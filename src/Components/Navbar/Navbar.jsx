@@ -182,7 +182,7 @@ const Navbar = () => {
                         onClick={handleLogOut}
                       />
                       <div class="login_btn">
-                        Logout <span aria-hidden="">_</span>
+                        Logout <span aria-hidden=""></span>
                         <span aria-hidden="" class="login_btn__glitch">
                           Logout
                         </span>
