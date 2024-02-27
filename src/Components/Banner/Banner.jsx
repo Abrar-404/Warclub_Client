@@ -6,7 +6,7 @@ const Banner = () => {
     //   </div>
     <div>
       <div className="pt-48">
-        <h1 className="text-[#45F882] text-2xl rajdhani-medium">
+        <h1 className="text-[#45F882] text-2xl rajdhani-medium flex justify-center">
           # World Class ESports & Gaming Site
         </h1>
       </div>
