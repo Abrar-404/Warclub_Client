@@ -11,10 +11,10 @@ const Banner = () => {
         <h1 className="text-[#45F882] text-2xl rajdhani-medium mt-10 flex justify-center">
           # World Class ESports & Gaming Site
         </h1>
-        <div className='flex items-center justify-center'>
+        <div className="flex items-center justify-center">
           <img src={shape1} alt="" className="w-[150px] h-[150px]" />
-          <h1 className='text-4xl text-white'>SHAPING THE FUTURE OF</h1>
-          <img src={shape2} alt="" className="w-[200px] h-[200px]" />
+          <h1 className="text-4xl text-white">SHAPING THE FUTURE OF</h1>
+          <img src={shape2} alt="" className="w-[150px] h-[150px]" />
         </div>
       </div>
     </div>
