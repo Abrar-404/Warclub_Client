@@ -67,7 +67,11 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" className="normal-case text-xl flex items-center">
-            <img className="" src="" alt="" />
+            <img
+              className=""
+              src="https://raw.githubusercontent.com/alaminh63/Titans_Arena/main/public/logoTest41.png"
+              alt=""
+            />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
