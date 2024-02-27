@@ -1,8 +1,5 @@
-const Navbar = () => {
-  return (
-    <div>
-      import React from 'react';
-import './Navbar.css';
+import React from 'react';
+import '../Styles/navbar.css';
 
 function Navbar() {
   return (
@@ -69,11 +66,5 @@ function Navbar() {
     </div>
   );
 }
-
-export default Navbar;
-
-    </div>
-  );
-};
 
 export default Navbar;
