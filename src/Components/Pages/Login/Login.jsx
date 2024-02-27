@@ -200,7 +200,6 @@
 
 import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Player } from '@lottiefiles/react-lottie-player';
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import Swal from 'sweetalert2';
@@ -208,6 +207,7 @@ import SocialLogin from './SocialLogin';
 import { Helmet } from 'react-helmet-async';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { AuthContext } from '../../../Providers/AuthProvider';
+import { Player } from '@lottiefiles/react-lottie-player';
 
 const Login = () => {
   const { signin, user, passwordReset } = useContext(AuthContext);
