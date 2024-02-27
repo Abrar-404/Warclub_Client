@@ -5,11 +5,10 @@ import { FcGoogle } from 'react-icons/fc';
 import { GiEnergyArrow } from 'react-icons/gi';
 
 import Swal from 'sweetalert2';
-import Button from '../Button/Button';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { AuthContext } from '../../Providers/AuthProvider';
 import axios from 'axios';
+import { AuthContext } from '../../../Providers/AuthProvider';
 
 const Login = () => {
   const { loginUser, googleSignIn, googleRegister } = useContext(AuthContext);
@@ -108,7 +107,6 @@ const Login = () => {
 
   return (
     <>
-      <PreLoader></PreLoader>
       <ToastContainer />
       <div className="hero  min-h-screen">
         <div className="hero-content  flex-col lg:flex-row-reverse">
@@ -183,11 +181,9 @@ const Login = () => {
                 <div className="text-3xl -rotate-45 w-9 text-red-600">
                   <GiEnergyArrow></GiEnergyArrow>
                 </div>
-                <Button>
                   <button className="text-3xl w-full text-center flex mx-auto">
                     <FcGoogle></FcGoogle>
                   </button>
-                </Button>
                 <div className="text-3xl w-9 -rotate-[225deg] text-red-600">
                   <GiEnergyArrow></GiEnergyArrow>
                 </div>
