@@ -166,12 +166,29 @@ const Navbar = () => {
                         />
                       </div>
                     </div>
-                    <button
+                    {/* <button
                       className="custom-button hover:bg-green-500 py-2 px-4"
                       onClick={handleLogOut}
                     >
                       Logout
-                    </button>
+                    </button> */}
+                    <div class="radio-wrapper">
+                      <input
+                        type="radio"
+                        checked="true"
+                        id="value-2"
+                        name="btn"
+                        class="input"
+                        onClick={handleLogOut}
+                      />
+                      <div class="login_btn">
+                        Logout <span aria-hidden="">_</span>
+                        <span aria-hidden="" class="login_btn__glitch">
+                          Logout
+                        </span>
+                        <label class="number">r2</label>
+                      </div>
+                    </div>
                   </div>
                 </>
               ) : (
@@ -185,7 +202,7 @@ const Navbar = () => {
                       class="input"
                     />
                     <div class="login_btn">
-                     Login <span aria-hidden="">_</span>
+                      Login <span aria-hidden="">_</span>
                       <span aria-hidden="" class="login_btn__glitch">
                         Login
                       </span>
