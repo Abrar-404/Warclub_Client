@@ -1,14 +1,24 @@
 const Banner = () => {
+  const converted = {
+    '.main-wrapper': { flexDirection: 'row', display: 'flex', flex: 1 },
+    '#content': { flex: 1 },
+    ul: { padding: '20px 0', flex: 1 },
+    li: { fontFamily: "'Lato'", color: 'whitesmoke', lineHeight: '44px' },
+  };
+
   return (
     <div>
       <div
         className="swiper-slide swiper-slide-next"
-        style={{
-          width: 1356,
-          opacity: 1,
-          transform: 'translate3d(0px, 0px, 0px)',
-          transitionDuration: '0ms',
-        }}
+        style={
+          ({
+            width: 1356,
+            opacity: 1,
+            transform: 'translate3d(0px, 0px, 0px)',
+            transitionDuration: '0ms',
+          },
+          converted)
+        }
         role="group"
         aria-label="1 / 3"
         data-swiper-slide-index={0}
