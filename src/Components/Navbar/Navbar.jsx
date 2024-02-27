@@ -1,39 +1,112 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+;
+import { Link, NavLink } from 'react-router-dom';
 import '../Styles/navbar.css';
+import { AuthContext } from '../../Providers/AuthProvider';
+import { useContext } from 'react';
 
 const Navbar = () => {
+  const { user, userLogOut } = useContext(AuthContext);
+
+ const handleLogOut = () => {
+   userLogOut()
+     .then(result => {
+       navigate('/');
+       console.log(result?.user);
+     })
+     .catch(error => {
+       console.error(error);
+     });
+ };
+
   const navOptions = (
     <>
       <li className="nav-link">
-        <Link to="/" className="default">
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? 'active' : 'default')}
+        >
           HOME
-        </Link>
+        </NavLink>
       </li>
       <li className="nav-link">
-        <Link to="/gallery" className="default">
+        <NavLink
+          to="/gallery"
+          className={({ isActive }) => (isActive ? 'active' : 'default')}
+        >
           GALLERY
-        </Link>
+        </NavLink>
       </li>
       <li className="nav-link">
-        <Link to="/allgame" className="default">
+        <NavLink
+          to="/allgame"
+          className={({ isActive }) => (isActive ? 'active' : 'default')}
+        >
           All GAMES
-        </Link>
+        </NavLink>
       </li>
       <li className="nav-link">
-        <Link to="/blogs" className="default">
+        <NavLink
+          to="/blogs"
+          className={({ isActive }) => (isActive ? 'active' : 'default')}
+        >
           BLOGS
-        </Link>
+        </NavLink>
       </li>
       <li className="nav-link">
-        <Link to="/support" className="default">
+        <NavLink
+          to="/support"
+          className={({ isActive }) => (isActive ? 'active' : 'default')}
+        >
           SUPPORT
-        </Link>
+        </NavLink>
       </li>
       <li className="nav-link">
-        <Link to="/tournament" className="default">
+        <NavLink
+          to="/tournament"
+          className={({ isActive }) => (isActive ? 'active' : 'default')}
+        >
           TOURNAMENTS
-        </Link>
+        </NavLink>
+      </li>
+      {user ? (
+        <>
+          <li className="nav-link">
+            <NavLink
+              to="/dashboard/profile"
+              className={({ isActive }) => (isActive ? 'active' : 'default')}
+            >
+              Dashboard
+            </NavLink>
+          </li>
+        </>
+      ) : (
+        <></>
+      )}
+    </>
+  );
+
+  const navOptionsForMobile = (
+    <>
+      <li className="nav-link">
+        <NavLink to="/">HOME</NavLink>
+      </li>
+      <li className="nav-link">
+        <NavLink to="/gallery">GALLERY</NavLink>
+      </li>
+      <li className="nav-link">
+        <NavLink to="/allgame">All GAMES</NavLink>
+      </li>
+      <li className="nav-link">
+        <NavLink to="/blogs">BLOGS</NavLink>
+      </li>
+      <li className="nav-link">
+        <NavLink to="/support">SUPPORT</NavLink>
+      </li>
+      <li className="nav-link">
+        <NavLink to="/tournament">Tournaments</NavLink>
+      </li>
+      <li className="nav-link">
+        <NavLink to="/dashboard/profile">Dashboard</NavLink>
       </li>
     </>
   );
@@ -63,15 +136,11 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-800 rounded-box w-52 z-10 text-white font-semibold"
             >
-              {navOptions}
+              {navOptionsForMobile}
             </ul>
           </div>
           <Link to="/" className="normal-case text-xl flex items-center">
-            <img
-              className=""
-              src="https://raw.githubusercontent.com/alaminh63/Titans_Arena/main/public/logoTest41.png"
-              alt=""
-            />
+            <img className="" src="" alt="" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -80,13 +149,39 @@ const Navbar = () => {
         <div className="navbar-end">
           <div>
             <div className="navbar-end">
-              <Link to="/login">
-                <button className="custom-button hover:bg-green-500 py-2 px-5">
-                  Login
-                </button>
-              </Link>
+              {user ? (
+                <>
+                  <div className="flex gap-4 ">
+                    <div className="avatar online">
+                      <div className="w-10 rounded-full">
+                        <img
+                          className=""
+                          src={user?.photoURL}
+                          alt="User Avatar"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      className="custom-button hover:bg-green-500 py-2 px-4"
+                      onClick={handleLogOut}
+                    >
+                      Logout
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <Link to="/login">
+                  <button className="custom-button hover:bg-green-500 py-2 px-5">
+                    Login
+                  </button>
+                </Link>
+              )}
             </div>
           </div>
+
+          {/* <Link to="/login" className="bt-primary font-bold">
+            Sign Up
+          </Link> */}
         </div>
       </div>
     </nav>
