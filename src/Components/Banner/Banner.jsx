@@ -12,7 +12,7 @@ const Banner = () => {
           # World Class ESports & Gaming Site
         </h1>
         <div className='flex items-center justify-center'>
-          <img src={shape1} alt="" className="w-[200px] h-[200px]" />
+          <img src={shape1} alt="" className="w-[150px] h-[150px]" />
           <h1 className='text-4xl text-white'>SHAPING THE FUTURE OF</h1>
           <img src={shape2} alt="" className="w-[200px] h-[200px]" />
         </div>
