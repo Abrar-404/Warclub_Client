@@ -210,7 +210,7 @@ import { AuthContext } from '../../../Providers/AuthProvider';
 import { Player } from '@lottiefiles/react-lottie-player';
 
 const Login = () => {
-  const { signin, user, passwordReset } = useContext(AuthContext);
+  const { loginUser, user, passwordReset } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
   const [verify, SetVerify] = useState(false);
@@ -222,7 +222,7 @@ const Login = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = data => {
-    signin(data.email, data.password)
+    loginUser(data.email, data.password)
       .then(result => {
         const loggedUser = result.user;
         console.log(loggedUser);
@@ -265,9 +265,9 @@ const Login = () => {
 
   return (
     <div>
-      <Helmet>
+      {/* <Helmet>
         <title>Titans Arena || LogIn</title>
-      </Helmet>
+      </Helmet> */}
       <div className="hero min-h-screen  bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
         <div className="hero-content flex-col my-20 lg:flex-row-reverse">
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl ">

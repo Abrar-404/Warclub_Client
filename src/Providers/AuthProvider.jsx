@@ -31,6 +31,9 @@ const AuthProvider = ({ children }) => {
     setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
+   const passwordReset = email => {
+     return sendPasswordResetEmail(auth, email);
+   };
 
   const userLogOut = () => {
     setLoading(true);
@@ -54,6 +57,7 @@ const AuthProvider = ({ children }) => {
     googleRegister,
     loginUser,
     userLogOut,
+    passwordReset,
   };
 
   return (
