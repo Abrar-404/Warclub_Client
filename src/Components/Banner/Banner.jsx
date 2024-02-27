@@ -16,6 +16,9 @@ const Banner = () => {
           <h1 className="text-4xl text-white">SHAPING THE FUTURE OF</h1>
           <img src={shape2} alt="" className="w-[150px] h-[150px]" />
         </div>
+        <h1 className="text-[#45F882] text-8xl font-extrabold rajdhani-bold flex justify-center">
+          ESPORTS
+        </h1>
       </div>
     </div>
   );
