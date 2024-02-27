@@ -231,45 +231,7 @@ const Banner = () => {
         <h1 className="text-[#45F882] text-2xl rajdhani-medium flex justify-center">
           # World Class ESports & Gaming Site
         </h1>
-        <h1
-          className="hero-title"
-          style={
-            (converted,
-            {
-              backgroundImage:
-                'url("https://wordpress.themeholy.com/bame/wp-content/uploads/2023/12/hero-title-bg-shape1.svg")',
-            })
-          }
-        >
-          <span
-            className="title1 custom-anim-top wow background-image"
-            data-wow-duration="1.1s"
-            data-wow-delay="0.3s"
-            style={{
-              visibility: 'visible',
-              animationDuration: '1.1s',
-              animationDelay: '0.3s',
-              animationName: 'custom-anim-top',
-              backgroundImage:
-                'url("https://wordpress.themeholy.com/bame/wp-content/uploads/2023/12/hero-title-bg-shape1.svg")',
-            }}
-          >
-            SHAPING THE FUTURE OF
-          </span>
-          <span
-            className="title2 custom-anim-top wow"
-            data-wow-duration="1.1s"
-            data-wow-delay="0.4s"
-            style={{
-              visibility: 'visible',
-              animationDuration: '1.1s',
-              animationDelay: '0.4s',
-              animationName: 'custom-anim-top',
-            }}
-          >
-            ESPORTS
-          </span>
-        </h1>
+      
       </div>
     </div>
   );
