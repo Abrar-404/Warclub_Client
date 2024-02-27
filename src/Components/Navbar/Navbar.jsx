@@ -1,23 +1,23 @@
-;
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import '../Styles/navbar.css';
 import { AuthContext } from '../../Providers/AuthProvider';
 import { useContext } from 'react';
+import '../Styles/loginbtn.css';
 
 const Navbar = () => {
   const { user, userLogOut } = useContext(AuthContext);
   const navigate = useNavigate();
 
- const handleLogOut = () => {
-   userLogOut()
-     .then(result => {
-       navigate('/');
-       console.log(result?.user);
-     })
-     .catch(error => {
-       console.error(error);
-     });
- };
+  const handleLogOut = () => {
+    userLogOut()
+      .then(result => {
+        navigate('/');
+        console.log(result?.user);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  };
 
   const navOptions = (
     <>
@@ -176,9 +176,22 @@ const Navbar = () => {
                 </>
               ) : (
                 <Link to="/login">
-                  <button className="custom-button hover:bg-green-500 py-2 px-5">
-                    Login
-                  </button>
+                  <div class="radio-wrapper">
+                    <input
+                      type="radio"
+                      checked="true"
+                      id="value-2"
+                      name="btn"
+                      class="input"
+                    />
+                    <div class="login_btn">
+                     Login <span aria-hidden="">_</span>
+                      <span aria-hidden="" class="login_btn__glitch">
+                        Login
+                      </span>
+                      <label class="number">r2</label>
+                    </div>
+                  </div>
                 </Link>
               )}
             </div>
