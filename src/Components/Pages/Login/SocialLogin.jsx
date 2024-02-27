@@ -9,7 +9,7 @@ import useAxiosSecure from './../../Hooks/useAxiosSecure';
 
 const SocialLogin = () => {
   const facebookProvider = new FacebookAuthProvider();
-  const { createUser, user, updateUserData, googleSignIn, FacebookSign } =
+  const { createUser, user, updateUserData, googleRegister, FacebookSign } =
     useContext(AuthContext);
   const [error, setErr] = useState('');
   const [axiosSecure] = useAxiosSecure();
@@ -48,7 +48,7 @@ const SocialLogin = () => {
       });
   };
   const handleGooglesignIn = () => {
-    googleSignIn()
+    googleRegister()
       .then(userCredential => {
         const user = userCredential.user;
         const savedUser = {
