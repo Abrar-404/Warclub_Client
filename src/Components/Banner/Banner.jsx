@@ -4,7 +4,7 @@ const Banner = () => {
     //   </div>
     <div>
       <div className="pt-48">
-        <h1 className=""># World Class ESports & Gaming Site</h1>
+        <h1 className="text-[#45F882]"># World Class ESports & Gaming Site</h1>
       </div>
     </div>
   );
