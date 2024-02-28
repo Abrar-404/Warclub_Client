@@ -12,11 +12,19 @@ const Banner = () => {
           # World Class ESports & Gaming Site
         </h1>
         <div className="flex items-center justify-center">
-          <img src={shape1} alt="" className="w-[150px] h-[150px]" />
+          <img
+            src={shape1}
+            alt=""
+            className="lg:w-[150px] lg:h-[150px] md:w-[100px] md:h-[100px]"
+          />
           <h1 className="lg:text-6xl md:text-3xl text-xl text-white rajdhani-bold">
             SHAPING THE FUTURE OF
           </h1>
-          <img src={shape2} alt="" className="lg:w-[150px] lg:h-[150px] md:w-[100px] md:h-[100px]" />
+          <img
+            src={shape2}
+            alt=""
+            className="lg:w-[150px] lg:h-[150px] md:w-[100px] md:h-[100px]"
+          />
         </div>
         <h1 className="text-[#45F882] text-8xl font-extrabold rajdhani-bold flex justify-center">
           ESPORTS
