@@ -13,3 +13,5 @@ const MainLayout = () => {
 };
 
 export default MainLayout;
+
+<script>AOS.init();</script>;
