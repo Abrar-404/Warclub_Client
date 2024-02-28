@@ -14,12 +14,7 @@ const Banner = () => {
           </h1>
         </div>
         <div className="flex items-center justify-center">
-          <div
-            data-aos="fade-left"
-            data-aos-anchor="#example-anchor"
-            data-aos-offset="500"
-            data-aos-duration="500"
-          >
+          <div>
             <img
               src={shape1}
               alt=""
@@ -31,6 +26,10 @@ const Banner = () => {
           </h1>
           <img
             src={shape2}
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
             alt=""
             className="lg:w-[150px] lg:h-[150px] md:w-[100px] md:h-[100px] w-[60px] h-[60px]"
           />
