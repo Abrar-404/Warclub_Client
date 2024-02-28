@@ -14,11 +14,18 @@ const Banner = () => {
           </h1>
         </div>
         <div className="flex items-center justify-center">
-          <img
-            src={shape1}
-            alt=""
-            className="lg:w-[150px] lg:h-[150px] md:w-[100px] md:h-[100px] w-[60px] h-[60px]"
-          />
+          <div
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+          >
+            <img
+              src={shape1}
+              alt=""
+              className="lg:w-[150px] lg:h-[150px] md:w-[100px] md:h-[100px] w-[60px] h-[60px]"
+            />
+          </div>
           <h1 className="lg:text-6xl md:text-3xl text-xl text-white rajdhani-bold">
             SHAPING THE FUTURE OF
           </h1>
@@ -28,7 +35,11 @@ const Banner = () => {
             className="lg:w-[150px] lg:h-[150px] md:w-[100px] md:h-[100px] w-[60px] h-[60px]"
           />
         </div>
-        <h1 className="text-[#45F882] lg:text-8xl md:text-6xl text-4xl font-extrabold rajdhani-bold flex justify-center">
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="text-[#45F882] lg:text-8xl md:text-6xl text-4xl font-extrabold rajdhani-bold flex justify-center"
+        >
           ESPORTS
         </h1>
       </div>
