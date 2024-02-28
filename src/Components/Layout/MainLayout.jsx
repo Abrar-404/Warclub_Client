@@ -21,6 +21,7 @@ const MainLayout = () => {
           border: '3px solid white',
         }}
       />
+
       <div>
         <Navbar></Navbar>
         <Outlet></Outlet>
