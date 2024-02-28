@@ -26,7 +26,7 @@ const Banner = () => {
             className="lg:w-[150px] lg:h-[150px] md:w-[100px] md:h-[100px] w-[60px] h-[60px]"
           />
         </div>
-        <h1 className="text-[#45F882] lg:text-8xl font-extrabold rajdhani-bold flex justify-center">
+        <h1 className="text-[#45F882] lg:text-8xl md:text-4xl font-extrabold rajdhani-bold flex justify-center">
           ESPORTS
         </h1>
       </div>
