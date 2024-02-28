@@ -1,6 +1,8 @@
 import '../Styles/customFont.css';
 import shape1 from '../../assets/shape1.png';
 import shape2 from '../../assets/shape2.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Banner = () => {
   return (
@@ -55,3 +57,4 @@ const Banner = () => {
 };
 
 export default Banner;
+AOS.init();
