@@ -8,14 +8,14 @@ const Banner = () => {
     //   </div>
     <div>
       <div className="pt-48">
-        <h1 className="text-[#45F882] lg:text-2xl md:text-xl rajdhani-medium mt-10 flex justify-center">
+        <h1 className="text-[#45F882] lg:text-4xl md:text-xl rajdhani-medium mt-10 flex justify-center">
           # World Class ESports & Gaming Site
         </h1>
         <div className="flex items-center justify-center">
           <img
             src={shape1}
             alt=""
-            className="lg:w-[150px] lg:h-[150px] md:w-[100px] md:h-[100px]"
+            className="lg:w-[150px] lg:h-[150px] md:w-[100px] md:h-[100px] w-[60px] h-[60px]"
           />
           <h1 className="lg:text-6xl md:text-3xl text-xl text-white rajdhani-bold">
             SHAPING THE FUTURE OF
