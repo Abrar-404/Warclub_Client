@@ -25,7 +25,11 @@ const Banner = () => {
               className="lg:w-[150px] lg:h-[150px] md:w-[100px] md:h-[100px] w-[60px] h-[60px]"
             />
           </div>
-          <h1 className="lg:text-6xl md:text-3xl text-xl text-white rajdhani-bold">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="lg:text-6xl md:text-3xl text-xl text-white rajdhani-bold"
+          >
             SHAPING THE FUTURE OF
           </h1>
           <img
