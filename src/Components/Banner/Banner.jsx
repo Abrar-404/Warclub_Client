@@ -8,9 +8,12 @@ const Banner = () => {
     //   </div>
     <div>
       <div className="pt-48">
-        <h1 data-aos="fade-up" data-aos-duration="3000">
-          className="text-[#45F882] lg:text-4xl md:text-xl rajdhani-medium mt-10
-          flex justify-center"> # World Class ESports & Gaming Site
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="text-[#45F882] lg:text-4xl md:text-xl rajdhani-medium mt-10 flex justify-center"
+        >
+          # World Class ESports & Gaming Site
         </h1>
         <div className="flex items-center justify-center">
           <img
