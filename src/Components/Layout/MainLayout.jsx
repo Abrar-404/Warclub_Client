@@ -2,10 +2,13 @@ import { Outlet } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import '../Styles/cursor.css';
 import AnimatedCursor from 'react-animated-cursor';
+import SmoothScroll from '../Scrolling/SmoothScroll';
 
 const MainLayout = () => {
   return (
     <div className="h-auto bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')] svg mx-auto">
+      <SmoothScroll></SmoothScroll>
+
       <AnimatedCursor
         innerSize={10}
         outerSize={50}
