@@ -20,8 +20,6 @@ const Banner = () => {
             <img
               src={shape1}
               data-aos="fade-right"
-              data-aos-anchor="#example-anchor"
-              data-aos-offset="500"
               data-aos-duration="3000"
               alt=""
               className="lg:w-[150px] lg:h-[150px] md:w-[100px] md:h-[100px] w-[60px] h-[60px]"
@@ -37,8 +35,6 @@ const Banner = () => {
           <img
             src={shape2}
             data-aos="fade-left"
-            data-aos-anchor="#example-anchor"
-            data-aos-offset="500"
             data-aos-duration="3000"
             alt=""
             className="lg:w-[150px] lg:h-[150px] md:w-[100px] md:h-[100px] w-[60px] h-[60px]"
