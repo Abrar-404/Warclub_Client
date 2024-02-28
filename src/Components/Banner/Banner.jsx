@@ -13,7 +13,7 @@ const Banner = () => {
         </h1>
         <div className="flex items-center justify-center">
           <img src={shape1} alt="" className="w-[150px] h-[150px]" />
-          <h1 className="text-6xl text-white rajdhani-bold">
+          <h1 className="lg:text-6xl text-white rajdhani-bold">
             SHAPING THE FUTURE OF
           </h1>
           <img src={shape2} alt="" className="w-[150px] h-[150px]" />
