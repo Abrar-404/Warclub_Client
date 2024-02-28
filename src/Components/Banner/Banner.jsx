@@ -8,7 +8,7 @@ const Banner = () => {
     //   </div>
     <div>
       <div className="pt-48">
-        <h1 className="text-[#45F882] lg:text-2xl rajdhani-medium mt-10 flex justify-center">
+        <h1 className="text-[#45F882] lg:text-2xl md:text-xl rajdhani-medium mt-10 flex justify-center">
           # World Class ESports & Gaming Site
         </h1>
         <div className="flex items-center justify-center">
