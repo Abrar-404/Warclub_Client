@@ -10,7 +10,7 @@ const Banner = () => {
     //   </div>
     <div>
       <div className="pt-48">
-        <div data-aos="fade-up" data-aos-duration="1000">
+        <div data-aos="fade-up" data-aos-duration="3000">
           <h1 className="text-[#45F882] lg:text-4xl md:text-xl rajdhani-medium mt-10 flex justify-center">
             # World Class ESports & Gaming Site
           </h1>
@@ -22,7 +22,7 @@ const Banner = () => {
               data-aos="fade-right"
               data-aos-anchor="#example-anchor"
               data-aos-offset="500"
-              data-aos-duration="500"
+              data-aos-duration="3000"
               alt=""
               className="lg:w-[150px] lg:h-[150px] md:w-[100px] md:h-[100px] w-[60px] h-[60px]"
             />
@@ -39,14 +39,14 @@ const Banner = () => {
             data-aos="fade-left"
             data-aos-anchor="#example-anchor"
             data-aos-offset="500"
-            data-aos-duration="500"
+            data-aos-duration="3000"
             alt=""
             className="lg:w-[150px] lg:h-[150px] md:w-[100px] md:h-[100px] w-[60px] h-[60px]"
           />
         </div>
         <h1
           data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos-duration="3000"
           className="text-[#45F882] lg:text-8xl md:text-6xl text-4xl font-extrabold rajdhani-bold flex justify-center"
         >
           ESPORTS
