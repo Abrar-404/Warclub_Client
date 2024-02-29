@@ -17,7 +17,6 @@
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 600;
 }
 
 .btn2:before {
@@ -25,7 +24,7 @@
   position: absolute;
   width: 0%;
   height: 0%;
-  left: 50%;
+  left: 20%;
   right: 50%;
   top: 50%;
   bottom: 50%;

@@ -54,10 +54,11 @@ const Banner = () => {
 
       {/* Buttons */}
 
-      <div className="flex justify-center gap-2 mt-20 lg:flex-row md:flex-col flex-col">
+      <div className="flex justify-center gap-2 mt-20 lg:flex-row md:flex-col flex-col mx-auto">
         <button className="btn2 rounded-tr-full rounded-bl-full">
-          <span className='font-bold flex items-center gap-3'>
-            Explore More <img src={arrow} className='w-[50px] h-[20px]' alt="" />{' '}
+          <span className="font-bold flex items-center gap-3">
+            Explore More{' '}
+            <img src={arrow} className="w-[50px] h-[20px]" alt="" />{' '}
           </span>
           <div class="top"></div>
           <div class="left"></div>
@@ -65,8 +66,11 @@ const Banner = () => {
           <div class="right"></div>
         </button>
 
-        <button className="btn2 rounded-tr-full rounded-bl-full">
-          <span>Browse Games</span>
+        <button className="btn2 rounded-tr-full rounded-bl-full mx-auto">
+          <span className="font-bold flex items-center gap-3 mx-auto">
+            Browse Games{' '}
+            <img src={arrow} className="w-[50px] h-[20px]" alt="" />{' '}
+          </span>
           <div class="top"></div>
           <div class="left"></div>
           <div class="bottom"></div>
