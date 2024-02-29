@@ -56,7 +56,7 @@ const Banner = () => {
 
       <div className="flex justify-center gap-2 mt-20">
         <button className="btn2 rounded-tr-full rounded-bl-full">
-          <span>
+          <span className='font-bold flex items-center gap-3'>
             Explore More <img src={arrow} className='w-[50px] h-[20px]' alt="" />{' '}
           </span>
           <div class="top"></div>
