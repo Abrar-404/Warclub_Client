@@ -54,11 +54,15 @@ const Banner = () => {
 
       {/* Buttons */}
 
-      <div className="flex justify-center gap-2 mt-20 lg:flex-row md:flex-col flex-col mx-auto">
-        <button className="btn2 rounded-tr-full rounded-bl-full">
-          <span className="font-bold flex items-center gap-3">
+      <div className="flex justify-center gap-2 mt-20 lg:flex-row md:flex-col flex-col mx-auto w-1/2">
+        <button className="btn2 rounded-tr-full rounded-bl-full mx-auto">
+          <span className="font-bold flex items-center gap-3 mx-auto">
             Explore More{' '}
-            <img src={arrow} className="w-[50px] h-[20px]" alt="" />{' '}
+            <img
+              src={arrow}
+              className="lg:w-[50px] lg:h-[20px] md:w-[30px] md:h-[10px] w-[30px] h-[15px]"
+              alt=""
+            />{' '}
           </span>
           <div class="top"></div>
           <div class="left"></div>
@@ -69,7 +73,11 @@ const Banner = () => {
         <button className="btn2 rounded-tr-full rounded-bl-full mx-auto">
           <span className="font-bold flex items-center gap-3 mx-auto">
             Browse Games{' '}
-            <img src={arrow} className="w-[50px] h-[20px]" alt="" />{' '}
+            <img
+              src={arrow}
+              className="lg:w-[50px] lg:h-[20px] md:w-[30px] md:h-[10px] w-[30px] h-[15px]"
+              alt=""
+            />{' '}
           </span>
           <div class="top"></div>
           <div class="left"></div>
