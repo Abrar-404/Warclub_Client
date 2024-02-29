@@ -3,6 +3,8 @@ import shape1 from '../../assets/shape1.png';
 import shape2 from '../../assets/shape2.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+// import '../Styles/button1.css';
+import '../Styles/button2.css';
 
 const Banner = () => {
   return (
@@ -47,6 +49,52 @@ const Banner = () => {
         >
           ESPORTS
         </h1>
+      </div>
+
+      {/* Buttons */}
+      {/* 
+      <button className="btn1">
+        Explore More
+        <div id="clip">
+          <div id="leftTop" class="corner"></div>
+          <div id="rightBottom" class="corner"></div>
+          <div id="rightTop" class="corner"></div>
+          <div id="leftBottom" class="corner"></div>
+        </div>
+        <span id="rightArrow" class="arrow"></span>
+        <span id="leftArrow" class="arrow"></span>
+      </button>
+
+      <button className="btn2">
+        Browse Games
+        <div id="clip">
+          <div id="leftTop" class="corner"></div>
+          <div id="rightBottom" class="corner"></div>
+          <div id="rightTop" class="corner"></div>
+          <div id="leftBottom" class="corner"></div>
+        </div>
+        <span id="rightArrow" class="arrow"></span>
+        <span id="leftArrow" class="arrow"></span>
+      </button> */}
+
+      <div className="flex justify-center gap-2 mt-2">
+        <button className="btn2 rounded-t-full rounded-bl-full">
+          <span>Explore More</span>
+          <div class="top"></div>
+          <div class="left"></div>
+          <div class="bottom"></div>
+          <div class="right"></div>
+        </button>
+
+        <button className="btn2 rounded-b-full">
+          <span>Browse Games</span>
+          <div class="top"></div>
+          <div class="left"></div>
+          <div class="bottom"></div>
+          <div class="right"></div>
+        </button>
+
+        <button className='btn3'>Explore More</button>
       </div>
     </div>
   );
