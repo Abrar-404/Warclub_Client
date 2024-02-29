@@ -78,13 +78,13 @@ const Banner = () => {
       </button> */}
 
       <div className="flex justify-center gap-2 mt-2">
-        <button className="btn2 rounded-t-full rounded-bl-full">
+        {/* <button className="btn2 rounded-t-full rounded-bl-full">
           <span>Explore More</span>
           <div class="top"></div>
           <div class="left"></div>
           <div class="bottom"></div>
           <div class="right"></div>
-        </button>
+        </button> */}
 
         <button className="btn2 rounded-b-full">
           <span>Browse Games</span>
