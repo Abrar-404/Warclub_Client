@@ -1,4 +1,4 @@
-/* .btn2 {
+.btn2 {
   padding: 20px 60px;
   background-color: transparent;
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -94,7 +94,7 @@
 .btn2:hover .left,
 .btn2:hover .right {
   height: 100%;
-} */
+}
 
 .btn3 {
   background-color: #007bff;
