@@ -86,7 +86,7 @@ const Banner = () => {
           <div class="right"></div>
         </button>
 
-        <button className="btn2 rounded-b-full">
+        <button className="btn2 rounded-tr-full rounded-bl-full">
           <span>Browse Games</span>
           <div class="top"></div>
           <div class="left"></div>
