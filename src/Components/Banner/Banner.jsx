@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../Styles/button1.css';
 import '../Styles/button2.css';
-import arrow from '../../assets/arrow.png'
+import arrow from '../../assets/arrow.png';
 
 const Banner = () => {
   return (
@@ -56,7 +56,9 @@ const Banner = () => {
 
       <div className="flex justify-center gap-2 mt-20">
         <button className="btn2 rounded-tr-full rounded-bl-full">
-          <span>Explore More</span>
+          <span>
+            Explore More <img src={arrow} alt="" />{' '}
+          </span>
           <div class="top"></div>
           <div class="left"></div>
           <div class="bottom"></div>
