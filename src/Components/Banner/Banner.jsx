@@ -86,13 +86,13 @@ const Banner = () => {
           <div class="right"></div>
         </button>
 
-        <button className="btn2 rounded-b-full">
+        {/* <button className="btn2 rounded-b-full">
           <span>Browse Games</span>
           <div class="top"></div>
           <div class="left"></div>
           <div class="bottom"></div>
           <div class="right"></div>
-        </button>
+        </button> */}
 
         <button className='btn3'>Explore More</button>
       </div>
