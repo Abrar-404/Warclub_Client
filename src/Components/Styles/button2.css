@@ -102,7 +102,7 @@
   border: none;
   clip-path: polygon(20px 6px,
    100% 6px,
-    100% 50%,
+    0% 50%,
      80% 100%,
       20px 100%,
        2px 35px);
