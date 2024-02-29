@@ -4,7 +4,6 @@
   border: 2px solid rgba(255, 255, 255, 0.5);
   font-size: 18px;
   position: relative;
-  /* overflow: hidden; */
   transition: 500ms;
 }
 
