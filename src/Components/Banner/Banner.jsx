@@ -51,7 +51,7 @@ const Banner = () => {
         </h1>
       </div>
 
-      {/* Buttons */}
+      Buttons
       {/* 
       <button className="btn1">
         Explore More
