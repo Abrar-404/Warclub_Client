@@ -53,30 +53,6 @@ const Banner = () => {
 
       {/* Buttons */}
 
-      {/* <button className="btn1">
-        Explore More
-        <div id="clip">
-          <div id="leftTop" class="corner"></div>
-          <div id="rightBottom" class="corner"></div>
-          <div id="rightTop" class="corner"></div>
-          <div id="leftBottom" class="corner"></div>
-        </div>
-        <span id="rightArrow" class="arrow"></span>
-        <span id="leftArrow" class="arrow"></span>
-      </button>
-
-      <button className="btn2">
-        Browse Games
-        <div id="clip">
-          <div id="leftTop" class="corner"></div>
-          <div id="rightBottom" class="corner"></div>
-          <div id="rightTop" class="corner"></div>
-          <div id="leftBottom" class="corner"></div>
-        </div>
-        <span id="rightArrow" class="arrow"></span>
-        <span id="leftArrow" class="arrow"></span>
-      </button> */}
-
       <div className="flex justify-center gap-2 mt-20">
         <button className="btn2 rounded-tr-full rounded-bl-full">
           <span>Explore More</span>
