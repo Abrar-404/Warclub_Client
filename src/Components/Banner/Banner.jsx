@@ -53,7 +53,7 @@ const Banner = () => {
 
       {/* Buttons */}
       
-      <button className="btn1">
+      {/* <button className="btn1">
         Explore More
         <div id="clip">
           <div id="leftTop" class="corner"></div>
@@ -75,7 +75,7 @@ const Banner = () => {
         </div>
         <span id="rightArrow" class="arrow"></span>
         <span id="leftArrow" class="arrow"></span>
-      </button>
+      </button> */}
 
       <div className="flex justify-center gap-2 mt-2">
         <button className="btn2 rounded-t-full rounded-bl-full">
