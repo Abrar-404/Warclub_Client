@@ -77,7 +77,7 @@ const Banner = () => {
         <span id="leftArrow" class="arrow"></span>
       </button> */}
 
-      <div className="flex justify-center gap-2 mt-2">
+      <div className="flex justify-center gap-2 mt-20">
         <button className="btn2 rounded-tr-full rounded-bl-full">
           <span>Explore More</span>
           <div class="top"></div>
