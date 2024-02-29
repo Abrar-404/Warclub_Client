@@ -4,7 +4,7 @@ import shape2 from '../../assets/shape2.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../Styles/button1.css';
-// import '../Styles/button2.css';
+import '../Styles/button2.css';
 
 const Banner = () => {
   return (
