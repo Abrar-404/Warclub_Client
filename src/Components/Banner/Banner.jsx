@@ -94,7 +94,7 @@ const Banner = () => {
           <div class="right"></div>
         </button>
 
-        {/* <button className='btn3'>Explore More</button> */}
+        <button className='btn3'>Explore More</button>
       </div>
     </div>
   );
