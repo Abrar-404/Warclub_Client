@@ -54,7 +54,7 @@ const Banner = () => {
 
       {/* Buttons */}
 
-      <div className="flex justify-center gap-2 mt-20 lg:flex-row md:flex-col flex-col mx-auto w-1/2">
+      <div className="flex justify-center gap-10 mt-20 lg:flex-row md:flex-col flex-col mx-auto w-1/2">
         <button className="btn2 rounded-tr-full rounded-bl-full mx-auto">
           <span className="font-bold flex items-center gap-3 mx-auto">
             Explore More{' '}
