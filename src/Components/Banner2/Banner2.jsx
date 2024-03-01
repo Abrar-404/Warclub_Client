@@ -14,6 +14,7 @@ const Banner2 = () => {
           <div className="flex items-center justify-between">
             <img
               data-aos="fade-right"
+              data-aos-duration="1500"
               className="lg:w-[300px] lg:h-[400px] md:w-[200px] md:h-[200px] w-[70px] h-[90px]"
               src={hero1}
               alt=""
@@ -21,6 +22,7 @@ const Banner2 = () => {
             <img
               className="lg:w-[300px] lg:h-[400px] md:w-[200px] md:h-[200px] w-[70px] h-[90px]"
               src={hero2}
+              data-aos-duration="1500"
               data-aos="fade-left"
               alt=""
             />
