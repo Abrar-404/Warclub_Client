@@ -17,6 +17,14 @@ const Banner2 = () => {
             alt=""
           />
         </div>
+
+        <div className="">
+          <img
+            className="absolute lg:w-[250px] lg:h-[300px] md:w-[150px] md:h-[170px] lg:top-[120px] lg:left-[870px] md:top-[68px] md:left-[100px] w-[80px] h-[100px] top-[32px] left-[60px]"
+            src={hero2}
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );
