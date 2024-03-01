@@ -13,7 +13,7 @@ const Banner2 = () => {
 
         <div className="">
           <img
-            className="absolute w-[200px] h-[300px] lg:top-[120px] lg:left-[200px]"
+            className="absolute lg:w-[200px] lg:h-[300px] md:w-[150px] md:h-[170px] lg:top-[120px] lg:left-[200px] md:top-[68px] md:left-[100px]"
             src={hero1}
             alt=""
           />
