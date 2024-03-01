@@ -7,7 +7,7 @@ const Banner2 = () => {
     <div>
       <div className="relative">
         <img src={shape3} alt="" />
-        <div className=" w-2/4 absolute lg:top-[100px] md:top-[40px] lg:left-[329px]">
+        <div className=" lg:w-2/4 md:w-2/3 absolute lg:top-[100px] md:top-[40px] lg:left-[329px] md:left-[120px]">
           <div className="flex items-center justify-between">
             <img
               className="lg:w-[300px] lg:h-[400px] md:w-[200px] md:h-[200px]"
