@@ -9,11 +9,7 @@ const Banner2 = () => {
   return (
     <div className="flex justify-center">
       <div>
-        <img className="relative" src={shape3} alt="" />
-
-        <div className="absolute lg:top-[730px] lg:left-[200px] md:t">
-          <img className="lg:w-[300px] lg:h-[400px] md:w-[190px] md:h-[200px]" src={hero1} alt="" />
-        </div>
+        <img src={shape3} alt="" />
       </div>
     </div>
   );
