@@ -8,8 +8,12 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 const Banner2 = () => {
   return (
     <div className="flex justify-center">
-      <div>
-        <img src={shape3} alt="" />
+      <div className="relative">
+        <img className="" src={shape3} alt="" />
+
+        <div>
+          <img className='absolute w-[300px] h-[400px] top-[100px]' src={hero1} alt="" />
+        </div>
       </div>
     </div>
   );
