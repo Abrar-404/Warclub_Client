@@ -25,6 +25,17 @@ const Banner2 = () => {
             alt=""
           />
         </div>
+
+        <div>
+          <h1 className="text-white lg:text-3xl font-bold absolute lg:top-[220px] lg:left-[515px]">
+            Join The Tournaments
+          </h1>
+          <h1 className="text-gray-600 font-bold  lg:text-sm absolute lg:top-[270px] lg:left-[430px] text-center">
+            Beyond esports tournaments, include a broader calendar of gaming
+            events, <br /> conferences, and conventions. and connect with each
+            other.
+          </h1>
+        </div>
       </div>
     </div>
   );
