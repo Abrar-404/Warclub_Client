@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 const Banner2 = () => {
   return (
     <div className="flex justify-center ">
-      <div className="relative border-red-600 border-2">
+      <div className="relative">
         <img className="" src={shape3} alt="" />
 
         <div className="">
