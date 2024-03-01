@@ -10,6 +10,7 @@ const Banner2 = () => {
         <div className=" lg:w-2/4 md:w-2/3 w-[57%] absolute lg:top-[100px] md:top-[40px] lg:left-[329px] md:left-[120px] top-[42px] left-[90px]">
           <div className="flex items-center justify-between">
             <img
+              data-aos="fade-right"
               className="lg:w-[300px] lg:h-[400px] md:w-[200px] md:h-[200px] w-[70px] h-[90px]"
               src={hero1}
               alt=""
@@ -17,6 +18,7 @@ const Banner2 = () => {
             <img
               className="lg:w-[300px] lg:h-[400px] md:w-[200px] md:h-[200px] w-[70px] h-[90px]"
               src={hero2}
+              data-aos="fade-left"
               alt=""
             />
           </div>
