@@ -27,7 +27,7 @@ const Banner2 = () => {
         </div>
 
         <div>
-          <h1 className="text-white lg:text-3xl font-bold absolute lg:top-[220px] lg:left-[515px]">
+          <h1 className="text-white lg:text-3xl md:text-xl text-sm font-bold absolute lg:top-[220px] lg:left-[515px]">
             Join The Tournaments
           </h1>
           <h1 className="text-gray-600 font-bold  lg:text-sm absolute lg:top-[270px] lg:left-[430px] text-center">
