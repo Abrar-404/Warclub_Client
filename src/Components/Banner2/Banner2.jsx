@@ -1,6 +1,7 @@
 import shape3 from '../../assets/shape3.png';
 import hero1 from '../../assets/hero1.png';
 import hero2 from '../../assets/hero2.png';
+import '../Styles/bannerBtn.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -38,7 +39,7 @@ const Banner2 = () => {
         </div>
 
         {/* button */}
-        
+
         <div class="box">
           <button class="button">SPACE</button>
           <div class="space">
