@@ -4,6 +4,7 @@ import hero2 from '../../assets/hero2.png';
 import '../Styles/bannerBtn.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import vs from '../../assets/vs.png';
 
 const Banner2 = () => {
   return (
@@ -40,7 +41,7 @@ const Banner2 = () => {
 
         {/* button */}
 
-        <div className="absolute lg:w-[250px] lg:h-[300px] md:w-[150px] md:h-[170px] lg:top-[314px] lg:left-[560px] md:top-[180px] md:left-[340px] w-[80px] h-[100px] top-[32px] left-[280px]">
+        <div className="absolute lg:w-[250px] lg:h-[300px] md:w-[150px] md:h-[170px] lg:top-[314px] lg:left-[560px] md:top-[180px] md:left-[320px] w-[80px] h-[100px] top-[32px] left-[280px]">
           <button class="cta">
             <span class="span">Join Now</span>
             <span class="second">
@@ -90,6 +91,14 @@ const Banner2 = () => {
               </svg>
             </span>
           </button>
+        </div>
+
+        <div className="absolute top-[70px]">
+          {window.innerWidth === 425 && (
+            <div>
+              <img className="w-[40px] h-[50px]" src={vs} alt="" />
+            </div>
+          )}
         </div>
       </div>
     </div>
