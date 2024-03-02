@@ -29,10 +29,10 @@ const Banner2 = () => {
         </div>
 
         <div>
-          <h1 className="text-white lg:text-3xl md:text-xl text-sm font-bold absolute lg:top-[220px] lg:left-[515px] md:top-[120px] md:left-[270px] top-[100px]">
+          <h1 className="text-white lg:text-3xl md:text-xl text-sm font-bold absolute lg:top-[220px] lg:left-[515px] md:top-[120px] md:left-[270px] top-[150px] left-[140px]">
             Join The Tournaments
           </h1>
-          <h1 className="text-gray-600 font-bold  lg:text-sm md:text-[10px] absolute lg:top-[270px] lg:left-[430px] md:top-[150px] md:left-[200px] text-center">
+          <h1 className="text-gray-600 font-bold  lg:text-sm md:text-[10px] absolute lg:top-[270px] lg:left-[430px] md:top-[150px] md:left-[200px] top-[200px] text-center">
             Beyond esports tournaments, include a broader calendar of gaming
             events, <br /> conferences, and conventions. and connect with each
             other.
