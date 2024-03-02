@@ -54,7 +54,7 @@ const Banner = () => {
 
       {/* Buttons */}
 
-      <div className="flex justify-center gap-10 mt-20 lg:flex-row md:flex-col flex-col mx-auto w-1/2">
+      <div className="flex justify-center gap-5 mt-20 lg:flex-row md:flex-col flex-col mx-auto w-1/2">
         <button class="cta">
           <span class="span">Explore More</span>
           <span class="second">
