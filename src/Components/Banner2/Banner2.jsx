@@ -94,7 +94,7 @@ const Banner2 = () => {
         </div>
 
         <div className="absolute top-[63px] left-[189px]">
-          {window.innerWidth === 425 && (
+          {window?.innerWidth === 425 && (
             <div>
               <img className="w-[40px] h-[50px]" src={vs} alt="" />
             </div>
