@@ -42,7 +42,7 @@ const Banner2 = () => {
 
         <div className="absolute lg:w-[250px] lg:h-[300px] md:w-[150px] md:h-[170px] lg:top-[10px] lg:left-[870px] md:top-[68px] md:left-[480px] w-[80px] h-[100px] top-[32px] left-[280px]">
           <button class="cta">
-            <span class="span">NEXT</span>
+            <span class="span">Join Now</span>
             <span class="second">
               <svg
                 width="50px"
