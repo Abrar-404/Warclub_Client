@@ -1,69 +1,81 @@
-.boxu {
-  --clr-shadow__border: #d9a1ff;
-  --clr-text: #F6F4EB;
-  --clr-space: #120e1e;
-  --clr-space-gr: #271950;
-  --clr-star: #E9F8F9;
-  --size: 3rem;
-  position: relative;
-  outline: 1px solid var(--clr-shadow__border);
-}
-
-.bitti {
-  font-weight: 600;
-  font-size: 1.5rem;
-  letter-spacing: 0.2rem;
-  background: transparent;
-  padding: calc(var(--size) / 3) var(--size);
-  border: none;
-  cursor: pointer;
-  color: var(--clr-text);
-  text-shadow: 2px 0px var(--clr-shadow__border), 0px 2px var(--clr-shadow__border),
-  -2px 0px var(--clr-shadow__border), 0px -2px var(--clr-shadow__border);
-}
-
-.space {
-  width: 100%;
-  height: 100%;
-  bottom: 0%;
-  gap: 1.5rem;
-  transition: 0.5s ease-in-out;
-  z-index: -1;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
+.cta {
   display: flex;
-  background: linear-gradient( 160deg, var(--clr-space), var(--clr-space-gr));
+  padding: 11px 33px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  color: white;
+  background: #6225E6;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+  border: none;
 }
 
-.box:hover .space {
-  opacity: 1;
+.cta:focus {
+  outline: none;
 }
 
-.star {
-  height: 4rem;
-  width: 0.3rem;
+.cta:hover {
   transition: 0.5s;
-  border-radius: 50px;
-  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-  position: relative;
-  background-color: var(--clr-star);
-  animation: space-animation calc(0.1s * var(--i)) linear infinite;
+  box-shadow: 10px 10px 0 #FBC638;
 }
 
-@keyframes space-animation {
+.cta .second {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover  .second {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+.span {
+  transform: skewX(15deg)
+}
+
+.second {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover .three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover .one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
   0% {
-    transform: rotate(-30deg) translateY(calc(-52% * var(--i)));
+    fill: white;
+  }
+
+  50% {
+    fill: #FBC638;
   }
 
   100% {
-    transform: rotate(-30deg) translateY(calc(52% * var(--i)));
+    fill: white;
   }
 }
-
-
-
-
-
-
-
