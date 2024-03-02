@@ -1,5 +1,6 @@
 .cta {
   display: flex;
+  align-items: center;
   padding: 11px 33px;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
