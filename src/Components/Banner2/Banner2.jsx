@@ -37,8 +37,20 @@ const Banner2 = () => {
           </h1>
         </div>
 
-
         {/* button */}
+        
+        <div class="box">
+          <button class="button">SPACE</button>
+          <div class="space">
+            <span style="--i: 31" class="star"></span>
+            <span style="--i: 12" class="star"></span>
+            <span style="--i: 57" class="star"></span>
+            <span style="--i: 93" class="star"></span>
+            <span style="--i: 23" class="star"></span>
+            <span style="--i: 70" class="star"></span>
+            <span style="--i: 6" class="star"></span>
+          </div>
+        </div>
       </div>
     </div>
   );
