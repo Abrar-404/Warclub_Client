@@ -36,6 +36,9 @@ const Banner2 = () => {
             other.
           </h1>
         </div>
+
+
+        {/* button */}
       </div>
     </div>
   );
