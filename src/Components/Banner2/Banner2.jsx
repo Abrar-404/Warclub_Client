@@ -93,7 +93,7 @@ const Banner2 = () => {
           </button>
         </div>
 
-        <div className="absolute top-[70px] left-[189px]">
+        <div className="absolute top-[63px] left-[189px]">
           {window.innerWidth === 425 && (
             <div>
               <img className="w-[40px] h-[50px]" src={vs} alt="" />
