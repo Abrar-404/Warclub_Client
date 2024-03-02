@@ -80,3 +80,17 @@
     fill: white;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .cta {
+    font-size: 6px;
+    padding: 9px 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .cta {
+    font-size: 7px;
+    padding: 9px 10px;
+  }
+}
