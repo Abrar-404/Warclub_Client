@@ -7,6 +7,12 @@ import 'aos/dist/aos.css';
 import vs from '../../assets/vs.png';
 
 const Banner2 = () => {
+
+
+  // const inVoice = () => {
+  // window.print()
+  // }
+
   return (
     <div className="flex justify-center ">
       <div className="relative">
@@ -42,7 +48,7 @@ const Banner2 = () => {
         {/* button */}
 
         <div className="absolute lg:w-[250px] lg:h-[300px] md:w-[150px] md:h-[170px] lg:top-[314px] lg:left-[560px] md:top-[180px] md:left-[320px] w-[80px] h-[100px] top-[310px] left-[160px]">
-          <button class="cta">
+          <button class="cta" onClick={inVoice}>
             <span class="span">Join Now</span>
             <span class="second">
               <svg
@@ -106,3 +112,5 @@ const Banner2 = () => {
 export default Banner2;
 
 AOS.init();
+
+
