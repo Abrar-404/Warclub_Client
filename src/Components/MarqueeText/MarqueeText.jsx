@@ -4,9 +4,8 @@ const MarqueeText = () => {
   return (
     <div>
       <Marquee>
-haha
-haha
-haha
+        <h1>ACTION-PACKED</h1>
+        <h1>MIND-BENDING</h1>
       </Marquee>
     </div>
   );
