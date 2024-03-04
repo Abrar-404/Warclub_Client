@@ -4,7 +4,7 @@ const MarqueeText = () => {
   return (
     <div>
       <Marquee>
-        <div>
+        <div className='flex'>
           <h1 className="text-4xl">ACTION-PACKED</h1>
           <h1 className="text-4xl">MIND-BENDING</h1>
           <h1 className="text-4xl">Collection OG Games</h1>
