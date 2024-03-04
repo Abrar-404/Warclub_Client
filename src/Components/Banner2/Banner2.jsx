@@ -7,8 +7,6 @@ import 'aos/dist/aos.css';
 import vs from '../../assets/vs.png';
 
 const Banner2 = () => {
-
-
   // const inVoice = () => {
   // window.print()
   // }
@@ -20,6 +18,8 @@ const Banner2 = () => {
 
         <div className="">
           <img
+            data-aos="fade-right"
+            data-aos-duration="2000"
             className="absolute lg:w-[250px] lg:h-[300px] md:w-[150px] md:h-[170px] lg:top-[120px] lg:left-[200px] md:top-[68px] md:left-[100px] w-[80px] h-[100px] top-[32px] left-[60px]"
             src={hero1}
             alt=""
@@ -112,5 +112,3 @@ const Banner2 = () => {
 export default Banner2;
 
 AOS.init();
-
-
