@@ -5,6 +5,10 @@ const About = () => {
     <div>
       <div>
         <img src={bigPic} alt="" />
+
+        <div>
+          
+        </div>
       </div>
     </div>
   );
