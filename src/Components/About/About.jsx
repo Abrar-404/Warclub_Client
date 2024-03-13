@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div>
       <div className="flex flex-col md:flex-col lg:flex-row mx-auto gap-20 justify-center mt-48">
-        <div className='flex justify-center mx-auto'>
+        <div className="flex justify-center mx-auto">
           <img src={bigPic} alt="" />
         </div>
 
@@ -42,8 +42,7 @@ const About = () => {
             <img src={feature2} alt="" />
             <div>
               <h1 className="text-white lg:text-2xl font-bold">
-                Over <span className="text-[#45f882]">1k+</span> Affiliate Game
-                Programs
+                Great Tournaments
               </h1>
               <h1 className="text-[#9199AD] font-semibold mt-2">
                 Keep users informed about the gaming industry with news <br />{' '}
