@@ -15,7 +15,7 @@ const About = () => {
 
         <div className="mx-auto">
           <div className="flex items-center gap-5 mx-auto justify-start">
-            <img src={littlePic} className="reveal-from-left" alt="" />
+            <img src={littlePic} className="reveal-from-top" alt="" />
             <div>
               <h1 className="text-[#45F882] font-bold lg:text-2xl">
                 # About Our Gaming Site
