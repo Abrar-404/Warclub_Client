@@ -14,7 +14,7 @@ const About = () => {
             <img src={littlePic} alt="" />
             <div>
               <h1 className="text-[#45F882] font-bold lg:text-2xl"># About Our Gaming Site</h1>
-              <h1 className="text-white">
+              <h1 className="text-white text-5xl">
                 Forging Legends In The Gaming Universe
               </h1>
             </div>
