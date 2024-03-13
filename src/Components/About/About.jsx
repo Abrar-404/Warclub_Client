@@ -6,12 +6,12 @@ const About = () => {
   return (
     <div>
       <div className="flex flex-col md:flex-col lg:flex-row mx-auto gap-20 justify-center mt-48">
-        <div>
+        <div className='flex justify-center mx-auto'>
           <img src={bigPic} alt="" />
         </div>
 
         <div>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 mx-auto justify-center">
             <img src={littlePic} alt="" />
             <div>
               <h1 className="text-[#45F882] font-bold lg:text-2xl">
