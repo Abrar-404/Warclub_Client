@@ -37,6 +37,20 @@ const About = () => {
               </h1>
             </div>
           </div>
+
+          <div className="flex items-center gap-5 mt-10 justify-center mx-auto">
+            <img src={feature2} alt="" />
+            <div>
+              <h1 className="text-white lg:text-2xl font-bold">
+                Over <span className="text-[#45f882]">1k+</span> Affiliate Game
+                Programs
+              </h1>
+              <h1 className="text-[#9199AD] font-semibold mt-2">
+                Keep users informed about the gaming industry with news <br />{' '}
+                articles on releases, updates, and events.
+              </h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>
