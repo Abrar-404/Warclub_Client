@@ -10,7 +10,7 @@ const About = () => {
         </div>
 
         <div>
-          <div className='flex items-center'>
+          <div className='flex items-center gap-5'>
             <img src={littlePic} alt="" />
             <div>
               <h1 className="text-[#45F882] font-bold lg:text-2xl">
