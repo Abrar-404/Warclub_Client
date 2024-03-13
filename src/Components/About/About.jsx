@@ -24,7 +24,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-5 mt-10 justify-center mx-auto">
+          <div className="flex items-center gap-5 mt-10 justify-start mx-auto">
             <img src={feature1} alt="" />
             <div>
               <h1 className="text-white lg:text-2xl font-bold">
@@ -38,7 +38,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-5 mt-10 justify-center mx-auto">
+          <div className="flex items-center gap-5 mt-10 justify-start mx-auto">
             <img src={feature2} alt="" />
             <div>
               <h1 className="text-white lg:text-2xl font-bold">
