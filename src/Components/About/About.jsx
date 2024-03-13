@@ -26,7 +26,7 @@ const About = () => {
           <div>
             <img src={feature1} alt="" />
             <div>
-              <h1 className=''>
+              <h1 className='text-white '>
                 Over <span>1k+</span> Affiliate Game Programs
               </h1>
             </div>
