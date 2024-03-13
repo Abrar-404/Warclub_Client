@@ -59,8 +59,8 @@ const About = () => {
                 Get Online Supports
               </h1>
               <h1 className="text-[#9199AD] font-semibold mt-2">
-                Display a calendar of upcoming tournaments with dates, <br />{' '}
-                times, and game titles and provide live updates.
+                Create profiles for professional esports players, including <br />
+                their bios, achievements, and current teams.
               </h1>
             </div>
           </div>
