@@ -6,12 +6,12 @@ import feature2 from '../../assets/feature2.svg';
 const About = () => {
   return (
     <div>
-      <div className="flex flex-col md:flex-col lg:flex-row mx-auto gap-20 justify-center mt-48">
+      <div className="flex flex-col md:flex-col lg:flex-row mx-auto gap-5 justify-center mt-48">
         <div className="flex justify-center mx-auto border-2 border-red-600">
           <img src={bigPic} alt="" />
         </div>
 
-        <div className="border-2 border-red-600">
+        <div className="border-2 border-red-600 mx-auto">
           <div className="flex items-center gap-5 mx-auto justify-start">
             <img src={littlePic} alt="" />
             <div>
