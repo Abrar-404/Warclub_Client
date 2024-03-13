@@ -5,10 +5,12 @@ const About = () => {
   return (
     <div>
       <div>
-        <img src={bigPic} alt="" />
+        <div>
+          <img src={bigPic} alt="" />
+        </div>
 
         <div>
-<img src={littlePic} alt="" />
+          <img src={littlePic} alt="" />
         </div>
       </div>
     </div>
