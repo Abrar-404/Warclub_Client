@@ -1,40 +1,27 @@
-/* .text-focus-in {
-	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
-
-@-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-} */
-
-.reveal-from-top {
+.reveal-from-left {
   opacity: 0;
-  transform: translateY(-30%);
+  transform: translateX(-10%);
   animation: revealLeft 1s forwards;
 }
 
 @keyframes revealLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.reveal-from-top {
+  opacity: 0;
+  transform: translateY(-30%);
+  animation: revealtop 1s forwards;
+}
+
+@keyframes revealtop {
   0% {
     opacity: 0;
     transform: translateY(-30%);
