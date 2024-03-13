@@ -50,6 +50,22 @@ const About = () => {
               </h1>
             </div>
           </div>
+
+          
+          <div className="flex items-center gap-5 mt-10 lg:justify-start md:justify-center justify-center mx-auto">
+            <img src={feature2} alt="" />
+            <div>
+              <h1 className="text-white lg:text-2xl font-bold">
+                Great Tournaments
+              </h1>
+              <h1 className="text-[#9199AD] font-semibold mt-2">
+                Display a calendar of upcoming tournaments with dates, <br />{' '}
+                times, and game titles and provide live updates.
+              </h1>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </div>
