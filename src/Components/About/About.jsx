@@ -11,7 +11,7 @@ const About = () => {
           <img src={bigPic} alt="" />
         </div>
 
-        <div className="border-2 border-red-600 mx-auto">
+        <div className="mx-auto">
           <div className="flex items-center gap-5 mx-auto justify-start">
             <img src={littlePic} alt="" />
             <div>
