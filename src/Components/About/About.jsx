@@ -11,7 +11,6 @@ const About = () => {
         </div>
 
         <div>
-
           <div className="flex items-center gap-5">
             <img src={littlePic} alt="" />
             <div>
@@ -27,10 +26,11 @@ const About = () => {
           <div>
             <img src={feature1} alt="" />
             <div>
-              
+              <h1 className=''>
+                Over <span>1k+</span> Affiliate Game Programs
+              </h1>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
