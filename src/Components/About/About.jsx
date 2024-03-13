@@ -7,12 +7,12 @@ const About = () => {
   return (
     <div>
       <div className="flex flex-col md:flex-col lg:flex-row mx-auto gap-20 justify-center mt-48">
-        <div className="flex justify-center mx-auto">
+        <div className="flex justify-center mx-auto border-2 border-red-600">
           <img src={bigPic} alt="" />
         </div>
 
-        <div>
-          <div className="flex items-center gap-5 mx-auto justify-center">
+        <div className="border-2 border-red-600">
+          <div className="flex items-center gap-5 mx-auto justify-start">
             <img src={littlePic} alt="" />
             <div>
               <h1 className="text-[#45F882] font-bold lg:text-2xl">
@@ -45,8 +45,8 @@ const About = () => {
                 Great Tournaments
               </h1>
               <h1 className="text-[#9199AD] font-semibold mt-2">
-                Display a calendar of upcoming tournaments with dates, <br /> times,
-                and game titles and provide live updates.
+                Display a calendar of upcoming tournaments with dates, <br />{' '}
+                times, and game titles and provide live updates.
               </h1>
             </div>
           </div>
