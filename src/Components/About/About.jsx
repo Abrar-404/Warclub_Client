@@ -1,6 +1,7 @@
 import bigPic from '../../assets/About.png';
 import littlePic from '../../assets/about2.png';
 import feature1 from '../../assets/about_feature_1.svg';
+import feature2 from '../../assets/feature2.svg';
 
 const About = () => {
   return (
