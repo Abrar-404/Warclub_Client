@@ -17,7 +17,7 @@ const About = () => {
               <h1 className="text-[#45F882] font-bold lg:text-2xl">
                 # About Our Gaming Site
               </h1>
-              <h1 className="text-white text-5xl font-bold mt-5">
+              <h1 className="text-white lg:text-5xl font-bold mt-5">
                 Forging Legends In The <br /> Gaming Universe
               </h1>
             </div>
