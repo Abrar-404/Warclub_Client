@@ -4,7 +4,7 @@ import littlePic from '../../assets/about2.png';
 const About = () => {
   return (
     <div>
-      <div className="flex flex-col md:flex-col lg:flex-row mx-auto gap-20">
+      <div className="flex flex-col md:flex-col lg:flex-row mx-auto gap-20 justify-center">
         <div>
           <img src={bigPic} alt="" />
         </div>
@@ -13,9 +13,11 @@ const About = () => {
           <div>
             <img src={littlePic} alt="" />
             <div>
-              <h1 className="text-[#45F882] font-bold lg:text-2xl"># About Our Gaming Site</h1>
+              <h1 className="text-[#45F882] font-bold lg:text-2xl">
+                # About Our Gaming Site
+              </h1>
               <h1 className="text-white text-5xl font-bold">
-                Forging Legends In The Gaming Universe
+                Forging Legends In The <br /> Gaming Universe
               </h1>
             </div>
           </div>
