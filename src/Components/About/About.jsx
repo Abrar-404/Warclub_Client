@@ -12,6 +12,9 @@ const About = () => {
         <div>
           <div>
             <img src={littlePic} alt="" />
+            <div>
+              <h1 className=''># About Our Gaming Site</h1>
+            </div>
           </div>
         </div>
       </div>
