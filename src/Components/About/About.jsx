@@ -1,4 +1,5 @@
 import bigPic from '../../assets/About.png';
+import littlePic from '../../assets/about2.png'
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
         <img src={bigPic} alt="" />
 
         <div>
-          
+<img src={littlePic} alt="" />
         </div>
       </div>
     </div>
