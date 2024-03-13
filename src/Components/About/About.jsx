@@ -4,7 +4,7 @@ import littlePic from '../../assets/about2.png'
 const About = () => {
   return (
     <div>
-      <div>
+      <div className='flex flex-col md:flex-col lg:'>
         <div>
           <img src={bigPic} alt="" />
         </div>
