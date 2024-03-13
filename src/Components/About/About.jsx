@@ -26,6 +26,9 @@ const About = () => {
 
           <div>
             <img src={feature1} alt="" />
+            <div>
+              
+            </div>
           </div>
           
         </div>
