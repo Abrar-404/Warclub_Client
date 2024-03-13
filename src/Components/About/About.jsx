@@ -45,8 +45,8 @@ const About = () => {
                 Great Tournaments
               </h1>
               <h1 className="text-[#9199AD] font-semibold mt-2">
-                Keep users informed about the gaming industry with news <br />{' '}
-                articles on releases, updates, and events.
+                Display a calendar of upcoming tournaments with dates, <br /> times,
+                and game titles and provide live updates.
               </h1>
             </div>
           </div>
