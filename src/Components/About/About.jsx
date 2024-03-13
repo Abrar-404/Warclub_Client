@@ -30,9 +30,9 @@ const About = () => {
                 Over <span className="text-[#45f882]">1k+</span> Affiliate Game
                 Programs
               </h1>
-              <h1>
-                Keep users informed about the gaming industry with news articles
-                on releases, updates, and events.
+              <h1 className="text-[#373B45]">
+                Keep users informed about the gaming industry with news <br />{' '}
+                articles on releases, updates, and events.
               </h1>
             </div>
           </div>
