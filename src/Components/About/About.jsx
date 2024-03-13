@@ -23,7 +23,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-5 mt-10">
+          <div className="flex items-center gap-5 mt-10 justify-center mx-auto">
             <img src={feature1} alt="" />
             <div>
               <h1 className="text-white lg:text-2xl font-bold">
