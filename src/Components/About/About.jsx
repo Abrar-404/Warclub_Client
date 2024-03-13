@@ -10,7 +10,7 @@ const About = () => {
     <div>
       <div className="flex flex-col md:flex-col lg:flex-row mx-auto gap-5 justify-center mt-48">
         <div className="flex justify-center mx-auto">
-          <img src={bigPic} alt="" />
+          <img className="reveal-from-left" src={bigPic} alt="" />
         </div>
 
         <div className="mx-auto">
@@ -28,7 +28,7 @@ const About = () => {
 
           <div className="flex items-center gap-5 mt-10 lg:justify-start md:justify-center justify-center mx-auto">
             <img src={feature1} className="reveal-from-top" alt="" />
-            <div>
+            <div className="reveal-from-left">
               <h1 className="text-white lg:text-2xl font-bold">
                 Over <span className="text-[#45f882]">1k+</span> Affiliate Game
                 Programs
@@ -42,7 +42,7 @@ const About = () => {
 
           <div className="flex items-center gap-5 mt-10 lg:justify-start md:justify-center justify-center mx-auto">
             <img src={feature2} className="reveal-from-top" alt="" />
-            <div>
+            <div className="reveal-from-left">
               <h1 className="text-white lg:text-2xl font-bold">
                 Great Tournaments
               </h1>
@@ -55,7 +55,7 @@ const About = () => {
 
           <div className="flex items-center gap-5 mt-10 lg:justify-start md:justify-center justify-center mx-auto">
             <img src={feature3} className="reveal-from-top" alt="" />
-            <div>
+            <div className="reveal-from-left">
               <h1 className="text-white lg:text-2xl font-bold">
                 Get Online Supports
               </h1>
