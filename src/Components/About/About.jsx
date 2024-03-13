@@ -3,6 +3,7 @@ import littlePic from '../../assets/about2.png';
 import feature1 from '../../assets/about_feature_1.svg';
 import feature2 from '../../assets/feature2.svg';
 import feature3 from '../../assets/feature3.svg';
+import '../Styles/featureStyle.css';
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
 
         <div className="mx-auto">
           <div className="flex items-center gap-5 mx-auto justify-start">
-            <img src={littlePic} alt="" />
+            <img src={littlePic} className="reveal-from-left" alt="" />
             <div>
               <h1 className="text-[#45F882] font-bold lg:text-2xl">
                 # About Our Gaming Site
@@ -59,7 +60,8 @@ const About = () => {
                 Get Online Supports
               </h1>
               <h1 className="text-[#9199AD] font-semibold mt-2">
-                Create profiles for professional esports players, including <br />
+                Create profiles for professional esports players, including{' '}
+                <br />
                 their bios, achievements, and current teams.
               </h1>
             </div>

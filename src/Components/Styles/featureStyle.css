@@ -1,4 +1,4 @@
-.text-focus-in {
+/* .text-focus-in {
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
@@ -25,5 +25,22 @@
     -webkit-filter: blur(0px);
             filter: blur(0px);
     opacity: 1;
+  }
+} */
+
+.reveal-from-left {
+  opacity: 0;
+  transform: translateY(-30%);
+  animation: revealLeft 1s forwards;
+}
+
+@keyframes revealLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
