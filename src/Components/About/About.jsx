@@ -1,10 +1,12 @@
 import bigPic from '../../assets/About.png';
 import littlePic from '../../assets/about2.png';
+import feature1 from '../../assets/about_feature_1.svg';
 
 const About = () => {
   return (
     <div>
       <div className="flex flex-col md:flex-col lg:flex-row mx-auto gap-20 justify-center mt-48">
+
         <div>
           <img src={bigPic} alt="" />
         </div>
@@ -22,6 +24,9 @@ const About = () => {
             </div>
           </div>
         </div>
+
+
+
       </div>
     </div>
   );
