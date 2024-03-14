@@ -33,7 +33,7 @@ latestGamesComp .swiper-slide {
 
 latestGamesComp .swiper-slide img {
   display: block;
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
   object-fit: cover;
 }
