@@ -6,7 +6,7 @@ import SmoothScroll from '../Scrolling/SmoothScroll';
 
 const MainLayout = () => {
   return (
-    <div className="h-auto bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')] svg mx-auto">
+    <div className="h-cover bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')] svg mx-auto">
       {/* <SmoothScroll></SmoothScroll> */}
 
       <AnimatedCursor
