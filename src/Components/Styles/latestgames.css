@@ -16,23 +16,22 @@ body {
   padding: 0;
 } */
 
-LatestGamesComp .swiper {
+latestGamesComp .swiper {
   width: 100%;
   height: 100%;
 }
 
-LatestGamesComp .swiper-slide {
+latestGamesComp .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
 
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-LatestGamesComp .swiper-slide img {
+latestGamesComp .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;

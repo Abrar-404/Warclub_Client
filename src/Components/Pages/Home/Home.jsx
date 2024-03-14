@@ -11,7 +11,9 @@ const Home = () => {
       <Banner2></Banner2>
       <MarqueeText></MarqueeText>
       <About></About>
-      <LatestGames></LatestGames>
+      <div className="mt-48">
+        <LatestGames></LatestGames>
+      </div>
     </div>
   );
 };
