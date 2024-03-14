@@ -12,7 +12,7 @@ export default function LatestGames() {
     <latestGamesComp>
 
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
-          <SwiperSlide><img className='' src={latest1} alt="" /></SwiperSlide>
+          <SwiperSlide><img className='rounded-3xl' src={latest1} alt="" /></SwiperSlide>
           <SwiperSlide>Slide 2</SwiperSlide>
           <SwiperSlide>Slide 3</SwiperSlide>
           <SwiperSlide>Slide 4</SwiperSlide>
