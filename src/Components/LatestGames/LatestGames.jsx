@@ -1,6 +1,8 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import feature1 from '../../assets/feature1.svg'
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 
