@@ -32,6 +32,7 @@ latestgames .swiper-slide {
 latestgames .swiper-slide img {
   display: block;
   width: 250px;
+  border-radius: 0.75rem;
   height: 250px;
   object-fit: cover;
 }
