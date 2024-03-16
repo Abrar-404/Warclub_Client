@@ -11,7 +11,7 @@ import { Pagination } from 'swiper/modules';
 
 export default function LatestGames() {
   return (
-    <>
+    <latestgames>
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -49,6 +49,6 @@ export default function LatestGames() {
         <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper>
-    </>
+    </latestgames>
   );
 }
