@@ -1,31 +1,48 @@
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import latest1 from '../../assets/latest1 (1).png'
-import latest2 from '../../assets/latest2 (2).png'
+
+// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import '../Styles/latestgames.css';
+import './styles.css';
 
+// import required modules
 import { Pagination } from 'swiper/modules';
 
 export default function LatestGames() {
   return (
-    <latestGamesComp>
-      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
-        <SwiperSlide>
-          <img
-            className="rounded-3xl px-5 py-5 border-2 border-red-600"
-            src={latest1}
-            alt=""
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="rounded-3xl px-5 py-5 border-2 border-red-600"
-            src={latest2}
-            alt=""
-          />
-        </SwiperSlide>
+    <>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={10}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          '@0.00': {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          '@0.75': {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          '@1.00': {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          '@1.50': {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
@@ -34,6 +51,6 @@ export default function LatestGames() {
         <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper>
-    </latestGamesComp>
+    </>
   );
 }
