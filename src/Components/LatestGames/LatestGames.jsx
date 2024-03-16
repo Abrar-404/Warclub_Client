@@ -2,7 +2,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import latest1 from '../../assets/latest1 (1).png'
-import latest1 from '../../assets/latest1 (1).png'
+import latest2 from '../../assets/latest2 (2).png'
+import latest2 from '../../assets/latest2 (2).png'
 
 import 'swiper/css';
 import 'swiper/css/pagination';
