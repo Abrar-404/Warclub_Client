@@ -42,35 +42,35 @@ export default function LatestGames() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-red-600">
+        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]0">
           <img src={latest1} alt="" />
         </SwiperSlide>
 
-        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-red-600">
+        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]">
           <img src={latest2} alt="" />
         </SwiperSlide>
 
-        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-red-600">
+        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]">
           <img src={latest3} alt="" />
         </SwiperSlide>
 
-        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-red-600">
+        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]">
           <img src={latest4} alt="" />
         </SwiperSlide>
 
-        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-red-600">
+        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]">
           <img src={latest1} alt="" />
         </SwiperSlide>
 
-        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-red-600">
+        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]">
           <img src={latest2} alt="" />
         </SwiperSlide>
 
-        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-red-600">
+        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]">
           <img src={latest3} alt="" />
         </SwiperSlide>
 
-        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-gradient-to-r from-green-500 via-yellow-500 to-orange-500">
+        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]">
           <img className="" src={latest4} alt="" />
         </SwiperSlide>
       </Swiper>
