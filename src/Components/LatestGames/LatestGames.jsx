@@ -60,10 +60,10 @@ export default function LatestGames() {
         <SwiperSlide>
           <img src={latest2} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
+         <SwiperSlide className='border-2 px-5 rounded-xl py-5 border-red-600'>
           <img src={latest3} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='border-2 px-5 rounded-xl py-5 border-red-600'>
           <img className="" src={latest4} alt="" />
         </SwiperSlide>
       </Swiper>
