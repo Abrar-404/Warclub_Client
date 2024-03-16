@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import latest1 from '../../assets/latest1 (1).png'
 import latest2 from '../../assets/latest2 (2).png'
 import latest3 from '../../assets/latest3 (3).png'
-import latest3 from '../../assets/latest3 (3).png'
+import latest4 from '../../assets/latest4 (4).png'
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -44,8 +44,12 @@ export default function LatestGames() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide><img src={latest1} alt="" /></SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>
+          <img src={latest1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={latest2} alt="" />
+        </SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
