@@ -42,7 +42,7 @@ export default function LatestGames() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]0">
+        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
           <img src={latest1} alt="" />
         </SwiperSlide>
 
