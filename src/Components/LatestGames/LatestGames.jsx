@@ -5,6 +5,8 @@ import latest2 from '../../assets/latest2 (2).png';
 import latest3 from '../../assets/latest3 (3).png';
 import latest4 from '../../assets/latest4 (4).png';
 
+import liitle1 from '../../assets/Littlelogo1.png'
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -89,6 +91,7 @@ export default function LatestGames() {
             <div className="hover-zoom rounded-xl">
               <img className="" src={latest4} alt="" />
             </div>
+
           </div>
         </SwiperSlide>
       </Swiper>
