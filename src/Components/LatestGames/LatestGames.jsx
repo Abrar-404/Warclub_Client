@@ -42,70 +42,72 @@ export default function LatestGames() {
           },
         }}
         modules={[Pagination]}
-        className="mySwiper"
+        className="mySwiper flex lg:flex-row md:flex-col flex-col"
       >
-        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
-          <div className="hover-zoom rounded-xl">
-            <img src={latest1} alt="" />
-          </div>
-        </SwiperSlide>
+        <div className="">
+          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
+            <div className="hover-zoom rounded-xl">
+              <img src={latest1} alt="" />
+            </div>
+          </SwiperSlide>
 
-        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]">
-          <div className="hover-zoom rounded-xl">
-            <img src={latest2} alt="" />
-          </div>
-        </SwiperSlide>
+          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]">
+            <div className="hover-zoom rounded-xl">
+              <img src={latest2} alt="" />
+            </div>
+          </SwiperSlide>
 
-        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
-          <div className="hover-zoom rounded-xl">
-            <img src={latest3} alt="" />
-          </div>
-        </SwiperSlide>
+          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
+            <div className="hover-zoom rounded-xl">
+              <img src={latest3} alt="" />
+            </div>
+          </SwiperSlide>
 
-        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#E58829]">
-          <div className="hover-zoom rounded-xl">
-            <img className="h-[250px]" src={latest4} alt="" />
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
-          <div className="hover-zoom rounded-xl">
-            <img src={latest1} alt="" />
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]">
-          <div className="hover-zoom rounded-xl">
-            <img src={latest2} alt="" />
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
-          <div className="hover-zoom rounded-xl">
-            <img src={latest3} alt="" />
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#E58829]">
-          <div>
-            <div className="hover-zoom rounded-xl relative">
+          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#E58829]">
+            <div className="hover-zoom rounded-xl">
               <img className="h-[250px]" src={latest4} alt="" />
             </div>
+          </SwiperSlide>
 
-            <div className="absolute top-[246px] left-[120px] mx-auto">
-              <img className="w-[60px] h-[50px]" src={liitle1} alt="" />
+          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
+            <div className="hover-zoom rounded-xl">
+              <img src={latest1} alt="" />
             </div>
+          </SwiperSlide>
 
-            <div className="mt-10">
-              <h1 className="text-white text-2xl font-semibold">
-                The Hunter Killer
-              </h1>
-              <h1 className="text-white text-base font-semibold">
-                Entry Fee <span className="text-[#45F882]">$10.00</span>
-              </h1>
+          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]">
+            <div className="hover-zoom rounded-xl">
+              <img src={latest2} alt="" />
             </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+
+          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
+            <div className="hover-zoom rounded-xl">
+              <img src={latest3} alt="" />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#E58829]">
+            <div>
+              <div className="hover-zoom rounded-xl relative">
+                <img className="lg:h-[250px] w-[100px] h-[120px]" src={latest4} alt="" />
+              </div>
+
+              <div className="absolute top-[246px] left-[120px] mx-auto">
+                <img className="w-[60px] h-[50px]" src={liitle1} alt="" />
+              </div>
+
+              <div className="mt-10">
+                <h1 className="text-white text-2xl font-semibold">
+                  The Hunter Killer
+                </h1>
+                <h1 className="text-white text-base font-semibold">
+                  Entry Fee <span className="text-[#45F882]">$10.00</span>
+                </h1>
+              </div>
+            </div>
+          </SwiperSlide>
+        </div>
       </Swiper>
     </latestgames>
   );
