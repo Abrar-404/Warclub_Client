@@ -42,7 +42,7 @@ export default function LatestGames() {
           },
         }}
         modules={[Pagination]}
-        className="mySwiper flex lg:flex-row md:flex-col flex-col"
+        className="mySwiper"
       >
         <div className="">
           <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
@@ -90,7 +90,11 @@ export default function LatestGames() {
           <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#E58829]">
             <div>
               <div className="hover-zoom rounded-xl relative">
-                <img className="lg:h-[250px] w-[100px] h-[120px]" src={latest4} alt="" />
+                <img
+                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
+                  src={latest4}
+                  alt=""
+                />
               </div>
 
               <div className="absolute top-[246px] left-[120px] mx-auto">
@@ -98,10 +102,10 @@ export default function LatestGames() {
               </div>
 
               <div className="mt-10">
-                <h1 className="text-white text-2xl font-semibold">
+                <h1 className="text-white lg:text-2xl text-xs font-semibold">
                   The Hunter Killer
                 </h1>
-                <h1 className="text-white text-base font-semibold">
+                <h1 className="text-white lg:text-base font-semibold text-xs">
                   Entry Fee <span className="text-[#45F882]">$10.00</span>
                 </h1>
               </div>
