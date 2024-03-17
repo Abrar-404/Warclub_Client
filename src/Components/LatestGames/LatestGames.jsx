@@ -6,6 +6,7 @@ import latest3 from '../../assets/latest3 (3).png';
 import latest4 from '../../assets/latest4 (4).png';
 
 import liitle1 from '../../assets/Littlelogo1.png';
+import liitle2 from '../../assets/Littlelogo2.png';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -82,8 +83,27 @@ export default function LatestGames() {
           </SwiperSlide>
 
           <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
-            <div className="hover-zoom rounded-xl">
-              <img src={latest3} alt="" />
+            <div>
+              <div className="hover-zoom rounded-xl relative">
+                <img
+                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
+                  src={latest3}
+                  alt=""
+                />
+              </div>
+
+              <div className="absolute top-[246px] left-[120px] mx-auto">
+                <img className="w-[60px] h-[50px]" src={liitle2} alt="" />
+              </div>
+
+              <div className="mt-10">
+                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
+                  The Hunter Killer
+                </h1>
+                <h1 className="text-white lg:text-base font-semibold text-xs">
+                  Entry Fee <span className="text-[#45F882]">$10.00</span>
+                </h1>
+              </div>
             </div>
           </SwiperSlide>
 
