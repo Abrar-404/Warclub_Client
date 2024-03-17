@@ -92,12 +92,14 @@ export default function LatestGames() {
               <img className="h-[250px]" src={latest4} alt="" />
             </div>
 
-            <div className="absolute top-[200px] left-10 mx-auto">
+            <div className="absolute top-[246px] left-[120px] mx-auto">
               <img className="w-[60px] h-[50px]" src={liitle1} alt="" />
             </div>
 
-            <div className="mt-5">
-              <h1 className="text-white text-2xl font-semibold">The Hunter Killer</h1>
+            <div className="mt-10">
+              <h1 className="text-white text-2xl font-semibold">
+                The Hunter Killer
+              </h1>
               <h1 className="text-white text-base font-semibold">
                 Entry Fee <span className="text-[#45F882]">$10.00</span>
               </h1>
