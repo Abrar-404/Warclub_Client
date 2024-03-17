@@ -92,6 +92,7 @@ export default function LatestGames() {
               <img className="" src={latest4} alt="" />
             </div>
 
+            <img src={liitle1} alt="" />
           </div>
         </SwiperSlide>
       </Swiper>
