@@ -98,7 +98,9 @@ export default function LatestGames() {
 
             <div>
               <h1>The Hunter Killer</h1> <br />
-              <h1>Entry Fee <span>$10.00</span></h1>
+              <h1>
+                Entry Fee <span className="text-[#45F882]">$10.00</span>
+              </h1>
             </div>
           </div>
         </SwiperSlide>
