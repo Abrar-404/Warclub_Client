@@ -12,6 +12,9 @@ const Home = () => {
       <MarqueeText></MarqueeText>
       <About></About>
       <div className="mt-48">
+        <div>
+          
+        </div>
         <LatestGames></LatestGames>
       </div>
     </div>
