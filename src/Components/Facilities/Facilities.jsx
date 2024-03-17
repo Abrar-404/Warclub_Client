@@ -1,4 +1,5 @@
 import controller from '../../assets/controller.svg';
+import '../Styles/facilities.css'
 
 const Facilities = () => {
   return (
@@ -7,7 +8,7 @@ const Facilities = () => {
         <div className="bg-[#0F1C23] rounded-xl bg-transparent">
           <div className="py-5 px-5">
             <div className="mx-auto  flex justify-center">
-              <img src={controller} alt="" />
+              <img className='invisible' src={controller} alt="" />
             </div>
             <div className="">
               <h1 className="text-center invisible">Esports Lounge</h1> <br />
