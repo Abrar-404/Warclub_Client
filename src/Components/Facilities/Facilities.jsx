@@ -1,4 +1,6 @@
 import controller from '../../assets/controller.svg';
+import controller2 from '../../assets/controller2.svg';
+import controller3 from '../../assets/controlle3.svg';
 import '../Styles/facilities.css';
 
 const Facilities = () => {
@@ -65,7 +67,7 @@ const Facilities = () => {
                 </div>
                 <div className="text-white">
                   <h1 className="text-center text-3xl font-bold">
-                    Esports Lounge
+                    Training Facilities
                   </h1>{' '}
                   <br />
                   <h1 className="text-center text-[#5C6574] font-semibold">
