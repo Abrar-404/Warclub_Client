@@ -7,6 +7,7 @@ import latest4 from '../../assets/latest4 (4).png';
 
 import liitle1 from '../../assets/Littlelogo1.png';
 import liitle2 from '../../assets/Littlelogo2.png';
+import liitle3 from '../../assets/Littlelogo3.png';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
