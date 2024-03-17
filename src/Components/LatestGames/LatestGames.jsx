@@ -5,7 +5,7 @@ import latest2 from '../../assets/latest2 (2).png';
 import latest3 from '../../assets/latest3 (3).png';
 import latest4 from '../../assets/latest4 (4).png';
 
-import liitle1 from '../../assets/Littlelogo1.png'
+import liitle1 from '../../assets/Littlelogo1.png';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -64,7 +64,7 @@ export default function LatestGames() {
 
         <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#E58829]">
           <div className="hover-zoom rounded-xl">
-            <img src={latest4} alt="" />
+            <img className='h-[250px]' src={latest4} alt="" />
           </div>
         </SwiperSlide>
 
@@ -89,10 +89,12 @@ export default function LatestGames() {
         <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#E58829]">
           <div>
             <div className="hover-zoom rounded-xl relative">
-              <img className="" src={latest4} alt="" />
+              <img className="h-[250px]" src={latest4} alt="" />
             </div>
 
-            <img className='absolute w-[30px] h-[30px]' src={liitle1} alt="" />
+            <div className="absolute top-5 left-10 mx-auto">
+              <img className="w-[500px] h-[20px]" src={liitle1} alt="" />
+            </div>
           </div>
         </SwiperSlide>
       </Swiper>
