@@ -14,7 +14,7 @@ import 'swiper/css/pagination';
 
 import '../Styles/latestgames.css';
 
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 export default function LatestGames() {
   return (
@@ -22,6 +22,10 @@ export default function LatestGames() {
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
@@ -43,7 +47,7 @@ export default function LatestGames() {
             spaceBetween: 50,
           },
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         className="mySwiper"
       >
         <div className="">
