@@ -18,8 +18,8 @@ const Home = () => {
           </h1>
         </div>
 
-        <div>
-          <h1 className="text-2xl font-bold text-white">
+        <div className="flex justify-center mx-auto">
+          <h1 className="text-4xl font-bold text-white">
             Game On, Power Up, Win Big!
           </h1>
         </div>
