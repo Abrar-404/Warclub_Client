@@ -14,7 +14,7 @@ const Home = () => {
       <div className="mt-48">
         <div className='mb-20'>
           <div className="flex justify-center mx-auto">
-            <h1 className="text-[#45F882] font-bold text-xl">
+            <h1 className="text-[#45F882] font-bold lg:text-xl md:text-xl text-lg">
               # Explore The Latest Releases
             </h1>
           </div>
