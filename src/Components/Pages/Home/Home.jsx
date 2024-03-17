@@ -11,6 +11,7 @@ const Home = () => {
       <Banner2></Banner2>
       <MarqueeText></MarqueeText>
       <About></About>
+
       <div className="mt-48">
         <div className='mb-20'>
           <div className="flex justify-center mx-auto">
@@ -27,6 +28,8 @@ const Home = () => {
         </div>
         <LatestGames></LatestGames>
       </div>
+
+      
     </div>
   );
 };
