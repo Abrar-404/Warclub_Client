@@ -102,7 +102,7 @@ export default function LatestGames() {
               </div>
 
               <div className="mt-10">
-                <h1 className="text-white lg:text-2xl text-xs font-semibold">
+                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
                   The Hunter Killer
                 </h1>
                 <h1 className="text-white lg:text-base font-semibold text-xs">
