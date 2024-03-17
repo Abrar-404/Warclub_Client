@@ -6,6 +6,17 @@ import '../Styles/facilities.css';
 const Facilities = () => {
   return (
     <div>
+      <div className="mt-32">
+        <h1 className="text-[#45F882] text-center font-semibold text-2xl">
+          # World Best Facilities Game
+        </h1>
+        <br />
+        <h1 className="text-5xl text-white text-center font-bold">
+          Bame Comes With Many Facilities Included <br /> In Planet{' '}
+          <span className="text-[#45F882]">!</span>
+        </h1>
+      </div>
+
       <div
         style={{
           backgroundImage:
