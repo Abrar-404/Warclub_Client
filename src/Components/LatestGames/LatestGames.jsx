@@ -115,7 +115,7 @@ export default function LatestGames() {
                   COD Black Ops
                 </h1>
                 <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee <span className="text-[#45F882]">$20.00</span>
+                  Entry Fee : <span className="text-[#45F882]">$20.00</span>
                 </h1>
               </div>
             </div>
@@ -140,7 +140,7 @@ export default function LatestGames() {
                   Ghostwire Tokyo
                 </h1>
                 <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee <span className="text-[#45F882]">$10.00</span>
+                  Entry Fee : <span className="text-[#45F882]">$10.00</span>
                 </h1>
               </div>
             </div>
@@ -165,7 +165,7 @@ export default function LatestGames() {
                   The Hunter Killer
                 </h1>
                 <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee <span className="text-[#45F882]">$10.00</span>
+                  Entry Fee : <span className="text-[#45F882]">$10.00</span>
                 </h1>
               </div>
             </div>
