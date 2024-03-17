@@ -97,7 +97,7 @@ export default function LatestGames() {
             </div>
 
             <div className="mt-5">
-              <h1 className="text-white">The Hunter Killer</h1>
+              <h1 className="text-white text-2xl">The Hunter Killer</h1>
               <h1 className="text-white">
                 Entry Fee <span className="text-[#45F882]">$10.00</span>
               </h1>
