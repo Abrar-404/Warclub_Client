@@ -6,7 +6,7 @@ import '../Styles/facilities.css';
 const Facilities = () => {
   return (
     <div>
-      <div className="mt-32">
+      <div className="mt-48 mb-20">
         <h1 className="text-[#45F882] text-center font-semibold text-2xl">
           # World Best Facilities Game
         </h1>
@@ -45,7 +45,7 @@ const Facilities = () => {
             </div>
           </div>
 
-          <div className="bg-[#0B0E13] rounded-[40px]  py-10 px-10">
+          <div className="bg-[#0B0E13] rounded-[40px]  py-[50px] px-[50px]">
             <div className="bg-[#0F1C23] rounded-[40px]">
               <div className="py-10 px-5">
                 <div className="mx-auto flex justify-center">
@@ -70,7 +70,7 @@ const Facilities = () => {
         {/* 2nd row */}
 
         <div className="flex justify-start lg:flex-row md:flex-col flex-col gap-10 mt-48">
-          <div className="bg-[#0B0E13] rounded-[40px]  py-10 px-10">
+          <div className="bg-[#0B0E13] rounded-[40px] py-[50px] px-[50px]">
             <div className="bg-[#0F1C23] rounded-[40px]">
               <div className="py-10 px-5">
                 <div className="mx-auto flex justify-center">
@@ -127,7 +127,7 @@ const Facilities = () => {
             </div>
           </div>
 
-          <div className="bg-[#0B0E13] rounded-[40px]  py-10 px-10">
+          <div className="bg-[#0B0E13] rounded-[40px] py-[50px] px-[50px]">
             <div className="bg-[#0F1C23] rounded-[40px]">
               <div className="py-10 px-5">
                 <div className="mx-auto flex justify-center">
