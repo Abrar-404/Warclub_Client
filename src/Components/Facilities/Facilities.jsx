@@ -9,6 +9,7 @@ const Facilities = () => {
         style={{
           backgroundImage:
             'url("https://wordpress.themeholy.com/bame/wp-content/uploads/2024/01/feature-sec1-bg.png")',
+          borderRadius: '70px',
         }}
       >
         <div className="bg-[#0F1C23] rounded-xl bg-transparent">
