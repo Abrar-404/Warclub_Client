@@ -87,10 +87,10 @@ export default function LatestGames() {
 
               <div className="mt-10">
                 <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  Ghostwire Tokyo
+                  Mobile Legends
                 </h1>
                 <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee <span className="text-[#45F882]">$10.00</span>
+                  Entry Fee <span className="text-[#45F882]">Free</span>
                 </h1>
               </div>
             </div>
