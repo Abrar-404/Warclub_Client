@@ -90,7 +90,7 @@ export default function LatestGames() {
                   Mobile Legends
                 </h1>
                 <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee <span className="text-[#45F882]">Free</span>
+                  Entry Fee : <span className="text-[#45F882]">Free</span>
                 </h1>
               </div>
             </div>
