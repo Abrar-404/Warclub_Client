@@ -12,8 +12,8 @@ const Home = () => {
       <MarqueeText></MarqueeText>
       <About></About>
       <div className="mt-48">
-        <div>
-          <h1>#Explore The Latest Releases</h1>
+        <div className='flex justify-center mx-auto'>
+          <h1># Explore The Latest Releases</h1>
         </div>
         <LatestGames></LatestGames>
       </div>
