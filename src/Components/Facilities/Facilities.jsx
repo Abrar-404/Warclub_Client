@@ -1,6 +1,6 @@
 import controller from '../../assets/controller.svg';
 import controller2 from '../../assets/controller2.svg';
-import controller3 from '../../assets/controlle3.svg';
+import controller3 from '../../assets/controller3.svg';
 import '../Styles/facilities.css';
 
 const Facilities = () => {
@@ -17,7 +17,7 @@ const Facilities = () => {
       >
         {/* 1st row */}
 
-        <div className="flex justify-center mx-auto gap-10">
+        <div className="flex justify-center mx-auto gap-10 lg:flex-row md:flex-col flex-col">
           <div className="bg-[#0F1C23] rounded-xl bg-transparent">
             <div className="py-5 px-5">
               <div className="mx-auto  flex justify-center">
@@ -58,12 +58,12 @@ const Facilities = () => {
 
         {/* 2nd row */}
 
-        <div className="flex justify-start gap-10 mt-48">
+        <div className="flex justify-start lg:flex-row md:flex-col flex-col gap-10 mt-48">
           <div className="bg-[#0B0E13] rounded-[40px]  py-10 px-10">
             <div className="bg-[#0F1C23] rounded-[40px]">
               <div className="py-10 px-5">
                 <div className="mx-auto flex justify-center">
-                  <img className="mb-5" src={controller} alt="" />
+                  <img className="mb-5" src={controller2} alt="" />
                 </div>
                 <div className="text-white">
                   <h1 className="text-center text-3xl font-bold">
@@ -99,7 +99,7 @@ const Facilities = () => {
 
         {/* 3rd row */}
 
-        <div className="flex justify-start gap-10 mt-48">
+        <div className="flex justify-start lg:flex-row md:flex-col flex-col-reverse gap-10 mt-48">
           <div className="bg-[#0F1C23] rounded-xl bg-transparent">
             <div className="py-10 px-5">
               <div className="mx-auto  flex justify-center">
@@ -120,11 +120,11 @@ const Facilities = () => {
             <div className="bg-[#0F1C23] rounded-[40px]">
               <div className="py-10 px-5">
                 <div className="mx-auto flex justify-center">
-                  <img className="mb-5" src={controller} alt="" />
+                  <img className="mb-5" src={controller3} alt="" />
                 </div>
                 <div className="text-white">
                   <h1 className="text-center text-3xl font-bold">
-                    Esports Lounge
+                    Broadcasting Studio
                   </h1>{' '}
                   <br />
                   <h1 className="text-center text-[#5C6574] font-semibold">
