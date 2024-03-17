@@ -2,7 +2,6 @@ import { Outlet } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import '../Styles/cursor.css';
 import AnimatedCursor from 'react-animated-cursor';
-import SmoothScroll from '../Scrolling/SmoothScroll';
 
 const MainLayout = () => {
   return (

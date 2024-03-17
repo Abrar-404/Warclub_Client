@@ -7,11 +7,11 @@ const Facilities = () => {
   return (
     <div>
       <div className="mt-48 mb-20">
-        <h1 className="text-[#45F882] text-center font-semibold text-2xl">
+        <h1 className="text-[#45F882] text-center font-semibold lg:text-2xl md:text-2xl text-xl">
           # World Best Facilities Game
         </h1>
         <br />
-        <h1 className="text-5xl text-white text-center font-bold">
+        <h1 className="lg:text-5xl md:text-3xl text-xl text-white text-center font-bold">
           Bame Comes With Many Facilities Included <br /> In Planet{' '}
           <span className="text-[#45F882]">!</span>
         </h1>
@@ -110,7 +110,7 @@ const Facilities = () => {
 
         {/* 3rd row */}
 
-        <div className="flex justify-start lg:flex-row md:flex-col flex-col-reverse gap-10 mt-48">
+        <div className="flex justify-start lg:flex-row md:flex-col-reverse flex-col-reverse gap-10 mt-48">
           <div className="bg-[#0F1C23] rounded-xl bg-transparent">
             <div className="py-10 px-5">
               <div className="mx-auto  flex justify-center">
