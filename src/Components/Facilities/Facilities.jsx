@@ -28,15 +28,18 @@ const Facilities = () => {
           </div>
         </div>
 
-        <div className="bg-[#0B0E13] rounded-3xl  py-10 px-10">
-          <div className="bg-[#0F1C23] rounded-3xl">
+        <div className="bg-[#0B0E13] rounded-[40px]  py-10 px-10">
+          <div className="bg-[#0F1C23] rounded-[40px]">
             <div className="py-10 px-5">
               <div className="mx-auto flex justify-center">
                 <img className="mb-5" src={controller} alt="" />
               </div>
               <div className="text-white">
-                <h1 className="text-center">Esports Lounge</h1> <br />
-                <h1 className="text-center">
+                <h1 className="text-center text-3xl font-bold">
+                  Esports Lounge
+                </h1>{' '}
+                <br />
+                <h1 className="text-center text-[#5C6574] font-semibold">
                   Lounge areas with comfortable seating for relaxation between
                   gaming sessions. Provide snacks, drink, and vending machine
                   for refreshments.
