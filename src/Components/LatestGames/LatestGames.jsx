@@ -64,7 +64,7 @@ export default function LatestGames() {
 
         <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#E58829]">
           <div className="hover-zoom rounded-xl">
-            <img className='h-[250px]' src={latest4} alt="" />
+            <img className="h-[250px]" src={latest4} alt="" />
           </div>
         </SwiperSlide>
 
@@ -92,8 +92,12 @@ export default function LatestGames() {
               <img className="h-[250px]" src={latest4} alt="" />
             </div>
 
-            <div className="absolute top-5 left-10 mx-auto">
-              <img className="w-[500px] h-[20px]" src={liitle1} alt="" />
+            <div className="absolute top-[200px] left-10 mx-auto">
+              <img className="w-[60px] h-[50px]" src={liitle1} alt="" />
+            </div>
+
+            <div>
+              <h1>The Hunter Killer</h1>
             </div>
           </div>
         </SwiperSlide>
