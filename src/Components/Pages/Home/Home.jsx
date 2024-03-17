@@ -12,16 +12,18 @@ const Home = () => {
       <MarqueeText></MarqueeText>
       <About></About>
       <div className="mt-48">
-        <div className="flex justify-center mx-auto">
-          <h1 className="text-[#45F882] font-bold text-xl">
-            # Explore The Latest Releases
-          </h1>
-        </div>
+        <div className='mb-20'>
+          <div className="flex justify-center mx-auto">
+            <h1 className="text-[#45F882] font-bold text-xl">
+              # Explore The Latest Releases
+            </h1>
+          </div>
 
-        <div className="flex justify-center mx-auto">
-          <h1 className="text-4xl font-bold text-white">
-            Game On, Power Up, Win Big!
-          </h1>
+          <div className="flex justify-center mx-auto">
+            <h1 className="text-4xl font-bold text-white">
+              Game On, Power Up, Win Big!
+            </h1>
+          </div>
         </div>
         <LatestGames></LatestGames>
       </div>
