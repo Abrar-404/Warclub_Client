@@ -20,7 +20,7 @@ const Home = () => {
           </div>
 
           <div className="flex justify-center mx-auto">
-            <h1 className="text-4xl font-bold text-white">
+            <h1 className="lg:text-4xl md:text-2xl text-xl font-bold text-white">
               Game On, Power Up, Win Big!
             </h1>
           </div>
