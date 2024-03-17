@@ -98,7 +98,7 @@ export default function LatestGames() {
 
               <div className="mt-10">
                 <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  The Hunter Killer
+                  Ghostwire Tokyo
                 </h1>
                 <h1 className="text-white lg:text-base font-semibold text-xs">
                   Entry Fee <span className="text-[#45F882]">$10.00</span>
