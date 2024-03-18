@@ -43,7 +43,7 @@ function GameThumb() {
         >
           <SwiperSlide className="">
             <img
-              className="lg:h-[400px] lg:w-[600px]"
+              className="lg:h-[400px] lg:w-[600px] md:h-[200px] md:w-[400px] h-[100px] w-[300px]"
               src={img1}
               alt="slide_image"
             />
@@ -51,7 +51,7 @@ function GameThumb() {
 
           <SwiperSlide className="h-[200px] w-[300px]">
             <img
-              className="lg:h-[400px] lg:w-[600px]"
+              className="lg:h-[400px] lg:w-[600px] md:h-[200px] md:w-[400px] h-[100px] w-[300px]"
               src={img2}
               alt="slide_image"
             />
@@ -59,7 +59,7 @@ function GameThumb() {
 
           <SwiperSlide className="h-[200px] w-[300px]">
             <img
-              className="lg:h-[400px] lg:w-[600px]"
+              className="lg:h-[400px] lg:w-[600px] md:h-[200px] md:w-[400px] h-[100px] w-[300px]"
               src={img3}
               alt="slide_image"
             />
@@ -67,7 +67,7 @@ function GameThumb() {
 
           <SwiperSlide className="h-[200px] w-[300px]">
             <img
-              className="lg:h-[400px] lg:w-[600px]"
+              className="lg:h-[400px] lg:w-[600px] md:h-[200px] md:w-[400px] h-[100px] w-[300px]"
               src={img4}
               alt="slide_image"
             />
@@ -75,7 +75,7 @@ function GameThumb() {
 
           <SwiperSlide className="h-[200px] w-[300px]">
             <img
-              className="lg:h-[400px] lg:w-[600px]"
+              className="lg:h-[400px] lg:w-[600px] md:h-[200px] md:w-[400px] h-[100px] w-[300px]"
               src={img5}
               alt="slide_image"
             />
@@ -83,7 +83,7 @@ function GameThumb() {
 
           <SwiperSlide className="h-[200px] w-[300px]">
             <img
-              className="lg:h-[400px] lg:w-[600px]"
+              className="lg:h-[400px] lg:w-[600px] md:h-[200px] md:w-[400px] h-[100px] w-[300px]"
               src={img6}
               alt="slide_image"
             />
@@ -91,7 +91,7 @@ function GameThumb() {
 
           <SwiperSlide className="h-[200px] w-[300px]">
             <img
-              className="lg:h-[400px] lg:w-[600px]"
+              className="lg:h-[400px] lg:w-[600px] md:h-[200px] md:w-[400px] h-[100px] w-[300px]"
               src={img7}
               alt="slide_image"
             />
