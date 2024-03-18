@@ -14,7 +14,7 @@ import img5 from '../../assets/sl5.jpg';
 import img6 from '../../assets/sl6.png';
 import img7 from '../../assets/sl7.jfif';
 
-import { EffectCoverflow, Navigation} from 'swiper/modules';
+import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
 function GameThumb() {
   return (
@@ -32,18 +32,18 @@ function GameThumb() {
             depth: 100,
             modifier: 2.5,
           }}
-          // pagination={{ el: '.swiper-pagination', clickable: true }}
+          pagination={{ el: '.swiper-pagination', clickable: true }}
           navigation={{
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
             clickable: true,
           }}
-          modules={[EffectCoverflow, Navigation]}
+          modules={[EffectCoverflow, Pagination, Navigation]}
           className="swiper_container"
         >
           <SwiperSlide className="">
             <img
-              className="lg:h-[400px] lg:w-[600px] md:h-[200px] md:w-[400px] h-[100px] w-[300px]"
+              className="lg:h-[400px] lg:w-[600px] md:h-[200px] md:w-[400px] h-[100px] w-[300px] border-2 border-green-600 rounded-xl"
               src={img1}
               alt="slide_image"
             />
