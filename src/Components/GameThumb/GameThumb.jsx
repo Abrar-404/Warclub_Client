@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
+import './GameThumb.css'
 
 const GameThumb = () => {
   useEffect(() => {
