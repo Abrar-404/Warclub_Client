@@ -14,7 +14,7 @@ import img5 from '../../assets/sl5.jpg';
 import img6 from '../../assets/sl6.png';
 import img7 from '../../assets/sl7.jfif';
 
-import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Navigation} from 'swiper/modules';
 
 function GameThumb() {
   return (
@@ -32,41 +32,69 @@ function GameThumb() {
             depth: 100,
             modifier: 2.5,
           }}
-          pagination={{ el: '.swiper-pagination', clickable: true }}
+          // pagination={{ el: '.swiper-pagination', clickable: true }}
           navigation={{
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
             clickable: true,
           }}
-          modules={[EffectCoverflow, Pagination, Navigation]}
+          modules={[EffectCoverflow, Navigation]}
           className="swiper_container"
         >
           <SwiperSlide className="">
-            <img className="h-[400px] w-[600px]" src={img1} alt="slide_image" />
+            <img
+              className="lg:h-[400px] lg:w-[600px]"
+              src={img1}
+              alt="slide_image"
+            />
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
-            <img className="h-[400px] w-[600px]" src={img2} alt="slide_image" />
+            <img
+              className="lg:h-[400px] lg:w-[600px]"
+              src={img2}
+              alt="slide_image"
+            />
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
-            <img className="h-[400px] w-[600px]" src={img3} alt="slide_image" />
+            <img
+              className="lg:h-[400px] lg:w-[600px]"
+              src={img3}
+              alt="slide_image"
+            />
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
-            <img className="h-[400px] w-[600px]" src={img4} alt="slide_image" />
+            <img
+              className="lg:h-[400px] lg:w-[600px]"
+              src={img4}
+              alt="slide_image"
+            />
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
-            <img className="h-[400px] w-[600px]" src={img5} alt="slide_image" />
+            <img
+              className="lg:h-[400px] lg:w-[600px]"
+              src={img5}
+              alt="slide_image"
+            />
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
-            <img className="h-[400px] w-[600px]" src={img6} alt="slide_image" />
+            <img
+              className="lg:h-[400px] lg:w-[600px]"
+              src={img6}
+              alt="slide_image"
+            />
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
-            <img className="h-[400px] w-[600px]" src={img7} alt="slide_image" />
+            <img
+              className="lg:h-[400px] lg:w-[600px]"
+              src={img7}
+              alt="slide_image"
+            />
           </SwiperSlide>
 
           <div className="slider-controler">
