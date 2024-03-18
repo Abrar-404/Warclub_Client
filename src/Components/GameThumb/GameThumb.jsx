@@ -7,6 +7,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './GameThumb.css'
 import img1 from '../../assets/sl1.webp'
+import img2 from '../../assets/sl2.jpg'
+
+
 import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
 
