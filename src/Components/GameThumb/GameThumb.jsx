@@ -14,7 +14,12 @@ import img5 from '../../assets/sl5.jpg';
 import img6 from '../../assets/sl6.png';
 import img7 from '../../assets/sl7.jfif';
 
-import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
+import {
+  Autoplay,
+  EffectCoverflow,
+  Navigation,
+  Pagination,
+} from 'swiper/modules';
 
 function GameThumb() {
   return (
@@ -24,6 +29,10 @@ function GameThumb() {
           effect={'coverflow'}
           grabCursor={true}
           centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           loop={true}
           slidesPerView={'auto'}
           coverflowEffect={{
@@ -38,7 +47,7 @@ function GameThumb() {
             prevEl: '.swiper-button-prev',
             clickable: true,
           }}
-          modules={[EffectCoverflow, Pagination, Navigation]}
+          modules={[EffectCoverflow, Autoplay, Pagination, Navigation]}
           className="swiper_container"
         >
           <SwiperSlide className="">
