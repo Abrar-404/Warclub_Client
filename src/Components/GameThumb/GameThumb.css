@@ -78,7 +78,7 @@ gamethumb .swiper-slide .content {
   left: 0;
   width: 50%;
   padding-left: 5%;
-  color: #fff;
+  /* color: #fff; */
 }
 gamethumb .swiper-slide .content .title {
   font-size: 2.6em;
@@ -113,7 +113,7 @@ gamethumb .swiper-container-horizontal
   position: relative;
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  /* background-color: #fff; */
   opacity: 0.4;
   animation: transition_all_03s 0.3s ease;
 }

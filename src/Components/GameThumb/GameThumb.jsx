@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
-import Swiper from 'swiper';
+import SwiperCore, { Pagination, Navigation } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-import './GameThumb.css'
-import img1 from '../../assets/About.png'
 
-const GameThumb = () => {
+SwiperCore.use([Pagination, Navigation]);
+
+function ImageSlider() {
   useEffect(() => {
     const sliderSelector = '.swiper-container';
     const options = {
@@ -51,51 +52,56 @@ const GameThumb = () => {
     // Initialize slider
     mySwiper.init();
 
-    // Clean up
-    return () => mySwiper.destroy();
+    // Cleanup function
+    return () => {
+      mySwiper.destroy(true, true);
+    };
   }, []);
 
   return (
-    <gamethumb>
-      <section className="swiper-container loading">
-        <div className="swiper-wrapper">
-          <div
-            className="swiper-slide"
-            style={{
-              backgroundImage:
-                'url(https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85)',
-            }}
-          >
-            <img
-              src="https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85"
-              className="entity-img"
-            />
-            <div className="content">
-              <p
-                className="title"
-                data-swiper-parallax="-30%"
-                data-swiper-parallax-scale=".7"
-              >
-                Shaun Matthews
-              </p>
-              <span className="caption" data-swiper-parallax="-20%">
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book.
-              </span>
-            </div>
+    <section className="swiper-container loading">
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+        navigation={{
+          prevEl: '.swiper-button-prev',
+          nextEl: '.swiper-button-next',
+        }}
+      >
+        <SwiperSlide
+          style={{
+            backgroundImage:
+              'url(https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85)',
+          }}
+        >
+          <img
+            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85"
+            className="entity-img"
+          />
+          <div className="content">
+            <p
+              className="title"
+              data-swiper-parallax="-30%"
+              data-swiper-parallax-scale=".7"
+            >
+              Shaun Matthews
+            </p>
+            <span className="caption" data-swiper-parallax="-20%">
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </span>
           </div>
-          {/* Add other swiper slides here */}
-        </div>
+        </SwiperSlide>
+        {/* Repeat similar structure for other slides */}
+      </Swiper>
 
-        {/* If we need pagination */}
-        <div className="swiper-pagination"></div>
-        {/* If we need navigation buttons */}
-        <div className="swiper-button-prev swiper-button-white"></div>
-        <div className="swiper-button-next swiper-button-white"></div>
-      </section>
-    </gamethumb>
+      <div className="swiper-pagination"></div>
+      <div className="swiper-button-prev swiper-button-white"></div>
+      <div className="swiper-button-next swiper-button-white"></div>
+    </section>
   );
-};
+}
 
-export default GameThumb;
+export default ImageSlider;
