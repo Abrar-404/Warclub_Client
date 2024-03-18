@@ -6,7 +6,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './GameThumb.css'
-import img from '../../assets/About.png'
+import img1 from '../../assets/sl1.webp'
 import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
 
@@ -36,7 +36,7 @@ function GameThumb() {
           className="swiper_container"
         >
           <SwiperSlide>
-            <img src={img} alt="slide_image" />
+            <img src={img1} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
             <img src={img} alt="slide_image" />
