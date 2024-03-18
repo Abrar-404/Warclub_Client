@@ -23,7 +23,6 @@ function GameThumb() {
   return (
     <game>
       <div className="container">
-        <h1 className="heading">Flower Gallery</h1>
         <Swiper
           effect={'coverflow'}
           grabCursor={true}
