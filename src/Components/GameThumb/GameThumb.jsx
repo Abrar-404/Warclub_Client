@@ -5,14 +5,12 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import './GameThumb.css'
-import img1 from '../../assets/sl1.webp'
-import img2 from '../../assets/sl2.jpg'
-import img3 from '../../assets/sl3.jpg'
-
+import './GameThumb.css';
+import img1 from '../../assets/sl1.webp';
+import img2 from '../../assets/sl2.jpg';
+import img3 from '../../assets/sl3.jpg';
 
 import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
-
 
 function GameThumb() {
   return (
@@ -39,25 +37,31 @@ function GameThumb() {
           modules={[EffectCoverflow, Pagination, Navigation]}
           className="swiper_container"
         >
-          <SwiperSlide>
-            <img src={img1} alt="slide_image" />
+          <SwiperSlide className="">
+            <img className="h-[200px] w-[300px]" src={img1} alt="slide_image" />
           </SwiperSlide>
-          <SwiperSlide>
-            <img src={img2} alt="slide_image" />
+
+          <SwiperSlide className="h-[200px] w-[300px]">
+            <img className="h-[200px] w-[300px]" src={img2} alt="slide_image" />
           </SwiperSlide>
-          <SwiperSlide>
+
+          <SwiperSlide className="h-[200px] w-[300px]">
             <img src={img3} alt="slide_image" />
           </SwiperSlide>
-          <SwiperSlide>
+
+          <SwiperSlide className="h-[200px] w-[300px]">
             <img src={img1} alt="slide_image" />
           </SwiperSlide>
-          <SwiperSlide>
+
+          <SwiperSlide className="h-[200px] w-[300px]">
             <img src={img2} alt="slide_image" />
           </SwiperSlide>
-          <SwiperSlide>
+
+          <SwiperSlide className="h-[200px] w-[300px]">
             <img src={img3} alt="slide_image" />
           </SwiperSlide>
-          <SwiperSlide>
+
+          <SwiperSlide className="h-[200px] w-[300px]">
             <img src={img1} alt="slide_image" />
           </SwiperSlide>
 

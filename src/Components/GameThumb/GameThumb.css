@@ -72,7 +72,7 @@ game .heading {
 }
 
 game .swiper_container {
-  height: 52rem;
+  /* height: 52rem; */
   padding: 2rem 0;
   position: relative;
 }
@@ -98,8 +98,8 @@ game  .swiper-slide img {
 }
 
 game .swiper-slide img {
-  width: 37rem;
-  height: 42rem;
+  /* width: 37rem;
+  height: 42rem; */
   border-radius: 2rem;
   object-fit: cover;
 }
