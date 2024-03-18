@@ -1,10 +1,15 @@
 import React, { useEffect } from 'react';
-import SwiperCore, { Pagination, Navigation } from 'swiper';
+import SwiperCore from 'swiper/core';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-import './GameThumb.scss'
+import './GameThumb.scss';
 
-SwiperCore.use([Pagination, Navigation]);
+import 'swiper/swiper.scss'; // Import Swiper styles
+
+import 'swiper/components/pagination/pagination.scss'; // Import Swiper pagination styles
+import 'swiper/components/navigation/navigation.scss'; // Import Swiper navigation styles
+
+SwiperCore.use([Navigation, Pagination]);
 
 function GameThumb() {
   useEffect(() => {
@@ -48,7 +53,7 @@ function GameThumb() {
       },
     };
 
-    const mySwiper = new Swiper(sliderSelector, options);
+    const mySwiper = new SwiperCore(sliderSelector, options);
 
     // Initialize slider
     mySwiper.init();
