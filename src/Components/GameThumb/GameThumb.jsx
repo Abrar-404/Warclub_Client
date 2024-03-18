@@ -43,22 +43,22 @@ function GameThumb() {
             <img src={img1} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={img} alt="slide_image" />
+            <img src={img2} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={img} alt="slide_image" />
+            <img src={img3} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={img} alt="slide_image" />
+            <img src={img1} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={img} alt="slide_image" />
+            <img src={img2} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={img} alt="slide_image" />
+            <img src={img3} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={img} alt="slide_image" />
+            <img src={img1} alt="slide_image" />
           </SwiperSlide>
 
           <div className="slider-controler">
