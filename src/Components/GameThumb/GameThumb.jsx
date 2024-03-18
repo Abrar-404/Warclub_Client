@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import SwiperCore, { Pagination, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
+import './GameThumb.scss'
 
 SwiperCore.use([Pagination, Navigation]);
 
