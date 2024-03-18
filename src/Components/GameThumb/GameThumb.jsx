@@ -11,7 +11,7 @@ import img2 from '../../assets/sl2.jpg';
 import img3 from '../../assets/sl3.jpg';
 import img4 from '../../assets/sl4.jpg';
 import img5 from '../../assets/sl5.jpg';
-import img6 from '../../assets/sl6.jpg';
+import img6 from '../../assets/sl6.png';
 
 import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
