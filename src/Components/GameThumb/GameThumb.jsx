@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.css';
 
 SwiperCore.use([Pagination, Navigation]);
 
-function ImageSlider() {
+function GameThumb() {
   useEffect(() => {
     const sliderSelector = '.swiper-container';
     const options = {
@@ -104,4 +104,4 @@ function ImageSlider() {
   );
 }
 
-export default ImageSlider;
+export default GameThumb;
