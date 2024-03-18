@@ -2,6 +2,7 @@ import About from '../../About/About';
 import Banner from '../../Banner/Banner';
 import Banner2 from '../../Banner2/Banner2';
 import Facilities from '../../Facilities/Facilities';
+import GameThumb from '../../GameThumb/GameThumb';
 import LatestGames from '../../LatestGames/LatestGames';
 import MarqueeText from '../../MarqueeText/MarqueeText';
 
@@ -14,7 +15,7 @@ const Home = () => {
       <About></About>
 
       <div className="mt-48">
-        <div className='mb-20'>
+        <div className="mb-20">
           <div className="flex justify-center mx-auto">
             <h1 className="text-[#45F882] font-bold lg:text-xl md:text-xl text-lg">
               # Explore The Latest Releases
@@ -31,6 +32,8 @@ const Home = () => {
       </div>
 
       <Facilities></Facilities>
+
+      <GameThumb></GameThumb>
     </div>
   );
 };

@@ -1,119 +1,96 @@
+import React, { useEffect } from 'react';
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css';
+
 const GameThumb = () => {
+  useEffect(() => {
+    const sliderSelector = '.swiper-container';
+    const options = {
+      init: false,
+      loop: true,
+      speed: 800,
+      slidesPerView: 2, // or 'auto'
+      // spaceBetween: 10,
+      centeredSlides: true,
+      effect: 'coverflow', // 'cube', 'fade', 'coverflow',
+      coverflowEffect: {
+        rotate: 50, // Slide rotate in degrees
+        stretch: 0, // Stretch space between slides (in px)
+        depth: 100, // Depth offset in px (slides translate in Z axis)
+        modifier: 1, // Effect multipler
+        slideShadows: true, // Enables slides shadows
+      },
+      grabCursor: true,
+      parallax: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        1023: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+      },
+      // Events
+      on: {
+        imagesReady: function () {
+          this.el.classList.remove('loading');
+        },
+      },
+    };
+
+    const mySwiper = new Swiper(sliderSelector, options);
+
+    // Initialize slider
+    mySwiper.init();
+
+    // Clean up
+    return () => mySwiper.destroy();
+  }, []);
+
   return (
-    <div>
-      <div class="app">
-        <div class="cardList">
-          <button class="cardList__btn btn btn--left">
-            <div class="icon">
-              <svg>
-                <use xlink:href="#arrow-left"></use>
-              </svg>
-            </div>
-          </button>
-
-          <div class="cards__wrapper">
-            <div class="card current--card">
-              <div class="card__image">
-                <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
-              </div>
-            </div>
-
-            <div class="card next--card">
-              <div class="card__image">
-                <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
-              </div>
-            </div>
-
-            <div class="card previous--card">
-              <div class="card__image">
-                <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
-              </div>
-            </div>
-          </div>
-
-          <button class="cardList__btn btn btn--right">
-            <div class="icon">
-              <svg>
-                <use xlink:href="#arrow-right"></use>
-              </svg>
-            </div>
-          </button>
-        </div>
-
-        <div class="infoList">
-          <div class="info__wrapper">
-            <div class="info current--info">
-              <h1 class="text name">Highlands</h1>
-              <h4 class="text location">Scotland</h4>
-              <p class="text description">The mountains are calling</p>
-            </div>
-
-            <div class="info next--info">
-              <h1 class="text name">Machu Pichu</h1>
-              <h4 class="text location">Peru</h4>
-              <p class="text description">Adventure is never far away</p>
-            </div>
-
-            <div class="info previous--info">
-              <h1 class="text name">Chamonix</h1>
-              <h4 class="text location">France</h4>
-              <p class="text description">Let your dreams come true</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="app__bg">
-          <div class="app__bg__image current--image">
-            <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
-          </div>
-          <div class="app__bg__image next--image">
-            <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
-          </div>
-          <div class="app__bg__image previous--image">
-            <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <div class="loading__wrapper">
-        <div class="loader--text">Loading...</div>
-        <div class="loader">
-          <span></span>
-        </div>
-      </div>
-
-      <svg class="icons" style="display: none;">
-        <symbol
-          id="arrow-left"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
+    <section className="swiper-container loading">
+      <div className="swiper-wrapper">
+        <div
+          className="swiper-slide"
+          style={{
+            backgroundImage:
+              'url(https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85)',
+          }}
         >
-          <polyline
-            points="328 112 184 256 328 400"
-            style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"
+          <img
+            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85"
+            className="entity-img"
           />
-        </symbol>
-        <symbol
-          id="arrow-right"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
-        >
-          <polyline
-            points="184 112 328 256 184 400"
-            style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"
-          />
-        </symbol>
-      </svg>
-
-      <div class="support">
-        <a href="https://twitter.com/DevLoop01" target="_blank">
-          <i class="fab fa-twitter-square"></i>
-        </a>
-        <a href="https://dribbble.com/devloop01" target="_blank">
-          <i class="fab fa-dribbble"></i>
-        </a>
+          <div className="content">
+            <p
+              className="title"
+              data-swiper-parallax="-30%"
+              data-swiper-parallax-scale=".7"
+            >
+              Shaun Matthews
+            </p>
+            <span className="caption" data-swiper-parallax="-20%">
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </span>
+          </div>
+        </div>
+        {/* Add other swiper slides here */}
       </div>
-    </div>
+
+      {/* If we need pagination */}
+      <div className="swiper-pagination"></div>
+      {/* If we need navigation buttons */}
+      <div className="swiper-button-prev swiper-button-white"></div>
+      <div className="swiper-button-next swiper-button-white"></div>
+    </section>
   );
 };
 
