@@ -42,32 +42,31 @@ function GameThumb() {
           className="swiper_container"
         >
           <SwiperSlide className="">
-            <img className="h-[200px] w-[300px]" src={img1} alt="slide_image" />
+            <img className="h-[400px] w-[600px]" src={img1} alt="slide_image" />
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
-            <img className="h-[200px] w-[300px]" src={img2} alt="slide_image" />
+            <img className="h-[400px] w-[600px]" src={img2} alt="slide_image" />
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
-            <img src={img3} alt="slide_image" />
+            <img className="h-[400px] w-[600px]" src={img3} alt="slide_image" />
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
-            <img src={img4} alt="slide_image" />
+            <img className="h-[400px] w-[600px]" src={img4} alt="slide_image" />
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
-            <img src={img5} alt="slide_image" />
+            <img className="h-[400px] w-[600px]" src={img5} alt="slide_image" />
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
-            <img src={img6} alt="slide_image" />
-            <img src={img6} alt="slide_image" />
+            <img className="h-[400px] w-[600px]" src={img6} alt="slide_image" />
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
-            <img src={img1} alt="slide_image" />
+            <img className="h-[400px] w-[600px]" src={img7} alt="slide_image" />
           </SwiperSlide>
 
           <div className="slider-controler">
