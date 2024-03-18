@@ -12,6 +12,7 @@ import img3 from '../../assets/sl3.jpg';
 import img4 from '../../assets/sl4.jpg';
 import img5 from '../../assets/sl5.jpg';
 import img6 from '../../assets/sl6.png';
+import img7 from '../../assets/sl7.jfif';
 
 import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
@@ -53,15 +54,16 @@ function GameThumb() {
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
-            <img src={img1} alt="slide_image" />
+            <img src={img4} alt="slide_image" />
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
-            <img src={img2} alt="slide_image" />
+            <img src={img5} alt="slide_image" />
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
-            <img src={img3} alt="slide_image" />
+            <img src={img6} alt="slide_image" />
+            <img src={img6} alt="slide_image" />
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
