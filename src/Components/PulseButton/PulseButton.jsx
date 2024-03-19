@@ -1,5 +1,4 @@
 import '../Styles/pulsebutton.css'
-import { MdOutlineArrowOutward } from 'react-icons/md';
 
 const PulseButton = () => {
   return (
