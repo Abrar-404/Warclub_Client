@@ -113,8 +113,8 @@ const Navbar = () => {
   );
 
   return (
-    <nav>
-      <div className="navbar px-4 lg:px-12  fixed z-50 bg-black bg-opacity-25 ">
+    <div>
+      <div className="navbar px-4 lg:px-12  fixed z-50 bg-black bg-opacity-25 mx-auto">
         <div className="navbar-start ">
           <div className="dropdown">
             <label tabIndex={0} className="lg:hidden">
@@ -219,7 +219,7 @@ const Navbar = () => {
           </Link> */}
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 
