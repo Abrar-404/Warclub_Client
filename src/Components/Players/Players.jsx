@@ -18,7 +18,7 @@ export default function Players() {
     <playerall>
       <Swiper
         slidesPerView={1}
-        spaceBetween={10}
+        spaceBetween={2}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
