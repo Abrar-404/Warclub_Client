@@ -33,7 +33,9 @@ const Home = () => {
 
       <Facilities></Facilities>
 
-      <GameThumb></GameThumb>
+      <div className="mt-48">
+        <GameThumb></GameThumb>
+      </div>
     </div>
   );
 };
