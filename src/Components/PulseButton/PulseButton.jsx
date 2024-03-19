@@ -1,3 +1,5 @@
+import '../Styles/pulsebutton.css'
+
 const PulseButton = () => {
   return (
     <div>
