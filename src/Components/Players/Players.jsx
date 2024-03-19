@@ -1,14 +1,10 @@
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import player1 from '../../assets/player1.png';
-import latest2 from '../../assets/latest2 (2).png';
-import latest3 from '../../assets/latest3 (3).png';
-import latest4 from '../../assets/latest4 (4).png';
-
-import liitle1 from '../../assets/Littlelogo1.png';
-import liitle2 from '../../assets/Littlelogo2.png';
-import liitle3 from '../../assets/Littlelogo3.png';
+import player2 from '../../assets/player2.png';
+import player3 from '../../assets/player3.png';
+import player4 from '../../assets/player4.png';
+import player5 from '../../assets/player5.png';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -52,182 +48,109 @@ export default function Players() {
         className="mySwiper"
       >
         <div className="">
-          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
-            <div>
-             <img src={player1} alt="" />
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]">
-            <div>
-              <div className="hover-zoom rounded-xl relative">
-                <img
-                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
-                  src={latest2}
-                  alt=""
-                />
-              </div>
-
-              <div className="absolute top-[246px] left-[120px] mx-auto">
-                <img className="w-[60px] h-[50px]" src={liitle1} alt="" />
-              </div>
-
-              <div className="mt-10">
-                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  COD Black Ops
-                </h1>
-                <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee : <span className="text-[#45F882]">$20.00</span>
+          <SwiperSlide className="px-5 rounded-xl py-5">
+            <div className="relative">
+              <img src={player1} alt="" />
+              <div className="absolute top-[91.5%] left-[33%]">
+                <h1 className="text-white font-bold text-lg hover:text-[#45F882]">
+                  Mac Marsh
                 </h1>
               </div>
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
-            <div>
-              <div className="hover-zoom rounded-xl relative">
-                <img
-                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
-                  src={latest3}
-                  alt=""
-                />
-              </div>
-
-              <div className="absolute top-[246px] left-[120px] mx-auto">
-                <img className="w-[60px] h-[50px]" src={liitle3} alt="" />
-              </div>
-
-              <div className="mt-10">
-                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  Ghostwire Tokyo
-                </h1>
-                <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee : <span className="text-[#45F882]">$10.00</span>
+          <SwiperSlide className="px-5 rounded-xl py-5">
+            <div className="relative">
+              <img src={player2} alt="" />
+              <div className="absolute top-[90.5%] left-[30%]">
+                <h1 className="text-white font-bold text-xl hover:text-[#45F882]">
+                  Robin Cloth
                 </h1>
               </div>
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#E58829]">
-            <div>
-              <div className="hover-zoom rounded-xl relative">
-                <img
-                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
-                  src={latest4}
-                  alt=""
-                />
-              </div>
-
-              <div className="absolute top-[246px] left-[120px] mx-auto">
-                <img className="w-[60px] h-[50px]" src={liitle2} alt="" />
-              </div>
-
-              <div className="mt-10">
-                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  The Hunter Killer
-                </h1>
-                <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee : <span className="text-[#45F882]">$10.00</span>
+          <SwiperSlide className="px-5 rounded-xl py-5">
+            <div className="relative">
+              <img src={player3} alt="" />
+              <div className="absolute top-[91.5%] left-[33%]">
+                <h1 className="text-white font-bold text-xl hover:text-[#45F882]">
+                  Eva Raina
                 </h1>
               </div>
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
-            <div>
-              <div className="hover-zoom rounded-xl relative">
-                <img
-                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
-                  src={latest1}
-                  alt=""
-                />
-              </div>
-
-              <div className="absolute top-[246px] left-[120px] mx-auto">
-                <img className="w-[60px] h-[50px]" src={liitle1} alt="" />
-              </div>
-
-              <div className="mt-10">
-                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  Mobile Legends
-                </h1>
-                <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee : <span className="text-[#45F882]">Free</span>
+          <SwiperSlide className="px-5 rounded-xl py-5">
+            <div className="relative">
+              <img src={player4} alt="" />
+              <div className="absolute top-[91.5%] left-[33%]">
+                <h1 className="text-white font-bold text-lg hover:text-[#45F882]">
+                  Max Alexis
                 </h1>
               </div>
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]">
-            <div>
-              <div className="hover-zoom rounded-xl relative">
-                <img
-                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
-                  src={latest2}
-                  alt=""
-                />
-              </div>
-
-              <div className="absolute top-[246px] left-[120px] mx-auto">
-                <img className="w-[60px] h-[50px]" src={liitle3} alt="" />
-              </div>
-
-              <div className="mt-10">
-                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  COD Black Ops
-                </h1>
-                <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee : <span className="text-[#45F882]">$20.00</span>
+          <SwiperSlide className="px-5 rounded-xl py-5">
+            <div className="relative">
+              <img src={player5} alt="" />
+              <div className="absolute top-[91.5%] left-[33%]">
+                <h1 className="text-white font-bold text-lg hover:text-[#45F882]">
+                  Willium Lili
                 </h1>
               </div>
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
-            <div>
-              <div className="hover-zoom rounded-xl relative">
-                <img
-                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
-                  src={latest3}
-                  alt=""
-                />
-              </div>
-
-              <div className="absolute top-[246px] left-[120px] mx-auto">
-                <img className="w-[60px] h-[50px]" src={liitle2} alt="" />
-              </div>
-
-              <div className="mt-10">
-                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  Ghostwire Tokyo
-                </h1>
-                <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee : <span className="text-[#45F882]">$10.00</span>
+          <SwiperSlide className="px-5 rounded-xl py-5">
+            <div className="relative">
+              <img src={player1} alt="" />
+              <div className="absolute top-[91.5%] left-[33%]">
+                <h1 className="text-white font-bold text-lg hover:text-[#45F882]">
+                  Mac Marsh
                 </h1>
               </div>
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#E58829]">
-            <div>
-              <div className="hover-zoom rounded-xl relative">
-                <img
-                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
-                  src={latest4}
-                  alt=""
-                />
-              </div>
-
-              <div className="absolute top-[246px] left-[120px] mx-auto">
-                <img className="w-[60px] h-[50px]" src={liitle1} alt="" />
-              </div>
-
-              <div className="mt-10">
-                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  The Hunter Killer
+          <SwiperSlide className="px-5 rounded-xl py-5">
+            <div className="relative">
+              <img src={player2} alt="" />
+              <div className="absolute top-[90.5%] left-[30%]">
+                <h1 className="text-white font-bold text-xl hover:text-[#45F882]">
+                  Robin Cloth
                 </h1>
-                <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee : <span className="text-[#45F882]">$10.00</span>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="px-5 rounded-xl py-5">
+            <div className="relative">
+              <img src={player3} alt="" />
+              <div className="absolute top-[91.5%] left-[33%]">
+                <h1 className="text-white font-bold text-xl hover:text-[#45F882]">
+                  Eva Raina
+                </h1>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="px-5 rounded-xl py-5">
+            <div className="relative">
+              <img src={player4} alt="" />
+              <div className="absolute top-[91.5%] left-[33%]">
+                <h1 className="text-white font-bold text-lg hover:text-[#45F882]">
+                  Max Alexis
+                </h1>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="px-5 rounded-xl py-5">
+            <div className="relative">
+              <img src={player5} alt="" />
+              <div className="absolute top-[91.5%] left-[33%]">
+                <h1 className="text-white font-bold text-lg hover:text-[#45F882]">
+                  Willium Lili
                 </h1>
               </div>
             </div>
