@@ -1,8 +1,8 @@
-.container {
+/* .container {
   width: 200px;
   height: 100%;
   margin: 0 auto 0;
-}
+} */
 
 .pulse-button {
 
@@ -13,7 +13,7 @@
   box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
   border-radius: 50%;
   background-color: #e84c3d;
-  background-image: url(http://www.clipartbest.com/cliparts/bTy/EkL/bTyEkLGrc.png);
+  /* background-image: url(http://www.clipartbest.com/cliparts/bTy/EkL/bTyEkLGrc.png); */
   background-size:cover;
   background-repeat: no-repeat;
   cursor: pointer;
