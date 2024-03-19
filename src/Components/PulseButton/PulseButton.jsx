@@ -5,7 +5,7 @@ const PulseButton = () => {
     <pulse>
       <div>
         <div class="container">
-          <button class="pulse-button"></button>
+          <button class="pulse-button hover:bg-[white]"></button>
         </div>
       </div>
     </pulse>
