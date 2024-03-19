@@ -123,7 +123,7 @@ function GameThumb() {
                 src={img6}
                 alt="slide_image"
               />
-              <div className="absolute top-[130px] left-[40%]">
+              <div className="absolute top-[130px] left-[40%] md:top-[7%] md:left-[25%]">
                 <PulseButton></PulseButton>
               </div>
             </div>
