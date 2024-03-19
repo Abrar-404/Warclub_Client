@@ -39,6 +39,18 @@ const Home = () => {
       </div>
 
       <div>
+        <div className="flex justify-center mx-auto mt-20">
+          <h1 className="text-[#45F882] font-bold lg:text-xl md:text-xl text-lg">
+            # Top World Class Gamer
+          </h1>
+        </div>
+
+        <div className="flex justify-center mx-auto mb-20">
+          <h1 className="lg:text-4xl md:text-2xl text-xl font-bold text-white">
+            Let’s See Our Pro Player
+          </h1>
+        </div>
+
         <Players></Players>
       </div>
     </div>
