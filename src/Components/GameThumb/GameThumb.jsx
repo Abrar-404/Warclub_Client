@@ -58,7 +58,7 @@ function GameThumb() {
                 src={img1}
                 alt="slide_image"
               />
-              <div className="absolute top-[130px] left-[40%] md:top-[7%] md:left-[25%]">
+              <div className="absolute lg:top-[130px] lg:left-[40%] md:top-[7%] md:left-[25%]">
                 <PulseButton></PulseButton>
               </div>
             </div>
@@ -71,7 +71,7 @@ function GameThumb() {
                 src={img2}
                 alt="slide_image"
               />
-              <div className="absolute top-[130px] left-[40%]  md:top-[7%] md:left-[25%]">
+              <div className="absolute lg:top-[130px] lg:left-[40%]  md:top-[7%] md:left-[25%]">
                 <PulseButton></PulseButton>
               </div>
             </div>
@@ -84,7 +84,7 @@ function GameThumb() {
                 src={img3}
                 alt="slide_image"
               />
-              <div className="absolute top-[130px] left-[40%] md:top-[7%] md:left-[25%]">
+              <div className="absolute lg:top-[130px] lg:left-[40%] md:top-[7%] md:left-[25%]">
                 <PulseButton></PulseButton>
               </div>
             </div>
@@ -97,7 +97,7 @@ function GameThumb() {
                 src={img4}
                 alt="slide_image"
               />
-              <div className="absolute top-[130px] left-[40%] md:top-[7%] md:left-[25%]">
+              <div className="absolute lg:top-[130px] lg:left-[40%] md:top-[7%] md:left-[25%]">
                 <PulseButton></PulseButton>
               </div>
             </div>
@@ -110,7 +110,7 @@ function GameThumb() {
                 src={img5}
                 alt="slide_image"
               />
-              <div className="absolute top-[130px] left-[40%] md:top-[7%] md:left-[25%]">
+              <div className="absolute lg:top-[130px] lg:left-[40%] md:top-[7%] md:left-[25%]">
                 <PulseButton></PulseButton>
               </div>
             </div>
@@ -123,7 +123,7 @@ function GameThumb() {
                 src={img6}
                 alt="slide_image"
               />
-              <div className="absolute top-[130px] left-[40%] md:top-[7%] md:left-[25%]">
+              <div className="absolute lg:top-[130px] lg:left-[40%] md:top-[7%] md:left-[25%]">
                 <PulseButton></PulseButton>
               </div>
             </div>
@@ -133,10 +133,10 @@ function GameThumb() {
             <div className="relative">
               <img
                 className="lg:h-[400px] lg:w-[600px] md:h-[200px] md:w-[400px] h-[100px] w-[300px] border-2 border-green-600 rounded-xl"
-                src={img4}
+                src={img7}
                 alt="slide_image"
               />
-              <div className="absolute top-[130px] left-[40%] md:top-[7%] md:left-[25%]">
+              <div className="absolute lg:top-[130px] lg:left-[40%] md:top-[7%] md:left-[25%]">
                 <PulseButton></PulseButton>
               </div>
             </div>
