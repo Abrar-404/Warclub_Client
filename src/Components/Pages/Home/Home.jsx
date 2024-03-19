@@ -5,6 +5,7 @@ import Facilities from '../../Facilities/Facilities';
 import GameThumb from '../../GameThumb/GameThumb';
 import LatestGames from '../../LatestGames/LatestGames';
 import MarqueeText from '../../MarqueeText/MarqueeText';
+import Players from '../../Players/Players';
 
 const Home = () => {
   return (
@@ -35,6 +36,10 @@ const Home = () => {
 
       <div className="mt-48">
         <GameThumb></GameThumb>
+      </div>
+
+      <div>
+        <Players></Players>
       </div>
     </div>
   );
