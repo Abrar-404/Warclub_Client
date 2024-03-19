@@ -2,11 +2,13 @@ import '../Styles/pulsebutton.css'
 
 const PulseButton = () => {
   return (
-    <div>
-      <div class="container">
-        <button class="pulse-button"></button>
+    <pulse>
+      <div>
+        <div class="container">
+          <button class="pulse-button"></button>
+        </div>
       </div>
-    </div>
+    </pulse>
   );
 };
 
