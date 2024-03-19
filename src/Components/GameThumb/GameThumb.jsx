@@ -104,11 +104,16 @@ function GameThumb() {
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
-            <img
-              className="lg:h-[400px] lg:w-[600px] md:h-[200px] md:w-[400px] h-[100px] w-[300px] border-2 border-green-600 rounded-xl"
-              src={img5}
-              alt="slide_image"
-            />
+            <div className="relative">
+              <img
+                className="lg:h-[400px] lg:w-[600px] md:h-[200px] md:w-[400px] h-[100px] w-[300px] border-2 border-green-600 rounded-xl"
+                src={img5}
+                alt="slide_image"
+              />
+              <div className="absolute top-[130px] left-[40%]">
+                <PulseButton></PulseButton>
+              </div>
+            </div>
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
