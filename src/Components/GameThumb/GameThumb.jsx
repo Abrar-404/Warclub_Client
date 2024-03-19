@@ -20,6 +20,7 @@ import {
   Navigation,
   Pagination,
 } from 'swiper/modules';
+import PulseButton from '../PulseButton/PulseButton';
 
 function GameThumb() {
   return (
@@ -56,6 +57,8 @@ function GameThumb() {
               src={img1}
               alt="slide_image"
             />
+
+            <PulseButton></PulseButton>
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
