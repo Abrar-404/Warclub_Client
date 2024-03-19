@@ -52,13 +52,16 @@ function GameThumb() {
           className="swiper_container"
         >
           <SwiperSlide className="">
-            <img
-              className="lg:h-[400px] lg:w-[600px] md:h-[200px] md:w-[400px] h-[100px] w-[300px] border-2 border-green-600 rounded-xl"
-              src={img1}
-              alt="slide_image"
-            />
-
-            <PulseButton></PulseButton>
+            <div className='relative'>
+              <img
+                className="lg:h-[400px] lg:w-[600px] md:h-[200px] md:w-[400px] h-[100px] w-[300px] border-2 border-green-600 rounded-xl"
+                src={img1}
+                alt="slide_image"
+              />
+              <div className='absolute top-11'>
+                <PulseButton></PulseButton>
+              </div>
+            </div>
           </SwiperSlide>
 
           <SwiperSlide className="h-[200px] w-[300px]">
