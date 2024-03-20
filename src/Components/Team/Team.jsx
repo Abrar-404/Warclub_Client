@@ -7,7 +7,11 @@ const Team = () => {
         <img src={teamImg} alt="" />
 
         <div>
-          <h1 className="text-[#43F27F]"># World Best Gaming Site</h1>
+          <h1 className="text-[#43F27F]"># World Best Gaming Site</h1> <br />
+          <h1 className='text-white'>
+            Join Bame Esports To Become Next{' '}
+            <span className="text-[#43F27F]">PRO Gamer Today !</span>
+          </h1>
         </div>
       </div>
     </div>
