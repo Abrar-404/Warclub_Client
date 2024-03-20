@@ -27,22 +27,50 @@ const Footer = () => {
             </p>
           </aside>
           <nav>
-            <h6 className="font-bold text-2xl border-b-2 pb-1 border-green-400 text-white">
+            <h6 className="font-bold text-2xl border-b-2 pb-1 font-medium border-green-400 text-white">
               Services
             </h6>
-            <a className="link link-hover">Branding</a>
-            <a className="link link-hover">Design</a>
-            <a className="link link-hover">Marketing</a>
-            <a className="link link-hover">Advertisement</a>
+            <a className="link link-hover text-gray-600 hover:text-green-400">
+              Gaming
+            </a>
+            <a className="link link-hover text-gray-600 hover:text-green-400">
+              Latest News
+            </a>
+            <a className="link link-hover text-gray-600 hover:text-green-400">
+              Our Gallery
+            </a>
+            <a className="link link-hover text-gray-600 hover:text-green-400">
+              Tournaments
+            </a>
+            <a className="link link-hover text-gray-600 hover:text-green-400">
+              All Players
+            </a>
+            <a className="link link-hover text-gray-600 hover:text-green-400">
+              About Me
+            </a>
           </nav>
           <nav>
             <h6 className="font-bold text-2xl border-b-2 pb-1 border-green-400 text-white">
               Company
             </h6>
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Contact</a>
-            <a className="link link-hover">Jobs</a>
-            <a className="link link-hover">Press kit</a>
+            <a className="link link-hover text-gray-600 hover:text-green-400">
+              Help & Support
+            </a>
+            <a className="link link-hover text-gray-600 hover:text-green-400">
+              About Us
+            </a>
+            <a className="link link-hover text-gray-600 hover:text-green-400">
+              Contact
+            </a>
+            <a className="link link-hover text-gray-600 hover:text-green-400">
+              Our Blog
+            </a>
+            <a className="link link-hover text-gray-600 hover:text-green-400">
+              My Account
+            </a>
+            <a className="link link-hover text-gray-600 hover:text-green-400">
+              Support
+            </a>
           </nav>
           <nav>
             <h6 className="font-bold text-2xl border-b-2 pb-1 border-green-400 text-white">
