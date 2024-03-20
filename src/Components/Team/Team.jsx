@@ -9,12 +9,12 @@ const Team = () => {
 
         {/* texts */}
 
-        <div className="absolute lg:top-[20%] lg:left-[10%] md:top-[8%] md:left-[10%] top-[5%]">
+        <div className="absolute lg:top-[20%] lg:left-[10%] md:top-[8%] md:left-[10%] left-[10%] top-[5%]">
           <h1 className="text-[#43F27F] font-semibold lg:text-xl md:text-base text-[10px]">
             # World Best Gaming Site
           </h1>{' '}
           <br />
-          <h1 className="text-white lg:text-3xl md:text-2xl text-[9px] font-bold">
+          <h1 className="text-white lg:text-3xl md:text-2xl text-[11px] font-bold">
             Join Warclub Esports To Become <br /> Next{' '}
             <span className="text-[#43F27F] font-normal">
               PRO Gamer Today !
