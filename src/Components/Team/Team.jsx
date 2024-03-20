@@ -32,7 +32,7 @@ const Team = () => {
 
         {/* button */}
 
-        <div className="absolute lg:top-[70%] lg:left-[10%]">
+        <div className="absolute lg:top-[70%] lg:left-[10%] md:top-[86%]">
           <button class="cta">
             <span class="span">Join Community</span>
             <span class="second">
