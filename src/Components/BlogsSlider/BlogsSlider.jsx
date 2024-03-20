@@ -9,6 +9,7 @@ import { FaRegUser } from 'react-icons/fa';
 import { SlCalender } from 'react-icons/sl';
 
 import '../Styles/blogtextbtn.css';
+import '../Styles/blogsliderbtn2.css';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -53,6 +54,7 @@ export default function BlogSlider() {
           <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
               <img src={blogPic1} alt="" />
+
               <div>
                 <div className="flex justify-center items-center gap-3">
                   <span className="text-green-600">
@@ -74,8 +76,37 @@ export default function BlogSlider() {
 
                 <div className="mt-2 butu">
                   <h1 className="text-xl text-left font-semibold text-white hover-underline-animation">
-                    Must-Visit Gaming Events <br /> <span className=''>Worldwide</span>
+                    Must-Visit Gaming Events <br />{' '}
+                    <span className="">Worldwide</span>
                   </h1>
+                </div>
+
+                {/* button */}
+
+                <div className="flex justify-start mt-2">
+                  <button class="bitttii">
+                    <div className="justify-center flex items-center">
+                      <span class="hover-underline-animation text-[#46f882]">
+                        {' '}
+                        Read More{' '}
+                      </span>
+                      <svg
+                        id="arrow-horizontal"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="5"
+                        viewBox="0 0 46 16"
+                        className="mb-5 text-[#46f882]"
+                      >
+                        <path
+                          id="Path_10"
+                          data-name="Path 10"
+                          d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                          transform="translate(30)"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
                 </div>
               </div>
             </div>
