@@ -149,7 +149,7 @@ export default function Players() {
             <div className="relative">
               <img src={player5} alt="" />
               <div className="absolute lg:top-[91.5%] lg:left-[33%] md:top-[90%] md:left-[32%]">
-                <h1 className="text-white font-bold lg:text-lg md:text-[8px] text-sm hover:text-[#45F882]">
+                <h1 className="text-white font-bold lg:text-lg md:text-[8px] text-[6px] hover:text-[#45F882]">
                   Willium Lili
                 </h1>
               </div>
