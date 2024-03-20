@@ -15,6 +15,7 @@ import 'swiper/css/pagination';
 
 import '../Styles/stickerslider.css';
 
+
 import { Autoplay } from 'swiper/modules';
 
 export default function StickerSlider() {
@@ -82,79 +83,79 @@ export default function StickerSlider() {
       >
         <div className="">
           <SwiperSlide className="">
-            <div>
+            <div className="hover-zoom">
               <img src={sticker1} alt="" />
             </div>
           </SwiperSlide>
 
           <SwiperSlide className="">
-            <div>
+            <div className="hover-zoom">
               <img src={sticker2} alt="" />
             </div>
           </SwiperSlide>
 
           <SwiperSlide className="">
-            <div>
+            <div className="hover-zoom">
               <img src={sticker3} alt="" />
             </div>
           </SwiperSlide>
 
           <SwiperSlide className="">
-            <div>
+            <div className="hover-zoom">
               <img src={sticker4} alt="" />
             </div>
           </SwiperSlide>
 
           <SwiperSlide className="">
-            <div>
+            <div className="hover-zoom">
               <img src={sticker5} alt="" />
             </div>
           </SwiperSlide>
 
           <SwiperSlide className="">
-            <div>
+            <div className="hover-zoom">
               <img src={sticker6} alt="" />
             </div>
           </SwiperSlide>
 
           <SwiperSlide className="">
-            <div>
+            <div className="hover-zoom">
               <img src={sticker7} alt="" />
             </div>
           </SwiperSlide>
 
           <SwiperSlide className="">
-            <div>
+            <div className="hover-zoom">
               <img src={sticker8} alt="" />
             </div>
           </SwiperSlide>
 
           <SwiperSlide className="">
-            <div>
+            <div className="hover-zoom">
               <img className="" src={sticker9} alt="" />
             </div>
           </SwiperSlide>
 
           <SwiperSlide className="">
-            <div>
+            <div className="hover-zoom">
               <img className="" src={sticker1} alt="" />
             </div>
           </SwiperSlide>
 
           <SwiperSlide className="">
-            <div>
+            <div className="hover-zoom">
               <img className="" src={sticker2} alt="" />
             </div>
           </SwiperSlide>
 
           <SwiperSlide className="">
-            <div>
+            <div className="hover-zoom">
               <img className="" src={sticker3} alt="" />
             </div>
           </SwiperSlide>
 
           <SwiperSlide className="">
-            <div>
+            <div className="hover-zoom">
               <img className="" src={sticker4} alt="" />
             </div>
           </SwiperSlide>

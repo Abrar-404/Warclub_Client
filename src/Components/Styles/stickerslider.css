@@ -17,7 +17,7 @@ body {
 } */
 
 stickers .swiper {
-width: auto;
+  width: auto;
 }
 
 stickers .swiper-slide {
@@ -31,11 +31,10 @@ stickers .swiper-slide {
 
 stickers .swiper-slide img {
   display: block;
-width: auto;
+  width: auto;
   border-radius: 0.75rem;
   object-fit: cover;
 }
-
 
 .hover-zoom {
   overflow: hidden;
@@ -71,4 +70,17 @@ width: auto;
   /* background: var(--primary); */
   background-color: #45f882;
   border: #45f882;
+}
+
+stickers .hover-zoom {
+  overflow: hidden;
+  position: relative;
+}
+
+stickers .hover-zoom img {
+  transition: transform 0.3s ease;
+}
+
+stickers .hover-zoom:hover img {
+  transform: scale(1.1);
 }
