@@ -8,6 +8,8 @@ import blogPic5 from '../../assets/blogPic5.png';
 import { FaRegUser } from 'react-icons/fa';
 import { SlCalender } from 'react-icons/sl';
 
+import '../Styles/blogtextbtn.css';
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -70,9 +72,9 @@ export default function BlogSlider() {
                   </h1>
                 </div>
 
-                <div>
-                  <h1 className="text-xl text-left font-semibold text-white">
-                    Must-Visit Gaming Events <br /> Worldwide
+                <div className="mt-2 butu">
+                  <h1 className="text-xl text-left font-semibold text-white hover-underline-animation">
+                    Must-Visit Gaming Events <br /> <span className=''>Worldwide</span>
                   </h1>
                 </div>
               </div>
