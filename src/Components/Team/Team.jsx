@@ -3,7 +3,13 @@ import teamImg from '../../assets/team.png'
 const Team = () => {
   return (
     <div>
-      <img src={teamImg} alt="" />
+      <div>
+        <img src={teamImg} alt="" />
+
+        <div>
+          <h1 className="text-[#43F27F]"># World Best Gaming Site</h1>
+        </div>
+      </div>
     </div>
   );
 };

@@ -56,7 +56,7 @@ const Home = () => {
       </div>
 
 
-      <div>
+      <div className='mt-48'>
         <Team></Team>
       </div>
     </div>
