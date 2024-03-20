@@ -52,7 +52,7 @@ export default function Players() {
             <div className="relative">
               <img src={player1} alt="" />
               <div className="absolute top-[91.5%] left-[33%]">
-                <h1 className="text-white font-bold lg:text-lg md:text-base text-sm hover:text-[#45F882]">
+                <h1 className="text-white font-bold lg:text-lg md:text-[8px] text-[6px] hover:text-[#45F882]">
                   Mac Marsh
                 </h1>
               </div>
@@ -63,7 +63,7 @@ export default function Players() {
             <div className="relative">
               <img src={player2} alt="" />
               <div className="absolute top-[90.5%] left-[30%]">
-                <h1 className="text-white font-bold lg:text-xl md:text-base text-sm hover:text-[#45F882]">
+                <h1 className="text-white font-bold lg:text-lg md:text-[8px] text-[6px] hover:text-[#45F882]">
                   Robin Cloth
                 </h1>
               </div>
@@ -74,7 +74,7 @@ export default function Players() {
             <div className="relative">
               <img src={player3} alt="" />
               <div className="absolute top-[91.5%] left-[33%]">
-                <h1 className="text-white font-bold lg:text-xl md:text-base text-sm hover:text-[#45F882]">
+                <h1 className="text-white font-bold lg:text-lg md:text-[8px] text-[6px] hover:text-[#45F882]">
                   Eva Raina
                 </h1>
               </div>
@@ -85,7 +85,7 @@ export default function Players() {
             <div className="relative">
               <img src={player4} alt="" />
               <div className="absolute top-[91.5%] left-[33%]">
-                <h1 className="text-white font-bold lg:text-lg md:text-base text-sm hover:text-[#45F882]">
+                <h1 className="text-white font-bold lg:text-lg md:text-[8px] text-[6px] hover:text-[#45F882]">
                   Max Alexis
                 </h1>
               </div>
@@ -96,7 +96,7 @@ export default function Players() {
             <div className="relative">
               <img src={player5} alt="" />
               <div className="absolute top-[91.5%] left-[33%]">
-                <h1 className="text-white font-bold lg:text-lg md:text-base text-sm hover:text-[#45F882]">
+                <h1 className="text-white font-bold lg:text-lg md:text-[8px] text-[6px] hover:text-[#45F882]">
                   Willium Lili
                 </h1>
               </div>
@@ -107,7 +107,7 @@ export default function Players() {
             <div className="relative">
               <img src={player1} alt="" />
               <div className="absolute top-[91.5%] left-[33%]">
-                <h1 className="text-white font-bold lg:text-lg md:text-base text-sm hover:text-[#45F882]">
+                <h1 className="text-white font-bold lg:text-lg md:text-[8px] text-[6px] hover:text-[#45F882]">
                   Mac Marsh
                 </h1>
               </div>
@@ -118,7 +118,7 @@ export default function Players() {
             <div className="relative">
               <img src={player2} alt="" />
               <div className="absolute top-[90.5%] left-[30%]">
-                <h1 className="text-white font-bold lg:text-xl md:text-base text-sm hover:text-[#45F882]">
+                <h1 className="text-white font-bold lg:text-lg md:text-[8px] text-[6px] hover:text-[#45F882]">
                   Robin Cloth
                 </h1>
               </div>
@@ -129,7 +129,7 @@ export default function Players() {
             <div className="relative">
               <img src={player3} alt="" />
               <div className="absolute top-[91.5%] left-[33%]">
-                <h1 className="text-white font-bold lg:text-xl md:text-base text-sm hover:text-[#45F882]">
+                <h1 className="text-white font-bold lg:text-lg md:text-[8px] text-[6px] hover:text-[#45F882]">
                   Eva Raina
                 </h1>
               </div>
@@ -139,7 +139,7 @@ export default function Players() {
             <div className="relative">
               <img src={player4} alt="" />
               <div className="absolute top-[91.5%] left-[33%]">
-                <h1 className="text-white font-bold lg:text-lg md:text-base text-sm hover:text-[#45F882]">
+                <h1 className="text-white font-bold lg:text-lg md:text-[8px] text-[6px] hover:text-[#45F882]">
                   Max Alexis
                 </h1>
               </div>
@@ -148,7 +148,7 @@ export default function Players() {
           <SwiperSlide className="px-5 rounded-xl py-5">
             <div className="relative">
               <img src={player5} alt="" />
-              <div className="absolute lg:top-[91.5%] lg:left-[33%] md:top-[90%] md:left-[32%]">
+              <div className="absolute lg:top-[91.5%] lg:left-[33%] md:top-[92%] md:left-[32%]">
                 <h1 className="text-white font-bold lg:text-lg md:text-[8px] text-[6px] hover:text-[#45F882]">
                   Willium Lili
                 </h1>
