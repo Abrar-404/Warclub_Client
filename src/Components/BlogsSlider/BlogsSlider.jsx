@@ -69,6 +69,12 @@ export default function BlogSlider() {
                     20 January, 2024
                   </h1>
                 </div>
+
+                <div>
+                  <h1 className="text-xl text-left font-semibold text-white">
+                    Must-Visit Gaming Events <br /> Worldwide
+                  </h1>
+                </div>
               </div>
             </div>
           </SwiperSlide>
