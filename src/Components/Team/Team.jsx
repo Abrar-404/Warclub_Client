@@ -21,7 +21,7 @@ const Team = () => {
             </span>
           </h1>{' '}
           <br />
-          <h1 className="text-[#6F7989] lg:text-lg md:text-base mt-0 pt-0 text-xs">
+          <h1 className="text-[#6F7989] lg:text-lg md:text-base mt-0 pt-0 text-[10px]">
             Esports and gaming facilities requires thoughtful consideration of{' '}
             <br />
             various elements to create an environment that caters to the needs{' '}
@@ -32,7 +32,7 @@ const Team = () => {
 
         {/* button */}
 
-        <div className="absolute lg:top-[70%] lg:left-[10%] md:top-[86%]">
+        <div className="absolute lg:top-[70%] lg:left-[10%] md:top-[86%] md:left-[10%]">
           <button class="cta">
             <span class="span">Join Community</span>
             <span class="second">
