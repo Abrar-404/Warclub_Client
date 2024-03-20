@@ -18,7 +18,7 @@ export default function BlogSlider() {
     <latestgames>
       <Swiper
         slidesPerView={1}
-        spaceBetween={10}
+        spaceBetween={5}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
@@ -56,26 +56,7 @@ export default function BlogSlider() {
 
           <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]">
             <div>
-              <div className="hover-zoom rounded-xl relative">
-                <img
-                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
-                  src={latest2}
-                  alt=""
-                />
-              </div>
-
-              <div className="absolute top-[246px] left-[120px] mx-auto">
-                <img className="w-[60px] h-[50px]" src={liitle1} alt="" />
-              </div>
-
-              <div className="mt-10">
-                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  COD Black Ops
-                </h1>
-                <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee : <span className="text-[#45F882]">$20.00</span>
-                </h1>
-              </div>
+              <img src={blogPic2} alt="" />
             </div>
           </SwiperSlide>
 
