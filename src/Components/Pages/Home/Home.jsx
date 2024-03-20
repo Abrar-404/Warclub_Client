@@ -3,6 +3,7 @@ import Banner from '../../Banner/Banner';
 import Banner2 from '../../Banner2/Banner2';
 import BlogSlider from '../../BlogsSlider/BlogsSlider';
 import Facilities from '../../Facilities/Facilities';
+import Footer from '../../Footer/Footer';
 import GameThumb from '../../GameThumb/GameThumb';
 import LatestGames from '../../LatestGames/LatestGames';
 import MarqueeText from '../../MarqueeText/MarqueeText';
@@ -67,6 +68,10 @@ const Home = () => {
 
       <div className='mt-48'>
         <StickerSlider></StickerSlider>
+      </div>
+
+      <div className='mt-48'>
+        <Footer></Footer>
       </div>
     </div>
   );

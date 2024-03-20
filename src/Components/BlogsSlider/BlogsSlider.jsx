@@ -54,8 +54,9 @@ export default function BlogSlider() {
         <div className="">
           <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
-              <img src={blogPic1} alt="" />
-
+              <div className="hover-zoom">
+                <img src={blogPic1} alt="" />
+              </div>
               <div>
                 <div className="flex justify-center items-center gap-3">
                   <span className="text-green-600">
@@ -104,7 +105,9 @@ export default function BlogSlider() {
 
           <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
-              <img src={blogPic2} alt="" />
+              <div className="hover-zoom">
+                <img src={blogPic2} alt="" />
+              </div>
 
               <div>
                 <div className="flex justify-center items-center gap-3">
@@ -154,7 +157,9 @@ export default function BlogSlider() {
 
           <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
-              <img src={blogPic3} alt="" />
+              <div className="hover-zoom">
+                <img src={blogPic3} alt="" />
+              </div>
 
               <div>
                 <div className="flex justify-center items-center gap-3">
@@ -204,7 +209,9 @@ export default function BlogSlider() {
 
           <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
-              <img src={blogPic4} alt="" />
+              <div className="hover-zoom">
+                <img src={blogPic4} alt="" />
+              </div>
 
               <div>
                 <div className="flex justify-center items-center gap-3">
@@ -254,7 +261,9 @@ export default function BlogSlider() {
 
           <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
-              <img src={blogPic5} alt="" />
+              <div className="hover-zoom">
+                <img src={blogPic5} alt="" />
+              </div>
 
               <div>
                 <div className="flex justify-center items-center gap-3">
@@ -304,7 +313,9 @@ export default function BlogSlider() {
 
           <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
-              <img src={blogPic1} alt="" />
+              <div className="hover-zoom">
+                <img src={blogPic1} alt="" />
+              </div>
 
               <div>
                 <div className="flex justify-center items-center gap-3">
@@ -354,7 +365,9 @@ export default function BlogSlider() {
 
           <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
-              <img src={blogPic2} alt="" />
+              <div className="hover-zoom">
+                <img src={blogPic2} alt="" />
+              </div>
 
               <div>
                 <div className="flex justify-center items-center gap-3">
@@ -404,7 +417,9 @@ export default function BlogSlider() {
 
           <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
-              <img src={blogPic3} alt="" />
+              <div className='hover-zoom'>
+                <img src={blogPic3} alt="" />
+              </div>
 
               <div>
                 <div className="flex justify-center items-center gap-3">
