@@ -62,7 +62,7 @@ export default function BlogSlider() {
                     {' '}
                     <FaRegUser></FaRegUser>
                   </span>
-                  <h1 className="text-gray-500 text-xs hover:text-[#46f882] font-semibold">
+                  <h1 className="text-gray-500 lg:text-xs text-[7px] hover:text-[#46f882] font-semibold">
                     By Warclub
                   </h1>{' '}
                   <span className="text-white">|</span>
@@ -70,13 +70,13 @@ export default function BlogSlider() {
                     {' '}
                     <SlCalender></SlCalender>
                   </span>
-                  <h1 className="text-gray-500 text-xs hover:text-[#46f882]  font-semibold">
+                  <h1 className="text-gray-500 lg:text-xs text-[7px] hover:text-[#46f882]  font-semibold">
                     20 January, 2024
                   </h1>
                 </div>
 
                 <div className="mt-2 butu">
-                  <h1 className="text-xl text-left font-semibold text-white hover-underline-animation">
+                  <h1 className="lg:text-xl md:text-base text-sm text-left font-semibold text-white hover-underline-animation">
                     Must-Visit Gaming Events <br />{' '}
                     <span className="">Worldwide</span>
                   </h1>
