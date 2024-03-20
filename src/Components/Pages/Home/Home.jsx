@@ -1,6 +1,7 @@
 import About from '../../About/About';
 import Banner from '../../Banner/Banner';
 import Banner2 from '../../Banner2/Banner2';
+import BlogSlider from '../../BlogsSlider/BlogsSlider';
 import Facilities from '../../Facilities/Facilities';
 import GameThumb from '../../GameThumb/GameThumb';
 import LatestGames from '../../LatestGames/LatestGames';
@@ -55,9 +56,12 @@ const Home = () => {
         <Players></Players>
       </div>
 
-
-      <div className='mt-48'>
+      <div className="mt-48">
         <Team></Team>
+      </div>
+
+      <div className="mt-52">
+        <BlogSlider></BlogSlider>
       </div>
     </div>
   );
