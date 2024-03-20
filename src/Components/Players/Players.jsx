@@ -52,7 +52,7 @@ export default function Players() {
             <div className="relative">
               <img src={player1} alt="" />
               <div className="absolute top-[91.5%] left-[33%]">
-                <h1 className="text-white font-bold lg:text-lg hover:text-[#45F882]">
+                <h1 className="text-white font-bold lg:text-lg md:text-base hover:text-[#45F882]">
                   Mac Marsh
                 </h1>
               </div>
