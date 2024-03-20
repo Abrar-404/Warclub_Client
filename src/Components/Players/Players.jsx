@@ -11,20 +11,17 @@ import 'swiper/css/pagination';
 
 import '../Styles/latestgames.css';
 
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 
 export default function Players() {
   return (
     <playerall>
       <Swiper
-        slidesPerView={1}
-        spaceBetween={2}
+        slidesPerView={5}
+        spaceBetween={0}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
         }}
         breakpoints={{
           '@0.00': {
@@ -44,7 +41,7 @@ export default function Players() {
             spaceBetween: 50,
           },
         }}
-        modules={[Pagination, Autoplay]}
+        modules={[ Autoplay]}
         className="mySwiper"
       >
         <div className="">

@@ -21,7 +21,7 @@ export default function StickerSlider() {
   return (
     <stickers>
       <Swiper
-        slidesPerView={1}
+        slidesPerView={10}
         spaceBetween={1}
         autoplay={{
           delay: 2500,
@@ -52,9 +52,29 @@ export default function StickerSlider() {
             slidesPerView: 6,
             spaceBetween: 70,
           },
-          '@2.75': {
+          '@2.50': {
             slidesPerView: 7,
             spaceBetween: 80,
+          },
+          '@2.75': {
+            slidesPerView: 8,
+            spaceBetween: 90,
+          },
+          '@3.00': {
+            slidesPerView: 9,
+            spaceBetween: 100,
+          },
+          '@3.50': {
+            slidesPerView: 10,
+            spaceBetween: 110,
+          },
+          '@3.75': {
+            slidesPerView: 11,
+            spaceBetween: 120,
+          },
+          '@4.00': {
+            slidesPerView: 12,
+            spaceBetween: 130,
           },
         }}
         modules={[Autoplay]}
@@ -103,15 +123,39 @@ export default function StickerSlider() {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className=" border-2 border-red-700 ">
+          <SwiperSlide className="">
             <div>
               <img src={sticker8} alt="" />
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className=" border-2 border-red-700 ">
+          <SwiperSlide className="">
             <div>
-              <img className="border border-green-600" src={sticker9} alt="" />
+              <img className="" src={sticker9} alt="" />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="">
+            <div>
+              <img className="" src={sticker1} alt="" />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="">
+            <div>
+              <img className="" src={sticker2} alt="" />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="">
+            <div>
+              <img className="" src={sticker3} alt="" />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="">
+            <div>
+              <img className="" src={sticker4} alt="" />
             </div>
           </SwiperSlide>
         </div>
