@@ -1,4 +1,5 @@
 import teamImg from '../../assets/team.png';
+import '../Styles/bannerBtn.css'
 
 const Team = () => {
   return (
