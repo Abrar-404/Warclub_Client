@@ -6,6 +6,7 @@ import GameThumb from '../../GameThumb/GameThumb';
 import LatestGames from '../../LatestGames/LatestGames';
 import MarqueeText from '../../MarqueeText/MarqueeText';
 import Players from '../../Players/Players';
+import Team from '../../Team/Team';
 
 const Home = () => {
   return (
@@ -52,6 +53,11 @@ const Home = () => {
         </div>
 
         <Players></Players>
+      </div>
+
+
+      <div>
+        <Team></Team>
       </div>
     </div>
   );
