@@ -118,7 +118,7 @@ export default function Players() {
             <div className="relative">
               <img src={player2} alt="" />
               <div className="absolute top-[90.5%] left-[30%]">
-                <h1 className="text-white font-bold text-xl hover:text-[#45F882]">
+                <h1 className="text-white font-bold lg:text-xl md:text-base text-sm hover:text-[#45F882]">
                   Robin Cloth
                 </h1>
               </div>
