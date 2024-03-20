@@ -135,6 +135,13 @@ const Footer = () => {
               </fieldset>
             </form>
           </footer>
+
+          <div>
+            <h1 className="text-center font-medium text-sm text-white">
+              © Copyright 2024 <span className="text-green-400">Warclub</span> -
+              All right reserved
+            </h1>
+          </div>
         </div>
       </div>
     </footercomp>
