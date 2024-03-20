@@ -49,203 +49,57 @@ export default function StickerSlider() {
         className="mySwiper"
       >
         <div className="">
-          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
+          <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
-              <div className="hover-zoom rounded-xl relative">
-                <img
-                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
-                  src={latest1}
-                  alt=""
-                />
-              </div>
-
-              <div className="absolute top-[246px] left-[120px] mx-auto">
-                <img className="w-[60px] h-[50px]" src={liitle1} alt="" />
-              </div>
-
-              <div className="mt-10">
-                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  Mobile Legends
-                </h1>
-                <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee : <span className="text-[#45F882]">Free</span>
-                </h1>
-              </div>
+              <img src={sticker1} alt="" />
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]">
+          <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
-              <div className="hover-zoom rounded-xl relative">
-                <img
-                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
-                  src={latest2}
-                  alt=""
-                />
-              </div>
-
-              <div className="absolute top-[246px] left-[120px] mx-auto">
-                <img className="w-[60px] h-[50px]" src={liitle1} alt="" />
-              </div>
-
-              <div className="mt-10">
-                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  COD Black Ops
-                </h1>
-                <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee : <span className="text-[#45F882]">$20.00</span>
-                </h1>
-              </div>
+              <img src={sticker2} alt="" />
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
+          <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
-              <div className="hover-zoom rounded-xl relative">
-                <img
-                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
-                  src={latest3}
-                  alt=""
-                />
-              </div>
-
-              <div className="absolute top-[246px] left-[120px] mx-auto">
-                <img className="w-[60px] h-[50px]" src={liitle3} alt="" />
-              </div>
-
-              <div className="mt-10">
-                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  Ghostwire Tokyo
-                </h1>
-                <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee : <span className="text-[#45F882]">$10.00</span>
-                </h1>
-              </div>
+              <img src={sticker3} alt="" />
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#E58829]">
+          <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
-              <div className="hover-zoom rounded-xl relative">
-                <img
-                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
-                  src={latest4}
-                  alt=""
-                />
-              </div>
-
-              <div className="absolute top-[246px] left-[120px] mx-auto">
-                <img className="w-[60px] h-[50px]" src={liitle2} alt="" />
-              </div>
-
-              <div className="mt-10">
-                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  The Hunter Killer
-                </h1>
-                <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee : <span className="text-[#45F882]">$10.00</span>
-                </h1>
-              </div>
+              <img src={sticker4} alt="" />
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
+          <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
-              <div className="hover-zoom rounded-xl relative">
-                <img
-                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
-                  src={latest1}
-                  alt=""
-                />
-              </div>
-
-              <div className="absolute top-[246px] left-[120px] mx-auto">
-                <img className="w-[60px] h-[50px]" src={liitle1} alt="" />
-              </div>
-
-              <div className="mt-10">
-                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  Mobile Legends
-                </h1>
-                <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee : <span className="text-[#45F882]">Free</span>
-                </h1>
-              </div>
+              <img src={sticker5} alt="" />
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#0FA48D]">
+          <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
-              <div className="hover-zoom rounded-xl relative">
-                <img
-                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
-                  src={latest2}
-                  alt=""
-                />
-              </div>
-
-              <div className="absolute top-[246px] left-[120px] mx-auto">
-                <img className="w-[60px] h-[50px]" src={liitle3} alt="" />
-              </div>
-
-              <div className="mt-10">
-                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  COD Black Ops
-                </h1>
-                <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee : <span className="text-[#45F882]">$20.00</span>
-                </h1>
-              </div>
+              <img src={sticker6} alt="" />
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#F03AF9]">
+          <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
-              <div className="hover-zoom rounded-xl relative">
-                <img
-                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
-                  src={latest3}
-                  alt=""
-                />
-              </div>
-
-              <div className="absolute top-[246px] left-[120px] mx-auto">
-                <img className="w-[60px] h-[50px]" src={liitle2} alt="" />
-              </div>
-
-              <div className="mt-10">
-                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  Ghostwire Tokyo
-                </h1>
-                <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee : <span className="text-[#45F882]">$10.00</span>
-                </h1>
-              </div>
+              <img src={sticker7} alt="" />
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className="border-2 px-5 rounded-xl py-5 border-[#E58829]">
+          <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
-              <div className="hover-zoom rounded-xl relative">
-                <img
-                  className="lg:h-[250px] lg:w-[250px] w-[120px] h-[75px]"
-                  src={latest4}
-                  alt=""
-                />
-              </div>
+              <img src={sticker8} alt="" />
+            </div>
+          </SwiperSlide>
 
-              <div className="absolute top-[246px] left-[120px] mx-auto">
-                <img className="w-[60px] h-[50px]" src={liitle1} alt="" />
-              </div>
-
-              <div className="mt-10">
-                <h1 className="text-white hover:text-[#45F882] lg:text-2xl text-xs font-semibold">
-                  The Hunter Killer
-                </h1>
-                <h1 className="text-white lg:text-base font-semibold text-xs">
-                  Entry Fee : <span className="text-[#45F882]">$10.00</span>
-                </h1>
-              </div>
+          <SwiperSlide className="px-5 rounded-xl py-5">
+            <div>
+              <img src={sticker9} alt="" />
             </div>
           </SwiperSlide>
         </div>
