@@ -1,5 +1,7 @@
 import teamImg from '../../assets/team.png';
 import '../Styles/bannerBtn.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Team = () => {
   return (
@@ -9,7 +11,12 @@ const Team = () => {
 
         {/* texts */}
 
-        <div className="absolute lg:top-[20%] lg:left-[10%] md:top-[8%] md:left-[10%] left-[10%] top-[5%]">
+        <div
+          className="absolute lg:top-[20%] lg:left-[10%] md:top-[8%] md:left-[10%] left-[10%] top-[5%]"
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
           <h1 className="text-[#43F27F] font-semibold lg:text-xl md:text-base text-[10px]">
             # World Best Gaming Site
           </h1>{' '}
@@ -89,3 +96,4 @@ const Team = () => {
 };
 
 export default Team;
+AOS.init();
