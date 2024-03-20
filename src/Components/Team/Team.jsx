@@ -9,7 +9,7 @@ const Team = () => {
 
         {/* texts */}
 
-        <div className="absolute lg:top-[20%] lg:left-[10%] md:top-[10%] top-[5%]">
+        <div className="absolute lg:top-[20%] lg:left-[10%] md:top-[8%] md:left-[10%] top-[5%]">
           <h1 className="text-[#43F27F] font-semibold lg:text-xl md:text-base text-xs">
             # World Best Gaming Site
           </h1>{' '}
@@ -21,7 +21,7 @@ const Team = () => {
             </span>
           </h1>{' '}
           <br />
-          <h1 className="text-[#6F7989]">
+          <h1 className="text-[#6F7989] lg:text-lg md:text-base mt-0 pt-0 text-xs">
             Esports and gaming facilities requires thoughtful consideration of{' '}
             <br />
             various elements to create an environment that caters to the needs{' '}
