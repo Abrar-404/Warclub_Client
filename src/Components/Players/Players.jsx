@@ -148,7 +148,7 @@ export default function Players() {
           <SwiperSlide className="px-5 rounded-xl py-5">
             <div className="relative">
               <img src={player5} alt="" />
-              <div className="absolute top-[91.5%] left-[33%]">
+              <div className="absolute lg:top-[91.5%] lg:left-[33%] md:top-[90%] md:left-[32%]">
                 <h1 className="text-white font-bold lg:text-lg md:text-[8px] text-sm hover:text-[#45F882]">
                   Willium Lili
                 </h1>
