@@ -18,7 +18,7 @@
   transition: all 0.3s ease;
 }
 
-.bitttii:hover svg {
+.bitttii:hover .svg {
   transform: translateX(0);
 }
 

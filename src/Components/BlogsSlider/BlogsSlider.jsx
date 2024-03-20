@@ -76,7 +76,7 @@ export default function BlogSlider() {
                 </div>
 
                 <div className="mt-2 butu">
-                  <h1 className="lg:text-xl md:text-base text-sm text-left font-semibold text-white hover-underline-animation">
+                  <h1 className="lg:text-xl hover:text-[#46f882] md:text-base text-sm text-left font-semibold text-white hover-underline-animation">
                     Must-Visit Gaming Events <br />{' '}
                     <span className="">Worldwide</span>
                   </h1>
@@ -91,21 +91,6 @@ export default function BlogSlider() {
                         {' '}
                         Read More{' '}
                       </span>
-                      {/* <svg
-                        id="arrow-horizontal"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="5"
-                        viewBox="0 0 46 16"
-                        className=" text-[#46f882]"
-                      >
-                        <path
-                          id="Path_10"
-                          data-name="Path 10"
-                          d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                          transform="translate(30)"
-                        ></path>
-                      </svg> */}
 
                       <div className="svg">
                         <IoIosArrowRoundForward></IoIosArrowRoundForward>
@@ -120,12 +105,100 @@ export default function BlogSlider() {
           <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
               <img src={blogPic2} alt="" />
+
+              <div>
+                <div className="flex justify-center items-center gap-3">
+                  <span className="text-green-600">
+                    {' '}
+                    <FaRegUser></FaRegUser>
+                  </span>
+                  <h1 className="text-gray-500 lg:text-xs text-[7px] hover:text-[#46f882] font-semibold">
+                    By Warclub
+                  </h1>{' '}
+                  <span className="text-white">|</span>
+                  <span className="text-green-600">
+                    {' '}
+                    <SlCalender></SlCalender>
+                  </span>
+                  <h1 className="text-gray-500 lg:text-xs text-[7px] hover:text-[#46f882]  font-semibold">
+                    20 January, 2024
+                  </h1>
+                </div>
+
+                <div className="mt-2 butu">
+                  <h1 className="lg:text-xl hover:text-[#46f882] md:text-base text-sm text-left font-semibold text-white hover-underline-animation">
+                    Influential Figures in the <br />{' '}
+                    <span className="">History of Gaming</span>
+                  </h1>
+                </div>
+
+                {/* button */}
+
+                <div className="flex justify-start mt-2">
+                  <button class="bitttii">
+                    <div className="justify-center flex items-center">
+                      <span class="hover-underline-animation text-[#46f882]">
+                        {' '}
+                        Read More{' '}
+                      </span>
+
+                      <div className="svg">
+                        <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
             </div>
           </SwiperSlide>
 
           <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
               <img src={blogPic3} alt="" />
+
+              <div>
+                <div className="flex justify-center items-center gap-3">
+                  <span className="text-green-600">
+                    {' '}
+                    <FaRegUser></FaRegUser>
+                  </span>
+                  <h1 className="text-gray-500 lg:text-xs text-[7px] hover:text-[#46f882] font-semibold">
+                    By Warclub
+                  </h1>{' '}
+                  <span className="text-white">|</span>
+                  <span className="text-green-600">
+                    {' '}
+                    <SlCalender></SlCalender>
+                  </span>
+                  <h1 className="text-gray-500 lg:text-xs text-[7px] hover:text-[#46f882]  font-semibold">
+                    20 January, 2024
+                  </h1>
+                </div>
+
+                <div className="mt-2 butu">
+                  <h1 className="lg:text-lg hover:text-[#46f882] md:text-base text-sm text-left font-semibold text-white hover-underline-animation">
+                    Pro Strategies for Dominating <br />{' '}
+                    <span className=""> in FPS Games</span>
+                  </h1>
+                </div>
+
+                {/* button */}
+
+                <div className="flex justify-start mt-2">
+                  <button class="bitttii">
+                    <div className="justify-center flex items-center">
+                      <span class="hover-underline-animation text-[#46f882]">
+                        {' '}
+                        Read More{' '}
+                      </span>
+
+                      <div className="svg">
+                        <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
             </div>
           </SwiperSlide>
 

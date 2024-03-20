@@ -1,6 +1,6 @@
 .hover-underline-animation {
   position: relative;
-  /* padding-bottom: 20px; */
+  padding-bottom: 4px;
 }
 
 .hover-underline-animation:after {
