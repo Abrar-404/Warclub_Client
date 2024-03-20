@@ -5,6 +5,8 @@ import blogPic2 from '../../assets/blogPic2.png';
 import blogPic3 from '../../assets/blogPic3.png';
 import blogPic4 from '../../assets/blogPic4.png';
 import blogPic5 from '../../assets/blogPic5.png';
+import { FaRegUser } from 'react-icons/fa';
+import { SlCalender } from 'react-icons/sl';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -49,6 +51,25 @@ export default function BlogSlider() {
           <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
               <img src={blogPic1} alt="" />
+              <div>
+                <div className="flex justify-center items-center gap-3">
+                  <span className="text-green-600">
+                    {' '}
+                    <FaRegUser></FaRegUser>
+                  </span>
+                  <h1 className="text-gray-500 text-xs hover:text-[#0FA48D] font-semibold">
+                    By Warclub
+                  </h1>{' '}
+                  <span className="text-white">|</span>
+                  <span className="text-green-600">
+                    {' '}
+                    <SlCalender></SlCalender>
+                  </span>
+                  <h1 className="text-gray-500 text-xs hover:text-[#0FA48D]  font-semibold">
+                    20 January, 2024
+                  </h1>
+                </div>
+              </div>
             </div>
           </SwiperSlide>
 
