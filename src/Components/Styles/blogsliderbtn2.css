@@ -12,7 +12,7 @@
   text-transform: uppercase;
 }
 
-.bitttii svg {
+.bitttii .svg {
   transform: translateX(-8px);
   color: #46f882;
   transition: all 0.3s ease;
@@ -22,17 +22,17 @@
   transform: translateX(0);
 }
 
-.bitttii:active svg {
+.bitttii:active .svg {
   transform: scale(0.9);
 }
 
 .bitttii .hover-underline-animation {
   position: relative;
-  /* padding-bottom: 20px; */
+  padding-bottom: 3px;
 }
 
 .hover-underline-animation:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);

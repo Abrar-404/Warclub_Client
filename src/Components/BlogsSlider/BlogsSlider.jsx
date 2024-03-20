@@ -7,6 +7,7 @@ import blogPic4 from '../../assets/blogPic4.png';
 import blogPic5 from '../../assets/blogPic5.png';
 import { FaRegUser } from 'react-icons/fa';
 import { SlCalender } from 'react-icons/sl';
+import { IoIosArrowRoundForward } from 'react-icons/io';
 
 import '../Styles/blogtextbtn.css';
 import '../Styles/blogsliderbtn2.css';
@@ -61,7 +62,7 @@ export default function BlogSlider() {
                     {' '}
                     <FaRegUser></FaRegUser>
                   </span>
-                  <h1 className="text-gray-500 text-xs hover:text-[#0FA48D] font-semibold">
+                  <h1 className="text-gray-500 text-xs hover:text-[#46f882] font-semibold">
                     By Warclub
                   </h1>{' '}
                   <span className="text-white">|</span>
@@ -69,7 +70,7 @@ export default function BlogSlider() {
                     {' '}
                     <SlCalender></SlCalender>
                   </span>
-                  <h1 className="text-gray-500 text-xs hover:text-[#0FA48D]  font-semibold">
+                  <h1 className="text-gray-500 text-xs hover:text-[#46f882]  font-semibold">
                     20 January, 2024
                   </h1>
                 </div>
@@ -90,13 +91,13 @@ export default function BlogSlider() {
                         {' '}
                         Read More{' '}
                       </span>
-                      <svg
+                      {/* <svg
                         id="arrow-horizontal"
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="5"
                         viewBox="0 0 46 16"
-                        className="mb-5 text-[#46f882]"
+                        className=" text-[#46f882]"
                       >
                         <path
                           id="Path_10"
@@ -104,7 +105,11 @@ export default function BlogSlider() {
                           d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
                           transform="translate(30)"
                         ></path>
-                      </svg>
+                      </svg> */}
+
+                      <div className="svg">
+                        <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                      </div>
                     </div>
                   </button>
                 </div>
