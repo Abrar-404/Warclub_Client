@@ -1,14 +1,14 @@
 footercomp .search {
-  --input-line: #cccccc;
-  --input-text-color: #808080;
+  --input-line: #1a1d26;
+  --input-text-color: gray;
   --input-text-hover-color: transparent;
-  --input-border-color: #808080;
-  --input-border-hover-color: #999999;
-  --input-bg-color: #333333;
+  --input-border-color: #1a1d26;
+  --input-border-hover-color: #1a1d26;
+  --input-bg-color: #1a1d26;
   --search-max-width: 250px;
   --search-min-width: 150px;
-  --border-radius: 5px;
-  --transition-cubic-bezier: 150ms cubic-bezier(0.4,0,0.2,1);
+  --border-radius: 20px;
+  --transition-cubic-bezier: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footercomp .search-box {
@@ -41,7 +41,7 @@ footercomp .input {
   height: 100%;
   border: 0;
   border-color: transparent;
-  font-size: 1rem;
+  font-size: 14px;
   padding-right: 0px;
   color: var(--input-line);
   background: var(--input-bg-color);
@@ -101,11 +101,11 @@ footercomp .btn-icon-content {
   border-bottom-right-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
   transition: var(--transition-cubic-bezier);
-  opacity: .4;
+  opacity: 0.4;
 }
 
 footercomp .btn-icon-content:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 footercomp .search-icon {
