@@ -74,7 +74,7 @@ export default function Players() {
             <div className="relative">
               <img src={player3} alt="" />
               <div className="absolute top-[91.5%] left-[33%]">
-                <h1 className="text-white font-bold text-xl hover:text-[#45F882]">
+                <h1 className="text-white font-bold lg:text-xl md:text-base text-sm hover:text-[#45F882]">
                   Eva Raina
                 </h1>
               </div>
