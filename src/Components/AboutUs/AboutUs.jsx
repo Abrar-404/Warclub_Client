@@ -1,9 +1,10 @@
 import { IoIosArrowForward } from 'react-icons/io';
 import { Link } from 'react-router-dom';
+import aboutBg from '../../assets/aboutusbg.png'
 
 const AboutUs = () => {
   return (
-    <div>
+    <div style={{ backgroundImage: `url(${aboutBg})` }}>
       <div className="mx-auto pt-32 pb-32">
         <h1 className="text-white font-bold lg:text-3xl text-center">
           About Us
