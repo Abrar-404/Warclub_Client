@@ -95,7 +95,7 @@ gamingslider .wrapper .card .img {
 } */
 
 gamingslider .card .details {
-  margin-left: 80px;
+  margin-left: 10px;
 }
 
 gamingslider .details span {
@@ -112,6 +112,6 @@ gamingslider .card a {
   transition: all 0.3s ease;
 }
 
-gamingslider .card a:hover {
+/* gamingslider .card a:hover {
   transition: scale(0.94);
-}
+} */

@@ -15,14 +15,18 @@ const GamingSlider = () => {
             >
               <div className="content">
                 <div className="img">
-                  <img src="./M ISMAIL.png" alt="" />
+                  <img src={sliderSticker1} alt="" />
                 </div>
                 <div className="details">
-                  <span className="name">1</span>
-                  <p>Amazon Wholesaler</p>
+                  <span className="name text-white font-bold">
+                    Great Tournament
+                  </span>
+                  <p className="text-sm text-gray-600">
+                    Keep users informed about the gaming <br /> industry with
+                    news articles.
+                  </p>
                 </div>
               </div>
-              <a href="#">Follow</a>
             </div>
 
             <div
@@ -31,14 +35,18 @@ const GamingSlider = () => {
             >
               <div className="content">
                 <div className="img">
-                  <img src="./komail-.jpg" alt="" />
+                  <img src={sliderSticker2} alt="" />
                 </div>
                 <div className="details">
-                  <span className="name">2</span>
-                  <p>Youtuber & web developer</p>
+                  <span className="name text-white font-bold">
+                    Great Tournament
+                  </span>
+                  <p className="text-sm text-gray-600">
+                    Keep users informed about the gaming <br /> industry with
+                    news articles.
+                  </p>
                 </div>
               </div>
-              <a href="#">Follow</a>
             </div>
 
             <div
@@ -47,14 +55,16 @@ const GamingSlider = () => {
             >
               <div className="content">
                 <div className="img">
-                  <img src="./murtaza.png" alt="" />
+                  <img src={sliderSticker3} alt="" />
                 </div>
                 <div className="details">
-                  <span className="name">3</span>
-                  <p>Gamer & Youtuber</p>
+                  <span className="name text-white font-bold">Gaming News</span>
+                  <p className="text-sm text-gray-600">
+                    Keep users informed about the gaming <br /> industry with
+                    news articles.
+                  </p>
                 </div>
               </div>
-              <a href="#">Follow</a>
             </div>
 
             <div
@@ -63,14 +73,18 @@ const GamingSlider = () => {
             >
               <div className="content">
                 <div className="img">
-                  <img src="./Qalb.jpg" alt="" />
+                  <img src={sliderSticker1} alt="" />
                 </div>
                 <div className="details">
-                  <span className="name">4</span>
-                  <p>Advertiser</p>
+                  <span className="name text-white font-bold">
+                    Great Tournament
+                  </span>
+                  <p className="text-sm text-gray-600">
+                    Keep users informed about the gaming <br /> industry with
+                    news articles.
+                  </p>
                 </div>
               </div>
-              <a href="#">Follow</a>
             </div>
 
             <div
@@ -79,14 +93,18 @@ const GamingSlider = () => {
             >
               <div className="content">
                 <div className="img">
-                  <img src="./komail.jpg" alt="" />
+                  <img src={sliderSticker2} alt="" />
                 </div>
                 <div className="details">
-                  <span className="name">5</span>
-                  <p>Youtuber & web developer</p>
+                  <span className="name text-white font-bold">
+                    Live Streaming
+                  </span>
+                  <p className="text-sm text-gray-600">
+                    Keep users informed about the gaming <br /> industry with
+                    news articles.
+                  </p>
                 </div>
               </div>
-              <a href="#">Follow</a>
             </div>
           </div>
         </div>
