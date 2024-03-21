@@ -30,7 +30,7 @@ const AboutUs = () => {
       <div className="mt-48">
         <div className="flex justify-evenly lg:flex-row md:flex-col flex-col gap-32 items-center mx-auto">
           <img
-            className="w-[500px] h-[400px] border-2 border-red-700"
+            className="w-[500px] h-[400px]"
             src={heroPic}
             alt=""
           />
