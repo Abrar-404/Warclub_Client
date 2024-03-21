@@ -18,6 +18,7 @@ gamingslider .wrapper .outer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 gamingslider .wrapper .card {

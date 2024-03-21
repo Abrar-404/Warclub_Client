@@ -2,7 +2,7 @@ import { IoIosArrowForward } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import aboutBg from '../../assets/aboutusbg.png';
 import GamingSlider from './GamingSlider';
-import heroPic from '../../assets/herolanding.png'
+import heroPic from '../../assets/herolanding.png';
 
 const AboutUs = () => {
   return (
@@ -28,11 +28,16 @@ const AboutUs = () => {
       </div>
 
       <div className="mt-48">
-        <div>
-          <div>
-            <img src={heroPic} alt="" />
+        <div className="flex justify-evenly lg:flex-row md:flex-col flex-col gap-32 items-center mx-auto">
+          <img
+            className="w-[500px] h-[400px] border-2 border-red-700"
+            src={heroPic}
+            alt=""
+          />
+
+          <div className=" lg:mr-48 lg:mt-0 md:mt-14 mt-20">
+            <GamingSlider></GamingSlider>
           </div>
-          <GamingSlider></GamingSlider>
         </div>
       </div>
     </>
