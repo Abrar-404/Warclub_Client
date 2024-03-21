@@ -7,6 +7,7 @@ import MainLayout from './Components/Layout/MainLayout.jsx';
 import Home from './Components/Pages/Home/Home.jsx';
 import Login from './Components/Pages/Login/Login';
 import AuthProvider from './Providers/AuthProvider.jsx';
+import AboutUs from './Components/AboutUs/AboutUs';
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/aboutUs',
-        element: <Login></Login>,
+        element: <AboutUs></AboutUs>,
       },
     ],
   },
