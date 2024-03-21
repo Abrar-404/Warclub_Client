@@ -1,6 +1,6 @@
 import { IoIosArrowForward } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-import aboutBg from '../../assets/aboutusbg.png'
+import aboutBg from '../../assets/aboutusbg.png';
 
 const AboutUs = () => {
   return (
@@ -10,7 +10,7 @@ const AboutUs = () => {
           About Us
         </h1>
 
-        <div className="text-white font-semibold text-sm text-center flex justify-center mx-auto items-center">
+        <div className="text-white font-semibold text-sm text-center flex justify-center mx-auto items-center pt-2">
           <h1>
             <Link to="/">
               <span className="text-green-400">Home</span>
@@ -19,7 +19,7 @@ const AboutUs = () => {
           <div>
             <IoIosArrowForward></IoIosArrowForward>
           </div>
-          <div>About</div>
+          <div>About Us</div>
         </div>
       </div>
     </div>
