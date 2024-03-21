@@ -21,7 +21,8 @@ gamingslider .wrapper .outer {
 }
 
 gamingslider .wrapper .card {
-  background: #fff;
+  /* background: #fff; */
+  background: transparent;
   width: 430px;
   display: flex;
   align-items: center;
@@ -30,7 +31,7 @@ gamingslider .wrapper .card {
   pointer-events: none;
   position: absolute;
   justify-content: space-between;
-  border-radius: 100px 20px 20px 100px;
+  /* border-radius: 100px 20px 20px 100px; */
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
   animation: animate 15s linear infinite;
   animation-delay: calc(3s * var(--delay));
@@ -82,18 +83,18 @@ gamingslider .wrapper .card .img {
   width: 90px;
   position: absolute;
   left: -5px;
-  background: #fff;
+  /* background: #fff; */
   border-radius: 50%;
   padding: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-gamingslider .card .img img {
+/* gamingslider .card .img img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
   object-fit: cover;
-}
+} */
 
 gamingslider .card .details {
   margin-left: 80px;

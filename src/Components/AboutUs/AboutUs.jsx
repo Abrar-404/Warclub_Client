@@ -27,7 +27,7 @@ const AboutUs = () => {
       </div>
 
 
-      <div>
+      <div className='mt-48'>
         <GamingSlider></GamingSlider>
       </div>
     </>

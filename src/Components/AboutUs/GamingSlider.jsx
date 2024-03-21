@@ -6,7 +6,10 @@ const GamingSlider = () => {
       <div>
         <div className="wrapper">
           <div className="outer">
-            <div className="card" style={{ '--delay': -1 }}>
+            <div
+              className="card border-2 border-green-400"
+              style={{ '--delay': -1 }}
+            >
               <div className="content">
                 <div className="img">
                   <img src="./M ISMAIL.png" alt="" />
@@ -19,7 +22,10 @@ const GamingSlider = () => {
               <a href="#">Follow</a>
             </div>
 
-            <div className="card" style={{ '--delay': 0 }}>
+            <div
+              className="card border-2 border-green-400"
+              style={{ '--delay': 0 }}
+            >
               <div className="content">
                 <div className="img">
                   <img src="./komail-.jpg" alt="" />
@@ -32,7 +38,10 @@ const GamingSlider = () => {
               <a href="#">Follow</a>
             </div>
 
-            <div className="card" style={{ '--delay': 1 }}>
+            <div
+              className="card border-2 border-green-400"
+              style={{ '--delay': 1 }}
+            >
               <div className="content">
                 <div className="img">
                   <img src="./murtaza.png" alt="" />
@@ -45,7 +54,10 @@ const GamingSlider = () => {
               <a href="#">Follow</a>
             </div>
 
-            <div className="card" style={{ '--delay': 2 }}>
+            <div
+              className="card border-2 border-green-400"
+              style={{ '--delay': 2 }}
+            >
               <div className="content">
                 <div className="img">
                   <img src="./Qalb.jpg" alt="" />
@@ -58,7 +70,10 @@ const GamingSlider = () => {
               <a href="#">Follow</a>
             </div>
 
-            <div className="card" style={{ '--delay': 2 }}>
+            <div
+              className="card border-2 border-green-400"
+              style={{ '--delay': 2 }}
+            >
               <div className="content">
                 <div className="img">
                   <img src="./komail.jpg" alt="" />
