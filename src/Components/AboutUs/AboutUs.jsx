@@ -27,13 +27,23 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="mt-48">
+      <div className="mt-48 text-center">
+        <div className="mb-20">
+          <div>
+            <h1 className="text-[#3ED773] font-bold text-base">
+              # WELCOME TO THE ESPORTS & GAMING SITE
+            </h1>
+          </div>
+
+          <div>
+            <h1 className="text-white font-bold text-2xl">
+              Forging Legends In The Gaming Universe
+            </h1>
+          </div>
+        </div>
+
         <div className="flex justify-evenly lg:flex-row md:flex-col flex-col gap-32 items-center mx-auto">
-          <img
-            className="w-[500px] h-[400px]"
-            src={heroPic}
-            alt=""
-          />
+          <img className="w-[500px] h-[400px]" src={heroPic} alt="" />
 
           <div className=" lg:mr-48 lg:mt-0 md:mt-14 mt-20">
             <GamingSlider></GamingSlider>
