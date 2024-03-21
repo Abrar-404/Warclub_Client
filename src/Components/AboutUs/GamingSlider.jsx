@@ -31,7 +31,7 @@ const GamingSlider = () => {
             >
               <div className="content">
                 <div className="img">
-                  <img src="./komail-.jpg" alt="" />
+                  <img src={sliderSticker2} alt="" />
                 </div>
                 <div className="details">
                   <span className="name">M Komail Hazara</span>
@@ -47,7 +47,7 @@ const GamingSlider = () => {
             >
               <div className="content">
                 <div className="img">
-                  <img src="./murtaza.png" alt="" />
+                  <img src={sliderSticker3} alt="" />
                 </div>
                 <div className="details">
                   <span className="name">Murtaza</span>
@@ -63,7 +63,7 @@ const GamingSlider = () => {
             >
               <div className="content">
                 <div className="img">
-                  <img src="./Qalb.jpg" alt="" />
+                  <img src={sliderSticker1} alt="" />
                 </div>
                 <div className="details">
                   <span className="name">Qalb-e-Abbas</span>
@@ -79,7 +79,7 @@ const GamingSlider = () => {
             >
               <div className="content">
                 <div className="img">
-                  <img src="./komail.jpg" alt="" />
+                  <img src={sliderSticker2} alt="" />
                 </div>
                 <div className="details">
                   <span className="name">M Komail Hazara</span>
