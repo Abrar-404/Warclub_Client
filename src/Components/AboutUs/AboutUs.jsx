@@ -9,7 +9,7 @@ const AboutUs = () => {
         </h1>
 
         <div>
-          <h1>Home <IoIosArrowForward></IoIosArrowForward></h1>
+          <h1>Home <IoIosArrowForward></IoIosArrowForward> About</h1>
         </div>
       </div>
     </div>
