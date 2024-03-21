@@ -11,11 +11,11 @@ const GamingSlider = () => {
           <div className="outer">
             <div
               className="card border-2 border-green-400"
-              style={{ '--delay': -1 }}
+              style={{ '--delay': -2 }}
             >
               <div className="content">
                 <div className="img">
-                  <img src="./M ISMAIL.png" alt="" />
+                  <img src={sliderSticker1} alt="" />
                 </div>
                 <div className="details">
                   <span className="name">M Ismail Hazara</span>
@@ -27,7 +27,7 @@ const GamingSlider = () => {
 
             <div
               className="card border-2 border-green-400"
-              style={{ '--delay': 0 }}
+              style={{ '--delay': -1 }}
             >
               <div className="content">
                 <div className="img">
@@ -43,7 +43,7 @@ const GamingSlider = () => {
 
             <div
               className="card border-2 border-green-400"
-              style={{ '--delay': 1 }}
+              style={{ '--delay': 0 }}
             >
               <div className="content">
                 <div className="img">
@@ -59,7 +59,7 @@ const GamingSlider = () => {
 
             <div
               className="card border-2 border-green-400"
-              style={{ '--delay': 2 }}
+              style={{ '--delay': 1 }}
             >
               <div className="content">
                 <div className="img">
