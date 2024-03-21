@@ -4,6 +4,7 @@ import aboutBg from '../../assets/aboutusbg.png';
 import GamingSlider from './GamingSlider';
 import heroPic from '../../assets/herolanding.png';
 import Stats from './Stats';
+import TourBanner from './TourBanner';
 
 const AboutUs = () => {
   return (
@@ -54,6 +55,10 @@ const AboutUs = () => {
 
         <div className='lg:mt-32 md:mt-48 mt-52'>
           <Stats></Stats>
+        </div>
+
+        <div>
+          <TourBanner></TourBanner>
         </div>
       </div>
     </>
