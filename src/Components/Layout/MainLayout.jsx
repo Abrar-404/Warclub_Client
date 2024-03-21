@@ -4,9 +4,16 @@ import '../Styles/cursor.css';
 import AnimatedCursor from 'react-animated-cursor';
 
 const MainLayout = () => {
+  const background = {
+    backgroundImage: `url(https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg)`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+  };
+
   return (
-    <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')] h-cover svg mx-auto">
-      <div className="md:max-w-[768px] max-w-[428px] lg:max-w-[1400px]  mx-auto">
+    <div className="svg" style={background}>
+      <div className="mx-auto">
         {/* <SmoothScroll></SmoothScroll> */}
 
         <AnimatedCursor
@@ -25,7 +32,7 @@ const MainLayout = () => {
           }}
         />
 
-        <div className="mx-auto">
+        <div className="md:max-w-[768px] max-w-[428px] lg:max-w-[1400px] mx-auto ">
           <Navbar></Navbar>
           <Outlet></Outlet>
         </div>

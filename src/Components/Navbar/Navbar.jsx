@@ -113,8 +113,8 @@ const Navbar = () => {
   );
 
   return (
-    <div>
-      <div className="navbar px-4 lg:px-12  fixed z-50 bg-black bg-opacity-25 mx-auto">
+    <div className="sticky top-0 z-50">
+      <div className="navbar bg-black bg-opacity-25 mx-auto">
         <div className="navbar-start ">
           <div className="dropdown">
             <label tabIndex={0} className="lg:hidden">
@@ -142,7 +142,7 @@ const Navbar = () => {
           </div>
           <Link to="/" className="normal-case text-xl flex items-center">
             <img
-              className=""
+              className="w-[300px] h-[70px]"
               src="https://raw.githubusercontent.com/alaminh63/Titans_Arena/main/public/logoTest41.png"
               alt=""
             />
