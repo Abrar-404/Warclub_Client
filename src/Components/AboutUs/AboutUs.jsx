@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import aboutBg from '../../assets/aboutusbg.png';
 import GamingSlider from './GamingSlider';
 import heroPic from '../../assets/herolanding.png';
+import Stats from './Stats';
 
 const AboutUs = () => {
   return (
@@ -48,6 +49,11 @@ const AboutUs = () => {
           <div className=" lg:mr-48 lg:mt-0 md:mt-14 mt-20">
             <GamingSlider></GamingSlider>
           </div>
+        </div>
+
+
+        <div className='mt-32'>
+          <Stats></Stats>
         </div>
       </div>
     </>

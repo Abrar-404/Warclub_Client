@@ -1,6 +1,4 @@
-import '../Styles/statbtn.css';
 import CountUp from 'react-countup';
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import ScrollTrigger from 'react-scroll-trigger';
 
@@ -14,9 +12,8 @@ const Stats = () => {
         onExit={() => setCounterOn(false)}
       >
         <div className="flex justify-center">
-          <div className="stats text-center w-[1100px] mx-auto pb-7 lg:stats-horizontal stats-vertical shadow">
+          <div className="stats text-center w-[1100px] bg-transparent mx-auto pb-7 lg:stats-horizontal stats-vertical shadow">
             <div className="stat">
-              <div className="stat-title">Clients</div>
               <div className="stat-value">
                 {counterOn && (
                   <CountUp
@@ -33,7 +30,6 @@ const Stats = () => {
             </div>
 
             <div className="stat">
-              <div className="stat-title">New Tourists</div>
               <div className="stat-value">
                 {counterOn && (
                   <CountUp
@@ -50,7 +46,6 @@ const Stats = () => {
             </div>
 
             <div className="stat">
-              <div className="stat-title">New Registers</div>
               <div className="stat-value">
                 {counterOn && (
                   <CountUp
@@ -64,14 +59,6 @@ const Stats = () => {
                 <span className="font-script">+</span>
               </div>
               <div className="stat-desc">↗︎ 90 (14%)</div>
-            </div>
-
-            <div className="stat text-center mx-auto flex justify-center">
-              <Link to="/rooms">
-                <button className="bhutta">
-                  <span>See Rooms</span>
-                </button>
-              </Link>
             </div>
           </div>
         </div>
