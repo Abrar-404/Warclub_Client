@@ -2,6 +2,7 @@ import { IoIosArrowForward } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import aboutBg from '../../assets/aboutusbg.png';
 import GamingSlider from './GamingSlider';
+import heroPic from '../../assets/herolanding.png'
 
 const AboutUs = () => {
   return (
@@ -26,9 +27,13 @@ const AboutUs = () => {
         </div>
       </div>
 
-
-      <div className='mt-48'>
-        <GamingSlider></GamingSlider>
+      <div className="mt-48">
+        <div>
+          <div>
+            <img src={heroPic} alt="" />
+          </div>
+          <GamingSlider></GamingSlider>
+        </div>
       </div>
     </>
   );
