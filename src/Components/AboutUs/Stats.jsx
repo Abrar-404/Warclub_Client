@@ -20,45 +20,52 @@ const Stats = () => {
                     start={1000}
                     end={2347}
                     duration={2.75}
-                    className="font-script text-orange-400 font-bold mx-auto"
+                    className="font-script text-white font-bold mx-auto"
                     delay={0}
                   ></CountUp>
                 )}{' '}
-                <span className="font-script">+</span>
+                <span className="text-[#45F882] text-4xl">+</span>
               </div>
-              <div className="stat-desc">Jan 1st - Feb 1st</div>
+              <div className="stat-desc text-[#45F882] font-bold">
+                Our Daily Game Users
+              </div>
             </div>
 
             <div className="stat">
               <div className="stat-value">
                 {counterOn && (
                   <CountUp
-                    start={3000}
-                    end={4000}
+                    start={20}
+                    end={50}
                     duration={2.75}
-                    className="font-script text-orange-400 font-bold mx-auto"
+                    className="font-script text-white font-bold mx-auto"
                     delay={0}
                   ></CountUp>
                 )}{' '}
-                <span className="font-script">+</span>
+                <span className="text-white">M</span>
+                <span className="text-[#45F882] text-4xl">+</span>
               </div>
-              <div className="stat-desc">↗︎ 400 (22%)</div>
+              <div className="stat-desc text-[#45F882] font-bold">
+                Game Downloads
+              </div>
             </div>
 
             <div className="stat">
               <div className="stat-value">
                 {counterOn && (
                   <CountUp
-                    start={2000}
-                    end={3000}
+                    start={100}
+                    end={200}
                     duration={2.75}
-                    className="font-script text-orange-400 font-bold mx-auto"
+                    className="font-script text-white font-bold mx-auto"
                     delay={0}
                   ></CountUp>
                 )}{' '}
-                <span className="font-script">+</span>
+                <span className="text-[#45F882] text-4xl">+</span>
               </div>
-              <div className="stat-desc">↗︎ 90 (14%)</div>
+              <div className="stat-desc text-[#45F882] font-bold">
+                Game Launched
+              </div>
             </div>
           </div>
         </div>
