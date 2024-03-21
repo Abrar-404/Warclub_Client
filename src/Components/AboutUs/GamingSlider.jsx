@@ -1,65 +1,79 @@
+import '../Styles/gamingslider.css'
+
 const GamingSlider = () => {
   return (
-    <div>
-      <div class="wrapper">
-        <div class="outer">
-            <div class="card" style="--delay:-1">
-                <div class="content">
-                    <div class="img"><img src="./M ISMAIL.png" alt=""></div>
-                    <div class="details">
-                        <span class="name">M Ismail Hazara</span>
-                        <p>Amazon Wholsaler</p>
-                    </div>
+    <gamingslider>
+      <div>
+        <div className="wrapper">
+          <div className="outer">
+            <div className="card" style={{ '--delay': -1 }}>
+              <div className="content">
+                <div className="img">
+                  <img src="./M ISMAIL.png" alt="" />
                 </div>
-                <a href="#">Follow</a>
+                <div className="details">
+                  <span className="name">M Ismail Hazara</span>
+                  <p>Amazon Wholesaler</p>
+                </div>
+              </div>
+              <a href="#">Follow</a>
             </div>
 
-            <div class="card" style="--delay:0">
-                <div class="content">
-                    <div class="img"><img src="./komail-.jpg" alt=""></div>
-                    <div class="details">
-                        <span class="name">M Komail Hazara</span>
-                        <p>Youtuber & web developer</p>
-                    </div>
+            <div className="card" style={{ '--delay': 0 }}>
+              <div className="content">
+                <div className="img">
+                  <img src="./komail-.jpg" alt="" />
                 </div>
-                <a href="#">Follow</a>
+                <div className="details">
+                  <span className="name">M Komail Hazara</span>
+                  <p>Youtuber & web developer</p>
+                </div>
+              </div>
+              <a href="#">Follow</a>
             </div>
 
-            <div class="card" style="--delay:1">
-                <div class="content">
-                    <div class="img"><img src="./murtaza.png" alt=""></div>
-                    <div class="details">
-                        <span class="name">Murtaza</span>
-                        <p>Gamer & Youtuber</p>
-                    </div>
+            <div className="card" style={{ '--delay': 1 }}>
+              <div className="content">
+                <div className="img">
+                  <img src="./murtaza.png" alt="" />
                 </div>
-                <a href="#">Follow</a>
+                <div className="details">
+                  <span className="name">Murtaza</span>
+                  <p>Gamer & Youtuber</p>
+                </div>
+              </div>
+              <a href="#">Follow</a>
             </div>
 
-            <div class="card" style="--delay:2">
-                <div class="content">
-                    <div class="img"><img src="./Qalb.jpg" alt=""></div>
-                    <div class="details">
-                        <span class="name">Qalb-e-Abbas</span>
-                        <p>Advertiser</p>
-                    </div>
+            <div className="card" style={{ '--delay': 2 }}>
+              <div className="content">
+                <div className="img">
+                  <img src="./Qalb.jpg" alt="" />
                 </div>
-                <a href="#">Follow</a>
+                <div className="details">
+                  <span className="name">Qalb-e-Abbas</span>
+                  <p>Advertiser</p>
+                </div>
+              </div>
+              <a href="#">Follow</a>
             </div>
 
-            <div class="card" style="--delay:2">
-                <div class="content">
-                    <div class="img"><img src="./komail.jpg" alt=""></div>
-                    <div class="details">
-                        <span class="name">M Komail Hazara</span>
-                        <p>Youtuber & web developer</p>
-                    </div>
+            <div className="card" style={{ '--delay': 2 }}>
+              <div className="content">
+                <div className="img">
+                  <img src="./komail.jpg" alt="" />
                 </div>
-                <a href="#">Follow</a>
+                <div className="details">
+                  <span className="name">M Komail Hazara</span>
+                  <p>Youtuber & web developer</p>
+                </div>
+              </div>
+              <a href="#">Follow</a>
             </div>
+          </div>
         </div>
-    </div>
-    </div>
+      </div>
+    </gamingslider>
   );
 };
 
