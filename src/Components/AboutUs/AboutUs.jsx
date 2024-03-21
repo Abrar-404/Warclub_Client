@@ -52,7 +52,7 @@ const AboutUs = () => {
         </div>
 
 
-        <div className='mt-32'>
+        <div className='lg:mt-32 md:mt-48 mt-52'>
           <Stats></Stats>
         </div>
       </div>

@@ -67,6 +67,25 @@ const Stats = () => {
                 Game Launched
               </div>
             </div>
+
+            <div className="stat">
+              <div className="stat-value">
+                {counterOn && (
+                  <CountUp
+                    start={10}
+                    end={30}
+                    duration={2.75}
+                    className="font-script text-white font-bold mx-auto"
+                    delay={0}
+                  ></CountUp>
+                )}{' '}
+                <span className="text-white">M</span>
+                <span className="text-[#45F882] text-4xl">+</span>
+              </div>
+              <div className="stat-desc text-[#45F882] font-bold">
+                Gaming Project Delivered
+              </div>
+            </div>
           </div>
         </div>
       </ScrollTrigger>
