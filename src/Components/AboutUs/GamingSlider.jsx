@@ -1,4 +1,7 @@
 import '../Styles/gamingslider.css'
+import sliderSticker1 from '../../assets/sliderSticker1.svg'
+import sliderSticker2 from '../../assets/sliderSticker2.svg'
+import sliderSticker3 from '../../assets/sliderSticker3.svg'
 
 const GamingSlider = () => {
   return (
