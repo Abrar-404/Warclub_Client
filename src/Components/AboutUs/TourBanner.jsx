@@ -14,7 +14,7 @@ const TourBanner = () => {
         </div>
 
         <div className="">
-          <h1 className="text-white lg:text-3xl font-bold">
+          <h1 className="text-white lg:text-3xl md:text-2xl text-xl font-bold">
             Our All Tournaments History{' '}
             <span className="text-[#45f882]">!</span>
           </h1>
