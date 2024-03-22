@@ -15,9 +15,15 @@ const Footer = () => {
             <aside>
               <img src={logo} className="w-[150px] h-[80px]" alt="" />
               <div>
-                <h1 className='text-gray-400'>
-                  Beyond esports tournaments, include a <br /> broader calendar of
-                  gaming events, <br /> conferences, and conventions.
+                <h1 className="text-gray-400">
+                  Beyond esports tournaments, include a <br /> broader calendar
+                  of gaming events, <br /> conferences, and conventions.
+                </h1>
+              </div>
+
+              <div>
+                <h1 className="text-xl text-white font-bold">
+                  Follow <span className="text-[#45F882]">With Us:</span>
                 </h1>
               </div>
             </aside>

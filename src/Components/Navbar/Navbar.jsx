@@ -141,8 +141,8 @@ const Navbar = () => {
               {navOptionsForMobile}
             </ul>
           </div>
-          <Link to="/" className="normal-case text-xl flex items-center">
-            <img className="w-[250px] h-[100px]" src={logo} alt="" />
+          <Link to="/" className="normal-case text-xl pl-5 flex items-center">
+            <img className="w-[220px] h-[100px]" src={logo} alt="" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
