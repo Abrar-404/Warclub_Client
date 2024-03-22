@@ -5,7 +5,7 @@ function Socials() {
   return (
     <socialcomp>
       <div class="cardush">
-        <a class="social-link1">
+        <a class="social-link1 flex lg:flex-row md:flex-col flex-col justify-center items-center">
           <svg
             style={{
               color: 'white',
@@ -14,7 +14,7 @@ function Socials() {
             width="16"
             height="16"
             fill="currentColor"
-            class="bi bi-instagram"
+            class="bi bi-instagram svg"
             viewBox="0 0 16 16"
           >
             <path

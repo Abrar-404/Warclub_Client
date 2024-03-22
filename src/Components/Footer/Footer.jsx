@@ -12,7 +12,7 @@ const Footer = () => {
           className=" bg-cover pt-14"
           style={{ backgroundImage: `url(${footerPic})` }}
         >
-          <footer className="footer p-10 text-white">
+          <footer className="footer p-10 text-white flex lg:flex-row md:flex-col flex-col justify-center gap-20">
             <aside>
               <img src={logo} className="w-[150px] h-[80px]" alt="" />
               <div>
@@ -28,9 +28,7 @@ const Footer = () => {
                 </h1>
               </div>
 
-              <div>
-                <Socials></Socials>
-              </div>
+              <div><Socials></Socials></div>
             </aside>
             <nav>
               <h6 className="font-bold text-2xl border-b-2 pb-1 border-green-400 text-white">
@@ -90,18 +88,18 @@ const Footer = () => {
                   </span>
                 </label>
 
-                <div class="search">
-                  <div class="search-box">
-                    <div class="search-field">
+                <div class="searching">
+                  <div class="searching-box">
+                    <div class="searching-field">
                       <input
                         placeholder="Email Address"
                         class="input"
                         type="text"
                       />
 
-                      <div className="search-box-icon">
+                      <div className="searching-box-icon">
                         <button className="btn-icon-content">
-                          <div className="search-icon">
+                          <div className="searching-icon">
                             <div className="text-green-600">
                               <FaTelegramPlane></FaTelegramPlane>
                             </div>
@@ -115,7 +113,7 @@ const Footer = () => {
             </form>
           </footer>
 
-          <div>
+          <div className="pt-32">
             <h1 className="text-center font-medium text-sm text-white">
               © Copyright 2024 <span className="text-green-400">Warclub</span> -
               All right reserved

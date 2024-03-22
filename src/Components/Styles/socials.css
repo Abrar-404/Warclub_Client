@@ -4,7 +4,7 @@ socialcomp .cardush {
   width: 350px;
 }
 
-socialcomp .cardush svg {
+socialcomp .cardush .svg {
   position: absolute;
   display: flex;
   width: 60%;
@@ -33,9 +33,10 @@ socialcomp .cardush .social-link1,
   text-decoration: none;
   transition: 0.25s;
   border-radius: 200px;
+  /* margin: auto; */
 }
 
-socialcomp .cardush svg {
+socialcomp .cardush .svg {
   transform: scale(1);
 }
 
