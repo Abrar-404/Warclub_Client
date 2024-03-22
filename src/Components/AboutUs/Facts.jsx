@@ -27,7 +27,7 @@ const Facts = () => {
                 <div className="text-[#45F882]">
                   <IoIosCheckmarkCircle></IoIosCheckmarkCircle>
                 </div>
-                <h1 className="text-gray-400 font-semibold">
+                <h1 className="text-gray-400 lg:text-base md:text-sm text-xs font-semibold">
                   {' '}
                   Duis scelerisque nunc ac massa efficitur pulvinar.
                 </h1>
@@ -36,7 +36,7 @@ const Facts = () => {
                 <div className="text-[#45F882]">
                   <IoIosCheckmarkCircle></IoIosCheckmarkCircle>
                 </div>
-                <h1 className="text-gray-400 font-semibold">
+                <h1 className="text-gray-400 lg:text-base md:text-sm text-xs font-semibold">
                   {' '}
                   Vivamus eget nisi scelerisque, iaculis risus vel, molestie
                   risus.
@@ -46,7 +46,7 @@ const Facts = () => {
                 <div className="text-[#45F882]">
                   <IoIosCheckmarkCircle></IoIosCheckmarkCircle>
                 </div>
-                <h1 className="text-gray-400 font-semibold">
+                <h1 className="text-gray-400 lg:text-base md:text-sm text-xs font-semibold">
                   {' '}
                   Aliquam nec sapien vitae dui dapibus blandit.
                 </h1>
@@ -55,7 +55,7 @@ const Facts = () => {
                 <div className="text-[#45F882]">
                   <IoIosCheckmarkCircle></IoIosCheckmarkCircle>
                 </div>
-                <h1 className="text-gray-400 font-semibold">
+                <h1 className="text-gray-400 lg:text-base md:text-sm text-xs font-semibold">
                   {' '}
                   Sed non ipsum ut mauris dictum ullamcorper ac at nibh.
                 </h1>
@@ -74,7 +74,7 @@ const Facts = () => {
           </div>
 
           <div>
-            <div className="text-left text-gray-400 font-semibold">
+            <div className="text-left text-gray-400 lg:text-base md:text-sm text-xs font-semibold">
               Gamers can join local gaming meetups, participate in gaming <br />{' '}
               events, or connect with like-minded individuals through online{' '}
               <br /> forums and social media groups. Engaging with the community{' '}
@@ -82,7 +82,7 @@ const Facts = () => {
               collaborative <br /> gaming experiences.
             </div>
 
-            <div className="text-left mt-5 text-gray-400 font-semibold">
+            <div className="text-left mt-5 text-gray-400 lg:text-base md:text-sm text-xs font-semibold">
               Storytelling is a crucial element in modern video game design,{' '}
               <br />
               creating immersive and engaging experiences. Games with <br />{' '}
@@ -92,7 +92,7 @@ const Facts = () => {
           </div>
         </div>
 
-        <div className="absolute lg:top-[38%] lg:left-[87%] mx-auto">
+        <div className="absolute lg:top-[38%] lg:left-[87%] md:left-[125%] md:top-[41%] left-[95%] top-[40%] mx-auto">
           <TextCircle></TextCircle>
         </div>
       </div>
