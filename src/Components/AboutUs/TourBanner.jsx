@@ -4,7 +4,9 @@ const TourBanner = () => {
   return (
     <tourbanner>
       <div>
-        <h1>Lion</h1>
+        <div>
+          <h1>Lion</h1>
+        </div>
       </div>
     </tourbanner>
   );
