@@ -6,6 +6,7 @@ import heroPic from '../../assets/herolanding.png';
 import Stats from './Stats';
 import TourBanner from './TourBanner';
 import Facts from './Facts';
+import Players from '../Players/Players';
 
 const AboutUs = () => {
   return (
@@ -53,8 +54,7 @@ const AboutUs = () => {
           </div>
         </div>
 
-
-        <div className='lg:mt-32 md:mt-48 mt-52'>
+        <div className="lg:mt-32 md:mt-48 mt-52">
           <Stats></Stats>
         </div>
 
@@ -64,6 +64,22 @@ const AboutUs = () => {
 
         <div>
           <Facts></Facts>
+        </div>
+
+        <div className='mt-32'>
+          <div className='mb-10'>
+            <div>
+              <h1 className="text-[#45f882] font-bold">
+                # Top World Class Gamer
+              </h1>
+            </div>
+            <div>
+              <h1 className="text-white font-bold lg:text-3xl md:text-xl text-lg">
+                Let’s See Our Pro Players
+              </h1>
+            </div>
+          </div>
+          <Players></Players>
         </div>
       </div>
     </>
