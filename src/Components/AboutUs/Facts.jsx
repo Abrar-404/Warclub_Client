@@ -71,12 +71,19 @@ const Facts = () => {
           <img className="rounded-3xl" src={fact1pic1} alt="" />
         </div>
         <div>
-          <div>
-            Gamers can join local gaming meetups, participate in gaming <br /> events,
-            or connect with like-minded individuals through online <br /> forums and
-            social media groups. Engaging with the community <br /> helps build
-            connections and creates opportunities for collaborative <br /> gaming
-            experiences.
+          <div className='text-left'>
+            Gamers can join local gaming meetups, participate in gaming <br />{' '}
+            events, or connect with like-minded individuals through online{' '}
+            <br /> forums and social media groups. Engaging with the community{' '}
+            <br /> helps build connections and creates opportunities for
+            collaborative <br /> gaming experiences.
+          </div>
+
+          <div className='text-left'>
+            Storytelling is a crucial element in modern video game design, <br />
+            creating immersive and engaging experiences. Games with <br /> compelling
+            narratives often resonate more with players, adding <br /> depth to the
+            overall gaming experience.
           </div>
         </div>
       </div>
