@@ -20,8 +20,8 @@ const Facts = () => {
             </h1>
           </div>
 
-          <div>
-            <div className="flex justify-start gap- items-center">
+          <div className="mt-5">
+            <div className="flex justify-start gap-2 mt-1 items-center">
               <div className="text-[#45F882]">
                 <IoIosCheckmarkCircle></IoIosCheckmarkCircle>
               </div>
@@ -30,7 +30,7 @@ const Facts = () => {
                 Duis scelerisque nunc ac massa efficitur pulvinar.
               </h1>
             </div>
-            <div className="flex justify-start gap- items-center">
+            <div className="flex justify-start gap-2 mt-1 items-center">
               <div className="text-[#45F882]">
                 <IoIosCheckmarkCircle></IoIosCheckmarkCircle>
               </div>
@@ -40,7 +40,7 @@ const Facts = () => {
                 risus.
               </h1>
             </div>
-            <div className="flex justify-start gap- items-center">
+            <div className="flex justify-start gap-2 mt-1 items-center">
               <div className="text-[#45F882]">
                 <IoIosCheckmarkCircle></IoIosCheckmarkCircle>
               </div>
@@ -49,7 +49,7 @@ const Facts = () => {
                 Aliquam nec sapien vitae dui dapibus blandit.
               </h1>
             </div>
-            <div className="flex justify-start gap- items-center">
+            <div className="flex justify-start gap-2 mt-1 items-center">
               <div className="text-[#45F882]">
                 <IoIosCheckmarkCircle></IoIosCheckmarkCircle>
               </div>
