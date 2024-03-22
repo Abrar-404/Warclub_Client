@@ -19,6 +19,13 @@ const Facts = () => {
               <span className="text-[#45F882]">!</span>
             </h1>
           </div>
+
+          <div className="flex justify-start items-center">
+            <div className="text-[#45F882]">
+              <CiCircleCheck></CiCircleCheck>
+            </div>
+            <h1> Duis scelerisque nunc ac massa efficitur pulvinar.</h1>
+          </div>
         </div>
       </div>
     </div>
