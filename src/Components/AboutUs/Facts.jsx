@@ -1,7 +1,7 @@
 import fact1pic1 from '../../assets/aboutusPic1.png';
 import fact1pic2 from '../../assets/aboutusPic2.png';
 
-import { CiCircleCheck } from 'react-icons/ci';
+import { IoIosCheckmarkCircle } from 'react-icons/io';
 
 const Facts = () => {
   return (
@@ -20,11 +20,44 @@ const Facts = () => {
             </h1>
           </div>
 
-          <div className="flex justify-start items-center">
-            <div className="text-[#45F882]">
-              <CiCircleCheck></CiCircleCheck>
+          <div>
+            <div className="flex justify-start gap- items-center">
+              <div className="text-[#45F882]">
+                <IoIosCheckmarkCircle></IoIosCheckmarkCircle>
+              </div>
+              <h1 className="text-[#545967] font-semibold">
+                {' '}
+                Duis scelerisque nunc ac massa efficitur pulvinar.
+              </h1>
             </div>
-            <h1> Duis scelerisque nunc ac massa efficitur pulvinar.</h1>
+            <div className="flex justify-start gap- items-center">
+              <div className="text-[#45F882]">
+                <IoIosCheckmarkCircle></IoIosCheckmarkCircle>
+              </div>
+              <h1 className="text-[#545967] font-semibold">
+                {' '}
+                Vivamus eget nisi scelerisque, iaculis risus vel, molestie
+                risus.
+              </h1>
+            </div>
+            <div className="flex justify-start gap- items-center">
+              <div className="text-[#45F882]">
+                <IoIosCheckmarkCircle></IoIosCheckmarkCircle>
+              </div>
+              <h1 className="text-[#545967] font-semibold">
+                {' '}
+                Aliquam nec sapien vitae dui dapibus blandit.
+              </h1>
+            </div>
+            <div className="flex justify-start gap- items-center">
+              <div className="text-[#45F882]">
+                <IoIosCheckmarkCircle></IoIosCheckmarkCircle>
+              </div>
+              <h1 className="text-[#545967] font-semibold">
+                {' '}
+                Sed non ipsum ut mauris dictum ullamcorper ac at nibh.
+              </h1>
+            </div>
           </div>
         </div>
       </div>
