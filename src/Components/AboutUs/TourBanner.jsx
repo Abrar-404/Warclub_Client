@@ -11,7 +11,9 @@ const TourBanner = () => {
         </div>
 
         <div>
-          <h1>Our All Tournaments History !</h1>
+          <h1 className="text-white lg:text-3xl font-bold">
+            Our All Tournaments History !
+          </h1>
         </div>
       </div>
     </tourbanner>
