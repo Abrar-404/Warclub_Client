@@ -25,7 +25,7 @@ const Facts = () => {
               <div className="text-[#45F882]">
                 <IoIosCheckmarkCircle></IoIosCheckmarkCircle>
               </div>
-              <h1 className="text-[#545967] font-semibold">
+              <h1 className="text-gray-400 font-semibold">
                 {' '}
                 Duis scelerisque nunc ac massa efficitur pulvinar.
               </h1>
@@ -34,7 +34,7 @@ const Facts = () => {
               <div className="text-[#45F882]">
                 <IoIosCheckmarkCircle></IoIosCheckmarkCircle>
               </div>
-              <h1 className="text-[#545967] font-semibold">
+              <h1 className="text-gray-400 font-semibold">
                 {' '}
                 Vivamus eget nisi scelerisque, iaculis risus vel, molestie
                 risus.
@@ -44,7 +44,7 @@ const Facts = () => {
               <div className="text-[#45F882]">
                 <IoIosCheckmarkCircle></IoIosCheckmarkCircle>
               </div>
-              <h1 className="text-[#545967] font-semibold">
+              <h1 className="text-gray-400 font-semibold">
                 {' '}
                 Aliquam nec sapien vitae dui dapibus blandit.
               </h1>
@@ -53,7 +53,7 @@ const Facts = () => {
               <div className="text-[#45F882]">
                 <IoIosCheckmarkCircle></IoIosCheckmarkCircle>
               </div>
-              <h1 className="text-[#545967] font-semibold">
+              <h1 className="text-gray-400 font-semibold">
                 {' '}
                 Sed non ipsum ut mauris dictum ullamcorper ac at nibh.
               </h1>
@@ -66,12 +66,13 @@ const Facts = () => {
         </div>
       </div>
 
-      <div>
+      <div className="flex justify-evenly lg:flex-row md:flex-col flex-col gap-10 mx-auto items-center">
         <div>
           <img className="rounded-3xl" src={fact1pic1} alt="" />
         </div>
+
         <div>
-          <div className='text-left'>
+          <div className="text-left text-gray-400 font-semibold">
             Gamers can join local gaming meetups, participate in gaming <br />{' '}
             events, or connect with like-minded individuals through online{' '}
             <br /> forums and social media groups. Engaging with the community{' '}
@@ -79,11 +80,12 @@ const Facts = () => {
             collaborative <br /> gaming experiences.
           </div>
 
-          <div className='text-left'>
-            Storytelling is a crucial element in modern video game design, <br />
-            creating immersive and engaging experiences. Games with <br /> compelling
-            narratives often resonate more with players, adding <br /> depth to the
-            overall gaming experience.
+          <div className="text-left mt-5 text-gray-400 font-semibold">
+            Storytelling is a crucial element in modern video game design,{' '}
+            <br />
+            creating immersive and engaging experiences. Games with <br />{' '}
+            compelling narratives often resonate more with players, adding{' '}
+            <br /> depth to the overall gaming experience.
           </div>
         </div>
       </div>
