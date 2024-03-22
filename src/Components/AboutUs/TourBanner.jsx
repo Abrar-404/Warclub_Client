@@ -1,4 +1,7 @@
 import '../Styles/tourbanner.css';
+import battle1 from '../../assets/battle1.png'
+import battle2 from '../../assets/battle2.png'
+import battle3 from '../../assets/battle3.png'
 
 const TourBanner = () => {
   return (
@@ -14,6 +17,11 @@ const TourBanner = () => {
           <h1 className="text-white lg:text-3xl font-bold">
             Our All Tournaments History !
           </h1>
+        </div>
+
+
+        <div>
+
         </div>
       </div>
     </tourbanner>
