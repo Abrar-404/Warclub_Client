@@ -21,7 +21,13 @@ const TourBanner = () => {
 
 
         <div>
-
+<img src={battle1} alt="" />
+        </div>
+        <div>
+<img src={battle2} alt="" />
+        </div>
+        <div>
+<img src={battle3} alt="" />
         </div>
       </div>
     </tourbanner>
