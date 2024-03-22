@@ -5,7 +5,7 @@ import { IoIosCheckmarkCircle } from 'react-icons/io';
 
 const Facts = () => {
   return (
-    <div>
+    <div className="mt-32">
       <div className="flex justify-evenly lg:flex-row md:flex-col flex-col gap-10 mx-auto items-center">
         <div>
           <div>
@@ -63,6 +63,21 @@ const Facts = () => {
 
         <div>
           <img className="rounded-3xl" src={fact1pic2} alt="" />
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <img className="rounded-3xl" src={fact1pic1} alt="" />
+        </div>
+        <div>
+          <div>
+            Gamers can join local gaming meetups, participate in gaming <br /> events,
+            or connect with like-minded individuals through online <br /> forums and
+            social media groups. Engaging with the community <br /> helps build
+            connections and creates opportunities for collaborative <br /> gaming
+            experiences.
+          </div>
         </div>
       </div>
     </div>
