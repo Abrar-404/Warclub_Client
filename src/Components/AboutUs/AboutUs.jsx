@@ -7,6 +7,7 @@ import Stats from './Stats';
 import TourBanner from './TourBanner';
 import Facts from './Facts';
 import Players from '../Players/Players';
+import StickerSlider from '../StickerSlider/StickerSlider';
 
 const AboutUs = () => {
   return (
@@ -80,6 +81,11 @@ const AboutUs = () => {
             </div>
           </div>
           <Players></Players>
+        </div>
+
+
+        <div className='mt-32'>
+          <StickerSlider></StickerSlider>
         </div>
       </div>
     </>
