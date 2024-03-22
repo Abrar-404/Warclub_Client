@@ -1,6 +1,8 @@
 import fact1pic1 from '../../assets/aboutusPic1.png';
 import fact1pic2 from '../../assets/aboutusPic2.png';
 
+import { CiCircleCheck } from 'react-icons/ci';
+
 const Facts = () => {
   return (
     <div>
