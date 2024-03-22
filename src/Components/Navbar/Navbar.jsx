@@ -3,6 +3,7 @@ import '../Styles/navbar.css';
 import { AuthContext } from '../../Providers/AuthProvider';
 import { useContext } from 'react';
 import '../Styles/loginbtn.css';
+import logo from '../../assets/NavLogo.png';
 
 const Navbar = () => {
   const { user, userLogOut } = useContext(AuthContext);
@@ -141,11 +142,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" className="normal-case text-xl flex items-center">
-            <img
-              className="w-[300px] h-[70px]"
-              src="https://raw.githubusercontent.com/alaminh63/Titans_Arena/main/public/logoTest41.png"
-              alt=""
-            />
+            <img className="w-[220px] h-[100px]" src={logo} alt="" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

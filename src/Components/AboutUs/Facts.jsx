@@ -66,7 +66,7 @@ const Facts = () => {
         </div>
       </div>
 
-      <div className="flex justify-evenly lg:flex-row md:flex-col flex-col gap-10 mx-auto items-center">
+      <div className="flex justify-evenly lg:flex-row md:flex-col flex-col gap-10 mx-auto items-center mt-10">
         <div>
           <img className="rounded-3xl" src={fact1pic1} alt="" />
         </div>
