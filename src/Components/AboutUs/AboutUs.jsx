@@ -5,6 +5,7 @@ import GamingSlider from './GamingSlider';
 import heroPic from '../../assets/herolanding.png';
 import Stats from './Stats';
 import TourBanner from './TourBanner';
+import Facts from './Facts';
 
 const AboutUs = () => {
   return (
@@ -59,6 +60,10 @@ const AboutUs = () => {
 
         <div>
           <TourBanner></TourBanner>
+        </div>
+
+        <div>
+          <Facts></Facts>
         </div>
       </div>
     </>
