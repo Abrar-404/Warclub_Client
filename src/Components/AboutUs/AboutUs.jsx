@@ -8,6 +8,7 @@ import TourBanner from './TourBanner';
 import Facts from './Facts';
 import Players from '../Players/Players';
 import StickerSlider from '../StickerSlider/StickerSlider';
+import AboutFooter from './AboutFooter';
 
 const AboutUs = () => {
   return (
@@ -86,6 +87,10 @@ const AboutUs = () => {
 
         <div className='mt-32'>
           <StickerSlider></StickerSlider>
+        </div>
+
+        <div className='mt-32'>
+          <AboutFooter></AboutFooter>
         </div>
       </div>
     </>
