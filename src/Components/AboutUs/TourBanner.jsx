@@ -7,17 +7,23 @@ const TourBanner = () => {
   return (
     <tourbanner>
       <div className="mt-32">
-        <div>
-          <h1 className="text-[#45f882] font-bold text-sm space-x-1">
-            # HISTORY OF WARCLUB TROPHY
-          </h1>
-        </div>
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <div>
+            <h1 className="text-[#45f882] font-bold text-sm space-x-1">
+              # HISTORY OF WARCLUB TROPHY
+            </h1>
+          </div>
 
-        <div className="">
-          <h1 className="text-white lg:text-3xl md:text-2xl text-xl font-bold">
-            Our All Tournaments History{' '}
-            <span className="text-[#45f882]">!</span>
-          </h1>
+          <div className="">
+            <h1 className="text-white lg:text-3xl md:text-2xl text-xl font-bold">
+              Our All Tournaments History{' '}
+              <span className="text-[#45f882]">!</span>
+            </h1>
+          </div>
         </div>
 
         <div className="flex justify-center mx-auto mt-32">

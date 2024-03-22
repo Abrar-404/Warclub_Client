@@ -34,7 +34,12 @@ const AboutUs = () => {
       </div>
 
       <div className="mt-48 text-center">
-        <div className="mb-20">
+        <div
+          className="mb-20"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <div>
             <h1 className="text-[#3ED773] font-bold text-base">
               # WELCOME TO THE ESPORTS & GAMING SITE
@@ -68,8 +73,13 @@ const AboutUs = () => {
           <Facts></Facts>
         </div>
 
-        <div className='mt-32'>
-          <div className='mb-10'>
+        <div className="mt-32">
+          <div
+            className="mb-10"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <div>
               <h1 className="text-[#45f882] font-bold">
                 # Top World Class Gamer
@@ -84,12 +94,11 @@ const AboutUs = () => {
           <Players></Players>
         </div>
 
-
-        <div className='mt-32'>
+        <div className="mt-32">
           <StickerSlider></StickerSlider>
         </div>
 
-        <div className='mt-32'>
+        <div className="mt-32">
           <AboutFooter></AboutFooter>
         </div>
       </div>

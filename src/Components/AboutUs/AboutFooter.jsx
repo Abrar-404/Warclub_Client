@@ -76,7 +76,7 @@ const AboutFooter = () => {
             </div>
           </div>
 
-          <div className="flex justify-center mt-20">
+          <div className="flex justify-center mt-20 pb-8">
             <div class="input-container">
               <input
                 type="text"
