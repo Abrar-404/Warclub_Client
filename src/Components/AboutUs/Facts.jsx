@@ -61,6 +61,10 @@ const Facts = () => {
           </div>
         </div>
       </div>
+
+      <div>
+        <img className='rounded-3xl' src={fact1pic2} alt="" />
+      </div>
     </div>
   );
 };
