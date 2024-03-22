@@ -2,7 +2,7 @@ textcircle .circle {
   position: relative;
   width: 200px;
   height: 200px;
-  background: #0B0E13;
+  background: #0b0e13;
   border-radius: 50%;
   display: flex;
   justify-content: center;
