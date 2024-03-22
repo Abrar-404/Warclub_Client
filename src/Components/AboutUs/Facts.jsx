@@ -12,7 +12,7 @@ const Facts = () => {
             </h1>
           </div>
           <div>
-            <h1 className="text-white lg:text-3xl font-bold">
+            <h1 className="text-white lg:text-3xl md:text-2xl text-xl font-bold">
               # Why Choose Our Gaming Site
             </h1>
           </div>
