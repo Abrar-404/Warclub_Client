@@ -7,7 +7,7 @@ import TextCircle from './TextCircle';
 const Facts = () => {
   return (
     <div className="mt-32">
-      <div>
+      <div className=" relative">
         <div className="flex justify-evenly lg:flex-row md:flex-col flex-col gap-10 mx-auto items-center">
           <div>
             <div>
@@ -92,8 +92,9 @@ const Facts = () => {
           </div>
         </div>
 
-
-        <TextCircle></TextCircle>
+        <div className="absolute lg:top-[38%] lg:left-[87%] mx-auto">
+          <TextCircle></TextCircle>
+        </div>
       </div>
     </div>
   );
