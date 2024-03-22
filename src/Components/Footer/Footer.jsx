@@ -2,6 +2,7 @@ import footerPic from '../../assets/Footer.png';
 import '../Styles/footercss.css';
 import { FaTelegramPlane } from 'react-icons/fa';
 import logo from '../../assets/NavLogo.png';
+import Socials from './Socials';
 
 const Footer = () => {
   return (
@@ -25,6 +26,10 @@ const Footer = () => {
                 <h1 className="text-xl text-white font-bold">
                   Follow <span className="text-[#45F882]">With Us:</span>
                 </h1>
+              </div>
+
+              <div>
+                <Socials></Socials>
               </div>
             </aside>
             <nav>
