@@ -6,9 +6,16 @@ const Facts = () => {
     <div>
       <div>
         <div>
-          <h1 className="text-[#45F882] font-semibold text-base">
-            # Why Choose Our Gaming Site
-          </h1>
+          <div>
+            <h1 className="text-[#45F882] font-semibold text-base">
+              # Why Choose Our Gaming Site
+            </h1>
+          </div>
+          <div>
+            <h1 className="text-[#45F882] font-semibold text-base">
+              # Why Choose Our Gaming Site
+            </h1>
+          </div>
         </div>
       </div>
     </div>
