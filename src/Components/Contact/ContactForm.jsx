@@ -244,6 +244,12 @@ const ContactForm = () => {
                   >
                     Office Mail: info@warclub.com
                   </a>
+                  <a
+                    href="mailto:info@warclubceo.com"
+                    class="text-gray-400 lg:text-sm md:text-xs text-xs"
+                  >
+                    CEO Mail: info@warclubceo.com
+                  </a>
                 </div>
               </div>
             </div>
