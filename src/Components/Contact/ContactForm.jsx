@@ -3,6 +3,7 @@ import Swal from 'sweetalert2';
 import emailjs from '@emailjs/browser';
 import '../Styles/contactform.css';
 import { FaRegUser } from 'react-icons/fa';
+import '../Styles/form.css';
 
 const ContactForm = () => {
   const form = useRef();
@@ -58,7 +59,61 @@ const ContactForm = () => {
           </h1>
         </div>
 
-        <div className="relative">
+        <div>
+          <div>
+            <div>
+              <div className="form-container">
+                <form className="form" ref={form} onSubmit={sendEmail}>
+                  <div className="form-group">
+                    <div className="relative">
+                      <input
+                        placeholder="Enter your text..."
+                        class="inputuu"
+                        name="text"
+                        type="text"
+                      ></input>
+
+                      <div className="absolute left-40 top-3 text-[#45F882]">
+                        <FaRegUser></FaRegUser>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="email">Email</label>
+                    <input
+                      required=""
+                      name="user_email"
+                      id="email"
+                      type="email"
+                      value={email}
+                      onChange={e => setEmail(e.target.value)}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="textarea">Message</label>
+                    <textarea
+                      required=""
+                      cols="50"
+                      rows="10"
+                      id="textarea"
+                      name="user_message"
+                      value={message}
+                      onChange={e => setMessage(e.target.value)}
+                    ></textarea>
+                  </div>
+                  <input
+                    type="submit"
+                    className="form-submit-btn"
+                    name=""
+                    id=""
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="relative">
           <input
             placeholder="Enter your text..."
             class="inputuu"
@@ -69,7 +124,7 @@ const ContactForm = () => {
           <div className="absolute left-44 top-3 text-[#45F882]">
             <FaRegUser></FaRegUser>
           </div>
-        </div>
+        </div> */}
       </div>
     </contactform>
   );
