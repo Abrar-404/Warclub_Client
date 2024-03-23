@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import aboutBg from '../../assets/aboutusbg.png';
 import { IoIosArrowForward } from 'react-icons/io';
+import AllGamesCardFetch from './AllGamesCardFetch';
 
 const AllGames = () => {
   return (
@@ -28,7 +29,7 @@ const AllGames = () => {
 
 
         <div>
-          
+          <AllGamesCardFetch></AllGamesCardFetch>
         </div>
       </div>
     </div>
