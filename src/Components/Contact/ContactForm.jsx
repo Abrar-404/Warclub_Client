@@ -6,6 +6,7 @@ import { FaRegUser } from 'react-icons/fa';
 import '../Styles/form.css';
 import { CiMail } from 'react-icons/ci';
 import { FaRegAddressCard } from 'react-icons/fa';
+import { FaRegMessage } from 'react-icons/fa6';
 
 const ContactForm = () => {
   const form = useRef();
@@ -125,16 +126,25 @@ const ContactForm = () => {
                     </div>
                   </div>
                   <div className="form-group">
-                    <label htmlFor="textarea">Message</label>
-                    <textarea
-                      required=""
-                      cols="50"
-                      rows="10"
-                      id="textarea"
-                      name="user_message"
-                      value={message}
-                      onChange={e => setMessage(e.target.value)}
-                    ></textarea>
+                    <div className="form-group">
+                      <div className="relative">
+                        <textarea
+                          placeholder="Your Address..."
+                          required=""
+                          cols="50"
+                          rows="10"
+                          id="textarea"
+                          name="user_message"
+                          value={message}
+                          onChange={e => setMessage(e.target.value)}
+                          type="text"
+                        ></textarea>
+
+                        <div className="absolute lg:left-80 lg:top-4 md:left-80 left-80 top-4 text-[#45F882]">
+                          <FaRegMessage></FaRegMessage>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <input
                     type="submit"
@@ -147,19 +157,6 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className="relative">
-          <input
-            placeholder="Enter your text..."
-            class="inputuu"
-            name="text"
-            type="text"
-          ></input>
-
-          <div className="absolute left-44 top-3 text-[#45F882]">
-            <FaRegUser></FaRegUser>
-          </div>
-        </div> */}
       </div>
     </contactform>
   );
