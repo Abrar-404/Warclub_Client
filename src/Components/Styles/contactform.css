@@ -1,19 +1,19 @@
 contactform .inputuu {
-  background-color: #0F1C23;
-  max-width: 190px;
+  background-color: #0f1c23;
+  max-width: 250px;
   height: 40px;
   padding: 10px;
   /* text-align: center; */
-  border: 2px solid white;
+  border: 2px solid #45f882;
   border-radius: 5px;
   /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
 }
 
 contactform .inputuu:focus {
-  color: rgb(0, 255, 255);
+  color: rgba(1, 200, 80, 0.994);
   background-color: #212121;
-  outline-color: rgb(0, 255, 255);
-  box-shadow: -3px -3px 15px rgb(0, 255, 255);
-  transition: .1s;
+  outline-color: rgba(1, 200, 80, 0.994);
+  box-shadow: -3px -3px 15px rgba(1, 200, 80, 0.994);
+  transition: 0.1s;
   transition-property: box-shadow;
 }
