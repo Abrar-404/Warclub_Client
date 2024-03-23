@@ -238,11 +238,12 @@ const ContactForm = () => {
                   </h1>
                 </div>
                 <div>
-                  <h1 className="text-gray-400 lg:text-sm md:text-xs text-xs">
-                    Floor 2, 4 Naval St, Ancoats, Manchester M4 6EW, United{' '}
-                    <br />
-                    Kingdom
-                  </h1>
+                  <a
+                    href="mailto:info@warclub.com"
+                    className="text-gray-400 lg:text-sm md:text-xs text-xs"
+                  >
+                    Office Mail: info@warclub.com
+                  </a>
                 </div>
               </div>
             </div>
