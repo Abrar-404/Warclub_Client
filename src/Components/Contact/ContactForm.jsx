@@ -171,9 +171,15 @@ const ContactForm = () => {
 
           <div className="ml-6">
             <h1 className="text-white text-2xl font-bold">
-              Contact Us & Meet Our Team{' '}
-              <span className="text-[#45F882]">!</span>
+              Contact Information's <span className="text-[#45F882]">!</span>
             </h1>
+          </div>
+
+
+          <div>
+            <div>
+              
+            </div>
           </div>
         </div>
       </div>
