@@ -7,9 +7,9 @@ import '../Styles/form.css';
 import { CiMail } from 'react-icons/ci';
 import { FaRegAddressCard } from 'react-icons/fa';
 import { FaRegMessage } from 'react-icons/fa6';
-import mapImg from '../../assets/mapIcon.svg'
-import phoneIcon from '../../assets/phoneIcon.svg'
-import envelopIcon from '../../assets/envelop.svg'
+import mapImg from '../../assets/mapIcon.svg';
+import phoneIcon from '../../assets/phoneIcon.svg';
+import envelopIcon from '../../assets/envelop.svg';
 
 const ContactForm = () => {
   const form = useRef();
@@ -179,17 +179,18 @@ const ContactForm = () => {
           </div>
 
           <div>
-            <div>
+            <div className="flex gap-5 mx-auto w-[35%] items-center py-4 px-5 bg-[#0F1C23] rounded-3xl">
               <div>
                 <img src={mapImg} alt="" />
               </div>
               <div>
                 <div>
-                  <h1 className="text-white font-bold lg:text-xl">ADDRESS:</h1>
+                  <h1 className="text-white font-bold lg:text-lg ">ADDRESS:</h1>
                 </div>
                 <div>
-                  <h1 className='text-gray-400 lg:text-sm'>
-                    Floor 2, 4 Naval St, Ancoats, Manchester M4 6EW, United <br />
+                  <h1 className="text-gray-400 lg:text-sm">
+                    Floor 2, 4 Naval St, Ancoats, Manchester M4 6EW, United{' '}
+                    <br />
                     Kingdom
                   </h1>
                 </div>
