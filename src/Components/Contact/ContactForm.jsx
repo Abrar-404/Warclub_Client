@@ -4,6 +4,8 @@ import emailjs from '@emailjs/browser';
 import '../Styles/contactform.css';
 import { FaRegUser } from 'react-icons/fa';
 import '../Styles/form.css';
+import { CiMail } from 'react-icons/ci';
+
 
 const ContactForm = () => {
   const form = useRef();
@@ -90,14 +92,18 @@ const ContactForm = () => {
                       <div className="form-group">
                         <div className="relative">
                           <input
-                            placeholder="Email Address..."
-                            class="inputuu"
-                            name="text"
-                            type="text"
+                            placeholder='Email Address...'
+                            required=""
+                            name="user_email"
+                            className='inputuu'
+                            id="email"
+                            type="email"
+                            value={email}
+                            onChange={e => setEmail(e.target.value)}
                           ></input>
 
                           <div className="absolute lg:left-32 md:left-40 left-40 top-3 text-[#45F882]">
-                            <FaRegUser></FaRegUser>
+                            <CiMail></CiMail>
                           </div>
                         </div>
                       </div>
