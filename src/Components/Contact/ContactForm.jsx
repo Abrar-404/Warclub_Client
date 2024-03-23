@@ -53,7 +53,7 @@ const ContactForm = () => {
 
   return (
     <contactform>
-      <div className="">
+      <div className="flex justify-evenly items-center">
         <div>
           <div className="ml-5">
             <h1 className="text-[#45F882] text-base font-semibold">
@@ -178,7 +178,7 @@ const ContactForm = () => {
             </h1>
           </div>
 
-          <div className="flex justify-start">
+          <div className="flex justify-start mt-5">
             <div className="ml-5">
               <div className="flex gap-5 mx-auto lg:w-[100%] md:w-[100%] items-center py-4 px-5 bg-[#0F1C23] border border-gray-400 hover:border-[#45F882] rounded-3xl">
                 <div>
