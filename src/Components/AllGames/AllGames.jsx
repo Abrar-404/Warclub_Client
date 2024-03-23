@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import aboutBg from '../../assets/aboutusbg.png'
+import aboutBg from '../../assets/aboutusbg.png';
 import { IoIosArrowForward } from 'react-icons/io';
 
 const AllGames = () => {
@@ -9,7 +9,7 @@ const AllGames = () => {
         <div style={{ backgroundImage: `url(${aboutBg})` }}>
           <div className="mx-auto pt-32 pb-32">
             <h1 className="text-white font-bold lg:text-3xl text-center">
-              About Us
+              Our Latest Games
             </h1>
 
             <div className="text-white font-semibold text-sm text-center flex justify-center mx-auto items-center pt-2">
@@ -21,9 +21,14 @@ const AllGames = () => {
               <div>
                 <IoIosArrowForward></IoIosArrowForward>
               </div>
-              <div>About Us</div>
+              <div>Latest Games</div>
             </div>
           </div>
+        </div>
+
+
+        <div>
+          
         </div>
       </div>
     </div>
