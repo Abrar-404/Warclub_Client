@@ -53,7 +53,7 @@ const ContactForm = () => {
 
   return (
     <contactform>
-      <div className="flex justify-evenly items-center">
+      <div className="flex justify-evenly items-center mx-auto mt-32">
         <div>
           <div className="ml-5">
             <h1 className="text-[#45F882] text-base font-semibold">

@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
-import aboutBg from '../../assets/aboutusbg.png'
+import aboutBg from '../../assets/aboutusbg.png';
 import { IoIosArrowForward } from 'react-icons/io';
 import ContactForm from './ContactForm';
+import contactBg from '../../assets/ContactBG.png';
 
 const Contact = () => {
   return (
@@ -27,8 +28,10 @@ const Contact = () => {
           </div>
         </div>
 
-        <div>
-          <ContactForm></ContactForm>
+        <div style={{ backgroundImage: `url(${contactBg})` }}>
+          <div className="pt-32">
+            <ContactForm></ContactForm>
+          </div>
         </div>
       </div>
     </>
