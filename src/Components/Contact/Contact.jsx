@@ -28,8 +28,9 @@ const Contact = () => {
           </div>
         </div>
 
-        <div style={{ backgroundImage: `url(${contactBg})` }}>
-          <div className="pt-32">
+        <div>
+          <div
+          >
             <ContactForm></ContactForm>
           </div>
         </div>

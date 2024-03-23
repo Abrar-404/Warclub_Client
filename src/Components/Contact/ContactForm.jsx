@@ -53,8 +53,8 @@ const ContactForm = () => {
 
   return (
     <contactform>
-      <div className="flex justify-evenly items-center mx-auto mt-32">
-        <div>
+      <div className="flex justify-evenly items-center mx-auto gap-20 mt-32">
+        <div data-aos="fade-right">
           <div className="ml-5">
             <h1 className="text-[#45F882] text-base font-semibold">
               # GET IN TOUCH
@@ -165,7 +165,7 @@ const ContactForm = () => {
           </div>
         </div>
 
-        <div>
+        <div data-aos="fade-left">
           <div className="ml-5">
             <h1 className="text-[#45F882] text-base font-semibold">
               # INFORMATION
