@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import Swal from "sweetalert2";
 import emailjs from '@emailjs/browser';
+import '../Styles/contactform.css'
 
 const ContactForm = () => {
 
@@ -43,7 +44,7 @@ const ContactForm = () => {
     };
 
   return (
-    <div>
+    <contactform>
       <div>
         <div>
           <h1 className="text-[#45F882] text-base font-semibold">
@@ -58,10 +59,15 @@ const ContactForm = () => {
         </div>
 
         <div>
-
+          <input
+            placeholder="Enter your text..."
+            class="inputuu"
+            name="text"
+            type="text"
+          ></input>
         </div>
       </div>
-    </div>
+    </contactform>
   );
 };
 
