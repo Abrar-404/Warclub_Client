@@ -29,6 +29,7 @@ const ContactForm = () => {
           Swal.fire({
             position: 'center',
             icon: 'success',
+            color: '#45F882',
             title: 'Message Sent Successfully',
             showConfirmButton: false,
             background: '#2B3445',
@@ -49,112 +50,130 @@ const ContactForm = () => {
 
   return (
     <contactform>
-      <div>
+      <div className="">
         <div>
-          <h1 className="text-[#45F882] text-base font-semibold">
-            # GET IN TOUCH
-          </h1>
-        </div>
+          <div className="ml-5">
+            <h1 className="text-[#45F882] text-base font-semibold">
+              # GET IN TOUCH
+            </h1>
+          </div>
 
-        <div>
-          <h1 className="text-white text-2xl font-bold">
-            Contact Us & Meet Our Team <span className="text-[#45F882]">!</span>
-          </h1>
-        </div>
+          <div className="ml-6">
+            <h1 className="text-white text-2xl font-bold">
+              Contact Us & Meet Our Team{' '}
+              <span className="text-[#45F882]">!</span>
+            </h1>
+          </div>
 
-        <div>
           <div>
             <div>
-              <div className="form-container">
-                <form className="form" ref={form} onSubmit={sendEmail}>
-                  <div className="flex justify-center lg:flex-row md:flex-col flex-col gap-6">
-                    <div>
+              <div className="">
+                <div className="form-container">
+                  <form className="form" ref={form} onSubmit={sendEmail}>
+                    <div className="flex justify-center lg:flex-row md:flex-col flex-col gap-6">
+                      <div>
+                        <div className="form-group">
+                          <div className="relative">
+                            <input
+                              placeholder="Your Name..."
+                              required=""
+                              name="from_name"
+                              className="inputuu"
+                              id="name"
+                              type="text"
+                              value={name}
+                              onChange={e => setName(e.target.value)}
+                            ></input>
+
+                            <div className="absolute lg:left-32 md:left-40 left-40 top-3 text-[#45F882]">
+                              <FaRegUser></FaRegUser>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div className="form-group">
+                          <div className="relative">
+                            <input
+                              placeholder="Email Address..."
+                              required=""
+                              name="user_email"
+                              className="inputuu"
+                              id="email"
+                              type="email"
+                              value={email}
+                              onChange={e => setEmail(e.target.value)}
+                            ></input>
+
+                            <div className="absolute lg:left-32 md:left-40 left-40 top-3 text-[#45F882]">
+                              <CiMail></CiMail>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-group">
                       <div className="form-group">
                         <div className="relative">
                           <input
-                            placeholder="Your Name..."
+                            placeholder="Your Address..."
                             required=""
-                            name="from_name"
-                            className="inputuu"
-                            id="name"
                             type="text"
-                            value={name}
-                            onChange={e => setName(e.target.value)}
                           ></input>
 
-                          <div className="absolute lg:left-32 md:left-40 left-40 top-3 text-[#45F882]">
-                            <FaRegUser></FaRegUser>
+                          <div className="absolute lg:left-80 lg:top-4 md:left-80 left-80 top-4 text-[#45F882]">
+                            <FaRegAddressCard></FaRegAddressCard>
                           </div>
                         </div>
                       </div>
                     </div>
-
-                    <div>
+                    <div className="form-group">
                       <div className="form-group">
                         <div className="relative">
-                          <input
-                            placeholder="Email Address..."
+                          <textarea
+                            placeholder="Your Address..."
                             required=""
-                            name="user_email"
-                            className="inputuu"
-                            id="email"
-                            type="email"
-                            value={email}
-                            onChange={e => setEmail(e.target.value)}
-                          ></input>
+                            cols="50"
+                            rows="10"
+                            id="textarea"
+                            name="user_message"
+                            value={message}
+                            onChange={e => setMessage(e.target.value)}
+                            type="text"
+                          ></textarea>
 
-                          <div className="absolute lg:left-32 md:left-40 left-40 top-3 text-[#45F882]">
-                            <CiMail></CiMail>
+                          <div className="absolute lg:left-80 lg:top-4 md:left-80 left-80 top-4 text-[#45F882]">
+                            <FaRegMessage></FaRegMessage>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="form-group">
-                    <div className="form-group">
-                      <div className="relative">
-                        <input
-                          placeholder="Your Address..."
-                          required=""
-                          type="text"
-                        ></input>
-
-                        <div className="absolute lg:left-80 lg:top-4 md:left-80 left-80 top-4 text-[#45F882]">
-                          <FaRegAddressCard></FaRegAddressCard>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-group">
-                    <div className="form-group">
-                      <div className="relative">
-                        <textarea
-                          placeholder="Your Address..."
-                          required=""
-                          cols="50"
-                          rows="10"
-                          id="textarea"
-                          name="user_message"
-                          value={message}
-                          onChange={e => setMessage(e.target.value)}
-                          type="text"
-                        ></textarea>
-
-                        <div className="absolute lg:left-80 lg:top-4 md:left-80 left-80 top-4 text-[#45F882]">
-                          <FaRegMessage></FaRegMessage>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <input
-                    type="submit"
-                    className="form-submit-btn"
-                    name=""
-                    id=""
-                  />
-                </form>
+                    <input
+                      type="submit"
+                      className="form-submit-btn"
+                      name=""
+                      id=""
+                    />
+                  </form>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div>
+          <div className="ml-5">
+            <h1 className="text-[#45F882] text-base font-semibold">
+              # INFORMATION
+            </h1>
+          </div>
+
+          <div className="ml-6">
+            <h1 className="text-white text-2xl font-bold">
+              Contact Us & Meet Our Team{' '}
+              <span className="text-[#45F882]">!</span>
+            </h1>
           </div>
         </div>
       </div>
