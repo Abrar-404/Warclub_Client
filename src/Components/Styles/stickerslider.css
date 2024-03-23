@@ -82,5 +82,5 @@ stickers .hover-zoom img {
 }
 
 stickers .hover-zoom:hover img {
-  transform: scale(1.1);
+  transform: scale(1.3);
 }

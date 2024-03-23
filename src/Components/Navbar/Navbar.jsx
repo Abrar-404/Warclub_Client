@@ -40,7 +40,7 @@ const Navbar = () => {
       </li>
       <li className="nav-link">
         <NavLink
-          to="/allgame"
+          to="/allGames"
           className={({ isActive }) => (isActive ? 'active' : 'default')}
         >
           All GAMES
@@ -96,7 +96,7 @@ const Navbar = () => {
         <NavLink to="/aboutUs">About Us</NavLink>
       </li>
       <li className="nav-link">
-        <NavLink to="/allgame">All GAMES</NavLink>
+        <NavLink to="/allGames">All GAMES</NavLink>
       </li>
       <li className="nav-link">
         <NavLink to="/blog">BLOGS</NavLink>

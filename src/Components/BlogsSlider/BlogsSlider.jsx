@@ -158,7 +158,7 @@ export default function BlogSlider() {
           <SwiperSlide className="px-5 rounded-xl py-5">
             <div>
               <div className="hover-zoom">
-                <img src={blogPic3} alt="" />
+                <img  src={blogPic3} alt="" />
               </div>
 
               <div>
