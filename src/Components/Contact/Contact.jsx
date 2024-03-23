@@ -3,6 +3,7 @@ import aboutBg from '../../assets/aboutusbg.png';
 import { IoIosArrowForward } from 'react-icons/io';
 import ContactForm from './ContactForm';
 import Map from './Map';
+import AboutFooter from '../AboutUs/AboutFooter';
 
 const Contact = () => {
   return (
@@ -28,13 +29,16 @@ const Contact = () => {
           </div>
         </div>
 
-          <div
-          >
-            <ContactForm></ContactForm>
-        </div>
-        
         <div>
-<Map></Map>
+          <ContactForm></ContactForm>
+        </div>
+
+        <div className="mt-32">
+          <Map></Map>
+        </div>
+
+        <div>
+          <AboutFooter></AboutFooter>
         </div>
       </div>
     </>
