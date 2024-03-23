@@ -179,7 +179,7 @@ const ContactForm = () => {
           </div>
 
           <div>
-            <div className="flex gap-5 mx-auto w-[35%] items-center py-4 px-5 bg-[#0F1C23] rounded-3xl">
+            <div className="flex gap-5 mx-auto w-[35%] items-center py-4 px-5 bg-[#0F1C23] border-2 border-gray-400 hover:border-[] rounded-3xl">
               <div>
                 <img src={mapImg} alt="" />
               </div>
