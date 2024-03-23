@@ -5,7 +5,7 @@ import '../Styles/contactform.css';
 import { FaRegUser } from 'react-icons/fa';
 import '../Styles/form.css';
 import { CiMail } from 'react-icons/ci';
-
+import { FaRegAddressCard } from 'react-icons/fa';
 
 const ContactForm = () => {
   const form = useRef();
@@ -92,10 +92,10 @@ const ContactForm = () => {
                       <div className="form-group">
                         <div className="relative">
                           <input
-                            placeholder='Email Address...'
+                            placeholder="Email Address..."
                             required=""
                             name="user_email"
-                            className='inputuu'
+                            className="inputuu"
                             id="email"
                             type="email"
                             value={email}
@@ -110,11 +110,19 @@ const ContactForm = () => {
                     </div>
                   </div>
                   <div className="form-group">
-                    <input
-                      placeholder='Your Address...'
-                      type='text'
-                      className='inputuu'
-                    />
+                    <div className="form-group">
+                      <div className="relative">
+                        <input
+                          placeholder="Your Address..."
+                          required=""
+                          type="text"
+                        ></input>
+
+                        <div className="absolute lg:left-32 md:left-40 left-40 top-3 text-[#45F882]">
+                          <FaRegAddressCard></FaRegAddressCard>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div className="form-group">
                     <label htmlFor="textarea">Message</label>
