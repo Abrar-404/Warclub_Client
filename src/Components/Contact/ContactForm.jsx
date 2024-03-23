@@ -178,78 +178,82 @@ const ContactForm = () => {
             </h1>
           </div>
 
-          <div>
-            <div className="flex gap-5 mx-auto lg:w-[37%] md:w-[60%] items-center py-4 px-5 bg-[#0F1C23] border border-gray-400 hover:border-[#45F882] rounded-3xl">
-              <div>
-                <img src={mapImg} alt="" />
-              </div>
-              <div>
+          <div className="flex justify-start">
+            <div className="ml-5">
+              <div className="flex gap-5 mx-auto lg:w-[100%] md:w-[100%] items-center py-4 px-5 bg-[#0F1C23] border border-gray-400 hover:border-[#45F882] rounded-3xl">
                 <div>
-                  <h1 className="text-white font-bold lg:text-lg ">ADDRESS:</h1>
+                  <img src={mapImg} alt="" />
                 </div>
                 <div>
-                  <a
-                    href="https://www.google.com/maps"
-                    className="text-gray-400 lg:text-sm md:text-xs text-xs"
-                  >
-                    Floor 2, 4 Naval St, Ancoats, Manchester M4 6EW, United{' '}
-                    <br />
-                    Kingdom
-                  </a>
+                  <div>
+                    <h1 className="text-white font-bold lg:text-lg ">
+                      ADDRESS:
+                    </h1>
+                  </div>
+                  <div>
+                    <a
+                      href="https://www.google.com/maps"
+                      className="text-gray-400 lg:text-sm md:text-xs text-xs"
+                    >
+                      Floor 2, 4 Naval St, Ancoats, Manchester M4 6EW, United{' '}
+                      <br />
+                      Kingdom
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="flex gap-5 mx-auto lg:w-[37%] md:w-[60%] items-center py-4 px-5 bg-[#0F1C23] border border-gray-400 hover:border-[#45F882] rounded-3xl">
-              <div>
-                <img src={phoneIcon} alt="" />
-              </div>
-              <div>
+              <div className="flex gap-5 mx-auto lg:w-[100%] md:w-[100%] items-center mt-5 py-4 px-5 bg-[#0F1C23] border border-gray-400 hover:border-[#45F882] rounded-3xl">
                 <div>
-                  <h1 className="text-white font-bold lg:text-lg ">
-                    OFFICE NUMBER:
-                  </h1>
+                  <img src={phoneIcon} alt="" />
                 </div>
                 <div>
-                  <a
-                    href="tel:16365981254"
-                    className="text-gray-400 lg:text-sm md:text-xs text-xs"
-                  >
-                    Mobile: +163 6598 1254 <br />
-                  </a>
-                  <a
-                    href="tel:16365981254"
-                    className="text-gray-400 lg:text-sm md:text-xs text-xs"
-                  >
-                    Fax: +163 6985 2365
-                  </a>
+                  <div>
+                    <h1 className="text-white font-bold lg:text-lg ">
+                      OFFICE NUMBER:
+                    </h1>
+                  </div>
+                  <div>
+                    <a
+                      href="tel:16365981254"
+                      className="text-gray-400 lg:text-sm md:text-xs text-xs"
+                    >
+                      Mobile: +163 6598 1254 <br />
+                    </a>
+                    <a
+                      href="tel:16365981254"
+                      className="text-gray-400 lg:text-sm md:text-xs text-xs"
+                    >
+                      Fax: +163 6985 2365
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="flex gap-5 mx-auto lg:w-[37%] md:w-[60%] items-center py-4 px-5 bg-[#0F1C23] border border-gray-400 hover:border-[#45F882] rounded-3xl">
-              <div>
-                <img src={envelopIcon} alt="" />
-              </div>
-              <div>
+              <div className="flex gap-5 mx-auto lg:w-[100%] md:w-[100%] items-center py-4 mt-5 px-5 bg-[#0F1C23] border border-gray-400 hover:border-[#45F882] rounded-3xl">
                 <div>
-                  <h1 className="text-white font-bold lg:text-lg ">
-                    OFFICE EMAIL:
-                  </h1>
+                  <img src={envelopIcon} alt="" />
                 </div>
                 <div>
-                  <a
-                    href="mailto:info@warclub.com"
-                    className="text-gray-400 lg:text-sm md:text-xs text-xs"
-                  >
-                    Office Mail: info@warclub.com
-                  </a>
-                  <a
-                    href="mailto:info@warclubceo.com"
-                    class="text-gray-400 lg:text-sm md:text-xs text-xs"
-                  >
-                    CEO Mail: info@warclubceo.com
-                  </a>
+                  <div>
+                    <h1 className="text-white font-bold lg:text-lg ">
+                      OFFICE EMAIL:
+                    </h1>
+                  </div>
+                  <div>
+                    <a
+                      href="mailto:info@warclub.com"
+                      className="text-gray-400 lg:text-sm md:text-xs text-xs"
+                    >
+                      Office Mail: info@warclub.com
+                    </a>
+                    <a
+                      href="mailto:info@warclubceo.com"
+                      class="text-gray-400 lg:text-sm md:text-xs text-xs"
+                    >
+                      CEO Mail: info@warclubceo.com
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
