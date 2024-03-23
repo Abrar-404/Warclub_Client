@@ -12,7 +12,7 @@ const AllGamesCardFetch = () => {
 
   return (
     <div>
-      <div>
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto max-w-5xl gap-10">
         {getGames?.map(gamesItems => (
           <AllGamesCard
             key={gamesItems?.id}
