@@ -8,7 +8,7 @@ import Login from './Components/Pages/Login/Login';
 import AuthProvider from './Providers/AuthProvider.jsx';
 import AboutUs from './Components/AboutUs/AboutUs';
 import Contact from './Components/Contact/Contact';
-import Blog from './Components/BlogPage/Blog';
+import Blog from './Components/BlogPage/Blog/Blog.jsx';
 
 const router = createBrowserRouter([
   {
