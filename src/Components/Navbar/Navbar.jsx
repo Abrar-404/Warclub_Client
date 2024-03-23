@@ -56,10 +56,10 @@ const Navbar = () => {
       </li>
       <li className="nav-link">
         <NavLink
-          to="/support"
+          to="/contact"
           className={({ isActive }) => (isActive ? 'active' : 'default')}
         >
-          SUPPORT
+          CONTACT
         </NavLink>
       </li>
       <li className="nav-link">
@@ -102,7 +102,7 @@ const Navbar = () => {
         <NavLink to="/blogs">BLOGS</NavLink>
       </li>
       <li className="nav-link">
-        <NavLink to="/support">SUPPORT</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </li>
       <li className="nav-link">
         <NavLink to="/tournament">Tournaments</NavLink>
