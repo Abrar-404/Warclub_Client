@@ -185,7 +185,13 @@ const ContactForm = () => {
               </div>
               <div>
                 <div>
-                  <h1 className='text-white font-bold lg:text-xl'>ADDRESS:</h1>
+                  <h1 className="text-white font-bold lg:text-xl">ADDRESS:</h1>
+                </div>
+                <div>
+                  <h1 className='text-gray-400 lg:text-sm'>
+                    Floor 2, 4 Naval St, Ancoats, Manchester M4 6EW, United <br />
+                    Kingdom
+                  </h1>
                 </div>
               </div>
             </div>
