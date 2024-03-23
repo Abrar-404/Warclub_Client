@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import aboutBg from '../../assets/aboutusbg.png'
 import { IoIosArrowForward } from 'react-icons/io';
+import ContactForm from './ContactForm';
 
 const Contact = () => {
   return (
@@ -24,6 +25,10 @@ const Contact = () => {
               <div>Contact Us</div>
             </div>
           </div>
+        </div>
+
+        <div>
+          <ContactForm></ContactForm>
         </div>
       </div>
     </>
