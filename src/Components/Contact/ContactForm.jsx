@@ -110,14 +110,10 @@ const ContactForm = () => {
                     </div>
                   </div>
                   <div className="form-group">
-                    <label htmlFor="email">Email</label>
                     <input
-                      required=""
-                      name="user_email"
-                      id="email"
-                      type="email"
-                      value={email}
-                      onChange={e => setEmail(e.target.value)}
+                      placeholder='Your Address...'
+                      type='text'
+                      className='inputuu'
                     />
                   </div>
                   <div className="form-group">
