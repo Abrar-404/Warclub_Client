@@ -70,9 +70,13 @@ const ContactForm = () => {
                         <div className="relative">
                           <input
                             placeholder="Your Name..."
-                            class="inputuu"
-                            name="text"
+                            required=""
+                            name="from_name"
+                            className="inputuu"
+                            id="name"
                             type="text"
+                            value={name}
+                            onChange={e => setName(e.target.value)}
                           ></input>
 
                           <div className="absolute lg:left-32 md:left-40 left-40 top-3 text-[#45F882]">
@@ -92,7 +96,7 @@ const ContactForm = () => {
                             type="text"
                           ></input>
 
-                          <div className="absolute left-32 top-3 text-[#45F882]">
+                          <div className="absolute lg:left-32 md:left-40 left-40 top-3 text-[#45F882]">
                             <FaRegUser></FaRegUser>
                           </div>
                         </div>
