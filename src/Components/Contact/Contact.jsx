@@ -28,11 +28,13 @@ const Contact = () => {
           </div>
         </div>
 
-        <div>
           <div
           >
             <ContactForm></ContactForm>
-          </div>
+        </div>
+        
+        <div>
+          
         </div>
       </div>
     </>
