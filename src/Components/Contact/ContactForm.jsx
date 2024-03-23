@@ -7,6 +7,9 @@ import '../Styles/form.css';
 import { CiMail } from 'react-icons/ci';
 import { FaRegAddressCard } from 'react-icons/fa';
 import { FaRegMessage } from 'react-icons/fa6';
+import mapImg from '../../assets/mapIcon.svg'
+import phoneIcon from '../../assets/phoneIcon.svg'
+import envelopIcon from '../../assets/envelop.svg'
 
 const ContactForm = () => {
   const form = useRef();
@@ -178,7 +181,7 @@ const ContactForm = () => {
 
           <div>
             <div>
-              
+
             </div>
           </div>
         </div>
