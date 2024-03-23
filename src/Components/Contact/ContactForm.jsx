@@ -178,10 +178,16 @@ const ContactForm = () => {
             </h1>
           </div>
 
-
           <div>
             <div>
-
+              <div>
+                <img src={mapImg} alt="" />
+              </div>
+              <div>
+                <div>
+                  <h1 className='text-white font-bold lg:text-xl'>ADDRESS:</h1>
+                </div>
+              </div>
             </div>
           </div>
         </div>
