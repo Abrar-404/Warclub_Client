@@ -179,7 +179,7 @@ const ContactForm = () => {
           </div>
 
           <div>
-            <div className="flex gap-5 mx-auto w-[35%] items-center py-4 px-5 bg-[#0F1C23] border-2 border-gray-400 hover:border-[] rounded-3xl">
+            <div className="flex gap-5 mx-auto lg:w-[37%] md:w-[60%] items-center py-4 px-5 bg-[#0F1C23] border border-gray-400 hover:border-[#45F882] rounded-3xl">
               <div>
                 <img src={mapImg} alt="" />
               </div>
@@ -188,7 +188,7 @@ const ContactForm = () => {
                   <h1 className="text-white font-bold lg:text-lg ">ADDRESS:</h1>
                 </div>
                 <div>
-                  <h1 className="text-gray-400 lg:text-sm">
+                  <h1 className="text-gray-400 lg:text-sm md:text-xs text-xs">
                     Floor 2, 4 Naval St, Ancoats, Manchester M4 6EW, United{' '}
                     <br />
                     Kingdom
