@@ -247,6 +247,7 @@ const ContactForm = () => {
                     >
                       Office Mail: info@warclub.com
                     </a>
+                    <br />
                     <a
                       href="mailto:info@warclubceo.com"
                       class="text-gray-400 lg:text-sm md:text-xs text-xs"
