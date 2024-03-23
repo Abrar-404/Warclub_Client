@@ -118,7 +118,7 @@ const ContactForm = () => {
                           type="text"
                         ></input>
 
-                        <div className="absolute lg:left-32 md:left-40 left-40 top-3 text-[#45F882]">
+                        <div className="absolute lg:left-80 lg:top-4 md:left-40 left-40 top-3 text-[#45F882]">
                           <FaRegAddressCard></FaRegAddressCard>
                         </div>
                       </div>
