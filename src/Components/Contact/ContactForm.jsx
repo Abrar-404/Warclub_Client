@@ -188,11 +188,14 @@ const ContactForm = () => {
                   <h1 className="text-white font-bold lg:text-lg ">ADDRESS:</h1>
                 </div>
                 <div>
-                  <h1 className="text-gray-400 lg:text-sm md:text-xs text-xs">
+                  <a
+                    href="https://www.google.com/maps"
+                    className="text-gray-400 lg:text-sm md:text-xs text-xs"
+                  >
                     Floor 2, 4 Naval St, Ancoats, Manchester M4 6EW, United{' '}
                     <br />
                     Kingdom
-                  </h1>
+                  </a>
                 </div>
               </div>
             </div>
@@ -208,10 +211,18 @@ const ContactForm = () => {
                   </h1>
                 </div>
                 <div>
-                  <h1 className="text-gray-400 lg:text-sm md:text-xs text-xs">
+                  <a
+                    href="tel:16365981254"
+                    className="text-gray-400 lg:text-sm md:text-xs text-xs"
+                  >
                     Mobile: +163 6598 1254 <br />
+                  </a>
+                  <a
+                    href="tel:16365981254"
+                    className="text-gray-400 lg:text-sm md:text-xs text-xs"
+                  >
                     Fax: +163 6985 2365
-                  </h1>
+                  </a>
                 </div>
               </div>
             </div>
@@ -222,7 +233,9 @@ const ContactForm = () => {
               </div>
               <div>
                 <div>
-                  <h1 className="text-white font-bold lg:text-lg ">ADDRESS:</h1>
+                  <h1 className="text-white font-bold lg:text-lg ">
+                    OFFICE EMAIL:
+                  </h1>
                 </div>
                 <div>
                   <h1 className="text-gray-400 lg:text-sm md:text-xs text-xs">
