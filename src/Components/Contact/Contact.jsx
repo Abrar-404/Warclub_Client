@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import aboutBg from '../../assets/aboutusbg.png';
 import { IoIosArrowForward } from 'react-icons/io';
 import ContactForm from './ContactForm';
-import contactBg from '../../assets/ContactBG.png';
+import Map from './Map';
 
 const Contact = () => {
   return (
@@ -34,7 +34,7 @@ const Contact = () => {
         </div>
         
         <div>
-          
+<Map></Map>
         </div>
       </div>
     </>
