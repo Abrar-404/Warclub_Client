@@ -64,17 +64,38 @@ const ContactForm = () => {
             <div>
               <div className="form-container">
                 <form className="form" ref={form} onSubmit={sendEmail}>
-                  <div className="form-group">
-                    <div className="relative">
-                      <input
-                        placeholder="Enter your text..."
-                        class="inputuu"
-                        name="text"
-                        type="text"
-                      ></input>
+                  <div className="flex justify-center lg:flex-row md:flex-col flex-col gap-6">
+                    <div>
+                      <div className="form-group">
+                        <div className="relative">
+                          <input
+                            placeholder="Your Name..."
+                            class="inputuu"
+                            name="text"
+                            type="text"
+                          ></input>
 
-                      <div className="absolute left-40 top-3 text-[#45F882]">
-                        <FaRegUser></FaRegUser>
+                          <div className="absolute lg:left-32 md:left-40 left-40 top-3 text-[#45F882]">
+                            <FaRegUser></FaRegUser>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div className="form-group">
+                        <div className="relative">
+                          <input
+                            placeholder="Email Address..."
+                            class="inputuu"
+                            name="text"
+                            type="text"
+                          ></input>
+
+                          <div className="absolute left-32 top-3 text-[#45F882]">
+                            <FaRegUser></FaRegUser>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
