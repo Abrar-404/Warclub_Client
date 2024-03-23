@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import footerBgPic from '../../assets/AboutFooter.png';
 import Socials from '../Footer/Socials';
 import '../Styles/inputform.css';
@@ -13,10 +14,16 @@ const AboutFooter = () => {
       >
         <div className="">
           <div className="flex justify-center gap-14 items-center lg:flex-row md:flex-col flex-col pt-32">
-            <h1 className="text-white font-bold hover:text-[#45F882]">Home</h1>
-            <h1 className="text-white font-bold hover:text-[#45F882]">
-              About Us
-            </h1>
+            <Link to="/">
+              <h1 className="text-white font-bold hover:text-[#45F882]">
+                Home
+              </h1>
+            </Link>
+            <Link to='/aboutUs'>
+              <h1 className="text-white font-bold hover:text-[#45F882]">
+                About Us
+              </h1>
+            </Link>
             <h1 className="text-white font-bold hover:text-[#45F882]">Blog</h1>
             <h1 className="text-white font-bold hover:text-[#45F882]">
               Gallery
