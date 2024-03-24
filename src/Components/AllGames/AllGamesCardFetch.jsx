@@ -33,7 +33,7 @@ const AllGamesCardFetch = () => {
         ))}
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-20">
         <button className="bhututu" onClick={toggleShowAll}>
           {showAll ? 'See Less' : 'See More'}
         </button>
