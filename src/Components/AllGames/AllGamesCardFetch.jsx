@@ -20,6 +20,10 @@ const AllGamesCardFetch = () => {
           ></AllGamesCard>
         ))}
       </div>
+
+      <div className='flex justify-center'>
+        <button className='btn btn-primary'>See More</button>
+      </div>
     </div>
   );
 };
