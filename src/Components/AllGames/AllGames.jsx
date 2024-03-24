@@ -33,7 +33,7 @@ const AllGames = () => {
           <AllGamesCardFetch></AllGamesCardFetch>
         </div>
 
-        <div>
+        <div className='mt-32'>
           <AboutFooter></AboutFooter>
         </div>
       </div>
