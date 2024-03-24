@@ -3,54 +3,54 @@
     "name": "The Hunter Killer",
     "fee": 49.99,
     "review": 4.5,
-    "img": "https://example.com/the_hunter_killer_image.jpg"
+    "img": "https://i.ibb.co/qsrbc58/2-1.png"
   },
   {
     "name": "Fantasy Quest",
     "fee": 29.99,
     "review": 4.2,
-    "img": "https://example.com/fantasy_quest_image.jpg"
+    "img": "https://i.ibb.co/VHymCCP/2-2.png"
   },
   {
     "name": "COD Black Ops",
     "fee": 39.99,
     "review": 4.7,
-    "img": "https://example.com/cod_black_ops_image.jpg"
+    "img": "https://i.ibb.co/9rM8dVN/2-4.png"
   },
   {
     "name": "Vikings",
     "fee": 19.99,
     "review": 4.0,
-    "img": "https://example.com/vikings_image.jpg"
+    "img": "https://i.ibb.co/C2DsHRN/2-3.png"
   },
   {
     "name": "Titan Birds",
     "fee": 59.99,
     "review": 4.8,
-    "img": "https://example.com/titan_birds_image.jpg"
+    "img": "https://i.ibb.co/7SjnddN/2-5.png"
   },
   {
     "name": "Medieval Mayhem",
     "fee": 34.99,
     "review": 4.3,
-    "img": "https://example.com/medieval_mayhem_image.jpg"
+    "img": "https://i.ibb.co/c6hrfTh/2-6.png"
   },
   {
     "name": "Royal Treasures",
     "fee": 24.99,
     "review": 4.1,
-    "img": "https://example.com/royal_treasures_image.jpg"
+    "img": "https://i.ibb.co/qsrbc58/2-1.png"
   },
   {
     "name": "Wild West Shootout",
     "fee": 44.99,
     "review": 4.6,
-    "img": "https://example.com/wild_west_shootout_image.jpg"
+    "img": "https://i.ibb.co/c6hrfTh/2-6.png"
   },
   {
     "name": "Survival Island",
     "fee": 14.99,
     "review": 3.9,
-    "img": "https://example.com/survival_island_image.jpg"
+    "img": "https://i.ibb.co/9rM8dVN/2-4.png"
   }
 ]
