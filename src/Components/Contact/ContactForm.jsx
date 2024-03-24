@@ -53,7 +53,7 @@ const ContactForm = () => {
 
   return (
     <contactform>
-      <div className="flex justify-evenly items-center mx-auto gap-20 mt-32">
+      <div className="flex lg:flex-row md:flex-col flex-col justify-evenly items-center mx-auto gap-20 mt-32">
         <div data-aos="fade-right">
           <div className="ml-5">
             <h1 className="text-[#45F882] text-base font-semibold">
