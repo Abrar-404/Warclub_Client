@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import aboutBg from '../../assets/aboutusbg.png';
 import { IoIosArrowForward } from 'react-icons/io';
 import AllGamesCardFetch from './AllGamesCardFetch';
+import AboutFooter from '../AboutUs/AboutFooter';
 
 const AllGames = () => {
   return (
@@ -30,6 +31,10 @@ const AllGames = () => {
 
         <div>
           <AllGamesCardFetch></AllGamesCardFetch>
+        </div>
+
+        <div>
+          <AboutFooter></AboutFooter>
         </div>
       </div>
     </div>
