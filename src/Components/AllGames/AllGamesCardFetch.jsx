@@ -44,16 +44,16 @@ const AllGamesCardFetch = () => {
       .then(res => res.json())
       .then(data => {
         setGames(data);
-        setVisibleGames(data.slice(0, 6)); // Initially show only 6 games
+        setVisibleGames(data.slice(0, 6));
       });
   }, []);
 
   const toggleShowAll = () => {
     setShowAll(prev => !prev);
     if (!showAll) {
-      setVisibleGames(games); // Show all games
+      setVisibleGames(games);
     } else {
-      setVisibleGames(games.slice(0, 6)); // Show only 6 games
+      setVisibleGames(games.slice(0, 6));
     }
   };
 
