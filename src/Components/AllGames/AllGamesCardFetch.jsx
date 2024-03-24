@@ -5,7 +5,7 @@ const AllGamesCardFetch = () => {
   const [getGames, setGetGames] = useState();
 
   useEffect(() => {
-    fetch('https://server-pi-opal-58.vercel.app/games')
+    fetch('http://localhost:5000/games')
       .then(res => res.json())
       .then(data => setGetGames(data));
   }, []);
