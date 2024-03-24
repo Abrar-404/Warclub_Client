@@ -26,7 +26,7 @@ const AllGamesCard = ({ gamesItems }) => {
           </div>
         </div>
 
-        <div className="absolute bottom-[70%] lg:left-3 lg:right-3 md:left-3 md:right-3 ">
+        <div className="absolute bottom-[70%] lg:left-3 lg:right-3 md:left-3 md:right-3 left-3 right-3">
           <div className="hover-zoom">
             <img
               className="w-[350px] h-[250px] rounded-2xl "
