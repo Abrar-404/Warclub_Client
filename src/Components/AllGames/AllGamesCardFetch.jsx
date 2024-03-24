@@ -8,7 +8,7 @@ const AllGamesCardFetch = () => {
   const [visibleGames, setVisibleGames] = useState([]);
 
   useEffect(() => {
-    fetch('https://server-pi-opal-58.vercel.app/games')
+    fetch('http://localhost:5000/games')
       .then(res => res.json())
       .then(data => {
         setGames(data);
