@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import AllGamesCard from './AllGamesCard';
+import '../Styles/seemorebtn.css'
 
 const AllGamesCardFetch = () => {
   const [games, setGames] = useState([]);
@@ -25,7 +26,7 @@ const AllGamesCardFetch = () => {
   };
 
   return (
-    <div>
+    <allgamesfetch>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto max-w-5xl gap-10">
         {visibleGames.map(game => (
           <AllGamesCard key={game.id} gamesItems={game}></AllGamesCard>
@@ -33,11 +34,11 @@ const AllGamesCardFetch = () => {
       </div>
 
       <div className="flex justify-center">
-        <button className="btn btn-primary" onClick={toggleShowAll}>
+        <button className="bhututu" onClick={toggleShowAll}>
           {showAll ? 'See Less' : 'See More'}
         </button>
       </div>
-    </div>
+    </allgamesfetch>
   );
 };
 
