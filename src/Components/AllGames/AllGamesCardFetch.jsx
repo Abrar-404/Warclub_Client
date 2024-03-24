@@ -52,7 +52,7 @@ const AllGamesCardFetch = () => {
   const [games, setGames] = useState([]);
   const [showAll, setShowAll] = useState(false);
   const [visibleGames, setVisibleGames] = useState([]);
-  const [timer, setTimer] = useState(60); // Initial timer value in seconds
+  const [timer, setTimer] = useState(60);
 
   useEffect(() => {
     fetchGames();
@@ -75,7 +75,7 @@ const AllGamesCardFetch = () => {
         if (prevTimer === 0) {
           console.log('Timer reached zero, adding new game...');
           addNewGame();
-          return 60; // Reset timer
+          return 60;
         } else {
           return prevTimer - 1;
         }
@@ -96,7 +96,7 @@ const AllGamesCardFetch = () => {
       .then(res => res.json())
       .then(data => {
         console.log('New game added successfully:', data);
-        fetchGames(); // Update games list after adding new game
+        fetchGames();
       })
       .catch(error => console.error('Error adding new game:', error));
   };
@@ -105,7 +105,6 @@ const AllGamesCardFetch = () => {
     fetch('http://localhost:5000/timerGame')
       .then(res => res.json())
       .then(data => {
-        // Update games list after fetching timerGame data
         setGames(data);
         setVisibleGames(data.slice(0, 6));
       })
