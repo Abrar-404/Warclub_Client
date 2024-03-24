@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import AllGamesCard from './AllGamesCard';
-import '../Styles/seemorebtn.css'
+import '../Styles/seemorebtn.css';
 
 const AllGamesCardFetch = () => {
   const [games, setGames] = useState([]);
@@ -34,7 +34,7 @@ const AllGamesCardFetch = () => {
       </div>
 
       <div className="flex justify-center mt-20">
-        <button className="bhututu" onClick={toggleShowAll}>
+        <button className="bhututu rounded-xl" onClick={toggleShowAll}>
           {showAll ? 'See Less' : 'See More'}
         </button>
       </div>
