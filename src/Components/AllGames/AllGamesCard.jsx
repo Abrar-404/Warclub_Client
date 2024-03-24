@@ -5,7 +5,7 @@ const AllGamesCard = ({ gamesItems }) => {
   const { img, name, review, fee } = gamesItems || {};
 
   return (
-    <div className='mt-32'>
+    <div className="mt-32">
       <div className="border border-gray-400 pt-20 pb-10 w-auto pl-5 rounded-3xl relative mt-48">
         <div className="flex justify-center items-center mx-auto">
           <h1 className="text-white lg:text-xl font-semibold">{name}</h1>
@@ -26,7 +26,7 @@ const AllGamesCard = ({ gamesItems }) => {
           </div>
         </div>
 
-        <div className="absolute bottom-[70%] lg:left-3 lg:right-3 md:left-3 md:right-3 left-3 right-3">
+        <div className="absolute bottom-[70%] lg:left-3 lg:right-3 md:left-3 md:right-3 left-7 right-3">
           <div className="hover-zoom">
             <img
               className="w-[350px] h-[250px] rounded-2xl "
