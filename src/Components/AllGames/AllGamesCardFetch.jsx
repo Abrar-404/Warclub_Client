@@ -73,6 +73,7 @@ const AllGamesCardFetch = () => {
     const interval = setInterval(() => {
       setTimer(prevTimer => {
         if (prevTimer === 0) {
+          console.log('Timer reached zero, adding new game...');
           addNewGame();
           return 60; // Reset timer
         } else {
