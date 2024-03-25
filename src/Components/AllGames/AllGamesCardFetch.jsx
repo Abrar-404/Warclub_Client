@@ -44,7 +44,6 @@
 
 // export default AllGamesCardFetch;
 
-
 import React, { useEffect, useState } from 'react';
 import AllGamesCard from './AllGamesCard';
 import '../Styles/seemorebtn.css';
@@ -53,6 +52,7 @@ const AllGamesCardFetch = () => {
   const [games, setGames] = useState([]);
   const [showAll, setShowAll] = useState(false);
   const [visibleGames, setVisibleGames] = useState([]);
+  const [timer, setTimer] = useState(10); // Initial timer value in seconds
 
   useEffect(() => {
     fetchInitialGames();
@@ -91,17 +91,25 @@ const AllGamesCardFetch = () => {
     setShowAll(prev => !prev);
   };
 
-  const handleSeeMoreClick = () => {
-    fetchNewGameData();
-  };
-
   useEffect(() => {
-    const timer = setTimeout(() => {
-      fetchNewGameData(); // Fetch new game data after 10 seconds
-    }, 10000); // 10 seconds in milliseconds
+    const interval = setInterval(() => {
+      setTimer(prevTimer => prevTimer - 1); // Decrement timer every second
+    }, 1000); // Update timer every second
 
-    return () => clearTimeout(timer); // Clear the timer on component unmount
-  }, [games]); // Re-run the effect whenever games change
+    // Clear the timer when it reaches 0
+    if (timer === 0) {
+      clearInterval(interval);
+      setTimer(10); // Reset the timer to 10 seconds
+      fetchNewGameData(); // Fetch new game data after 10 seconds
+    }
+
+    return () => clearInterval(interval); // Clear the timer on component unmount
+  }, [timer, fetchNewGameData]); // Re-run the effect whenever timer or fetchNewGameData function changes
+
+  const handleSeeMoreClick = () => {
+    toggleShowAll();
+    fetchNewGameData(); // Fetch new game data when "See More" button is clicked
+  };
 
   return (
     <allgamesfetch>
@@ -112,18 +120,14 @@ const AllGamesCardFetch = () => {
       </div>
 
       <div className="flex justify-center mt-20">
-        <button className="bhututu rounded-xl" onClick={toggleShowAll}>
+        <button className="bhututu rounded-xl" onClick={handleSeeMoreClick}>
           {showAll ? 'See Less' : 'See More'}
         </button>
       </div>
 
-      {!showAll && (
-        <div className="flex justify-center mt-20">
-          <button className="bhututu rounded-xl" onClick={handleSeeMoreClick}>
-            See More
-          </button>
-        </div>
-      )}
+      <div className="flex justify-center mt-20">
+        <p className="text-white text-4xl">Timer: {timer}s</p>
+      </div>
     </allgamesfetch>
   );
 };
