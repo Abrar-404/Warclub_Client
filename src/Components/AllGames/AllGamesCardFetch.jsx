@@ -91,11 +91,11 @@
 
 import React, { useEffect, useState } from 'react';
 import AllGamesCard from './AllGamesCard';
-// import '../Styles/seemorebtn.css';
 import '../Styles/bannerBtn.css';
 import { MdDoubleArrow, MdPlayArrow } from 'react-icons/md';
-import LatestGames from '../LatestGames/LatestGames';
 import GameThumb from '../GameThumb/GameThumb';
+import sticker1 from '../../assets/sticker2.png';
+import sticker2 from '../../assets/sticker3.png';
 
 const AllGamesCardFetch = () => {
   const [games, setGames] = useState([]);
@@ -232,7 +232,20 @@ const AllGamesCardFetch = () => {
       </div>
 
       <div className=" border-8 rounded-[600px] py-32 border-t-0 border-b-0 hover:border-[#3CCF70] mt-32 mb-10">
-        <div className="flex justify-center mt-5 text-3xl gap-2 mx-auto w-1/2 py-28 rounded-[600px] border-t-0 border-b-0 border-red-600 border-8 hover:border-[#3CCF70]">
+        <div className="text-center mt-5 text-3xl gap-2 mx-auto w-1/2 py-28 rounded-[600px] border-t-0 border-b-0 border-red-600 border-8 hover:border-[#3CCF70]">
+          <div className="mb-5">
+            <label className="swap swap-flip text-9xl">
+              {/* this hidden checkbox controls the state */}
+              <input type="checkbox" />
+
+              <div className="swap-on">
+                <img src={sticker1} alt="" />
+              </div>
+              <div className="swap-off">
+                <img src={sticker2} alt="" />
+              </div>
+            </label>
+          </div>{' '}
           <h1 className="text-white text-3xl text-center font-bold">
             Upcoming <span className="text-[#3CCF70]">Games</span>
           </h1>
