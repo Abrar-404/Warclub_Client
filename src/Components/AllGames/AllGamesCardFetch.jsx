@@ -169,7 +169,7 @@ const AllGamesCardFetch = () => {
     const minutes = Math.floor((timer % (60 * 60)) / 60);
     const seconds = timer % 60;
 
-    return `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    return <div className='text-green-400 font-bold'>{`${days}d ${hours}h ${minutes}m ${seconds}s`}</div>;
   };
 
   const handleSeeMoreClick = () => {
@@ -229,14 +229,12 @@ const AllGamesCardFetch = () => {
         </button>
       </div>
 
-      <div className="flex justify-center mt-20">
-        <p className="text-white text-4xl">Timer: {formatTime()}</p>
-      </div>
-
       <div className="">
-        <div className="flex justify-center items-center gap-32">
+        <div className="flex justify-center items-center gap-20 lg:flex-row md:flex-col flex-col">
           <div>
-            <h1 className="text-white text-3xl">Upcoming Games</h1>
+            <h1 className="text-white text-3xl text-center font-bold">
+              Upcoming <span className="text-[#3CCF70]">Games</span>
+            </h1>
           </div>
 
           <div className="flex justify-start items-center text-7xl relative">
@@ -258,8 +256,8 @@ const AllGamesCardFetch = () => {
             </div>
           </div>
 
-          <div className='md:w-3/4'>
-           <GameThumb></GameThumb>
+          <div className="md:w-3/4">
+            <GameThumb></GameThumb>
           </div>
         </div>
 
@@ -283,6 +281,11 @@ const AllGamesCardFetch = () => {
           }
         `}
         </style>
+      </div>
+
+      <div className="flex justify-center mt-5 text-3xl gap-2">
+        <div className="text-white text-3xl font-bold">Coming In :</div>
+        <div>{formatTime()}</div>
       </div>
     </allgamesfetch>
   );
