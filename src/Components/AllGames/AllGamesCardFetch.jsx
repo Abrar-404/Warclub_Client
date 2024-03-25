@@ -142,7 +142,7 @@ const AllGamesCardFetch = () => {
   const [games, setGames] = useState([]);
   const [showAll, setShowAll] = useState(false);
   const [visibleGames, setVisibleGames] = useState([]);
-  const [timer, setTimer] = useState(60); // Initial timer value in seconds
+  const [timer, setTimer] = useState(60);
 
   useEffect(() => {
     fetchInitialGames();
@@ -169,10 +169,10 @@ const AllGamesCardFetch = () => {
 
   const fetchNewGameData = async () => {
     try {
-      const response = await fetch('http://localhost:5000/timerGame'); // Assuming this endpoint returns new game data
+      const response = await fetch('http://localhost:5000/timerGame');
       const newData = await response.json();
-      setGames(prevGames => [...prevGames, newData]); // Add new game data to existing games
-      setVisibleGames(prevVisibleGames => [...prevVisibleGames, newData]); // Update visible games with new data
+      setGames(prevGames => [...prevGames, newData]);
+      setVisibleGames(prevVisibleGames => [...prevVisibleGames, newData]);
     } catch (error) {
       console.error('Error fetching new game data:', error);
     }
@@ -184,22 +184,22 @@ const AllGamesCardFetch = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTimer(prevTimer => prevTimer - 1); // Decrement timer every second
-    }, 1000); // Update timer every second
+      setTimer(prevTimer => prevTimer - 1);
+    }, 1000); 
 
     // Clear the timer when it reaches 0
     if (timer === 0) {
       clearInterval(interval);
-      setTimer(10); // Reset the timer to 10 seconds
-      fetchNewGameData(); // Fetch new game data after 10 seconds
+      setTimer(60); 
+      fetchNewGameData();
     }
 
-    return () => clearInterval(interval); // Clear the timer on component unmount
-  }, [timer, fetchNewGameData]); // Re-run the effect whenever timer or fetchNewGameData function changes
+    return () => clearInterval(interval); 
+  }, [timer, fetchNewGameData]);
 
   const handleSeeMoreClick = () => {
     toggleShowAll();
-    fetchNewGameData(); // Fetch new game data when "See More" button is clicked
+    fetchNewGameData(); 
   };
 
   return (
