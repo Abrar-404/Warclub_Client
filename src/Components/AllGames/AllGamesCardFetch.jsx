@@ -102,7 +102,7 @@ const AllGamesCardFetch = () => {
   const [games, setGames] = useState([]);
   const [showAll, setShowAll] = useState(false);
   const [visibleGames, setVisibleGames] = useState([]);
-  const [timer, setTimer] = useState(calculateInitialTimer()); // Initialize timer with initial value
+  const [timer, setTimer] = useState(calculateInitialTimer());
 
   useEffect(() => {
     fetchInitialGames();
@@ -147,10 +147,9 @@ const AllGamesCardFetch = () => {
       setTimer(prevTimer => prevTimer - 1);
     }, 1000);
 
-    // Clear the timer when it reaches 0
     if (timer === 0) {
       clearInterval(interval);
-      setTimer(calculateInitialTimer()); // Reset timer
+      setTimer(calculateInitialTimer());
       fetchNewGameData();
     }
 
@@ -158,7 +157,6 @@ const AllGamesCardFetch = () => {
   }, [timer, fetchNewGameData]);
 
   function calculateInitialTimer() {
-    // Calculate initial timer value in seconds
     const daysInSeconds = 3 * 24 * 60 * 60;
     const hoursInSeconds = 23 * 60 * 60;
     const minutesInSeconds = 59 * 60;
