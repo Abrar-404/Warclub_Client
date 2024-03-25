@@ -26,6 +26,28 @@ const AllGamesCardFetch = () => {
     }
   };
 
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/timerGames');
+        const data = await response.json();
+        setGames(data);
+        setVisibleGames(data.slice(0, 6));
+      } catch (error) {
+        console.error('Error fetching timer games:', error);
+      }
+    };
+
+    fetchData();
+
+    const interval = setInterval(() => {
+      fetchData();
+    }, 30000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <allgamesfetch>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto max-w-5xl gap-10">
