@@ -6,7 +6,6 @@ const AllGamesCardFetch = () => {
   const [games, setGames] = useState([]);
   const [showAll, setShowAll] = useState(false);
   const [visibleGames, setVisibleGames] = useState([]);
-   const [timer, setTimer] = useState(null);
 
   useEffect(() => {
     fetch('http://localhost:5000/games')
@@ -25,28 +24,6 @@ const AllGamesCardFetch = () => {
       setVisibleGames(games.slice(0, 6));
     }
   };
-
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('http://localhost:5000/timerGames');
-        const data = await response.json();
-        setGames(data);
-        setVisibleGames(data.slice(0, 6));
-      } catch (error) {
-        console.error('Error fetching timer games:', error);
-      }
-    };
-
-    fetchData();
-
-    const interval = setInterval(() => {
-      fetchData();
-    }, 30000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <allgamesfetch>
