@@ -170,7 +170,7 @@ const AllGamesCardFetch = () => {
     const seconds = timer % 60;
 
     return (
-      <div className="text-green-400 font-bold">{`${days}d ${hours}h ${minutes}m ${seconds}s`}</div>
+      <div className="text-green-400 font-semibold">{`${days}d ${hours}h ${minutes}m ${seconds}s`}</div>
     );
   };
 
@@ -239,7 +239,7 @@ const AllGamesCardFetch = () => {
             </h1>
           </div> */}
 
-          <div className="border-2 border-red-600 mx-auto">
+          <div className="border-8 border-t-0 border-b-0 border-red-600 mx-auto py-4 rounded-full">
             <h1 className="text-white text-lg font-bold">Coming In :</h1>
             <h1 className="text-sm">{formatTime()}</h1>
           </div>
