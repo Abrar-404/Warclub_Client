@@ -261,8 +261,8 @@ const AllGamesCardFetch = () => {
           </div> */}
 
           <div className="border-8 border-t-0 border-b-0 hover:border-[#3CCF70] border-red-600 mx-auto py-4 rounded-full">
-            <h1 className="text-white text-lg font-bold">Coming In :</h1>
-            <h1 className="text-sm">{formatTime()}</h1>
+            <h1 className="text-white text-sm font-bold">Coming In :</h1>
+            <h1 className="text-xs">{formatTime()}</h1>
           </div>
 
           <div className="flex justify-start items-center text-7xl relative">
