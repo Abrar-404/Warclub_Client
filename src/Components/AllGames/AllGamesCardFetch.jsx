@@ -94,6 +94,8 @@ import AllGamesCard from './AllGamesCard';
 // import '../Styles/seemorebtn.css';
 import '../Styles/bannerBtn.css';
 import { MdDoubleArrow, MdPlayArrow } from 'react-icons/md';
+import LatestGames from '../LatestGames/LatestGames';
+import GameThumb from '../GameThumb/GameThumb';
 
 const AllGamesCardFetch = () => {
   const [games, setGames] = useState([]);
@@ -231,23 +233,33 @@ const AllGamesCardFetch = () => {
         <p className="text-white text-4xl">Timer: {formatTime()}</p>
       </div>
 
-      <div>
-        <div className="flex justify-start items-center text-7xl relative">
-          <MdDoubleArrow
-            style={{
-              animation: 'fadeInOut2 .5s ease-in-out infinite',
-              color: 'white', // Green color
-            }}
-            className=""
-          />
-          <div className="text-7xl absolute left-10">
+      <div className="">
+        <div className="flex justify-center items-center gap-32">
+          <div>
+            <h1 className="text-white text-3xl">Upcoming Games</h1>
+          </div>
+
+          <div className="flex justify-start items-center text-7xl relative">
             <MdDoubleArrow
               style={{
-                animation: 'fadeInOut .5s ease-in-out infinite',
-                color: '#45f882', // Green color
+                animation: 'fadeInOut2 .5s ease-in-out infinite',
+                color: 'white', // Green color
               }}
               className=""
             />
+            <div className="text-7xl absolute left-11">
+              <MdDoubleArrow
+                style={{
+                  animation: 'fadeInOut .5s ease-in-out infinite',
+                  color: '#45f882', // Green color
+                }}
+                className=""
+              />
+            </div>
+          </div>
+
+          <div className='md:w-3/4'>
+           <GameThumb></GameThumb>
           </div>
         </div>
 
