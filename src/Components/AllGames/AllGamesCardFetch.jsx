@@ -95,7 +95,8 @@
 
 import React, { useEffect, useState } from 'react';
 import AllGamesCard from './AllGamesCard';
-import '../Styles/seemorebtn.css';
+// import '../Styles/seemorebtn.css';
+import '../Styles/bannerBtn.css'
 
 const AllGamesCardFetch = () => {
   const [games, setGames] = useState([]);
