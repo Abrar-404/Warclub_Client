@@ -95,6 +95,14 @@ const AllGamesCardFetch = () => {
     fetchNewGameData();
   };
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      fetchNewGameData(); // Fetch new game data after 10 seconds
+    }, 10000); // 10 seconds in milliseconds
+
+    return () => clearTimeout(timer); // Clear the timer on component unmount
+  }, [games]); // Re-run the effect whenever games change
+
   return (
     <allgamesfetch>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto max-w-5xl gap-10">
