@@ -1,5 +1,3 @@
-
-
 // import React, { useEffect, useState } from 'react';
 // import AllGamesCard from './AllGamesCard';
 // import '../Styles/seemorebtn.css';
@@ -95,7 +93,6 @@
 
 // export default AllGamesCardFetch;
 
-
 import React, { useEffect, useState } from 'react';
 import AllGamesCard from './AllGamesCard';
 import '../Styles/seemorebtn.css';
@@ -104,7 +101,7 @@ const AllGamesCardFetch = () => {
   const [games, setGames] = useState([]);
   const [showAll, setShowAll] = useState(false);
   const [visibleGames, setVisibleGames] = useState([]);
-  const [timer, setTimer] = useState(60);
+  const [timer, setTimer] = useState(calculateInitialTimer()); // Initialize timer with initial value
 
   useEffect(() => {
     fetchInitialGames();
@@ -120,7 +117,9 @@ const AllGamesCardFetch = () => {
 
   const fetchInitialGames = async () => {
     try {
-      const response = await fetch('http://localhost:5000/games');
+      const response = await fetch(
+        'https://server-pi-opal-58.vercel.app/games'
+      );
       const data = await response.json();
       setGames(data);
       setVisibleGames(data.slice(0, 6));
@@ -131,7 +130,9 @@ const AllGamesCardFetch = () => {
 
   const fetchNewGameData = async () => {
     try {
-      const response = await fetch('http://localhost:5000/timerGame');
+      const response = await fetch(
+        'https://server-pi-opal-58.vercel.app/timerGame'
+      );
       const newData = await response.json();
       setGames(prevGames => [...prevGames, newData]);
       setVisibleGames(prevVisibleGames => [...prevVisibleGames, newData]);
@@ -152,12 +153,21 @@ const AllGamesCardFetch = () => {
     // Clear the timer when it reaches 0
     if (timer === 0) {
       clearInterval(interval);
-      setTimer(60);
+      setTimer(calculateInitialTimer()); // Reset timer
       fetchNewGameData();
     }
 
     return () => clearInterval(interval);
   }, [timer, fetchNewGameData]);
+
+  function calculateInitialTimer() {
+    // Calculate initial timer value in seconds
+    const daysInSeconds = 3 * 24 * 60 * 60;
+    const hoursInSeconds = 23 * 60 * 60;
+    const minutesInSeconds = 59 * 60;
+    const seconds = 59;
+    return daysInSeconds + hoursInSeconds + minutesInSeconds + seconds;
+  }
 
   const formatTime = () => {
     const days = Math.floor(timer / (24 * 60 * 60));
