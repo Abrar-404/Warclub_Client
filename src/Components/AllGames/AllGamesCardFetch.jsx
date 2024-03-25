@@ -68,13 +68,19 @@ const AllGamesCardFetch = () => {
     };
   }, []);
 
+  // Function to fetch game data from the timerGame collection
+  const fetchTimerGameData = async () => {
+    const response = await fetch('http://localhost:5000/timerGameData');
+    if (response.ok) {
+      const data = await response.json();
+      if (data) {
+        setGames(prevGames => [...prevGames, data]);
+      }
+    }
+  };
+
   useEffect(() => {
-    fetch('http://localhost:5000/games')
-      .then(res => res.json())
-      .then(data => {
-        setGames(data);
-        setVisibleGames(data.slice(0, 6));
-      });
+    fetchTimerGameData(); // Fetch initial timer game data
   }, []);
 
   const toggleShowAll = () => {
