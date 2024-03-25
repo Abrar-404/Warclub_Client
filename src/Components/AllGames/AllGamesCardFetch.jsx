@@ -118,9 +118,7 @@ const AllGamesCardFetch = () => {
 
   const fetchInitialGames = async () => {
     try {
-      const response = await fetch(
-        'https://server-pi-opal-58.vercel.app/games'
-      );
+      const response = await fetch('http://localhost:5000/games');
       const data = await response.json();
       setGames(data);
       setVisibleGames(data.slice(0, 6));
@@ -131,9 +129,7 @@ const AllGamesCardFetch = () => {
 
   const fetchNewGameData = async () => {
     try {
-      const response = await fetch(
-        'https://server-pi-opal-58.vercel.app/timerGame'
-      );
+      const response = await fetch('http://localhost:5000/timerGame');
       const newData = await response.json();
       setGames(prevGames => [...prevGames, newData]);
       setVisibleGames(prevVisibleGames => [...prevVisibleGames, newData]);
