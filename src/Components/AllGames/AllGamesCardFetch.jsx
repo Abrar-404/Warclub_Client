@@ -231,6 +231,14 @@ const AllGamesCardFetch = () => {
         </button>
       </div>
 
+      <div className=" border-8 rounded-[600px] py-32 border-t-0 border-b-0 hover:border-[#3CCF70] mt-32 mb-10">
+        <div className="flex justify-center mt-5 text-3xl gap-2 mx-auto w-1/2 py-28 rounded-[600px] border-t-0 border-b-0 border-red-600 border-8 hover:border-[#3CCF70]">
+          <h1 className="text-white text-3xl text-center font-bold">
+            Upcoming <span className="text-[#3CCF70]">Games</span>
+          </h1>
+        </div>
+      </div>
+
       <div className="">
         <div className="flex justify-center items-center gap-20 lg:flex-row md:flex-col flex-col">
           {/* <div>
@@ -239,7 +247,7 @@ const AllGamesCardFetch = () => {
             </h1>
           </div> */}
 
-          <div className="border-8 border-t-0 border-b-0 border-red-600 mx-auto py-4 rounded-full">
+          <div className="border-8 border-t-0 border-b-0 hover:border-[#3CCF70] border-red-600 mx-auto py-4 rounded-full">
             <h1 className="text-white text-lg font-bold">Coming In :</h1>
             <h1 className="text-sm">{formatTime()}</h1>
           </div>
@@ -288,14 +296,6 @@ const AllGamesCardFetch = () => {
           }
         `}
         </style>
-      </div>
-
-      <div className=" border-8 rounded-[600px] py-32 border-t-0 border-b-0">
-        <div className="flex justify-center mt-5 text-3xl gap-2 mx-auto w-1/2 py-28 rounded-[600px] border-t-0 border-b-0 border-red-600 border-8">
-          <h1 className="text-white text-3xl text-center font-bold">
-            Upcoming <span className="text-[#3CCF70]">Games</span>
-          </h1>
-        </div>
       </div>
     </allgamesfetch>
   );
