@@ -6,7 +6,6 @@ const AllGamesCardFetch = () => {
   const [games, setGames] = useState([]);
   const [showAll, setShowAll] = useState(false);
   const [visibleGames, setVisibleGames] = useState([]);
-   const [visibleGames, setVisibleGames] = useState([]);
    const [timer, setTimer] = useState(null);
 
   useEffect(() => {
