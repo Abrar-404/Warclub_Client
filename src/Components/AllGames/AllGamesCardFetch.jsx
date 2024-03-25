@@ -22,9 +22,7 @@
 
 //   const fetchInitialGames = async () => {
 //     try {
-//       const response = await fetch(
-//         'https://server-pi-opal-58.vercel.app/games'
-//       );
+//       const response = await fetch('http://localhost:5000/games');
 //       const data = await response.json();
 //       setGames(data);
 //       setVisibleGames(data.slice(0, 6));
@@ -35,9 +33,7 @@
 
 //   const fetchNewGameData = async () => {
 //     try {
-//       const response = await fetch(
-//         'https://server-pi-opal-58.vercel.app/timerGame'
-//       );
+//       const response = await fetch('http://localhost:5000/timerGame');
 //       const newData = await response.json();
 //       setGames(prevGames => [...prevGames, newData]);
 //       setVisibleGames(prevVisibleGames => [...prevVisibleGames, newData]);
@@ -96,7 +92,8 @@
 import React, { useEffect, useState } from 'react';
 import AllGamesCard from './AllGamesCard';
 // import '../Styles/seemorebtn.css';
-import '../Styles/bannerBtn.css'
+import '../Styles/bannerBtn.css';
+import { MdDoubleArrow, MdPlayArrow } from 'react-icons/md';
 
 const AllGamesCardFetch = () => {
   const [games, setGames] = useState([]);
@@ -232,6 +229,48 @@ const AllGamesCardFetch = () => {
 
       <div className="flex justify-center mt-20">
         <p className="text-white text-4xl">Timer: {formatTime()}</p>
+      </div>
+
+      <div>
+        <div className="flex justify-start items-center text-7xl relative">
+          <MdDoubleArrow
+            style={{
+              animation: 'fadeInOut2 .5s ease-in-out infinite',
+              color: 'white', // Green color
+            }}
+            className=""
+          />
+          <div className="text-7xl absolute left-10">
+            <MdDoubleArrow
+              style={{
+                animation: 'fadeInOut .5s ease-in-out infinite',
+                color: '#45f882', // Green color
+              }}
+              className=""
+            />
+          </div>
+        </div>
+
+        <style>
+          {`
+          @keyframes fadeInOut {
+            0%, 100% {
+              opacity: 0.5;
+            }
+            50% {
+              opacity: 1;
+            }
+          }
+          @keyframes fadeInOut2 {
+            0%, 100% {
+              opacity: 1;
+            }
+            50% {
+              opacity: 0.5;
+            }
+          }
+        `}
+        </style>
       </div>
     </allgamesfetch>
   );
