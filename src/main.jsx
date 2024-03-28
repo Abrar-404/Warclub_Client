@@ -5,10 +5,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import MainLayout from './Components/Layout/MainLayout.jsx';
 import Home from './Components/Pages/Home/Home.jsx';
 import Login from './Components/Pages/Login/Login';
-import AuthProvider from './Providers/AuthProvider.jsx';
 import AboutUs from './Components/AboutUs/AboutUs';
 import Contact from './Components/Contact/Contact';
 import AllGames from './Components/AllGames/AllGames';
+import AuthProvider from './Providers/AuthProvider.jsx';
 
 const router = createBrowserRouter([
   {
