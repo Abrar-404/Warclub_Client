@@ -51,8 +51,8 @@ const MainLayout = () => {
 
         <div className="md:max-w-[768px] max-w-[428px] lg:max-w-[1400px] mx-auto ">
           <Navbar></Navbar>
-          <Circle2 background="#101114" color="#3EF17B"></Circle2>
           <Outlet></Outlet>
+          <Circle2 background="#101114" color="#3EF17B"></Circle2>
         </div>
       </div>
     </div>
