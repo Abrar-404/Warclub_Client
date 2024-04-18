@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import '../Styles/cursor.css';
 import AnimatedCursor from 'react-animated-cursor';
+import { Circle2 } from 'react-preloaders';
 
 const MainLayout = () => {
   const background = {
