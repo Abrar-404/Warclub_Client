@@ -9,7 +9,7 @@ import AboutUs from './Components/AboutUs/AboutUs';
 import Contact from './Components/Contact/Contact';
 import AllGames from './Components/AllGames/AllGames';
 import AuthProvider from './Providers/AuthProvider.jsx';
-import { Gallery } from './Components/Gallery/Gallery.jsx';
+import Gallery from './Components/Gallery/Gallery.jsx';
 
 const router = createBrowserRouter([
   {
