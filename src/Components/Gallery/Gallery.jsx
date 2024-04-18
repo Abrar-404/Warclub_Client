@@ -37,7 +37,7 @@ const squareData = [
   },
   {
     id: 3,
-    src: 'https://images.unsplash.com/photo-1629901925121-8a141c2a42f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+    src: 'https://i.ibb.co/MSp4QJd/horizon-forbidden-west-burning-shores-1-jpg.jpg',
   },
   {
     id: 4,
