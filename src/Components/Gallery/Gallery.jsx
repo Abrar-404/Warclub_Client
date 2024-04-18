@@ -73,7 +73,7 @@ const squareData = [
   },
   {
     id: 12,
-    src: 'https://images.unsplash.com/photo-1533107862482-0e6974b06ec4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=882&q=80',
+    src: 'https://i.ibb.co/N7SdtY5/best-horror-games-on-ps5-guide-1-large.jpg',
   },
   {
     id: 13,
