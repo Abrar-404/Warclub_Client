@@ -4,7 +4,7 @@ import Footer from '../Footer/Footer';
 
 const ShuffleHero = () => {
   return (
-    <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 items-center gap-8 max-w-12xl mx-auto m-auto">
+    <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 items-center gap-8 max-w-12xl mx-auto m-auto mt-5">
       <ShuffleGrid />
       <Footer></Footer>
     </section>
@@ -105,7 +105,7 @@ const generateSquares = () => {
       style={{
         backgroundImage: `url(${sq.src})`,
         backgroundSize: 'cover',
-        borderRadius: '10px',
+        borderRadius: '15px',
       }}
     ></motion.div>
   ));
