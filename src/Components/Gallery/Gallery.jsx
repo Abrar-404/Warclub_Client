@@ -1,20 +1,14 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
-import Hello from './Hello';
 import '../Styles/Gallery.css';
 
 import LightGallery from 'lightgallery/react';
-import { LightGallerySettings } from 'lightgallery/lg-settings';
 import lgZoom from 'lightgallery/plugins/zoom';
-import lgVideo from 'lightgallery/plugins/video';
 
-const Gallery = () => {
-  const { useState } = React;
-  const [name] = useState('React');
+export const Gallery = () => {
+
 
   return (
     <div>
-      <LightGallery plugins={[lgZoom, lgVideo]} mode="lg-fade">
+      <LightGallery plugins={[lgZoom]} mode="lg-fade">
         <a
           data-lg-size="1406-1390"
           className="gallery-item"
@@ -77,5 +71,3 @@ const Gallery = () => {
     </div>
   );
 };
-
-ReactDOM.render(<App />, document.getElementById('root'));
