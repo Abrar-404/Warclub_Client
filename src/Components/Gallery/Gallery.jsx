@@ -49,7 +49,7 @@ const squareData = [
   },
   {
     id: 6,
-    src: 'https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+    src: 'https://i.ibb.co/WVrtLXm/joel-ellie.webp',
   },
   {
     id: 7,
