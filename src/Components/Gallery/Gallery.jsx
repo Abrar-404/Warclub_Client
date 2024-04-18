@@ -53,7 +53,7 @@ const squareData = [
   },
   {
     id: 7,
-    src: 'https://images.unsplash.com/photo-1599586120429-48281b6f0ece?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+    src: 'https://i.ibb.co/Fz8FkjT/TEKKEN-SITE.webp',
   },
   {
     id: 8,
