@@ -64,6 +64,14 @@ const Navbar = () => {
       </li>
       <li className="nav-link">
         <NavLink
+          to="/gallery"
+          className={({ isActive }) => (isActive ? 'active' : 'default')}
+        >
+          Gallery
+        </NavLink>
+      </li>
+      <li className="nav-link">
+        <NavLink
           to="/tournament"
           className={({ isActive }) => (isActive ? 'active' : 'default')}
         >
@@ -106,6 +114,9 @@ const Navbar = () => {
       </li>
       <li className="nav-link">
         <NavLink to="/tournament">Tournaments</NavLink>
+      </li>
+      <li className="nav-link">
+        <NavLink to="/gallery">Gallery</NavLink>
       </li>
       <li className="nav-link">
         <NavLink to="/dashboard/profile">Dashboard</NavLink>
