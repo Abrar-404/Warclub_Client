@@ -9,7 +9,6 @@ import AboutUs from './Components/AboutUs/AboutUs';
 import Contact from './Components/Contact/Contact';
 import AllGames from './Components/AllGames/AllGames';
 import AuthProvider from './Providers/AuthProvider.jsx';
-import { Circle2 } from 'react-preloaders';
 
 const router = createBrowserRouter([
   {
