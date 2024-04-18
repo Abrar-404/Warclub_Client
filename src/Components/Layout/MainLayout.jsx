@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import '../Styles/cursor.css';
 import AnimatedCursor from 'react-animated-cursor';
-import { Circle2 } from 'react-preloaders';
+
 
 const MainLayout = () => {
   const background = {
@@ -51,7 +51,6 @@ const MainLayout = () => {
 
         <div className="md:max-w-[768px] max-w-[428px] lg:max-w-[1400px] mx-auto ">
           <Navbar></Navbar>
-          <Circle2 background="#101114" color="#3EF17B"></Circle2>
           <Outlet></Outlet>
         </div>
       </div>
