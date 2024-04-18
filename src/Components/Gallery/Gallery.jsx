@@ -33,7 +33,7 @@ const squareData = [
   },
   {
     id: 2,
-    src: 'https://images.unsplash.com/photo-1510925758641-869d353cecc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+    src: 'https://i.ibb.co/JxxV9Tp/survivor-16827508379411387348426.webp',
   },
   {
     id: 3,
