@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
+import Footer from '../Footer/Footer';
 
 const ShuffleHero = () => {
   return (
     <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 items-center gap-8 max-w-12xl mx-auto m-auto">
       <ShuffleGrid />
+      <Footer></Footer>
     </section>
   );
 };
