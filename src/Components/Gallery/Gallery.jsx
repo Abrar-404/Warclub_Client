@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 
 const ShuffleHero = () => {
   return (
-    <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 items-center gap-8 max-w-96xl mx-auto m-auto">
+    <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 items-center gap-8 max-w-12xl mx-auto m-auto">
       <ShuffleGrid />
     </section>
   );
@@ -29,7 +29,7 @@ const shuffle = array => {
 const squareData = [
   {
     id: 1,
-    src: 'https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+    src: 'https://i.ibb.co/kBZy7RW/Baldurs-Gate-3.webp',
   },
   {
     id: 2,
@@ -98,7 +98,7 @@ const generateSquares = () => {
     <motion.div
       key={sq.id}
       layout
-      transition={{ duration: 1.5, type: 'spring' }}
+      transition={{ duration: 3.5, type: 'spring' }}
       className="w-full h-full"
       style={{
         backgroundImage: `url(${sq.src})`,
@@ -121,11 +121,11 @@ const ShuffleGrid = () => {
   const shuffleSquares = () => {
     setSquares(generateSquares());
 
-    timeoutRef.current = setTimeout(shuffleSquares, 3000);
+    timeoutRef.current = setTimeout(shuffleSquares, 4000);
   };
 
   return (
-    <div className="grid grid-cols-4 grid-rows-4 h-[450px] gap-1">
+    <div className="grid grid-cols-4 grid-rows-4 h-[950px] gap-1">
       {squares.map(sq => sq)}
     </div>
   );
