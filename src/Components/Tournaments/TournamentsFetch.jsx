@@ -42,17 +42,17 @@ const TournamentsFetch = () => {
           <img className="" src={tourPic} alt="" />
 
           <img
-            className="absolute bottom-[80px] left-[7%]"
+            className="absolute bottom-[70px] left-[7%]"
             src={sticker1}
             alt=""
           />
           <img
-            className="absolute bottom-[80px] right-[7%]"
+            className="absolute bottom-[70px] right-[7%]"
             src={sticker2}
             alt=""
           />
 
-          <div className="absolute bottom-[80px] left-[40%] flex justify-center gap-10">
+          <div className="absolute bottom-[70px] left-[28%] flex justify-center gap-10">
             <div className="text-right ">
               <h1 className="text-[#45F882] text-xl font-semibold">
                 VIDEO GAME
@@ -71,7 +71,7 @@ const TournamentsFetch = () => {
               <h1 className="text-[#45F882] text-xl font-semibold">
                 VIDEO GAME
               </h1>
-              <h1 className="text-3xl font-bold text-white">THE PANDAS</h1>
+              <h1 className="text-3xl font-bold text-white">THE NINJAS</h1>
             </div>
           </div>
         </div>
