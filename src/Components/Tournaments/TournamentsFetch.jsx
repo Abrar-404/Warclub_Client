@@ -62,7 +62,7 @@ const TournamentsFetch = () => {
 
             <div className="text-center">
               <h1 className="text-white text-5xl font-semibold">06:30</h1>
-              <h1 className="text-xs font-bold text-[#959DB1]">
+              <h1 className="text-xs font-bold pt-3 text-[#959DB1]">
                 April 19, 2024
               </h1>
             </div>
