@@ -35,7 +35,7 @@ const TournamentsFetch = () => {
         </h1>
       </div>
 
-      <div>
+      <div className='mt-20'>
         <img src={tourPic} alt="" />
       </div>
     </>
