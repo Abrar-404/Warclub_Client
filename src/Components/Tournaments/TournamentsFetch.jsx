@@ -4,7 +4,7 @@ const TournamentsFetch = () => {
   return (
     <div>
       <div className="flex justify-center mx-auto">
-        <img className="border-2 border-red-700 w-[50%]" src={tourPic} alt="" />
+        <img className=" w-[50%]" src={tourPic} alt="" />
       </div>
     </div>
   );
