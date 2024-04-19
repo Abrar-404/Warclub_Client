@@ -25,6 +25,10 @@ const TournamentsFetch = () => {
           </div>
         </div>
       </div>
+
+      <div>
+        
+      </div>
     </>
   );
 };
