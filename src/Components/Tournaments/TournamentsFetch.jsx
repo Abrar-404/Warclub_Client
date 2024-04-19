@@ -9,7 +9,7 @@ const TournamentsFetch = () => {
       <div style={{ backgroundImage: `url(${aboutBg})` }}>
         <div className="mx-auto pt-32 pb-32">
           <h1 className="text-white font-bold lg:text-3xl text-center">
-           Tournaments
+            Tournaments
           </h1>
 
           <div className="text-white font-semibold text-sm text-center flex justify-center mx-auto items-center pt-2">
@@ -27,7 +27,7 @@ const TournamentsFetch = () => {
       </div>
 
       <div>
-        
+        <h1># GAME STREAMING BATTLE</h1>
       </div>
     </>
   );
