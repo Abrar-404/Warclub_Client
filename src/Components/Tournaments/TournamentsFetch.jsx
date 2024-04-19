@@ -51,6 +51,11 @@ const TournamentsFetch = () => {
             src={sticker2}
             alt=""
           />
+
+
+          <div>
+            <h1>VIDEO GAME</h1>
+          </div>
         </div>
       </div>
     </>
