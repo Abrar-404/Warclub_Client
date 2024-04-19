@@ -4,6 +4,7 @@ import { IoIosArrowForward } from 'react-icons/io';
 import aboutBg from '../../assets/aboutusbg.png';
 import sticker1 from '../../assets/sticker1.png';
 import sticker2 from '../../assets/sticker2.png';
+import upcoming from '../../assets/upcoming.png';
 
 const TournamentsFetch = () => {
   return (
@@ -74,7 +75,7 @@ const TournamentsFetch = () => {
 
         <div>
           <div>
-            <h1>Upcoming</h1>
+            <img src="" alt="" />
           </div>
         </div>
       </div>
