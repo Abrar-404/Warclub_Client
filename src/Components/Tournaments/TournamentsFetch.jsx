@@ -51,28 +51,30 @@ const TournamentsFetch = () => {
             src={sticker2}
             alt=""
           />
+        </div>
 
-          <div className="absolute bottom-[70px] left-[28%] flex justify-center gap-10">
-            <div className="text-right ">
-              <h1 className="text-[#45F882] text-xl font-semibold">
-                VIDEO GAME
-              </h1>
-              <h1 className="text-3xl font-bold text-white">THE PANDAS</h1>
-            </div>
+        <div className="absolute bottom-[70px] left-[28%] flex justify-center gap-10">
+          <div className="text-right ">
+            <h1 className="text-[#45F882] text-xl font-semibold">VIDEO GAME</h1>
+            <h1 className="text-3xl font-bold text-white">THE PANDAS</h1>
+          </div>
 
-            <div className="text-center bg-black rounded-3xl p-3">
-              <h1 className="text-white text-5xl font-semibold">06:30</h1>
-              <h1 className="text-xs font-bold pt-3 text-[#959DB1]">
-                April 19, 2024
-              </h1>
-            </div>
+          <div className="text-center bg-black rounded-3xl p-3">
+            <h1 className="text-white text-5xl font-semibold">06:30</h1>
+            <h1 className="text-xs font-bold pt-3 text-[#959DB1]">
+              April 19, 2024
+            </h1>
+          </div>
 
-            <div className="text-left">
-              <h1 className="text-[#45F882] text-xl font-semibold">
-                VIDEO GAME
-              </h1>
-              <h1 className="text-3xl font-bold text-white">THE NINJAS</h1>
-            </div>
+          <div className="text-left">
+            <h1 className="text-[#45F882] text-xl font-semibold">VIDEO GAME</h1>
+            <h1 className="text-3xl font-bold text-white">THE NINJAS</h1>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h1>Upcoming</h1>
           </div>
         </div>
       </div>
