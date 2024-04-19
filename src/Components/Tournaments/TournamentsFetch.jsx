@@ -39,10 +39,10 @@ const TournamentsFetch = () => {
 
       <div className="mt-20">
         <div>
-          <img className='relative' src={tourPic} alt="" />
+          <img className="relative" src={tourPic} alt="" />
 
-          <img src={sticker1} alt="" />
-          <img src={sticker2} alt="" />
+          <img className="absolute" src={sticker1} alt="" />
+          <img className="absolute" src={sticker2} alt="" />
         </div>
       </div>
     </>
