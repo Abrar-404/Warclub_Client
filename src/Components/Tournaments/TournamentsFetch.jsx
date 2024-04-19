@@ -74,8 +74,9 @@ const TournamentsFetch = () => {
         </div>
 
         <div>
-          <div>
-            <img src="" alt="" />
+          <div className="relative">
+            <img className="" src={upcoming} alt="" />
+            <h1 className="absolute top-3 text-white">Upcoming</h1>
           </div>
         </div>
       </div>
