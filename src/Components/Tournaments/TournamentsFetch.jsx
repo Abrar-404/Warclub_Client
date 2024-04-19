@@ -60,7 +60,7 @@ const TournamentsFetch = () => {
               <h1 className="text-3xl font-bold text-white">THE PANDAS</h1>
             </div>
 
-            <div className="text-center">
+            <div className="text-center bg-black rounded-3xl">
               <h1 className="text-white text-5xl font-semibold">06:30</h1>
               <h1 className="text-xs font-bold pt-3 text-[#959DB1]">
                 April 19, 2024
