@@ -42,7 +42,7 @@ const TournamentsFetch = () => {
           <img className="" src={tourPic} alt="" />
 
           <img
-            className="absolute bottom-[-230px] left-[7%]"
+            className="absolute bottom-[60px] left-[7%]"
             src={sticker1}
             alt=""
           />
