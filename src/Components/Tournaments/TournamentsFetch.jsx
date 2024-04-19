@@ -34,6 +34,10 @@ const TournamentsFetch = () => {
           Our Gaming Tournaments <span className="text-[#45F882]">!</span>
         </h1>
       </div>
+
+      <div>
+        <img src={tourPic} alt="" />
+      </div>
     </>
   );
 };
