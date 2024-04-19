@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import tourPic from '../../assets/tourPic.png';
 import { IoIosArrowForward } from 'react-icons/io';
 import aboutBg from '../../assets/aboutusbg.png';
+import sticker1 from '../../assets/sticker1.png';
+import sticker2 from '../../assets/sticker2.png';
 
 const TournamentsFetch = () => {
   return (
@@ -35,8 +37,13 @@ const TournamentsFetch = () => {
         </h1>
       </div>
 
-      <div className='mt-20'>
-        <img src={tourPic} alt="" />
+      <div className="mt-20">
+        <div>
+          <img className='relative' src={tourPic} alt="" />
+
+          <img src={sticker1} alt="" />
+          <img src={sticker2} alt="" />
+        </div>
       </div>
     </>
   );
