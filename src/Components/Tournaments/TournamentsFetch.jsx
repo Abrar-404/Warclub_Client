@@ -26,7 +26,7 @@ const TournamentsFetch = () => {
         </div>
       </div>
 
-      <div>
+      <div className='mt-20'>
         <h1 className="text-[#45F882] text-center font-semibold"># GAME STREAMING BATTLE</h1>
       </div>
     </>
