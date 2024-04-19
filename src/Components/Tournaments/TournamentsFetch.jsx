@@ -30,7 +30,7 @@ const TournamentsFetch = () => {
         <h1 className="text-[#45F882] text-center font-semibold">
           # GAME STREAMING BATTLE
         </h1>
-        <h1 className="text-white">
+        <h1 className="text-white text-3xl font-bold">
           Our Gaming Tournaments <span className="text-[#45F882]">!</span>
         </h1>
       </div>
