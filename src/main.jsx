@@ -10,7 +10,7 @@ import Contact from './Components/Contact/Contact';
 import AllGames from './Components/AllGames/AllGames';
 import AuthProvider from './Providers/AuthProvider.jsx';
 import Gallery from './Components/Gallery/Gallery.jsx';
-import TournamentsFetch from './Components/Tournaments/TournamentsFetch';
+import Tournaments from './Components/Tournaments/Tournaments';
 
 const router = createBrowserRouter([
   {
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/tournament',
-        element: <TournamentsFetch></TournamentsFetch>,
+        element: <Tournaments></Tournaments>,
       },
     ],
   },

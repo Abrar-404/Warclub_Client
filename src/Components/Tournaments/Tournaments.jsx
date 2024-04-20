@@ -14,7 +14,7 @@ import {
   TabPanel,
 } from '@material-tailwind/react';
 
-const TournamentsFetch = () => {
+const Tournaments = () => {
   const data = [
     {
       label: (
@@ -543,4 +543,4 @@ const TournamentsFetch = () => {
   );
 };
 
-export default TournamentsFetch;
+export default Tournaments;
