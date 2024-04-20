@@ -18,7 +18,7 @@ const TournamentsFetch = () => {
   const data = [
     {
       label: (
-        <button className="bhutti">
+        <button className="bhutti rounded-2xl">
           <span>All Matches</span>
           <i></i>
         </button>
@@ -301,7 +301,12 @@ const TournamentsFetch = () => {
       ),
     },
     {
-      label: 'Upcoming Match',
+      label: (
+        <button className="bhutti rounded-2xl">
+          <span>Upcoming Matches</span>
+          <i></i>
+        </button>
+      ),
       value: 'react',
       desc: (
         <div className="mt-20 relative">

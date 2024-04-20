@@ -1,6 +1,7 @@
 .bhutti {
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  border-radius: 30px;
   padding: 10px 30px;
   transition: 0.5s;
   position: relative;
@@ -13,12 +14,14 @@
 .bhutti:hover {
   letter-spacing: 0.25em;
   background: #45f882;
+  border-radius: 30px;
   color: #45f882;
   box-shadow: 0 0 45px #45f882;
 }
 
 .bhutti::before {
   content: '';
+  border-radius: 30px;
   position: absolute;
   inset: 2px;
   background: #10131c;
@@ -27,11 +30,13 @@
 .bhutti span {
   position: relative;
   z-index: 1;
+  border-radius: 30px;
 }
 
 .bhutti i {
   position: absolute;
   inset: 0;
+  border-radius: 30px;
   display: block;
 }
 
