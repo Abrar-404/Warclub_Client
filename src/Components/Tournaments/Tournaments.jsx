@@ -118,7 +118,7 @@ const Tournaments = () => {
                 <h1 className="text-[#45F882] text-xl font-semibold">
                   VIDEO GAME
                 </h1>
-                <h1 className="text-3xl font-bold text-white">THE NINJAS</h1>
+                <h1 className="text-3xl font-bold text-white">PRO PLAYERS</h1>
               </div>
             </div>
 
