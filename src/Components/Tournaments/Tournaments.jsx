@@ -40,13 +40,13 @@ const Tournaments = () => {
                 alt=""
               />
               <img
-                className="absolute bottom-[70px] right-[7%]"
+                className="absolute lg:bottom-[70px] lg:left-[7%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:right-[4%] right-[5%]"
                 src={sticker2}
                 alt=""
               />
             </div>
 
-            <div className="absolute bottom-[80px] left-[28%] flex justify-center gap-10">
+            <div className="absolute lg:bottom-[80px] lg:left-[28%] flex justify-center gap-10">
               <div className="text-right ">
                 <h1 className="text-[#45F882] lg:text-xl md:text-sm font-semibold">
                   VIDEO GAME
