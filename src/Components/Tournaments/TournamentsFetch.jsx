@@ -367,7 +367,12 @@ const TournamentsFetch = () => {
     },
 
     {
-      label: 'Finished Match',
+      label: (
+        <button className="bhutti rounded-2xl">
+          <span>Finished Matches</span>
+          <i></i>
+        </button>
+      ),
       value: 'vue',
       desc: (
         <div className="mt-20 relative">

@@ -9,6 +9,7 @@
   background: transparent;
   border: none;
   color: #fff;
+  border: #45f882;
 }
 
 .bhutti:hover {
@@ -16,6 +17,7 @@
   background: #45f882;
   border-radius: 30px;
   color: #45f882;
+  border: #45f882;
   box-shadow: 0 0 45px #45f882;
 }
 
@@ -23,12 +25,14 @@
   content: '';
   border-radius: 30px;
   position: absolute;
+  border: #45f882;
   inset: 2px;
   background: #10131c;
 }
 
 .bhutti span {
   position: relative;
+  border: #45f882;
   z-index: 1;
   border-radius: 30px;
 }
@@ -36,6 +40,8 @@
 .bhutti i {
   position: absolute;
   inset: 0;
+  border: #45f882;
+    border: 1px solid #45f882;
   border-radius: 30px;
   display: block;
 }
