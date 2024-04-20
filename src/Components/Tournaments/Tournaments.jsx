@@ -48,16 +48,16 @@ const Tournaments = () => {
 
             <div className="absolute lg:bottom-[80px] lg:left-[28%] flex justify-center gap-10">
               <div className="text-right ">
-                <h1 className="text-[#45F882] lg:text-xl md:text-sm font-semibold">
+                <h1 className="text-[#45F882] lg:text-xl md:text-sm text-xs font-semibold">
                   VIDEO GAME
                 </h1>
-                <h1 className="text-3xl font-bold md:text-xl text-white">
+                <h1 className="lg:text-3xl font-bold md:text-xl text-lg text-white">
                   THE PANDAS
                 </h1>
               </div>
 
               <div className="text-center bg-black rounded-3xl p-3">
-                <h1 className="text-white text-5xl font-semibold">06:30</h1>
+                <h1 className="text-white lg:text-5xl md:text-3xl font-semibold">06:30</h1>
                 <h1 className="text-xs font-bold pt-3 text-[#959DB1]">
                   April 19, 2024
                 </h1>
