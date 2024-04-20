@@ -12,7 +12,7 @@ const MainLayout = () => {
   };
 
   return (
-    <div className="svg" style={background}>
+    <div className="svg " style={background}>
       <div className="mx-auto">
         {/* <SmoothScroll></SmoothScroll> */}
 
