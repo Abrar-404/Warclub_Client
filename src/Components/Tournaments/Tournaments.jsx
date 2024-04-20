@@ -89,12 +89,12 @@ const Tournaments = () => {
 
               <img
                 className="absolute bottom-[70px] left-[7%]"
-                src={sticker1}
+                src={sticker3}
                 alt=""
               />
               <img
                 className="absolute bottom-[70px] right-[7%]"
-                src={sticker2}
+                src={sticker4}
                 alt=""
               />
             </div>
