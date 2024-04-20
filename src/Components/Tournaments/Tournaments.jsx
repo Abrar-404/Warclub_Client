@@ -145,22 +145,22 @@ const Tournaments = () => {
 
               <img
                 className="absolute bottom-[70px] left-[7%]"
-                src={sticker1}
+                src={sticker5}
                 alt=""
               />
               <img
                 className="absolute bottom-[70px] right-[7%]"
-                src={sticker2}
+                src={sticker6}
                 alt=""
               />
             </div>
 
-            <div className="absolute bottom-[80px] left-[28%] flex justify-center gap-10">
+            <div className="absolute bottom-[80px] left-[29%] flex justify-center gap-10">
               <div className="text-right ">
                 <h1 className="text-[#45F882] text-xl font-semibold">
                   VIDEO GAME
                 </h1>
-                <h1 className="text-3xl font-bold text-white">THE PANDAS</h1>
+                <h1 className="text-3xl font-bold text-white">THE LIONS</h1>
               </div>
 
               <div className="text-center bg-black rounded-3xl p-3">
@@ -174,7 +174,7 @@ const Tournaments = () => {
                 <h1 className="text-[#45F882] text-xl font-semibold">
                   VIDEO GAME
                 </h1>
-                <h1 className="text-3xl font-bold text-white">THE NINJAS</h1>
+                <h1 className="text-3xl font-bold text-white">THE ASSASSINS</h1>
               </div>
             </div>
 
