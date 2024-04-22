@@ -96,13 +96,13 @@ const Tournaments = () => {
               <img className="" src={tourPic} alt="" />
 
               <img
-                className="absolute lg:bottom-[40px] lg:left-[5.5%] lg:w-[10%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:left-[4%] left-[5%]"
-                src={sticker1}
+                className="absolute lg:bottom-[40px] lg:left-[4.5%] lg:w-[12%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:left-[4%] left-[5%]"
+                src={sticker3}
                 alt=""
               />
               <img
                 className="absolute lg:bottom-[40px] lg:right-[5.5%] lg:w-[10%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:right-[4%] right-[5%]"
-                src={sticker2}
+                src={sticker4}
                 alt=""
               />
             </div>
