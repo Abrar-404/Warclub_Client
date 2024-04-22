@@ -75,10 +75,10 @@ const Tournaments = () => {
               </div>
             </div>
 
-            <div className="absolute lg:left-[41%] md:left-[36%] lg:bottom-[1%] md:bottom-[-5%] flex justify-center items-center lg:gap-4 md:gap-2">
+            <div className="absolute lg:left-[41%] md:left-[36%] lg:bottom-[1%] md:bottom-[-5%] bottom-1 flex justify-center items-center lg:gap-4 md:gap-2">
               <div className="relative">
-                <img className="md:w-[90%]" src={upcoming} alt="" />
-                <h1 className="absolute bottom-[2px] lg:font-bold md:font-semibold left-3 text-white">
+                <img className="md:w-[90%] w-[70%]" src={upcoming} alt="" />
+                <h1 className="absolute bottom-[2px] lg:font-bold md:font-semibold lg:text-base left-3 text-white">
                   Upcoming
                 </h1>
               </div>
