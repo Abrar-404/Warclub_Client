@@ -46,9 +46,9 @@ const Tournaments = () => {
               />
             </div>
 
-            <div className="absolute lg:bottom-[80px] lg:left-[28%] md:bottom-[20%] bottom-2 md:left-[24%] flex justify-center lg:gap-10 md:gap-7 gap-2">
+            <div className="absolute lg:bottom-[80px] lg:left-[28%] md:bottom-[20%] bottom-2 md:left-[24%] left-8 flex justify-center lg:gap-10 md:gap-7 gap-2">
               <div className="text-right ">
-                <h1 className="text-[#45F882] lg:text-xl md:text-sm text-xs font-semibold">
+                <h1 className="text-[#45F882] lg:text-xl md:text-sm text-[8px] font-semibold">
                   VIDEO GAME
                 </h1>
                 <h1 className="lg:text-3xl font-bold md:text-xl text-sm text-white">
