@@ -46,7 +46,7 @@ const Tournaments = () => {
               />
             </div>
 
-            <div className="absolute lg:bottom-[80px] lg:left-[28%] md:bottom-[20%] bottom-2 md:left-[22%] flex justify-center gap-10">
+            <div className="absolute lg:bottom-[80px] lg:left-[28%] md:bottom-[20%] bottom-2 md:left-[24%] flex justify-center lg:gap-10 md:gap-7 gap-2">
               <div className="text-right ">
                 <h1 className="text-[#45F882] lg:text-xl md:text-sm text-xs font-semibold">
                   VIDEO GAME
@@ -60,7 +60,7 @@ const Tournaments = () => {
                 <h1 className="text-white lg:text-5xl md:text-3xl text-sm font-semibold">
                   06:30
                 </h1>
-                <h1 className="text-xs font-bold pt-3 text-[#959DB1]">
+                <h1 className="lg:text-xs md:text-xs text-xs font-bold lg:pt-3 md:pt-2 pt-0 text-[#959DB1]">
                   April 19, 2024
                 </h1>
               </div>
