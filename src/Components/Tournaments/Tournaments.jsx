@@ -77,7 +77,7 @@ const Tournaments = () => {
 
             <div className="absolute left-[41%] bottom-[1%] flex justify-center items-center gap-4">
               <div className="relative">
-                <img className="" src={upcoming} alt="" />
+                <img className="md:w-[90%]" src={upcoming} alt="" />
                 <h1 className="absolute bottom-[2px] font-bold left-4 text-white">
                   Upcoming
                 </h1>
