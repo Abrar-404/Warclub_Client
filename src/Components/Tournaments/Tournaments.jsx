@@ -83,8 +83,8 @@ const Tournaments = () => {
                 </h1>
               </div>
               <div className="relative ">
-                <img className="" src={upcoming} alt="" />
-                <h1 className="absolute bottom-[2px] font-bold left-9 text-white">
+                <img className="md:w-[90%]" src={upcoming} alt="" />
+                <h1 className="absolute bottom-[2px] lg:font-bold md:font-semibold md:left-8 text-white">
                   0 / 0
                 </h1>
               </div>
