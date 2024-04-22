@@ -46,18 +46,18 @@ const Tournaments = () => {
               />
             </div>
 
-            <div className="absolute lg:bottom-[80px] lg:left-[28%] md:bottom-[20%] md:left-[22%] flex justify-center gap-10">
+            <div className="absolute lg:bottom-[80px] lg:left-[28%] md:bottom-[20%] bottom-2 md:left-[22%] flex justify-center gap-10">
               <div className="text-right ">
                 <h1 className="text-[#45F882] lg:text-xl md:text-sm text-xs font-semibold">
                   VIDEO GAME
                 </h1>
-                <h1 className="lg:text-3xl font-bold md:text-xl text-lg text-white">
+                <h1 className="lg:text-3xl font-bold md:text-xl text-sm text-white">
                   THE PANDAS
                 </h1>
               </div>
 
               <div className="text-center bg-black rounded-3xl p-3">
-                <h1 className="text-white lg:text-5xl md:text-3xl text-xl font-semibold">
+                <h1 className="text-white lg:text-5xl md:text-3xl text-sm font-semibold">
                   06:30
                 </h1>
                 <h1 className="text-xs font-bold pt-3 text-[#959DB1]">
@@ -69,7 +69,7 @@ const Tournaments = () => {
                 <h1 className="text-[#45F882] lg:text-xl md:text-sm text-xs font-semibold">
                   VIDEO GAME
                 </h1>
-                <h1 className="lg:text-3xl font-bold md:text-xl text-lg">
+                <h1 className="lg:text-3xl font-bold md:text-xl text-sm">
                   THE NINJAS
                 </h1>
               </div>
