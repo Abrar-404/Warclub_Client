@@ -51,12 +51,12 @@ const Tournaments = () => {
                 <h1 className="text-[#45F882] lg:text-xl md:text-sm text-[8px] font-semibold">
                   VIDEO GAME
                 </h1>
-                <h1 className="lg:text-3xl font-bold md:text-xl text-sm text-white">
+                <h1 className="lg:text-3xl font-bold md:text-xl text-xs text-white">
                   THE PANDAS
                 </h1>
               </div>
 
-              <div className="text-center bg-black rounded-3xl p-3">
+              <div className="text-center bg-black rounded-3xl lg:p-3 md:p-3 p-2">
                 <h1 className="text-white lg:text-5xl md:text-3xl text-sm font-semibold">
                   06:30
                 </h1>
@@ -66,10 +66,10 @@ const Tournaments = () => {
               </div>
 
               <div className="text-left">
-                <h1 className="text-[#45F882] lg:text-xl md:text-sm text-xs font-semibold">
+                <h1 className="text-[#45F882] lg:text-xl md:text-sm text-[8px] font-semibold">
                   VIDEO GAME
                 </h1>
-                <h1 className="lg:text-3xl font-bold md:text-xl text-sm">
+                <h1 className="lg:text-3xl font-bold md:text-xl text-xs">
                   THE NINJAS
                 </h1>
               </div>
