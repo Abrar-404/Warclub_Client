@@ -35,7 +35,7 @@ const Tournaments = () => {
               <img className="" src={tourPic} alt="" />
 
               <img
-                className="absolute lg:bottom-[70px] lg:left-[7%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:left-[4%] left-[5%]"
+                className="absolute lg:bottom-[70px] lg:left-[7%] lg:w-[10%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:left-[4%] left-[5%]"
                 src={sticker1}
                 alt=""
               />
