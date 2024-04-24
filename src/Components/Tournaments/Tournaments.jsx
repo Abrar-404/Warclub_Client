@@ -221,12 +221,12 @@ const Tournaments = () => {
 
               <img
                 className="absolute lg:bottom-[40px] lg:left-[4.5%] lg:w-[12%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:left-[4%] left-[5%]"
-                src={sticker5}
+                src={sticker7}
                 alt=""
               />
               <img
                 className="absolute lg:bottom-[40px] lg:right-[4.5%] lg:w-[12%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:right-[4%] right-[5%]"
-                src={sticker6}
+                src={sticker8}
                 alt=""
               />
             </div>
