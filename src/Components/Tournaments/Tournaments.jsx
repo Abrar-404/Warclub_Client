@@ -348,63 +348,309 @@ const Tournaments = () => {
       ),
       value: 'react',
       desc: (
-        <div className="mt-20 relative">
-          <div>
-            <img className="" src={tourPic} alt="" />
+        <div>
+          <div className="mt-20 relative">
+            <div>
+              <img className="" src={tourPic} alt="" />
 
-            <img
-              className="absolute lg:bottom-[40px] lg:left-[5.5%] lg:w-[10%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:left-[4%] left-[5%]"
-              src={sticker1}
-              alt=""
-            />
-            <img
-              className="absolute lg:bottom-[40px] lg:right-[5.5%] lg:w-[10%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:right-[4%] right-[5%]"
-              src={sticker2}
-              alt=""
-            />
+              <img
+                className="absolute lg:bottom-[40px] lg:left-[5.5%] lg:w-[10%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:left-[4%] left-[5%]"
+                src={sticker1}
+                alt=""
+              />
+              <img
+                className="absolute lg:bottom-[40px] lg:right-[5.5%] lg:w-[10%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:right-[4%] right-[5%]"
+                src={sticker2}
+                alt=""
+              />
+            </div>
+
+            <div className="absolute lg:bottom-[80px] lg:left-[28%] md:bottom-[20%] bottom-3 md:left-[24%] left-[23%] flex justify-center lg:gap-10 md:gap-7 gap-2">
+              <div className="text-right ">
+                <h1 className="text-[#45F882] lg:text-xl md:text-sm text-[8px] font-semibold">
+                  VIDEO GAME
+                </h1>
+                <h1 className="lg:text-3xl font-bold md:text-xl text-[10px] text-white">
+                  THE PANDAS
+                </h1>
+              </div>
+
+              <div className="text-center bg-black rounded-3xl lg:p-3 md:p-3 p-2">
+                <h1 className="text-white lg:text-5xl md:text-3xl text-sm font-semibold">
+                  06:30
+                </h1>
+                <h1 className="lg:text-xs md:text-xs text-xs font-bold lg:pt-3 md:pt-2 pt-0 text-[#959DB1]">
+                  April 19, 2024
+                </h1>
+              </div>
+
+              <div className="text-left">
+                <h1 className="text-[#45F882] lg:text-xl md:text-sm text-[8px] font-semibold">
+                  VIDEO GAME
+                </h1>
+                <h1 className="lg:text-3xl font-bold md:text-xl text-[10px]">
+                  THE NINJAS
+                </h1>
+              </div>
+            </div>
+
+            <div className="absolute lg:left-[41%] md:left-[36%] left-[27%] lg:bottom-[1%] md:bottom-[-5%] bottom-[-10%] flex justify-center items-center lg:gap-4 md:gap-2 gap-0">
+              <div className="relative">
+                <img className="md:w-[90%] w-[70%]" src={upcoming} alt="" />
+                <h1 className="absolute bottom-[2px] lg:font-bold md:font-semibold lg:text-base md:text-base text-xs left-3 text-white">
+                  Upcoming
+                </h1>
+              </div>
+              <div className="relative ">
+                <img className="md:w-[90%] w-[70%]" src={upcoming} alt="" />
+                <h1 className="absolute bottom-[2px] lg:font-bold md:font-semibold lg:text-base md:text-base text-xs md:left-8 left-7 text-white">
+                  0 / 0
+                </h1>
+              </div>
+            </div>
           </div>
 
-          <div className="absolute lg:bottom-[80px] lg:left-[28%] md:bottom-[20%] bottom-3 md:left-[24%] left-[23%] flex justify-center lg:gap-10 md:gap-7 gap-2">
-            <div className="text-right ">
-              <h1 className="text-[#45F882] lg:text-xl md:text-sm text-[8px] font-semibold">
-                VIDEO GAME
-              </h1>
-              <h1 className="lg:text-3xl font-bold md:text-xl text-[10px] text-white">
-                THE PANDAS
-              </h1>
+          <div className="mt-20 relative">
+            <div>
+              <img className="" src={tourPic} alt="" />
+
+              <img
+                className="absolute lg:bottom-[40px] lg:left-[4.5%] lg:w-[12%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:left-[4%] left-[5%]"
+                src={sticker3}
+                alt=""
+              />
+              <img
+                className="absolute lg:bottom-[40px] lg:right-[4.5%] lg:w-[12%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:right-[4%] right-[5%]"
+                src={sticker4}
+                alt=""
+              />
             </div>
 
-            <div className="text-center bg-black rounded-3xl lg:p-3 md:p-3 p-2">
-              <h1 className="text-white lg:text-5xl md:text-3xl text-sm font-semibold">
-                06:30
-              </h1>
-              <h1 className="lg:text-xs md:text-xs text-xs font-bold lg:pt-3 md:pt-2 pt-0 text-[#959DB1]">
-                April 19, 2024
-              </h1>
+            <div className="absolute lg:bottom-[80px] lg:left-[27%] md:bottom-[20%] bottom-3 md:left-[22%] left-[22%] flex justify-center lg:gap-10 md:gap-7 gap-2">
+              <div className="text-right ">
+                <h1 className="text-[#45F882] lg:text-xl md:text-sm text-[8px] font-semibold">
+                  VIDEO GAME
+                </h1>
+                <h1 className="lg:text-3xl font-bold md:text-xl text-[10px] text-white">
+                  THE HOLIGANS
+                </h1>
+              </div>
+
+              <div className="text-center bg-black rounded-3xl lg:p-3 md:p-3 p-2">
+                <h1 className="text-white lg:text-5xl md:text-3xl text-sm font-semibold">
+                  06:30
+                </h1>
+                <h1 className="lg:text-xs md:text-xs text-xs font-bold lg:pt-3 md:pt-2 pt-0 text-[#959DB1]">
+                  April 19, 2024
+                </h1>
+              </div>
+
+              <div className="text-left">
+                <h1 className="text-[#45F882] lg:text-xl md:text-sm text-[8px] font-semibold">
+                  VIDEO GAME
+                </h1>
+                <h1 className="lg:text-3xl font-bold md:text-xl text-[10px]">
+                  THE PLAYERS
+                </h1>
+              </div>
             </div>
 
-            <div className="text-left">
-              <h1 className="text-[#45F882] lg:text-xl md:text-sm text-[8px] font-semibold">
-                VIDEO GAME
-              </h1>
-              <h1 className="lg:text-3xl font-bold md:text-xl text-[10px]">
-                THE NINJAS
-              </h1>
+            <div className="absolute lg:left-[41%] md:left-[36%] left-[27%] lg:bottom-[1%] md:bottom-[-5%] bottom-[-10%] flex justify-center items-center lg:gap-4 md:gap-2 gap-0">
+              <div className="relative">
+                <img className="md:w-[90%] w-[70%]" src={upcoming} alt="" />
+                <h1 className="absolute bottom-[2px] lg:font-bold md:font-semibold lg:text-base md:text-base text-xs left-3 text-white">
+                  Upcoming
+                </h1>
+              </div>
+              <div className="relative ">
+                <img className="md:w-[90%] w-[70%]" src={upcoming} alt="" />
+                <h1 className="absolute bottom-[2px] lg:font-bold md:font-semibold lg:text-base md:text-base text-xs md:left-8 left-7 text-white">
+                  0 / 0
+                </h1>
+              </div>
             </div>
           </div>
 
-          <div className="absolute lg:left-[41%] md:left-[36%] left-[27%] lg:bottom-[1%] md:bottom-[-5%] bottom-[-10%] flex justify-center items-center lg:gap-4 md:gap-2 gap-0">
-            <div className="relative">
-              <img className="md:w-[90%] w-[70%]" src={upcoming} alt="" />
-              <h1 className="absolute bottom-[2px] lg:font-bold md:font-semibold lg:text-base md:text-base text-xs left-3 text-white">
-                Upcoming
-              </h1>
+          <div className="mt-20 relative">
+            <div>
+              <img className="" src={tourPic} alt="" />
+
+              <img
+                className="absolute lg:bottom-[40px] lg:left-[4.5%] lg:w-[12%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:left-[4%] left-[5%]"
+                src={sticker5}
+                alt=""
+              />
+              <img
+                className="absolute lg:bottom-[40px] lg:right-[4.5%] lg:w-[12%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:right-[4%] right-[5%]"
+                src={sticker6}
+                alt=""
+              />
             </div>
-            <div className="relative ">
-              <img className="md:w-[90%] w-[70%]" src={upcoming} alt="" />
-              <h1 className="absolute bottom-[2px] lg:font-bold md:font-semibold lg:text-base md:text-base text-xs md:left-8 left-7 text-white">
-                0 / 0
-              </h1>
+
+            <div className="absolute lg:bottom-[80px] lg:left-[29%] md:bottom-[20%] bottom-3 md:left-[23%] left-[22%] flex justify-center lg:gap-10 md:gap-7 gap-2">
+              <div className="text-right ">
+                <h1 className="text-[#45F882] lg:text-xl md:text-sm text-[8px] font-semibold">
+                  VIDEO GAME
+                </h1>
+                <h1 className="lg:text-3xl font-bold md:text-xl text-[10px] text-white">
+                  THE LIONS
+                </h1>
+              </div>
+
+              <div className="text-center bg-black rounded-3xl lg:p-3 md:p-3 p-2">
+                <h1 className="text-white lg:text-5xl md:text-3xl text-sm font-semibold">
+                  06:30
+                </h1>
+                <h1 className="lg:text-xs md:text-xs text-xs font-bold lg:pt-3 md:pt-2 pt-0 text-[#959DB1]">
+                  April 19, 2024
+                </h1>
+              </div>
+
+              <div className="text-left">
+                <h1 className="text-[#45F882] lg:text-xl md:text-sm text-[8px] font-semibold">
+                  VIDEO GAME
+                </h1>
+                <h1 className="lg:text-3xl font-bold md:text-xl text-[10px]">
+                  THE ASSASSINS
+                </h1>
+              </div>
+            </div>
+
+            <div className="absolute lg:left-[41%] md:left-[36%] left-[27%] lg:bottom-[1%] md:bottom-[-5%] bottom-[-10%] flex justify-center items-center lg:gap-4 md:gap-2 gap-0">
+              <div className="relative">
+                <img className="md:w-[90%] w-[70%]" src={upcoming} alt="" />
+                <h1 className="absolute bottom-[2px] lg:font-bold md:font-semibold lg:text-base md:text-base text-xs left-3 text-white">
+                  Upcoming
+                </h1>
+              </div>
+              <div className="relative ">
+                <img className="md:w-[90%] w-[70%]" src={upcoming} alt="" />
+                <h1 className="absolute bottom-[2px] lg:font-bold md:font-semibold lg:text-base md:text-base text-xs md:left-8 left-7 text-white">
+                  0 / 0
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-20 relative">
+            <div>
+              <img className="" src={tourPic} alt="" />
+
+              <img
+                className="absolute lg:bottom-[40px] lg:left-[4.5%] lg:w-[12%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:left-[4%] left-[5%]"
+                src={sticker7}
+                alt=""
+              />
+              <img
+                className="absolute lg:bottom-[40px] lg:right-[4.5%] lg:w-[12%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:right-[4%] right-[5%]"
+                src={sticker8}
+                alt=""
+              />
+            </div>
+
+            <div className="absolute lg:bottom-[80px] lg:left-[29%] md:bottom-[20%] bottom-3 md:left-[23%] left-[22%] flex justify-center lg:gap-10 md:gap-7 gap-2">
+              <div className="text-right ">
+                <h1 className="text-[#45F882] lg:text-xl md:text-sm text-[8px] font-semibold">
+                  VIDEO GAME
+                </h1>
+                <h1 className="lg:text-3xl font-bold md:text-xl text-[10px] text-white">
+                  CYBERPUNKS
+                </h1>
+              </div>
+
+              <div className="text-center bg-black rounded-3xl lg:p-3 md:p-3 p-2">
+                <h1 className="text-white lg:text-5xl md:text-3xl text-sm font-semibold">
+                  06:30
+                </h1>
+                <h1 className="lg:text-xs md:text-xs text-xs font-bold lg:pt-3 md:pt-2 pt-0 text-[#959DB1]">
+                  April 19, 2024
+                </h1>
+              </div>
+
+              <div className="text-left">
+                <h1 className="text-[#45F882] lg:text-xl md:text-sm text-[8px] font-semibold">
+                  VIDEO GAME
+                </h1>
+                <h1 className="lg:text-3xl font-bold md:text-xl text-[10px]">
+                  THE GORILLAS
+                </h1>
+              </div>
+            </div>
+
+            <div className="absolute lg:left-[41%] md:left-[36%] left-[27%] lg:bottom-[1%] md:bottom-[-5%] bottom-[-10%] flex justify-center items-center lg:gap-4 md:gap-2 gap-0">
+              <div className="relative">
+                <img className="md:w-[90%] w-[70%]" src={upcoming} alt="" />
+                <h1 className="absolute bottom-[2px] lg:font-bold md:font-semibold lg:text-base md:text-base text-xs left-3 text-white">
+                  Upcoming
+                </h1>
+              </div>
+              <div className="relative ">
+                <img className="md:w-[90%] w-[70%]" src={upcoming} alt="" />
+                <h1 className="absolute bottom-[2px] lg:font-bold md:font-semibold lg:text-base md:text-base text-xs md:left-8 left-7 text-white">
+                  0 / 0
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-20 relative">
+            <div>
+              <img className="" src={tourPic} alt="" />
+
+              <img
+                className="absolute lg:bottom-[40px] lg:left-[5.5%] lg:w-[10%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:left-[4%] left-[5%]"
+                src={sticker1}
+                alt=""
+              />
+              <img
+                className="absolute lg:bottom-[40px] lg:right-[5.5%] lg:w-[10%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:right-[4%] right-[5%]"
+                src={sticker2}
+                alt=""
+              />
+            </div>
+
+            <div className="absolute lg:bottom-[80px] lg:left-[28%] md:bottom-[20%] bottom-3 md:left-[24%] left-[23%] flex justify-center lg:gap-10 md:gap-7 gap-2">
+              <div className="text-right ">
+                <h1 className="text-[#45F882] lg:text-xl md:text-sm text-[8px] font-semibold">
+                  VIDEO GAME
+                </h1>
+                <h1 className="lg:text-3xl font-bold md:text-xl text-[10px] text-white">
+                  THE PANDAS
+                </h1>
+              </div>
+
+              <div className="text-center bg-black rounded-3xl lg:p-3 md:p-3 p-2">
+                <h1 className="text-white lg:text-5xl md:text-3xl text-sm font-semibold">
+                  06:30
+                </h1>
+                <h1 className="lg:text-xs md:text-xs text-xs font-bold lg:pt-3 md:pt-2 pt-0 text-[#959DB1]">
+                  April 19, 2024
+                </h1>
+              </div>
+
+              <div className="text-left">
+                <h1 className="text-[#45F882] lg:text-xl md:text-sm text-[8px] font-semibold">
+                  VIDEO GAME
+                </h1>
+                <h1 className="lg:text-3xl font-bold md:text-xl text-[10px]">
+                  THE NINJAS
+                </h1>
+              </div>
+            </div>
+
+            <div className="absolute lg:left-[41%] md:left-[36%] left-[27%] lg:bottom-[1%] md:bottom-[-5%] bottom-[-10%] flex justify-center items-center lg:gap-4 md:gap-2 gap-0">
+              <div className="relative">
+                <img className="md:w-[90%] w-[70%]" src={upcoming} alt="" />
+                <h1 className="absolute bottom-[2px] lg:font-bold md:font-semibold lg:text-base md:text-base text-xs left-3 text-white">
+                  Upcoming
+                </h1>
+              </div>
+              <div className="relative ">
+                <img className="md:w-[90%] w-[70%]" src={upcoming} alt="" />
+                <h1 className="absolute bottom-[2px] lg:font-bold md:font-semibold lg:text-base md:text-base text-xs md:left-8 left-7 text-white">
+                  0 / 0
+                </h1>
+              </div>
             </div>
           </div>
         </div>
