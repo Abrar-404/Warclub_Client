@@ -281,24 +281,24 @@ const Tournaments = () => {
               <img className="" src={tourPic} alt="" />
 
               <img
-                className="absolute lg:bottom-[40px] lg:left-[4.5%] lg:w-[12%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:left-[4%] left-[5%]"
-                src={sticker9}
+                className="absolute lg:bottom-[40px] lg:left-[5.5%] lg:w-[10%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:left-[4%] left-[5%]"
+                src={sticker1}
                 alt=""
               />
               <img
-                className="absolute lg:bottom-[40px] lg:right-[4.5%] lg:w-[12%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:right-[4%] right-[5%]"
-                src={sticker10}
+                className="absolute lg:bottom-[40px] lg:right-[5.5%] lg:w-[10%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:right-[4%] right-[5%]"
+                src={sticker2}
                 alt=""
               />
             </div>
 
-            <div className="absolute lg:bottom-[80px] lg:left-[29%] md:bottom-[20%] bottom-3 md:left-[23%] left-[22%] flex justify-center lg:gap-10 md:gap-7 gap-2">
+            <div className="absolute lg:bottom-[80px] lg:left-[28%] md:bottom-[20%] bottom-3 md:left-[24%] left-[23%] flex justify-center lg:gap-10 md:gap-7 gap-2">
               <div className="text-right ">
                 <h1 className="text-[#45F882] lg:text-xl md:text-sm text-[8px] font-semibold">
                   VIDEO GAME
                 </h1>
                 <h1 className="lg:text-3xl font-bold md:text-xl text-[10px] text-white">
-                  CYBERPUNKS
+                  THE PANDAS
                 </h1>
               </div>
 
@@ -316,7 +316,7 @@ const Tournaments = () => {
                   VIDEO GAME
                 </h1>
                 <h1 className="lg:text-3xl font-bold md:text-xl text-[10px]">
-                  THE GORILLAS
+                  THE NINJAS
                 </h1>
               </div>
             </div>
