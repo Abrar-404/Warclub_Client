@@ -10,8 +10,6 @@ import sticker5 from '../../assets/sticker5.png';
 import sticker6 from '../../assets/sticker6.png';
 import sticker7 from '../../assets/sticker7.png';
 import sticker8 from '../../assets/sticker8.png';
-import sticker1 from '../../assets/sticker1.png';
-import sticker2 from '../../assets/sticke2.png';
 import upcoming from '../../assets/upcoming.png';
 import '../Styles/tourbuttons.css';
 import {
