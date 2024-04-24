@@ -10,6 +10,8 @@ import sticker5 from '../../assets/sticker5.png';
 import sticker6 from '../../assets/sticker6.png';
 import sticker7 from '../../assets/sticker7.png';
 import sticker8 from '../../assets/sticker8.png';
+import sticker9 from '../../assets/sticker9.png';
+import sticker10 from '../../assets/sticker10.png';
 import upcoming from '../../assets/upcoming.png';
 import '../Styles/tourbuttons.css';
 import {
@@ -275,7 +277,7 @@ const Tournaments = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="mt-20 relative">
             <div>
               <img className="" src={tourPic} alt="" />
