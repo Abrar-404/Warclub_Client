@@ -10,8 +10,8 @@ import sticker5 from '../../assets/sticker5.png';
 import sticker6 from '../../assets/sticker6.png';
 import sticker7 from '../../assets/sticker7.png';
 import sticker8 from '../../assets/sticker8.png';
-import sticker9 from '../../assets/sticker9.png';
-import sticker10 from '../../assets/sticker10.png';
+import sticker1 from '../../assets/sticker1.png';
+import sticker2 from '../../assets/sticke2.png';
 import upcoming from '../../assets/upcoming.png';
 import '../Styles/tourbuttons.css';
 import {
@@ -284,12 +284,12 @@ const Tournaments = () => {
 
               <img
                 className="absolute lg:bottom-[40px] lg:left-[4.5%] lg:w-[12%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:left-[4%] left-[5%]"
-                src={sticker7}
+                src={sticker9}
                 alt=""
               />
               <img
                 className="absolute lg:bottom-[40px] lg:right-[4.5%] lg:w-[12%] lg:h-[70%] md:w-[13%] md:h-[80%] w-[12%] h-[80%] md:bottom-[10%] bottom-[10%] md:right-[4%] right-[5%]"
-                src={sticker8}
+                src={sticker10}
                 alt=""
               />
             </div>
