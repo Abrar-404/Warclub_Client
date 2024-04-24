@@ -237,7 +237,7 @@ const Tournaments = () => {
                   VIDEO GAME
                 </h1>
                 <h1 className="lg:text-3xl font-bold md:text-xl text-[10px] text-white">
-                  THE LIONS
+                  CYBERPUNKS
                 </h1>
               </div>
 
@@ -255,7 +255,7 @@ const Tournaments = () => {
                   VIDEO GAME
                 </h1>
                 <h1 className="lg:text-3xl font-bold md:text-xl text-[10px]">
-                  THE ASSASSINS
+                  THE GORILLAS
                 </h1>
               </div>
             </div>
