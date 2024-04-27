@@ -3,6 +3,7 @@ import Navbar from '../Navbar/Navbar';
 import '../Styles/cursor.css';
 import AnimatedCursor from 'react-animated-cursor';
 
+
 const MainLayout = () => {
   const background = {
     backgroundImage: `url(https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg)`,
