@@ -37,7 +37,7 @@
 //         console.log(loggedInGoogleUser);
 //         // const user = { email };
 //         axios
-//           .post('http://localhost:5000/jwt', loggedInGoogleUser, {
+//           .post('https://server-pi-opal-58.vercel.app/jwt', loggedInGoogleUser, {
 //             withCredentials: true,
 //           })
 //           .then(res => {
@@ -64,7 +64,7 @@
 //         console.log(loggedInUser);
 //         const user = { email };
 //         axios
-//           .post('http://localhost:5000/jwt', user, {
+//           .post('https://server-pi-opal-58.vercel.app/jwt', user, {
 //             withCredentials: true,
 //           })
 //           .then(res => {
