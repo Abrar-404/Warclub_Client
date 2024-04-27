@@ -127,7 +127,7 @@ const AllGamesCardFetch = () => {
       console.error('Error fetching initial games:', error);
     }
   };
-
+ 
   const fetchNewGameData = async () => {
     try {
       const response = await fetch(
