@@ -11,6 +11,7 @@ import AllGames from './Components/AllGames/AllGames';
 import AuthProvider from './Providers/AuthProvider.jsx';
 import Gallery from './Components/Gallery/Gallery.jsx';
 import Tournaments from './Components/Tournaments/Tournaments';
+import Blogs from './Components/BlogPage/Blogs';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: '/tournament',
         element: <Tournaments></Tournaments>,
+      },
+      {
+        path: '/blogs',
+        element: <Blogs></Blogs>,
       },
     ],
   },
