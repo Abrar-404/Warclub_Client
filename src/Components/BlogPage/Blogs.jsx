@@ -1,8 +1,18 @@
 import { IoIosArrowForward } from 'react-icons/io';
 import aboutBg from '../../assets/aboutusbg.png';
 import { Link } from 'react-router-dom';
+import BlogsCard from './BlogsCard';
+import { useEffect, useState } from 'react';
 
 const Blogs = () => {
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:5000/blogs')
+      .then(res => res.json())
+      .then(data => setBlogs(data));
+  }, []);
+
   return (
     <div>
       <div style={{ backgroundImage: `url(${aboutBg})` }}>
@@ -24,7 +34,12 @@ const Blogs = () => {
           </div>
         </div>
       </div>
-      <h1>Blogs here</h1>
+
+      <div>
+        {blogs?.map(blog => (
+          <BlogsCard key={blog._id} blog={blog} />
+        ))}
+      </div>
     </div>
   );
 };
