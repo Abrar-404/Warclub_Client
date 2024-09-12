@@ -48,7 +48,7 @@ const Blogs = () => {
           <div class="blog_card lg:w-full md:mx-auto md:w-[50%] md:justify-center md:flex w-[70%] flex justify-center mx-auto  relative">
             <input
               type="text"
-              className="w-full h-full bg-transparent border-2 py-3 rounded-full border-[#45f882] lg:w-[300px] pl-6"
+              className="w-full h-full bg-transparent border-2 py-3 rounded-full border-[#45f882] lg:w-[300px] pl-6 text-white hover:border-green-700"
               placeholder="Search Here"
             />
             <div className="absolute lg:right-10 lg:top-8 md:right-10 md:top-8 right-10 top-8">
