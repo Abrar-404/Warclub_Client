@@ -3,6 +3,7 @@ import aboutBg from '../../assets/aboutusbg.png';
 import { Link } from 'react-router-dom';
 import BlogsCard from './BlogsCard';
 import { useEffect, useState } from 'react';
+import '../Styles/blogCard.css'
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -35,10 +36,20 @@ const Blogs = () => {
         </div>
       </div>
 
-      <div>
-        {blogs?.map(blog => (
-          <BlogsCard key={blog._id} blog={blog} />
-        ))}
+      <div className="flex justify-center">
+        <div>
+          {blogs?.map(blog => (
+            <BlogsCard key={blog._id} blog={blog} />
+          ))}
+        </div>
+
+        <div>
+          <div class="blog_card">
+
+            <p class="blog_card-title">search</p>
+            
+          </div>
+        </div>
       </div>
     </div>
   );
