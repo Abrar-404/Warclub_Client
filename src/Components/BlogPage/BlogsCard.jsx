@@ -1,3 +1,4 @@
+import { User } from 'lucide-react';
 import '../Styles/blogCard.css';
 
 const BlogsCard = ({ blog }) => {
@@ -13,6 +14,11 @@ const BlogsCard = ({ blog }) => {
             className="w-full h-[370px] p-2 rounded-3xl"
           />
         </div>
+
+        <div>
+          <User />
+        </div>
+
         <p class="blog_card-title">{title}</p>
         <p class="blog_card-body">
           Nullam ac tristique nulla, at convallis quam. Integer consectetur mi
