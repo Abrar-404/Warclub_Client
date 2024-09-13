@@ -37,7 +37,7 @@ const Blogs = () => {
         </div>
       </div>
 
-      <div className="flex justify-center mx-auto lg:flex-row md:flex-col-reverse flex-col-reverse">
+      <div className="flex justify-center mx-auto lg:flex-row md:flex-col-reverse flex-col-reverse gap-7 mt-20">
         <div>
           {blogs?.map(blog => (
             <BlogsCard key={blog._id} blog={blog} />
@@ -48,10 +48,10 @@ const Blogs = () => {
           <div class="blog_card lg:w-full md:mx-auto md:w-[50%] md:justify-center md:flex w-[70%] flex justify-center mx-auto  relative">
             <input
               type="text"
-              className="w-full h-full bg-transparent border-2 py-3 rounded-full border-[#45f882] lg:w-[300px] pl-6 text-white hover:border-green-700"
+              className="w-full h-full bg-transparent border-2 py-3 rounded-full border-[#45f882] lg:w-[300px] pl-6 text-white hover:border-green-700 my-3"
               placeholder="Search Here"
             />
-            <div className="absolute lg:right-10 lg:top-8 md:right-10 md:top-8 right-10 top-8">
+            <div className="absolute lg:right-10 lg:top-11 md:right-10 md:top-11 right-10 top-11">
               <Search color="#45f882" />
             </div>
           </div>
