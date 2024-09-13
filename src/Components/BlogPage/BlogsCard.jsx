@@ -1,4 +1,4 @@
-import { User } from 'lucide-react';
+import { Calendar, MessageCircle, User } from 'lucide-react';
 import '../Styles/blogCard.css';
 
 const BlogsCard = ({ blog }) => {
@@ -15,23 +15,29 @@ const BlogsCard = ({ blog }) => {
           />
         </div>
 
-        <div className="ml-2 flex mx-auto gap-4">
+        <div className="ml-2 flex mx-auto lg:gap-4 md:gap-4 gap-3 mt-5">
           <div className="flex justify-start gap-1 items-center">
             <User size="16px" color="#45f882" />
-            <p className="text-[12px] text-gray-400">By Warclub</p>
+            <p className="lg:text-[12px] md:text-[12px] text-[9px] text-gray-400 hover:text-[#45F882]">
+              By Warclub
+            </p>
           </div>
 
           <p className="text-gray-400"> |</p>
           <div className="flex justify-start gap-1 items-center">
-            <User size="16px" color="#45f882" />
-            <p className="text-[12px] text-gray-400">By Warclub</p>
+            <Calendar size="16px" color="#45f882" />
+            <p className="lg:text-[12px] md:text-[12px] text-[9px] text-gray-400 hover:text-[#45F882]">
+              13 September, 2024
+            </p>
           </div>
 
           <p className="text-gray-400"> |</p>
 
           <div className="flex justify-start gap-1 items-center">
-            <User size="16px" color="#45f882" />
-            <p className="text-[12px] text-gray-400">By Warclub</p>
+            <MessageCircle size="16px" color="#45f882" />
+            <p className="lg:text-[12px] md:text-[12px] text-[9px] text-gray-400 hover:text-[#45F882]">
+             Comments (3)
+            </p>
           </div>
         </div>
 
