@@ -6,12 +6,12 @@ const BlogsCard = ({ blog }) => {
 
   return (
     <>
-      <div class="blog_card mb-8">
+      <div class="blog_card mb-8 lg:mx-0 md:mx-10 mx-10">
         <div class="blog_card-image">
           <img
             src={image}
             alt=""
-            className="w-full h-[370px] p-2 rounded-3xl"
+            className="lg:w-full md:w-full lg:h-[370px] md:h-[370px] p-2 rounded-3xl"
           />
         </div>
 
