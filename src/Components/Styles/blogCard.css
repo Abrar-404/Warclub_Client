@@ -10,9 +10,7 @@
 }
 
 .blog_card-title {
-  font-size: 18px;
-  font-weight: 600;
-  color: #b2eccf;
+  color: white;
   margin: 15px 0 0 10px;
 }
 
@@ -24,7 +22,6 @@
 .blog_card-body {
   margin: 13px 0 0 10px;
   color: rgb(184, 184, 184);
-  font-size: 15px;
 }
 
 .blog_footer {

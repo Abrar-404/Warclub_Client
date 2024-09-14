@@ -4,6 +4,17 @@ import '../Styles/blogCard.css';
 const BlogsCard = ({ blog }) => {
   const { title, description, description2, image } = blog || {};
 
+  const splitDescription = (text, wordsPerLine) => {
+    const words = text?.split(' ') || [];
+    const lines = [];
+    for (let i = 0; i < words.length; i += wordsPerLine) {
+      lines.push(words.slice(i, i + wordsPerLine).join(' '));
+    }
+    return lines.slice(0, 3);
+  };
+
+  const descriptionLines = splitDescription(description2, 10);
+
   return (
     <>
       <div class="blog_card mb-8 lg:mx-0 md:mx-10 mx-10">
@@ -36,16 +47,18 @@ const BlogsCard = ({ blog }) => {
           <div className="flex justify-start gap-1 items-center">
             <MessageCircle size="16px" color="#45f882" />
             <p className="lg:text-[12px] md:text-[12px] text-[9px] text-gray-400 hover:text-[#45F882]">
-             Comments (3)
+              Comments (3)
             </p>
           </div>
         </div>
 
-        <p class="blog_card-title">{title}</p>
-        <p class="blog_card-body">
-          Nullam ac tristique nulla, at convallis quam. Integer consectetur mi
-          nec magna tristique, non lobortis.
-        </p>
+        <p class="blog_card-title font-bold text-2xl pr-10">{title}</p>
+
+        <div class="blog_card-body text-sm">
+          {descriptionLines.map((line, index) => (
+            <p key={index}>{line}</p>
+          ))}
+        </div>
       </div>
     </>
   );
