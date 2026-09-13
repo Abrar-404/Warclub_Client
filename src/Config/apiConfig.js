@@ -4,7 +4,7 @@ const isLocal =
     window.location.hostname === '127.0.0.1');
 
 export const LOCAL_API_URL = 'http://localhost:5001';
-export const CLOUD_API_URL = 'https://server-pi-opal-58.vercel.app';
+export const CLOUD_API_URL = 'https://server-sigma-ten-76.vercel.app';
 
 export const API_BASE_URL = isLocal ? LOCAL_API_URL : CLOUD_API_URL;
 
