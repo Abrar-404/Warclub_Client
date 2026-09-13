@@ -1,10 +1,37 @@
+import { useState } from 'react';
 import footerPic from '../../assets/Footer.png';
 import '../Styles/footercss.css';
 import { FaTelegramPlane } from 'react-icons/fa';
 import logo from '../../assets/NavLogo.png';
 import Socials from './Socials';
+import Swal from 'sweetalert2';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+
+  const handleNewsletter = (e) => {
+    e.preventDefault();
+    if (!email) {
+      Swal.fire({
+        title: 'Please enter your email',
+        icon: 'info',
+        background: '#1F2937',
+        color: '#FFFFFF',
+      });
+      return;
+    }
+    Swal.fire({
+      title: 'Subscribed Successfully!',
+      text: 'You will now receive the latest updates from Warclub.',
+      icon: 'success',
+      timer: 2000,
+      showConfirmButton: false,
+      background: '#1F2937',
+      color: '#45F882',
+    });
+    setEmail('');
+  };
   return (
     <footercomp>
       <div>
@@ -34,49 +61,49 @@ const Footer = () => {
               <h6 className="font-bold text-2xl border-b-2 pb-1 border-green-400 text-white">
                 Services
               </h6>
-              <a className="link link-hover text-gray-600 hover:text-green-400">
+              <Link to="/allGames" className="link link-hover text-gray-400 hover:text-green-400">
                 Gaming
-              </a>
-              <a className="link link-hover text-gray-600 hover:text-green-400">
+              </Link>
+              <Link to="/blogs" className="link link-hover text-gray-400 hover:text-green-400">
                 Latest News
-              </a>
-              <a className="link link-hover text-gray-600 hover:text-green-400">
+              </Link>
+              <Link to="/gallery" className="link link-hover text-gray-400 hover:text-green-400">
                 Our Gallery
-              </a>
-              <a className="link link-hover text-gray-600 hover:text-green-400">
+              </Link>
+              <Link to="/tournament" className="link link-hover text-gray-400 hover:text-green-400">
                 Tournaments
-              </a>
-              <a className="link link-hover text-gray-600 hover:text-green-400">
+              </Link>
+              <Link to="/aboutUs" className="link link-hover text-gray-400 hover:text-green-400">
                 All Players
-              </a>
-              <a className="link link-hover text-gray-600 hover:text-green-400">
-                About Me
-              </a>
+              </Link>
+              <Link to="/aboutUs" className="link link-hover text-gray-400 hover:text-green-400">
+                About Us
+              </Link>
             </nav>
             <nav>
               <h6 className="font-bold text-2xl border-b-2 pb-1 border-green-400 text-white">
                 Company
               </h6>
-              <a className="link link-hover text-gray-600 hover:text-green-400">
+              <Link to="/contact" className="link link-hover text-gray-400 hover:text-green-400">
                 Help & Support
-              </a>
-              <a className="link link-hover text-gray-600 hover:text-green-400">
+              </Link>
+              <Link to="/aboutUs" className="link link-hover text-gray-400 hover:text-green-400">
                 About Us
-              </a>
-              <a className="link link-hover text-gray-600 hover:text-green-400">
+              </Link>
+              <Link to="/contact" className="link link-hover text-gray-400 hover:text-green-400">
                 Contact
-              </a>
-              <a className="link link-hover text-gray-600 hover:text-green-400">
+              </Link>
+              <Link to="/blogs" className="link link-hover text-gray-400 hover:text-green-400">
                 Our Blog
-              </a>
-              <a className="link link-hover text-gray-600 hover:text-green-400">
+              </Link>
+              <Link to="/login" className="link link-hover text-gray-400 hover:text-green-400">
                 My Account
-              </a>
-              <a className="link link-hover text-gray-600 hover:text-green-400">
+              </Link>
+              <Link to="/contact" className="link link-hover text-gray-400 hover:text-green-400">
                 Support
-              </a>
+              </Link>
             </nav>
-            <form>
+            <form onSubmit={handleNewsletter}>
               <h6 className="font-bold text-2xl border-b-2 pb-1 border-green-400 text-white">
                 Newsletter
               </h6>
@@ -88,17 +115,20 @@ const Footer = () => {
                   </span>
                 </label>
 
-                <div class="searching">
-                  <div class="searching-box">
-                    <div class="searching-field">
+                <div className="searching">
+                  <div className="searching-box">
+                    <div className="searching-field">
                       <input
                         placeholder="Email Address"
-                        class="input"
-                        type="text"
+                        className="input"
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
                       />
 
                       <div className="searching-box-icon">
-                        <button className="btn-icon-content">
+                        <button type="submit" className="btn-icon-content" aria-label="Subscribe to newsletter">
                           <div className="searching-icon">
                             <div className="text-green-600">
                               <FaTelegramPlane></FaTelegramPlane>

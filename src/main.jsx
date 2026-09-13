@@ -12,6 +12,8 @@ import AuthProvider from './Providers/AuthProvider.jsx';
 import Gallery from './Components/Gallery/Gallery.jsx';
 import Tournaments from './Components/Tournaments/Tournaments';
 import Blogs from './Components/BlogPage/Blogs';
+import Profile from './Components/Pages/Dashboard/Profile';
+import Register from './Components/Pages/Login/Register';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login></Login>,
+      },
+      {
+        path: '/register',
+        element: <Register></Register>,
       },
       {
         path: '/aboutUs',
@@ -49,6 +55,14 @@ const router = createBrowserRouter([
       {
         path: '/blogs',
         element: <Blogs></Blogs>,
+      },
+      {
+        path: '/dashboard',
+        element: <Profile></Profile>,
+      },
+      {
+        path: '/dashboard/profile',
+        element: <Profile></Profile>,
       },
     ],
   },

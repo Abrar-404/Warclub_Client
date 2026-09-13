@@ -6,6 +6,7 @@ import { MdDoubleArrow, MdPlayArrow } from 'react-icons/md';
 import GameThumb from '../GameThumb/GameThumb';
 import sticker1 from '../../assets/sticker2.png';
 import sticker2 from '../../assets/sticker3.png';
+import { apiFetch } from '../../Config/apiConfig';
 
 const AllGamesCardFetch = () => {
   const [games, setGames] = useState([]);
@@ -27,12 +28,12 @@ const AllGamesCardFetch = () => {
 
   const fetchInitialGames = async () => {
     try {
-      const response = await fetch(
-        'https://server-pi-opal-58.vercel.app/games'
-      );
+      const response = await apiFetch('/games');
       const data = await response.json();
-      setGames(data);
-      setVisibleGames(data.slice(0, 6));
+      if (Array.isArray(data)) {
+        setGames(data);
+        setVisibleGames(data.slice(0, 6));
+      }
     } catch (error) {
       console.error('Error fetching initial games:', error);
     }
@@ -40,12 +41,12 @@ const AllGamesCardFetch = () => {
  
   const fetchNewGameData = async () => {
     try {
-      const response = await fetch(
-        'https://server-pi-opal-58.vercel.app/timerGame'
-      );
+      const response = await apiFetch('/timerGame');
       const newData = await response.json();
-      setGames(prevGames => [...prevGames, newData]);
-      setVisibleGames(prevVisibleGames => [...prevVisibleGames, newData]);
+      if (newData && newData._id) {
+        setGames(prevGames => [...prevGames, newData]);
+        setVisibleGames(prevVisibleGames => [...prevVisibleGames, newData]);
+      }
     } catch (error) {
       console.error('Error fetching new game data:', error);
     }

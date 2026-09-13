@@ -3,10 +3,11 @@ import React, { useContext, useEffect } from 'react';
 
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
+import { API_BASE_URL } from '../../Config/apiConfig';
 
 const axiosSecure = axios.create({
-  baseURL: 'https://titans-arena-server.vercel.app',
-  // baseURL : 'https://titans-arena-server.vercel.app/',
+  baseURL: API_BASE_URL,
+  withCredentials: true,
 });
 
 const useAxiosSecure = () => {

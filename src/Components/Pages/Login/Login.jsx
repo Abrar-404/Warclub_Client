@@ -219,6 +219,7 @@ const Login = () => {
   const {
     register,
     handleSubmit,
+    getValues,
     formState: { errors },
   } = useForm();
   const onSubmit = data => {
@@ -226,21 +227,29 @@ const Login = () => {
       .then(result => {
         const loggedUser = result.user;
         console.log(loggedUser);
-        console.log('User created successfully');
+        console.log('User login successful');
 
         navigate(from, { replace: true });
 
         Swal.fire({
           title: 'User Login Successful.',
-          showClass: {
-            popup: 'animate__animated animate__fadeInDown',
-          },
-          hideClass: {
-            popup: 'animate__animated animate__fadeOutUp',
-          },
+          icon: 'success',
+          showConfirmButton: false,
+          timer: 1500,
+          background: '#1F2937',
+          color: '#45F882',
         });
       })
-      .catch(error => console.log(error));
+      .catch(error => {
+        console.error(error);
+        Swal.fire({
+          icon: 'error',
+          title: 'Login Failed',
+          text: error.message,
+          background: '#1F2937',
+          color: '#FFFFFF',
+        });
+      });
   };
 
   const onChange = value => {
@@ -249,18 +258,40 @@ const Login = () => {
   };
 
   const passwordResetHandle = () => {
-    const userEmail = user.email;
-    passwordReset(userEmail)
-      .then(() => {
-        // Password reset email sent!
-        // ..
-        console.log('password reset done');
-      })
-      .catch(error => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        // ..
+    const enteredEmail = getValues('email') || user?.email;
+    if (!enteredEmail) {
+      Swal.fire({
+        title: 'Please enter your email',
+        text: 'Type your email into the email field above to reset your password.',
+        icon: 'info',
+        background: '#1F2937',
+        color: '#FFFFFF',
       });
+      return;
+    }
+
+    if (passwordReset) {
+      passwordReset(enteredEmail)
+        .then(() => {
+          Swal.fire({
+            icon: 'success',
+            title: 'Password Reset Email Sent',
+            text: `A reset link was sent to ${enteredEmail}. Please check your inbox.`,
+            background: '#1F2937',
+            color: '#45F882',
+          });
+        })
+        .catch(error => {
+          console.error('Password reset error:', error);
+          Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: error.message,
+            background: '#1F2937',
+            color: '#FFFFFF',
+          });
+        });
+    }
   };
 
   return (

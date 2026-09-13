@@ -1,9 +1,35 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 import footerBgPic from '../../assets/AboutFooter.png';
 import Socials from '../Footer/Socials';
 import '../Styles/inputform.css';
 
 const AboutFooter = () => {
+  const [email, setEmail] = useState('');
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    if (!email) {
+      Swal.fire({
+        title: 'Please enter your email',
+        icon: 'info',
+        background: '#1F2937',
+        color: '#FFFFFF',
+      });
+      return;
+    }
+    Swal.fire({
+      title: 'Subscribed Successfully!',
+      text: 'Thank you for subscribing to Warclub newsletter.',
+      icon: 'success',
+      timer: 2000,
+      showConfirmButton: false,
+      background: '#1F2937',
+      color: '#45F882',
+    });
+    setEmail('');
+  };
   return (
     <aboutfooter>
       <div
@@ -24,13 +50,19 @@ const AboutFooter = () => {
                 About Us
               </h1>
             </Link>
-            <h1 className="text-white font-bold hover:text-[#45F882]">Blog</h1>
-            <h1 className="text-white font-bold hover:text-[#45F882]">
-              Gallery
-            </h1>
-            <h1 className="text-white font-bold hover:text-[#45F882]">
-              Contact
-            </h1>
+            <Link to="/blogs">
+              <h1 className="text-white font-bold hover:text-[#45F882]">Blog</h1>
+            </Link>
+            <Link to="/gallery">
+              <h1 className="text-white font-bold hover:text-[#45F882]">
+                Gallery
+              </h1>
+            </Link>
+            <Link to="/contact">
+              <h1 className="text-white font-bold hover:text-[#45F882]">
+                Contact
+              </h1>
+            </Link>
           </div>
 
           <div className="flex justify-center mx-auto lg:flex-row md:flex-col flex-col gap-20 mt-20 border-t-2 pt-5 border-b-2 border-b-gray-700 pb-5 border-t-gray-700">
@@ -84,14 +116,17 @@ const AboutFooter = () => {
           </div>
 
           <div className="flex justify-center mt-20 pb-8">
-            <div class="input-container">
+            <form onSubmit={handleSubscribe} className="input-container">
               <input
-                type="text"
+                type="email"
                 className="inputing"
                 placeholder="Email Address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
               />
-              <button class="bhutu">Subscribe</button>
-            </div>
+              <button type="submit" className="bhutu">Subscribe</button>
+            </form>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from 'react-router-dom';
 
 import blogPic1 from '../../assets/blogPic1.png';
 import blogPic2 from '../../assets/blogPic2.png';
@@ -86,18 +87,20 @@ export default function BlogSlider() {
                 {/* button */}
 
                 <div className="flex justify-start mt-2">
-                  <button class="bitttii">
-                    <div className="justify-center flex items-center">
-                      <span class="hover-underline-animation text-[#46f882]">
-                        {' '}
-                        Read More{' '}
-                      </span>
+                  <Link to="/blogs">
+                    <button className="bitttii">
+                      <div className="justify-center flex items-center">
+                        <span className="hover-underline-animation text-[#46f882]">
+                          {' '}
+                          Read More{' '}
+                        </span>
 
-                      <div className="svg">
-                        <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                        <div className="svg">
+                          <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                        </div>
                       </div>
-                    </div>
-                  </button>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -138,18 +141,20 @@ export default function BlogSlider() {
                 {/* button */}
 
                 <div className="flex justify-start mt-2">
-                  <button class="bitttii">
-                    <div className="justify-center flex items-center">
-                      <span class="hover-underline-animation text-[#46f882]">
-                        {' '}
-                        Read More{' '}
-                      </span>
+                  <Link to="/blogs">
+                    <button className="bitttii">
+                      <div className="justify-center flex items-center">
+                        <span className="hover-underline-animation text-[#46f882]">
+                          {' '}
+                          Read More{' '}
+                        </span>
 
-                      <div className="svg">
-                        <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                        <div className="svg">
+                          <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                        </div>
                       </div>
-                    </div>
-                  </button>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -190,18 +195,20 @@ export default function BlogSlider() {
                 {/* button */}
 
                 <div className="flex justify-start mt-2">
-                  <button class="bitttii">
-                    <div className="justify-center flex items-center">
-                      <span class="hover-underline-animation text-[#46f882]">
-                        {' '}
-                        Read More{' '}
-                      </span>
+                  <Link to="/blogs">
+                    <button className="bitttii">
+                      <div className="justify-center flex items-center">
+                        <span className="hover-underline-animation text-[#46f882]">
+                          {' '}
+                          Read More{' '}
+                        </span>
 
-                      <div className="svg">
-                        <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                        <div className="svg">
+                          <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                        </div>
                       </div>
-                    </div>
-                  </button>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -242,18 +249,20 @@ export default function BlogSlider() {
                 {/* button */}
 
                 <div className="flex justify-start mt-2">
-                  <button class="bitttii">
-                    <div className="justify-center flex items-center">
-                      <span class="hover-underline-animation text-[#46f882]">
-                        {' '}
-                        Read More{' '}
-                      </span>
+                  <Link to="/blogs">
+                    <button className="bitttii">
+                      <div className="justify-center flex items-center">
+                        <span className="hover-underline-animation text-[#46f882]">
+                          {' '}
+                          Read More{' '}
+                        </span>
 
-                      <div className="svg">
-                        <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                        <div className="svg">
+                          <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                        </div>
                       </div>
-                    </div>
-                  </button>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -294,18 +303,20 @@ export default function BlogSlider() {
                 {/* button */}
 
                 <div className="flex justify-start mt-2">
-                  <button class="bitttii">
-                    <div className="justify-center flex items-center">
-                      <span class="hover-underline-animation text-[#46f882]">
-                        {' '}
-                        Read More{' '}
-                      </span>
+                  <Link to="/blogs">
+                    <button className="bitttii">
+                      <div className="justify-center flex items-center">
+                        <span className="hover-underline-animation text-[#46f882]">
+                          {' '}
+                          Read More{' '}
+                        </span>
 
-                      <div className="svg">
-                        <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                        <div className="svg">
+                          <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                        </div>
                       </div>
-                    </div>
-                  </button>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -346,18 +357,20 @@ export default function BlogSlider() {
                 {/* button */}
 
                 <div className="flex justify-start mt-2">
-                  <button class="bitttii">
-                    <div className="justify-center flex items-center">
-                      <span class="hover-underline-animation text-[#46f882]">
-                        {' '}
-                        Read More{' '}
-                      </span>
+                  <Link to="/blogs">
+                    <button className="bitttii">
+                      <div className="justify-center flex items-center">
+                        <span className="hover-underline-animation text-[#46f882]">
+                          {' '}
+                          Read More{' '}
+                        </span>
 
-                      <div className="svg">
-                        <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                        <div className="svg">
+                          <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                        </div>
                       </div>
-                    </div>
-                  </button>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -398,18 +411,20 @@ export default function BlogSlider() {
                 {/* button */}
 
                 <div className="flex justify-start mt-2">
-                  <button class="bitttii">
-                    <div className="justify-center flex items-center">
-                      <span class="hover-underline-animation text-[#46f882]">
-                        {' '}
-                        Read More{' '}
-                      </span>
+                  <Link to="/blogs">
+                    <button className="bitttii">
+                      <div className="justify-center flex items-center">
+                        <span className="hover-underline-animation text-[#46f882]">
+                          {' '}
+                          Read More{' '}
+                        </span>
 
-                      <div className="svg">
-                        <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                        <div className="svg">
+                          <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                        </div>
                       </div>
-                    </div>
-                  </button>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -450,18 +465,20 @@ export default function BlogSlider() {
                 {/* button */}
 
                 <div className="flex justify-start mt-2">
-                  <button class="bitttii">
-                    <div className="justify-center flex items-center">
-                      <span class="hover-underline-animation text-[#46f882]">
-                        {' '}
-                        Read More{' '}
-                      </span>
+                  <Link to="/blogs">
+                    <button className="bitttii">
+                      <div className="justify-center flex items-center">
+                        <span className="hover-underline-animation text-[#46f882]">
+                          {' '}
+                          Read More{' '}
+                        </span>
 
-                      <div className="svg">
-                        <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                        <div className="svg">
+                          <IoIosArrowRoundForward></IoIosArrowRoundForward>
+                        </div>
                       </div>
-                    </div>
-                  </button>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

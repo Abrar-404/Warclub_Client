@@ -193,7 +193,9 @@ const ContactForm = () => {
                   <div>
                     <a
                       href="https://www.google.com/maps"
-                      className="text-gray-400 lg:text-sm md:text-xs text-xs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 lg:text-sm md:text-xs text-xs hover:text-[#45F882] transition"
                     >
                       Floor 2, 4 Naval St, Ancoats, Manchester M4 6EW, United{' '}
                       <br />

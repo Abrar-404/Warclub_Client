@@ -57,22 +57,28 @@ const SocialLogin = () => {
           photoURL: user.photoURL,
         };
 
-        axiosSecure.post('/users', savedUser).then(data => {
-          console.log(data);
-          navigate(from, { replace: true });
-          if (user) {
-            Swal.fire({
-              title: 'User Registered Successfully',
-              icon: 'success',
-              timer: 2000,
-              color: '#FFFFFF',
-              background:
-                ' linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)',
-
-              confirmButtonColor: 'cool',
-            });
-          }
-        });
+        axiosSecure
+          .post('/users', savedUser)
+          .then(data => {
+            console.log('Saved user:', data);
+          })
+          .catch(err => {
+            console.warn('User already saved or server offline:', err.message);
+          })
+          .finally(() => {
+            navigate(from, { replace: true });
+            if (user) {
+              Swal.fire({
+                title: 'User Registered Successfully',
+                icon: 'success',
+                timer: 2000,
+                color: '#FFFFFF',
+                background:
+                  ' linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)',
+                confirmButtonColor: 'cool',
+              });
+            }
+          });
       })
       .catch(error => {
         const errorMessage = error.message;

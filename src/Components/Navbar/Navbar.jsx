@@ -107,7 +107,7 @@ const Navbar = () => {
         <NavLink to="/allGames">All GAMES</NavLink>
       </li>
       <li className="nav-link">
-        <NavLink to="/blog">BLOGS</NavLink>
+        <NavLink to="/blogs">BLOGS</NavLink>
       </li>
       <li className="nav-link">
         <NavLink to="/contact">Contact</NavLink>
@@ -165,15 +165,17 @@ const Navbar = () => {
               {user ? (
                 <>
                   <div className="flex gap-4 ">
-                    <div className="avatar online">
-                      <div className="w-10 rounded-full">
-                        <img
-                          className=""
-                          src={user?.photoURL}
-                          alt="User Avatar"
-                        />
+                    <Link to="/dashboard/profile" title="View Profile" className="hover:opacity-80 transition">
+                      <div className="avatar online cursor-pointer">
+                        <div className="w-10 rounded-full ring-2 ring-[#45F882]">
+                          <img
+                            className=""
+                            src={user?.photoURL || 'https://i.ibb.co/279NXhY/daniel-tolmachov-bluefire02.gif'}
+                            alt="User Avatar"
+                          />
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                     {/* <button
                       className="custom-button hover:bg-green-500 py-2 px-4"
                       onClick={handleLogOut}

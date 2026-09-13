@@ -6,15 +6,36 @@ import { useEffect, useState } from 'react';
 import '../Styles/blogCard.css';
 import '../Styles/categoryBtn.css';
 import { Search } from 'lucide-react';
+import { apiFetch } from '../../Config/apiConfig';
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('All');
 
   useEffect(() => {
-    fetch('http://localhost:5000/blogs')
+    apiFetch('/blogs')
       .then(res => res.json())
-      .then(data => setBlogs(data));
+      .then(data => setBlogs(Array.isArray(data) ? data : []))
+      .catch(err => console.error('Error fetching blogs:', err));
   }, []);
+
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(prev => prev === category ? 'All' : category);
+  };
+
+  const filteredBlogs = blogs.filter(blog => {
+    const matchesSearch = !searchTerm ||
+      blog.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      blog.description?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      blog.description2?.toLowerCase().includes(searchTerm.toLowerCase());
+
+    const matchesCategory = selectedCategory === 'All' ||
+      blog.title?.toLowerCase().includes(selectedCategory.toLowerCase()) ||
+      blog.description?.toLowerCase().includes(selectedCategory.toLowerCase());
+
+    return matchesSearch && matchesCategory;
+  });
 
   return (
     <div>
@@ -40,16 +61,31 @@ const Blogs = () => {
 
       <div className="flex justify-center mx-auto lg:flex-row md:flex-col-reverse flex-col-reverse gap-7 mt-20">
         <div>
-          {blogs?.map(blog => (
-            <BlogsCard key={blog._id} blog={blog} />
-          ))}
+          {filteredBlogs.length > 0 ? (
+            filteredBlogs.map(blog => (
+              <BlogsCard key={blog._id} blog={blog} />
+            ))
+          ) : (
+            <div className="text-center p-12 bg-[#0F1C23] rounded-3xl border border-gray-800 text-gray-400 max-w-xl mx-auto">
+              <p className="text-lg font-semibold text-white mb-2">No articles found</p>
+              <p className="text-sm mb-4">No blogs match &quot;{searchTerm || selectedCategory}&quot;</p>
+              <button
+                onClick={() => { setSearchTerm(''); setSelectedCategory('All'); }}
+                className="px-4 py-2 bg-[#45F882] text-black font-semibold rounded-lg hover:bg-green-400 transition"
+              >
+                Reset Filters
+              </button>
+            </div>
+          )}
         </div>
 
         <div className="">
-          <div class="blog_card lg:w-full md:mx-auto md:w-[50%] md:justify-center md:flex w-[70%] flex justify-center mx-auto  relative ">
+          <div className="blog_card lg:w-full md:mx-auto md:w-[50%] md:justify-center md:flex w-[70%] flex justify-center mx-auto relative">
             <input
               type="text"
-              className="w-full h-full bg-transparent border-2 py-3 rounded-full border-[#45f882] lg:w-[300px] pl-6 text-white hover:border-green-700 my-3"
+              value={searchTerm}
+              onChange={e => setSearchTerm(e.target.value)}
+              className="w-full h-full bg-transparent border-2 py-3 rounded-full border-[#45f882] lg:w-[300px] pl-6 text-white hover:border-green-700 my-3 outline-none"
               placeholder="Search Here"
             />
             <div className="absolute lg:right-10 lg:top-11 md:right-10 md:top-11 right-10 top-11">
@@ -64,7 +100,10 @@ const Blogs = () => {
               <hr className="h-[2px] mt-2 mb-5 bg-gradient-to-r from-green-400 via-yellow-400 to-orange-500 border-0 rounded-full" />
             </div>
 
-            <button className="cat_btn w-full">
+            <button
+              onClick={() => handleCategoryClick('Fantasy')}
+              className={`cat_btn w-full ${selectedCategory === 'Fantasy' ? 'ring-2 ring-[#45F882]' : ''}`}
+            >
               <svg
                 className="cat_svg"
                 height="24"
@@ -83,7 +122,10 @@ const Blogs = () => {
               </span>
             </button>
 
-            <button className="cat_btn w-full mt-4">
+            <button
+              onClick={() => handleCategoryClick('Gaming')}
+              className={`cat_btn w-full mt-4 ${selectedCategory === 'Gaming' ? 'ring-2 ring-[#45F882]' : ''}`}
+            >
               <svg
                 className="cat_svg"
                 height="24"
@@ -102,7 +144,10 @@ const Blogs = () => {
               </span>
             </button>
 
-            <button className="cat_btn w-full mt-4">
+            <button
+              onClick={() => handleCategoryClick('Live Games')}
+              className={`cat_btn w-full mt-4 ${selectedCategory === 'Live Games' ? 'ring-2 ring-[#45F882]' : ''}`}
+            >
               <svg
                 className="cat_svg"
                 height="24"
@@ -121,7 +166,10 @@ const Blogs = () => {
               </span>
             </button>
 
-            <button className="cat_btn w-full mt-4">
+            <button
+              onClick={() => handleCategoryClick('MX-Xbox')}
+              className={`cat_btn w-full mt-4 ${selectedCategory === 'MX-Xbox' ? 'ring-2 ring-[#45F882]' : ''}`}
+            >
               <svg
                 className="cat_svg"
                 height="24"
@@ -140,7 +188,10 @@ const Blogs = () => {
               </span>
             </button>
 
-            <button className="cat_btn w-full mt-4">
+            <button
+              onClick={() => handleCategoryClick('Shooting')}
+              className={`cat_btn w-full mt-4 ${selectedCategory === 'Shooting' ? 'ring-2 ring-[#45F882]' : ''}`}
+            >
               <svg
                 className="cat_svg"
                 height="24"
@@ -159,7 +210,10 @@ const Blogs = () => {
               </span>
             </button>
 
-            <button className="cat_btn w-full mt-4">
+            <button
+              onClick={() => handleCategoryClick('Uncategorized')}
+              className={`cat_btn w-full mt-4 ${selectedCategory === 'Uncategorized' ? 'ring-2 ring-[#45F882]' : ''}`}
+            >
               <svg
                 className="cat_svg"
                 height="24"
