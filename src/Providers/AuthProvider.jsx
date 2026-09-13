@@ -11,11 +11,12 @@ import {
 } from 'firebase/auth';
 
 import { auth } from './../Config/firebase.config';
-import { GoogleAuthProvider } from 'firebase/auth';
+import { GoogleAuthProvider, FacebookAuthProvider } from 'firebase/auth';
 
 export const AuthContext = createContext(null);
 const googleProvider = new GoogleAuthProvider();
 googleProvider.setCustomParameters({ prompt: 'select_account' });
+const facebookProvider = new FacebookAuthProvider();
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
@@ -34,6 +35,16 @@ const AuthProvider = ({ children }) => {
   const googleRegisterRedirect = () => {
     setLoading(true);
     return signInWithRedirect(auth, googleProvider);
+  };
+
+  const FacebookSign = () => {
+    setLoading(true);
+    return signInWithPopup(auth, facebookProvider);
+  };
+
+  const facebookSignRedirect = () => {
+    setLoading(true);
+    return signInWithRedirect(auth, facebookProvider);
   };
 
   const loginUser = (email, password) => {
@@ -77,6 +88,8 @@ const AuthProvider = ({ children }) => {
     registerUser,
     googleRegister,
     googleRegisterRedirect,
+    FacebookSign,
+    facebookSignRedirect,
     loginUser,
     userLogOut,
     passwordReset,
