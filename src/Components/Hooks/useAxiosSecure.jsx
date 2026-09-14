@@ -11,11 +11,11 @@ const axiosSecure = axios.create({
 });
 
 const useAxiosSecure = () => {
-  const { logOut } = useContext(AuthContext);
+  const { userLogOut } = useContext(AuthContext);
   const navigate = useNavigate();
 
   useEffect(() => {
-    axiosSecure.interceptors.request.use(config => {
+    const reqInterceptor = axiosSecure.interceptors.request.use(config => {
       const token = localStorage.getItem('access-token');
       if (token) {
         config.headers.Authorization = `Bearer ${token}`;
@@ -23,20 +23,28 @@ const useAxiosSecure = () => {
       return config;
     });
 
-    axiosSecure.interceptors.response.use(
+    const resInterceptor = axiosSecure.interceptors.response.use(
       response => response,
       async error => {
         if (
           error.response &&
           (error.response.status === 401 || error.response.status === 403)
         ) {
-          await logOut();
+          if (userLogOut) {
+            await userLogOut();
+          }
+          localStorage.removeItem('access-token');
           navigate('/login');
         }
         return Promise.reject(error);
       }
     );
-  }, [axiosSecure, logOut, navigate]);
+
+    return () => {
+      axiosSecure.interceptors.request.eject(reqInterceptor);
+      axiosSecure.interceptors.response.eject(resInterceptor);
+    };
+  }, [userLogOut, navigate]);
 
   return [axiosSecure];
 };

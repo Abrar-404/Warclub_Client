@@ -41,6 +41,16 @@ const SocialLogin = () => {
           photoURL: user.photoURL,
         };
 
+        // Request and persist JWT token
+        axiosSecure
+          .post('/jwt', { email: user.email })
+          .then(jwtRes => {
+            if (jwtRes.data?.token) {
+              localStorage.setItem('access-token', jwtRes.data.token);
+            }
+          })
+          .catch(jwtErr => console.warn('JWT notice:', jwtErr.message));
+
         axiosSecure
           .post('/users', savedUser)
           .catch(err => {
@@ -49,11 +59,11 @@ const SocialLogin = () => {
           .finally(() => {
             Swal.fire({
               title: 'Login Successful!',
+              text: `Welcome to Warclub, ${savedUser.name}!`,
               icon: 'success',
               timer: 2000,
-              color: '#FFFFFF',
-              background:
-                'linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)',
+              color: '#45F882',
+              background: '#1F2937',
               confirmButtonColor: '#45F882',
             });
             navigate(from, { replace: true });
@@ -86,8 +96,7 @@ const SocialLogin = () => {
           title: title,
           text: text,
           color: '#FFFFFF',
-          background:
-            'linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)',
+          background: '#1F2937',
           confirmButtonColor: '#45F882',
         });
       });
@@ -103,6 +112,16 @@ const SocialLogin = () => {
           photoURL: user.photoURL,
         };
 
+        // Request and persist JWT token
+        axiosSecure
+          .post('/jwt', { email: user.email })
+          .then(jwtRes => {
+            if (jwtRes.data?.token) {
+              localStorage.setItem('access-token', jwtRes.data.token);
+            }
+          })
+          .catch(jwtErr => console.warn('JWT notice:', jwtErr.message));
+
         axiosSecure
           .post('/users', savedUser)
           .catch(err => {
@@ -111,11 +130,11 @@ const SocialLogin = () => {
           .finally(() => {
             Swal.fire({
               title: 'Login Successful!',
+              text: `Welcome to Warclub, ${savedUser.name}!`,
               icon: 'success',
               timer: 2000,
-              color: '#FFFFFF',
-              background:
-                'linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)',
+              color: '#45F882',
+              background: '#1F2937',
               confirmButtonColor: '#45F882',
             });
             navigate(from, { replace: true });

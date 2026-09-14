@@ -9,6 +9,7 @@ import { AuthContext } from '../../../Providers/AuthProvider';
 import { Player } from '@lottiefiles/react-lottie-player';
 import SocialLogin from './SocialLogin';
 import useAxiosSecure from '../../Hooks/useAxiosSecure';
+import { Helmet } from 'react-helmet-async';
 
 const Register = () => {
   const { registerUser } = useContext(AuthContext);
@@ -41,6 +42,16 @@ const Register = () => {
               photoURL: data.photoURL || 'https://i.ibb.co/279NXhY/daniel-tolmachov-bluefire02.gif',
             };
 
+            // Request and store JWT token
+            axiosSecure
+              .post('/jwt', { email: data.email })
+              .then(jwtRes => {
+                if (jwtRes.data?.token) {
+                  localStorage.setItem('access-token', jwtRes.data.token);
+                }
+              })
+              .catch(jwtErr => console.warn('JWT notice:', jwtErr.message));
+
             axiosSecure
               .post('/users', savedUser)
               .catch(err => console.warn('Could not save user to DB:', err.message))
@@ -49,7 +60,8 @@ const Register = () => {
                 Swal.fire({
                   position: 'center',
                   icon: 'success',
-                  title: 'Account Created Successfully!',
+                  title: 'Welcome to Warclub Esports!',
+                  text: 'Account created successfully.',
                   showConfirmButton: false,
                   timer: 2000,
                   background: '#1F2937',
@@ -78,14 +90,17 @@ const Register = () => {
 
   return (
     <div className="min-h-screen bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')] bg-cover bg-center py-12">
+      <Helmet>
+        <title>Warclub Esports || Register</title>
+      </Helmet>
       <div className="max-w-5xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-center gap-12">
         {/* Registration Card */}
         <div className="w-full max-w-md bg-[#121820]/90 border border-green-500/50 rounded-2xl p-8 shadow-2xl backdrop-blur-sm">
-          <h1 className="text-4xl font-mono font-bold text-green-400 text-center mb-2">
-            Join Titans Arena
+          <h1 className="text-3xl font-extrabold text-white text-center mb-1">
+            Join <span className="text-[#45F882]">Warclub Esports</span>
           </h1>
-          <p className="text-gray-400 text-center text-sm mb-6">
-            Create your player profile & jump into action
+          <p className="text-gray-400 text-center text-xs mb-6">
+            Create your player profile & compete in global tournaments
           </p>
 
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">

@@ -14,11 +14,14 @@ import Tournaments from './Components/Tournaments/Tournaments';
 import Blogs from './Components/BlogPage/Blogs';
 import Profile from './Components/Pages/Dashboard/Profile';
 import Register from './Components/Pages/Login/Register';
+import ErrorPage from './Components/ErrorPage/ErrorPage';
+import { HelmetProvider } from 'react-helmet-async';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
@@ -70,8 +73,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AuthProvider>
-      <RouterProvider router={router} />
-    </AuthProvider>
+    <HelmetProvider>
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
+    </HelmetProvider>
   </React.StrictMode>
 );

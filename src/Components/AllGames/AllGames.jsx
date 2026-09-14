@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom';
-import aboutBg from '../../assets/aboutusbg.png';
-import { IoIosArrowForward } from 'react-icons/io';
+import PageBanner from '../Common/PageBanner';
 import AllGamesCardFetch from './AllGamesCardFetch';
 import AboutFooter from '../AboutUs/AboutFooter';
 
@@ -8,32 +6,25 @@ const AllGames = () => {
   return (
     <div>
       <div>
-        <div style={{ backgroundImage: `url(${aboutBg})` }}>
-          <div className="mx-auto pt-32 pb-32">
-            <h1 className="text-white font-bold lg:text-3xl text-center">
-              Our Latest Games
-            </h1>
-
-            <div className="text-white font-semibold text-sm text-center flex justify-center mx-auto items-center pt-2">
-              <h1>
-                <Link to="/">
-                  <span className="text-green-400">Home</span>
-                </Link>{' '}
-              </h1>
-              <div>
-                <IoIosArrowForward></IoIosArrowForward>
-              </div>
-              <div>Latest Games</div>
-            </div>
-          </div>
-        </div>
+        <PageBanner
+          badge="CLASSIFIED ARMORY // TITLE REPOSITORY"
+          title="WARCLUB"
+          highlight="GAMES VAULT"
+          subtitle="Explore, inspect, and deploy into competitive esports battlegrounds, cross-platform arenas, and community championships."
+          breadcrumb="Games"
+          stats={[
+            { label: 'TOTAL TITLES', value: '24+ GAMES' },
+            { label: 'CROSS-PLAY', value: 'ENABLED' },
+            { label: 'PRIZE POOLS', value: '$500K' },
+          ]}
+        />
 
 
         <div>
           <AllGamesCardFetch></AllGamesCardFetch>
         </div>
 
-        <div className='mt-32'>
+        <div className='mt-20 md:mt-24'>
           <AboutFooter></AboutFooter>
         </div>
       </div>

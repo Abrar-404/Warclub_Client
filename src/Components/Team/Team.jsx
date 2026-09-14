@@ -1,97 +1,87 @@
+import React from 'react';
 import teamImg from '../../assets/team.png';
-import '../Styles/bannerBtn.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
+import { FaDiscord, FaUsers, FaTrophy, FaBolt, FaShieldAlt } from 'react-icons/fa';
 
 const Team = () => {
   return (
-    <div>
-      <div className="relative">
-        <img src={teamImg} alt="" />
+    <div className="w-full max-w-7xl mx-auto px-4 my-12">
+      {/* Clan Hub Banner Frame */}
+      <div className="relative rounded-3xl border border-gray-800 bg-[#070b13] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.85)]">
+        {/* Background Image with Cyber Gradients */}
+        <div 
+          className="absolute inset-0 bg-cover bg-right md:bg-center opacity-40 mix-blend-luminosity pointer-events-none"
+          style={{ backgroundImage: `url(${teamImg})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#070B13] via-[#070B13]/90 to-transparent pointer-events-none" />
+        <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-[#45F882] to-transparent opacity-80" />
 
-        {/* texts */}
-
-        <div
-          className="absolute lg:top-[20%] lg:left-[10%] md:top-[8%] md:left-[10%] left-[10%] top-[5%]"
-          data-aos="fade-right"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-        >
-          <h1 className="text-[#43F27F] font-semibold lg:text-xl md:text-base text-[10px]">
-            # World Best Gaming Site
-          </h1>{' '}
-          <br />
-          <h1 className="text-white lg:text-3xl md:text-2xl text-[11px] font-bold">
-            Join Warclub Esports To Become <br /> Next{' '}
-            <span className="text-[#43F27F] font-normal">
-              PRO Gamer Today !
+        {/* Content Container */}
+        <div className="relative z-10 p-8 sm:p-12 lg:p-16 max-w-2xl">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#45F882]/10 border border-[#45F882]/30 mb-4">
+            <FaShieldAlt className="text-[#45F882] text-xs" />
+            <span className="text-[11px] font-orbitron font-bold text-[#45F882] tracking-widest uppercase">
+              GLOBAL CLAN & SQUAD RECRUITMENT
             </span>
-          </h1>{' '}
-          <br />
-          <h1 className="text-[#6F7989] lg:text-lg md:text-base mt-0 pt-0 text-[10px]">
-            Esports and gaming facilities requires thoughtful consideration of{' '}
-            <br />
-            various elements to create an environment that caters to the needs{' '}
-            <br />
-            of gamers and enhances the overall gaming experience.
-          </h1>
-        </div>
+          </div>
 
-        {/* button */}
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-orbitron font-extrabold text-white uppercase leading-tight">
+            JOIN WARCLUB TO BECOME THE NEXT <br className="hidden sm:inline" />
+            <span className="text-[#45F882] neon-text-green">PRO CHAMPION</span> TODAY!
+          </h2>
 
-        <div className="absolute lg:top-[70%] lg:left-[10%] md:top-[86%] md:left-[10%] top-[170px] left-[35%]">
-          <Link to="/contact" aria-label="Join Community">
-            <button className="cta">
-              <span className="span">Join Community</span>
-              <span className="second">
-                <svg
-                  width={
-                    window.innerWidth >= 1024
-                      ? '50px'
-                      : window.innerWidth >= 768
-                      ? '30px'
-                      : '20px'
-                  }
-                  height={
-                    window.innerWidth >= 1024
-                      ? '20px'
-                      : window.innerWidth >= 768
-                      ? '10px'
-                      : '8px'
-                  }
-                  viewBox="0 0 66 43"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                >
-                  <g
-                    id="arrow"
-                    stroke="none"
-                    strokeWidth="1"
-                    fill="none"
-                    fillRule="evenodd"
-                  >
-                    <path
-                      className="one"
-                      d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
-                      fill="#FFFFFF"
-                    ></path>
-                    <path
-                      className="two"
-                      d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
-                      fill="#FFFFFF"
-                    ></path>
-                    <path
-                      className="three"
-                      d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
-                      fill="#FFFFFF"
-                    ></path>
-                  </g>
-                </svg>
-              </span>
-            </button>
-          </Link>
+          <p className="text-gray-300 text-sm sm:text-base font-rajdhani leading-relaxed mt-4">
+            Connect with thousands of competitive athletes, find verified scrim partners, recruit teammates, and compete in our official Discord community hub with 24/7 moderation.
+          </p>
+
+          {/* Quick Perks Strip */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 my-6 text-xs font-rajdhani">
+            <div className="flex items-center gap-2 bg-[#0c1420]/80 border border-gray-800 px-3 py-2 rounded-xl">
+              <FaUsers className="text-[#45F882] text-sm flex-shrink-0" />
+              <div>
+                <strong className="text-white block font-orbitron text-xs">45,000+</strong>
+                <span className="text-gray-400 text-[10px]">Active Members</span>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2 bg-[#0c1420]/80 border border-gray-800 px-3 py-2 rounded-xl">
+              <FaTrophy className="text-[#F03AF9] text-sm flex-shrink-0" />
+              <div>
+                <strong className="text-white block font-orbitron text-xs">$500K+</strong>
+                <span className="text-gray-400 text-[10px]">Annual Bounties</span>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2 bg-[#0c1420]/80 border border-gray-800 px-3 py-2 rounded-xl col-span-2 sm:col-span-1">
+              <FaBolt className="text-yellow-400 text-sm flex-shrink-0" />
+              <div>
+                <strong className="text-white block font-orbitron text-xs">DAILY</strong>
+                <span className="text-gray-400 text-[10px]">Tier-1 Scrims</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Interactive CTAs */}
+          <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
+            <a
+              href="https://discord.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto"
+            >
+              <button className="w-full sm:w-auto px-7 py-3.5 bg-[#5865F2] hover:bg-[#4752c4] text-white font-orbitron font-extrabold text-xs uppercase tracking-wider rounded-xl shadow-[0_0_20px_rgba(88,101,242,0.4)] active:scale-95 transition-all flex items-center justify-center gap-2">
+                <FaDiscord className="text-base" />
+                <span>JOIN OUR DISCORD</span>
+              </button>
+            </a>
+
+            <Link to="/contact" className="w-full sm:w-auto">
+              <button className="w-full sm:w-auto px-7 py-3.5 bg-[#121A26] hover:bg-[#182333] border border-gray-700 hover:border-[#45F882] text-white font-orbitron font-semibold text-xs uppercase tracking-wider rounded-xl transition-all active:scale-95 flex items-center justify-center gap-2">
+                <FaUsers className="text-gray-400 text-xs" />
+                <span>CONTACT RECRUITERS</span>
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
@@ -99,4 +89,3 @@ const Team = () => {
 };
 
 export default Team;
-AOS.init();

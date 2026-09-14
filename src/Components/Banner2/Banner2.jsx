@@ -1,120 +1,172 @@
-import shape3 from '../../assets/shape3.png';
+import React, { useState, useEffect } from 'react';
 import hero1 from '../../assets/hero1.png';
 import hero2 from '../../assets/hero2.png';
-import '../Styles/bannerBtn.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import vs from '../../assets/vs.png';
 import { Link } from 'react-router-dom';
+import { FaFire, FaTrophy, FaGamepad, FaClock, FaShieldAlt } from 'react-icons/fa';
 
 const Banner2 = () => {
-  // const inVoice = () => {
-  // window.print()
-  // }
+  // Live ticking match countdown for interactivity
+  const [timeLeft, setTimeLeft] = useState({ hours: 2, minutes: 14, seconds: 36 });
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(prev => {
+        if (prev.seconds > 0) return { ...prev, seconds: prev.seconds - 1 };
+        if (prev.minutes > 0) return { ...prev, minutes: prev.minutes - 1, seconds: 59 };
+        if (prev.hours > 0) return { hours: prev.hours - 1, minutes: 59, seconds: 59 };
+        return { hours: 2, minutes: 30, seconds: 0 };
+      });
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const formatNum = (num) => String(num).padStart(2, '0');
 
   return (
-    <div className="flex justify-center ">
-      <div className="relative">
-        <img className="" src={shape3} alt="" />
+    <div className="w-full max-w-7xl mx-auto px-4 py-8">
+      {/* Cybernetic Arena Card */}
+      <div className="relative rounded-3xl border border-gray-800 bg-[#070B12]/95 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.85)] p-6 md:p-10 lg:p-12">
+        {/* Background Grid & Ambient Glows */}
+        <div className="absolute inset-0 cyber-grid-bg opacity-30 pointer-events-none" />
+        <div className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-[#45F882]/10 rounded-full blur-[90px] pointer-events-none" />
+        <div className="absolute top-1/2 right-1/4 translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-[#F03AF9]/10 rounded-full blur-[90px] pointer-events-none" />
+        <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-[#45F882] to-transparent opacity-75" />
 
-        <div className="">
-          <img
-            data-aos="fade-right"
-            data-aos-duration="2000"
-            className="absolute lg:w-[250px] lg:h-[300px] md:w-[150px] md:h-[170px] lg:top-[120px] lg:left-[200px] md:top-[68px] md:left-[100px] w-[80px] h-[100px] top-[32px] left-[60px]"
-            src={hero1}
-            alt=""
-          />
+        {/* Top Header Telemetry */}
+        <div className="relative z-10 text-center mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#45F882]/10 border border-[#45F882]/30 mb-3">
+            <FaFire className="text-[#45F882] text-xs animate-bounce" />
+            <span className="text-[11px] font-orbitron font-bold text-[#45F882] tracking-widest uppercase">
+              FEATURED MATCHUP // APEX GRAND FINALS
+            </span>
+          </div>
+          <h2 className="text-2xl md:text-4xl font-orbitron font-extrabold text-white uppercase tracking-wider">
+            CLASH OF THE <span className="text-[#45F882]">TITANS</span>
+          </h2>
+          <p className="text-gray-400 text-xs sm:text-sm font-rajdhani max-w-xl mx-auto mt-2">
+            Watch the world's most feared esports squads duel in high-stakes bracket elimination. 
+            Choose your side and witness cybernetic dominance.
+          </p>
         </div>
 
-        <div className="">
-          <img
-            data-aos="fade-left"
-            data-aos-duration="2000"
-            className="absolute lg:w-[250px] lg:h-[300px] md:w-[150px] md:h-[170px] lg:top-[120px] lg:left-[870px] md:top-[68px] md:left-[480px] w-[80px] h-[100px] top-[32px] left-[280px]"
-            src={hero2}
-            alt=""
-          />
-        </div>
+        {/* Main Versus Arena Grid */}
+        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          {/* Left Contender: Team Shadow */}
+          <div className="lg:col-span-4 flex flex-col items-center text-center order-2 lg:order-1">
+            <div className="relative group w-full h-64 sm:h-72 md:h-80 lg:h-88 flex items-end justify-center">
+              <div className="absolute inset-x-8 bottom-0 h-44 bg-gradient-to-t from-[#45F882]/25 via-[#45F882]/5 to-transparent rounded-2xl blur-xl opacity-40 group-hover:opacity-80 transition duration-300" />
+              <img
+                src={hero1}
+                alt="Team Ninja"
+                className="relative max-h-full w-auto object-contain filter drop-shadow-[0_0_20px_rgba(69,248,130,0.3)] transform transition duration-500 group-hover:scale-105"
+              />
+            </div>
 
-        <div>
-          <h1
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            className="text-white lg:text-3xl md:text-xl text-sm font-bold absolute lg:top-[220px] lg:left-[515px] md:top-[120px] md:left-[270px] top-[150px] left-[140px]"
-          >
-            Join The Tournaments
-          </h1>
-          <h1
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            className="text-gray-600 font-bold  lg:text-sm md:text-[10px] absolute lg:top-[270px] lg:left-[430px] md:top-[150px] md:left-[200px] top-[200px] text-center"
-          >
-            Beyond esports tournaments, include a broader calendar of gaming
-            events, <br /> conferences, and conventions. and connect with each
-            other.
-          </h1>
-        </div>
-
-        {/* button */}
-
-        <div className="absolute lg:w-[250px] lg:h-[300px] md:w-[150px] md:h-[170px] lg:top-[314px] lg:left-[560px] md:top-[180px] md:left-[320px] w-[80px] h-[100px] top-[310px] left-[160px]">
-          <Link to="/contact">
-            <button class="cta">
-              <span class="span">Join Now</span>
-              <span class="second">
-                <svg
-                  width={
-                    window.innerWidth >= 1024
-                      ? '50px'
-                      : window.innerWidth >= 768
-                      ? '30px'
-                      : '20px'
-                  }
-                  height={
-                    window.innerWidth >= 1024
-                      ? '20px'
-                      : window.innerWidth >= 768
-                      ? '10px'
-                      : '8px'
-                  }
-                  viewBox="0 0 66 43"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <g
-                    id="arrow"
-                    stroke="none"
-                    strokeWidth="1"
-                    fill="none"
-                    fillRule="evenodd"
-                  >
-                    <path
-                      className="one"
-                      d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
-                      fill="#FFFFFF"
-                    ></path>
-                    <path
-                      className="two"
-                      d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
-                      fill="#FFFFFF"
-                    ></path>
-                    <path
-                      className="three"
-                      d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
-                      fill="#FFFFFF"
-                    ></path>
-                  </g>
-                </svg>
+            <div className="mt-5 space-y-1.5 w-full flex flex-col items-center text-center">
+              <span className="inline-block px-3 py-1 rounded-full bg-[#45F882]/10 border border-[#45F882]/40 text-[#45F882] font-mono text-xs font-semibold uppercase tracking-wider">
+                FACTION 01 // SHADOW STRIKE
               </span>
-            </button>
-          </Link>
-        </div>
+              <h3 className="text-xl sm:text-2xl font-orbitron font-extrabold text-white tracking-wide">
+                THE NINJAS
+              </h3>
+              <div className="flex items-center justify-center gap-3 text-xs font-rajdhani text-gray-400">
+                <span>WIN RATE: <strong className="text-[#45F882]">78.4%</strong></span>
+                <span>•</span>
+                <span>STREAK: <strong className="text-white">8 WINS</strong></span>
+              </div>
+            </div>
+          </div>
 
-        <div className="absolute top-[63px] left-[189px]">
-          <div className="lg:hidden md:hidden sm:block">
-            <img className="w-[40px] h-[50px]" src={vs} alt="" />
+          {/* Center Versus Hub & Countdown */}
+          <div className="lg:col-span-4 flex flex-col items-center justify-center text-center order-1 lg:order-2">
+            {/* VS Emblem */}
+            <div className="relative mb-5">
+              <div className="absolute -inset-4 bg-gradient-to-r from-[#45F882]/20 via-transparent to-[#F03AF9]/20 rounded-full blur-xl animate-pulse" />
+              <img
+                src={vs}
+                alt="Versus"
+                className="relative w-20 sm:w-24 h-auto object-contain filter drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]"
+              />
+            </div>
+
+            {/* Countdown Box */}
+            <div className="w-full max-w-xs bg-[#0C121B]/90 border border-gray-800 rounded-2xl p-4 shadow-xl mb-5">
+              <div className="flex items-center justify-center gap-1.5 text-xs text-gray-400 font-orbitron mb-2">
+                <FaClock className="text-[#45F882]" />
+                <span className="tracking-wider uppercase">BATTLE STARTS IN</span>
+              </div>
+              <div className="flex items-center justify-center gap-3 font-orbitron font-bold text-xl sm:text-2xl text-white">
+                <div className="flex flex-col items-center">
+                  <span className="px-2.5 py-1 bg-[#141E2B] rounded-lg border border-gray-700/60 text-[#45F882]">
+                    {formatNum(timeLeft.hours)}
+                  </span>
+                  <span className="text-[9px] text-gray-500 font-mono mt-1">HOURS</span>
+                </div>
+                <span className="text-gray-600">:</span>
+                <div className="flex flex-col items-center">
+                  <span className="px-2.5 py-1 bg-[#141E2B] rounded-lg border border-gray-700/60 text-[#45F882]">
+                    {formatNum(timeLeft.minutes)}
+                  </span>
+                  <span className="text-[9px] text-gray-500 font-mono mt-1">MINS</span>
+                </div>
+                <span className="text-gray-600">:</span>
+                <div className="flex flex-col items-center">
+                  <span className="px-2.5 py-1 bg-[#141E2B] rounded-lg border border-gray-700/60 text-white animate-pulse">
+                    {formatNum(timeLeft.seconds)}
+                  </span>
+                  <span className="text-[9px] text-gray-500 font-mono mt-1">SECS</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Bounty Badge */}
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F03AF9]/10 border border-[#F03AF9]/30 text-xs font-orbitron text-[#F03AF9] mb-5">
+              <FaTrophy className="text-xs" />
+              <span>BOUNTY POOL: $25,000 USD</span>
+            </div>
+
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xs">
+              <Link to="/tournament" className="flex-1">
+                <button className="w-full h-11 px-5 bg-[#45F882] hover:bg-[#3be074] border border-[#45F882] text-black font-orbitron font-extrabold text-xs uppercase tracking-wider rounded-xl shadow-[0_0_20px_rgba(69,248,130,0.4)] active:scale-95 transition-all flex items-center justify-center gap-2 cursor-pointer">
+                  <FaGamepad />
+                  <span>ENTER ARENA</span>
+                </button>
+              </Link>
+              <Link to="/contact" className="flex-1">
+                <button className="w-full h-11 px-5 bg-[#121A26] hover:bg-[#182333] border border-gray-700 hover:border-[#45F882] text-white font-orbitron font-semibold text-xs uppercase tracking-wider rounded-xl transition-all active:scale-95 flex items-center justify-center gap-1.5 cursor-pointer">
+                  <FaShieldAlt className="text-gray-400 text-xs" />
+                  <span>REGISTER</span>
+                </button>
+              </Link>
+            </div>
+          </div>
+
+          {/* Right Contender: Team Titan */}
+          <div className="lg:col-span-4 flex flex-col items-center text-center order-3">
+            <div className="relative group w-full h-64 sm:h-72 md:h-80 lg:h-88 flex items-end justify-center">
+              <div className="absolute inset-x-8 bottom-0 h-44 bg-gradient-to-t from-[#F03AF9]/25 via-[#F03AF9]/5 to-transparent rounded-2xl blur-xl opacity-40 group-hover:opacity-80 transition duration-300" />
+              <img
+                src={hero2}
+                alt="Team Pandas"
+                className="relative max-h-full w-auto object-contain filter drop-shadow-[0_0_20px_rgba(240,58,249,0.3)] transform transition duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            <div className="mt-5 space-y-1.5 w-full flex flex-col items-center text-center">
+              <span className="inline-block px-3 py-1 rounded-full bg-[#F03AF9]/10 border border-[#F03AF9]/40 text-[#F03AF9] font-mono text-xs font-semibold uppercase tracking-wider">
+                FACTION 02 // CYBER VANGUARD
+              </span>
+              <h3 className="text-xl sm:text-2xl font-orbitron font-extrabold text-white tracking-wide">
+                THE PANDAS
+              </h3>
+              <div className="flex items-center justify-center gap-3 text-xs font-rajdhani text-gray-400">
+                <span>WIN RATE: <strong className="text-[#F03AF9]">75.1%</strong></span>
+                <span>•</span>
+                <span>STREAK: <strong className="text-white">6 WINS</strong></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -123,5 +175,3 @@ const Banner2 = () => {
 };
 
 export default Banner2;
-
-AOS.init();

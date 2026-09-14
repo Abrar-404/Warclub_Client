@@ -20,7 +20,7 @@ import { Autoplay } from 'swiper/modules';
 
 export default function StickerSlider() {
   return (
-    <stickers>
+    <div>
       <Swiper
         slidesPerView={10}
         spaceBetween={1}
@@ -161,6 +161,6 @@ export default function StickerSlider() {
           </SwiperSlide>
         </div>
       </Swiper>
-    </stickers>
+    </div>
   );
 }

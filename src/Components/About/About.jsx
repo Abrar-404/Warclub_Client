@@ -1,74 +1,105 @@
+import React from 'react';
 import bigPic from '../../assets/About.png';
 import littlePic from '../../assets/about2.png';
 import feature1 from '../../assets/about_feature_1.svg';
 import feature2 from '../../assets/feature2.svg';
 import feature3 from '../../assets/feature3.svg';
+import { Link } from 'react-router-dom';
+import { FaShieldAlt, FaArrowRight } from 'react-icons/fa';
 import '../Styles/featureStyle.css';
+
+const features = [
+  {
+    icon: feature1,
+    title: '1,000+ Affiliate Game Programs',
+    desc: 'Empowering cyber athletes and creators with verified publisher partnerships, brand sponsorships, and tournament prize syndicates.',
+    tag: 'Ecosystem'
+  },
+  {
+    icon: feature2,
+    title: 'Championship Tier Tournaments',
+    desc: 'Dynamic real-time brackets, double-elimination formats, automated dispute arbitration, and instant digital payout escrows.',
+    tag: 'Leagues'
+  },
+  {
+    icon: feature3,
+    title: '24/7 Matchmaking & Support',
+    desc: 'Sub-12ms server mesh, AI-assisted anti-cheat telemetry, and live tournament marshals standing by around the clock.',
+    tag: 'Integrity'
+  }
+];
 
 const About = () => {
   return (
-    <div>
-      <div className="flex flex-col md:flex-col lg:flex-row mx-auto gap-5 justify-center mt-48">
-        <div className="flex justify-center mx-auto">
-          <img className="reveal-from-left" src={bigPic} alt="" />
+    <section className="relative w-full max-w-7xl mx-auto px-4 mt-16 md:mt-20">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        {/* Left Side: Illustration */}
+        <div className="lg:col-span-6 flex justify-center">
+          <div className="relative group">
+            <div className="absolute -inset-4 bg-gradient-to-tr from-[#45F882]/20 to-transparent rounded-3xl blur-2xl opacity-60 group-hover:opacity-100 transition duration-500 pointer-events-none" />
+            <img
+              className="relative z-10 w-full max-w-lg h-auto object-contain filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)]"
+              src={bigPic}
+              alt="Warclub Gaming Universe"
+            />
+          </div>
         </div>
 
-        <div className="mx-auto">
-          <div className="flex items-center gap-5 mx-auto justify-start">
-            <img src={littlePic} className="reveal-from-top" alt="" />
-            <div className="reveal-from-left">
-              <h1 className="text-[#45F882] font-bold lg:text-2xl">
-                # About Our Gaming Site
-              </h1>
-              <h1 className="text-white lg:text-5xl font-bold mt-5">
-                Forging Legends In The <br /> Gaming Universe
-              </h1>
+        {/* Right Side: Narrative & Features */}
+        <div className="lg:col-span-6 space-y-6">
+          <div>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#45F882]/10 border border-[#45F882]/30 mb-3">
+              <FaShieldAlt className="text-[#45F882] text-xs" />
+              <span className="text-[11px] font-orbitron font-bold text-[#45F882] tracking-widest uppercase">
+                ABOUT WARCLUB ECOSYSTEM
+              </span>
             </div>
+
+            <h2 className="text-2xl sm:text-4xl font-orbitron font-extrabold text-white uppercase leading-tight">
+              FORGING LEGENDS IN THE <br />
+              <span className="text-[#45F882] neon-text-green">GAMING UNIVERSE</span>
+            </h2>
+
+            <p className="text-gray-300 text-sm sm:text-base font-rajdhani leading-relaxed mt-3">
+              Warclub unites elite competitive players, aspiring champions, and passionate fans under a single high-performance esports platform.
+            </p>
           </div>
 
-          <div className="flex items-center gap-5 mt-10 lg:justify-start md:justify-center justify-center mx-auto">
-            <img src={feature1} className="reveal-from-top" alt="" />
-            <div className="reveal-from-left">
-              <h1 className="text-white lg:text-2xl font-bold">
-                Over <span className="text-[#45f882]">1k+</span> Affiliate Game
-                Programs
-              </h1>
-              <h1 className="text-[#9199AD] font-semibold mt-2">
-                Keep users informed about the gaming industry with news <br />{' '}
-                articles on releases, updates, and events.
-              </h1>
-            </div>
+          {/* Feature Cards Grid */}
+          <div className="space-y-4">
+            {features.map((feat, idx) => (
+              <div
+                key={idx}
+                className="group flex items-start gap-4 p-4 rounded-2xl bg-[#0a0f18]/85 border border-gray-800 hover:border-[#45F882]/60 transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(69,248,130,0.15)]"
+              >
+                <div className="w-12 h-12 rounded-xl bg-[#121a26] border border-gray-700/60 group-hover:border-[#45F882] flex items-center justify-center shrink-0 transition-colors">
+                  <img src={feat.icon} alt="" className="w-7 h-7 object-contain" />
+                </div>
+
+                <div>
+                  <h3 className="font-orbitron font-bold text-base text-white group-hover:text-[#45F882] transition-colors">
+                    {feat.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-gray-400 font-rajdhani mt-1 leading-relaxed">
+                    {feat.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
 
-          <div className="flex items-center gap-5 mt-10 lg:justify-start md:justify-center justify-center mx-auto">
-            <img src={feature2} className="reveal-from-top" alt="" />
-            <div className="reveal-from-left">
-              <h1 className="text-white lg:text-2xl font-bold">
-                Great Tournaments
-              </h1>
-              <h1 className="text-[#9199AD] font-semibold mt-2">
-                Display a calendar of upcoming tournaments with dates, <br />{' '}
-                times, and game titles and provide live updates.
-              </h1>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-5 mt-10 lg:justify-start md:justify-center justify-center mx-auto">
-            <img src={feature3} className="reveal-from-top" alt="" />
-            <div className="reveal-from-left">
-              <h1 className="text-white lg:text-2xl font-bold">
-                Get Online Supports
-              </h1>
-              <h1 className="text-[#9199AD] font-semibold mt-2">
-                Create profiles for professional esports players, including{' '}
-                <br />
-                their bios, achievements, and current teams.
-              </h1>
-            </div>
+          {/* Learn More Button */}
+          <div className="pt-2">
+            <Link to="/aboutUs" className="inline-block">
+              <button className="px-6 py-3 bg-[#111924] hover:bg-[#45F882] text-white hover:text-black font-orbitron font-bold text-xs uppercase tracking-wider rounded-xl border border-gray-700 hover:border-[#45F882] shadow-md hover:shadow-[0_0_20px_rgba(69,248,130,0.4)] active:scale-95 transition-all flex items-center gap-2">
+                <span>EXPLORE WARCLUB STORY</span>
+                <FaArrowRight className="text-xs" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,260 +1,75 @@
-// import { useContext, useState } from 'react';
-// import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
-
-// import { FcGoogle } from 'react-icons/fc';
-// import { GiEnergyArrow } from 'react-icons/gi';
-
-// import Swal from 'sweetalert2';
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
-// import axios from 'axios';
-// import { AuthContext } from '../../../Providers/AuthProvider';
-
-// const Login = () => {
-//   const { loginUser, googleSignIn, googleRegister } = useContext(AuthContext);
-//   const [error, setError] = useState(null);
-//   const naviGate = useNavigate();
-//   const location = useLocation();
-
-//   const handleGoogleSignIn = () => {
-//     googleRegister()
-//       .then(result => {
-//         Swal.fire({
-//           imageUrl: `https://i.ibb.co/H4HnLmL/yippee-yay.gif`,
-//           title: 'WOOHOOO!!!! Welcome To The World!!!!',
-//           width: 600,
-//           padding: '3em',
-//           color: '#7CFC00',
-//           background: '#fff url()',
-//           backdrop: `
-//     rgba(0,0,123,0.4)
-//     top
-//     no-repeat
-//   `,
-//         });
-//         console.log(result.user);
-//         const loggedInGoogleUser = result?.user;
-//         console.log(loggedInGoogleUser);
-//         // const user = { email };
-//         axios
-//           .post('https://server-pi-opal-58.vercel.app/jwt', loggedInGoogleUser, {
-//             withCredentials: true,
-//           })
-//           .then(res => {
-//             console.log(res.data);
-//           });
-//         naviGate(location?.state ? location.state : '/');
-//       })
-//       .catch(error => {
-//         console.error(error);
-//       });
-//   };
-
-//   const handleLogin = e => {
-//     e.preventDefault();
-//     setError(null);
-
-//     const email = e.target.email.value;
-//     const password = e.target.password.value;
-//     console.log(email, password);
-
-//     loginUser(email, password)
-//       .then(result => {
-//         const loggedInUser = result?.user;
-//         console.log(loggedInUser);
-//         const user = { email };
-//         axios
-//           .post('https://server-pi-opal-58.vercel.app/jwt', user, {
-//             withCredentials: true,
-//           })
-//           .then(res => {
-//             console.log(res.data);
-//             if (res.data?.success) {
-//               naviGate(location?.state ? location.state : '/');
-//             }
-//           });
-//         Swal.fire({
-//           imageUrl: `https://i.ibb.co/H4HnLmL/yippee-yay.gif`,
-//           title: 'WOOHOOO!!!! Welcome To The World!!!!',
-//           width: 600,
-//           padding: '3em',
-//           color: '#7CFC00',
-//           background: '#fff url()',
-//           backdrop: `
-//     rgba(0,0,123,0.4)
-//     top
-//     no-repeat
-//   `,
-//         });
-//       })
-//       .catch(error => {
-//         console.error(error);
-//         Swal.fire({
-//           imageUrl: `https://i.ibb.co/ZLj6kP2/200w.gif`,
-//           title: 'Email and Password did not match',
-//           width: 600,
-//           padding: '3em',
-//           color: '#C70039 ',
-//           background: '#fff url()',
-//           backdrop: `
-//     rgba(0,0,123,0.4)
-//     top
-//     no-repeat
-//   `,
-//         });
-//       });
-//   };
-
-//   return (
-//     <>
-//       <ToastContainer />
-//       <div className="hero  min-h-screen">
-//         <div className="hero-content  flex-col lg:flex-row-reverse">
-//           <div className="text-center items-center lg:text-left">
-//             <h1 className="text-5xl w-full text-white font-bold">Login now!</h1>
-//             <img
-//               className="w-[200px] h-[180px] mt-10 rounded-full"
-//               src="https://i.ibb.co/279NXhY/daniel-tolmachov-bluefire02.gif"
-//               alt=""
-//             />
-//           </div>
-//           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl  bg-slate-700 bg-opacity-60">
-//             {error && (
-//               <div
-//                 className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
-//                 role="alert"
-//               >
-//                 {error}
-//               </div>
-//             )}
-//             <form onSubmit={handleLogin} className="card-body">
-//               <div className="form-control">
-//                 <label className="label">
-//                   <span className="label-text text-white font-bold">Email</span>
-//                 </label>
-//                 <input
-//                   type="email"
-//                   placeholder="email"
-//                   className="input input-bordered"
-//                   required
-//                   name="email"
-//                 />
-//               </div>
-//               <div className="form-control">
-//                 <label className="label">
-//                   <span className="label-text text-white font-bold">
-//                     Password
-//                   </span>
-//                 </label>
-//                 <input
-//                   type="password"
-//                   placeholder="password"
-//                   className="input input-bordered"
-//                   required
-//                   name="password"
-//                 />
-//                 <label className="label">
-//                   <span className="label-text text-white font-bold">
-//                     Password
-//                   </span>
-//                   <a
-//                     href="#"
-//                     className="label-text-alt link text-white font-bold link-hover"
-//                   >
-//                     Forgot password?
-//                   </a>
-//                 </label>
-//               </div>
-//               <div className="form-control mt-6">
-//                 <button className="btn btn-primary">Login</button>
-//               </div>
-//               <p className="text-white font-medium">
-//                 New to this World? Please{' '}
-//                 <Link className="text-blue-700 font-bold" to="/register">
-//                   Register
-//                 </Link>
-//               </p>
-//               <div
-//                 className="w-full justify-center items-center flex mx-auto"
-//                 onClick={handleGoogleSignIn}
-//               >
-//                 <div className="text-3xl -rotate-45 w-9 text-red-600">
-//                   <GiEnergyArrow></GiEnergyArrow>
-//                 </div>
-//                   <button className="text-3xl w-full text-center flex mx-auto">
-//                     <FcGoogle></FcGoogle>
-//                   </button>
-//                 <div className="text-3xl w-9 -rotate-[225deg] text-red-600">
-//                   <GiEnergyArrow></GiEnergyArrow>
-//                 </div>
-//               </div>
-//             </form>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Login;
-
 import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import Swal from 'sweetalert2';
 import SocialLogin from './SocialLogin';
 import { Helmet } from 'react-helmet-async';
-import ReCAPTCHA from 'react-google-recaptcha';
 import { AuthContext } from '../../../Providers/AuthProvider';
 import { Player } from '@lottiefiles/react-lottie-player';
+import { apiFetch } from '../../../Config/apiConfig';
+import { FaGamepad, FaEnvelope, FaLock, FaArrowRight } from 'react-icons/fa';
 
 const Login = () => {
   const { loginUser, user, passwordReset } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
-  const [verify, SetVerify] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const from = location.state?.from?.pathname || '/';
+  const from = location.state?.from?.pathname || '/dashboard/profile';
   const {
     register,
     handleSubmit,
     getValues,
     formState: { errors },
   } = useForm();
-  const onSubmit = data => {
-    loginUser(data.email, data.password)
-      .then(result => {
-        const loggedUser = result.user;
-        console.log(loggedUser);
-        console.log('User login successful');
 
-        navigate(from, { replace: true });
+  const onSubmit = async (data) => {
+    setLoading(true);
+    try {
+      const result = await loginUser(data.email, data.password);
+      const loggedUser = result.user;
 
-        Swal.fire({
-          title: 'User Login Successful.',
-          icon: 'success',
-          showConfirmButton: false,
-          timer: 1500,
-          background: '#1F2937',
-          color: '#45F882',
+      // Request and save JWT token
+      try {
+        const jwtRes = await apiFetch('/jwt', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: loggedUser.email }),
         });
-      })
-      .catch(error => {
-        console.error(error);
-        Swal.fire({
-          icon: 'error',
-          title: 'Login Failed',
-          text: error.message,
-          background: '#1F2937',
-          color: '#FFFFFF',
-        });
+        const jwtData = await jwtRes.json();
+        if (jwtData?.token) {
+          localStorage.setItem('access-token', jwtData.token);
+        }
+      } catch (tokenErr) {
+        console.warn('JWT token request notice:', tokenErr.message);
+      }
+
+      Swal.fire({
+        title: 'Welcome Back to Warclub!',
+        text: 'Login successful. Connecting to player hub...',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 1800,
+        background: '#1F2937',
+        color: '#45F882',
+        confirmButtonColor: '#45F882',
       });
-  };
 
-  const onChange = value => {
-    console.log('Captcha Value', value);
-    SetVerify(true);
+      navigate(from, { replace: true });
+    } catch (error) {
+      console.error('Login error:', error);
+      Swal.fire({
+        icon: 'error',
+        title: 'Login Failed',
+        text: error.message || 'Invalid credentials. Please try again.',
+        background: '#1F2937',
+        color: '#FFFFFF',
+        confirmButtonColor: '#45F882',
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   const passwordResetHandle = () => {
@@ -262,10 +77,11 @@ const Login = () => {
     if (!enteredEmail) {
       Swal.fire({
         title: 'Please enter your email',
-        text: 'Type your email into the email field above to reset your password.',
+        text: 'Type your registered email address into the form above.',
         icon: 'info',
         background: '#1F2937',
         color: '#FFFFFF',
+        confirmButtonColor: '#45F882',
       });
       return;
     }
@@ -276,123 +92,140 @@ const Login = () => {
           Swal.fire({
             icon: 'success',
             title: 'Password Reset Email Sent',
-            text: `A reset link was sent to ${enteredEmail}. Please check your inbox.`,
+            text: `A password reset link was dispatched to ${enteredEmail}. Please check your inbox.`,
             background: '#1F2937',
             color: '#45F882',
+            confirmButtonColor: '#45F882',
           });
         })
-        .catch(error => {
+        .catch((error) => {
           console.error('Password reset error:', error);
           Swal.fire({
             icon: 'error',
-            title: 'Error',
+            title: 'Reset Request Failed',
             text: error.message,
             background: '#1F2937',
             color: '#FFFFFF',
+            confirmButtonColor: '#45F882',
           });
         });
     }
   };
 
   return (
-    <div>
-      {/* <Helmet>
-        <title>Titans Arena || LogIn</title>
-      </Helmet> */}
-      <div className="hero min-h-screen  bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
-        <div className="hero-content flex-col my-20 lg:flex-row-reverse">
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl ">
-            <h1 className="text-5xl mb-5 mt-5 text-center font-mono font-bold text-green-500">
-              Login To Titans Arena
-            </h1>
+    <div className="min-h-screen py-12 flex items-center justify-center">
+      <Helmet>
+        <title>Warclub Esports || Player Login</title>
+      </Helmet>
 
-            <div className="flex flex-col justify-center items-center rounded-md border-green-500 border lg:p-3 -mx-1 lg:mx-0 ">
-              <form
-                onSubmit={handleSubmit(onSubmit)}
-                className="   shadow-md rounded px-8 pt-6 pb-8 w-full"
-              >
-                <div className="mb-2">
-                  <label
-                    className="block  text-green-400 text-xl font-bold mb-2"
-                    htmlFor="email"
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    {...register('email', { required: true })}
-                    className="p-3  outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
-                  />
-                  {errors.email && (
-                    <p className="text-red-500 text-xs italic">
-                      Email is required.
-                    </p>
-                  )}
-                </div>
-
-                <div className="">
-                  <label
-                    className="block text-green-400 text-xl  font-bold mb-2"
-                    htmlFor="password"
-                  >
-                    Password
-                  </label>
-                  <input
-                    type="password"
-                    id="password"
-                    {...register('password', { required: true })}
-                    className="p-3 mb-5 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
-                  />
-                  {errors.password && (
-                    <p className="text-red-500 text-xs italic">
-                      Password is required.
-                    </p>
-                  )}
-                </div>
-                <div className="flex items-center justify-between">
-                  <button
-                    type="submit"
-                    className="custom-button hover:bg-green-500 py-2 px-5 w-full"
-                  >
-                    Login
-                  </button>
-                </div>
-              </form>
-              <button
-                onClick={passwordResetHandle}
-                className=" text-purple-500"
-              >
-                Forget Password?
-              </button>
-              <div className="">
-                <div className=" flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
-                  <p className="mx-4 mb-0 text-center text-green-500 font-semibold ">
-                    Or
-                  </p>
-                </div>
-                <div className="ml-5">
-                  <SocialLogin></SocialLogin>
-
-                  <p className="mt-4 text-center text-green-500 flex items-center gap-3 mb-3">
-                    Don't Have an Account Go To
-                    <Link className="text-indigo-600 " to="/register">
-                      Register{' '}
-                    </Link>{' '}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="text-center lg:text-left">
+      <div className="max-w-5xl w-full mx-auto px-4 flex flex-col lg:flex-row items-center justify-center gap-12">
+        {/* Left Side: Animated Gamer Graphic */}
+        <div className="hidden lg:flex flex-col items-center justify-center max-w-md text-center">
+          <div className="p-4 rounded-3xl bg-slate-900/60 border border-green-500/20 shadow-2xl backdrop-blur-sm">
             <Player
-              className=" rounded-lg  sm:w-[500px] sm:h-[500px]"
+              className="w-80 h-80"
               autoplay
               loop
               src="https://assets6.lottiefiles.com/packages/lf20_nc1bp7st.json"
-              // style={{ height: "500px", width: "700px" }}
-            ></Player>
+            />
+            <div className="mt-4 px-4 pb-2">
+              <span className="px-3 py-1 bg-green-500/20 text-[#45F882] text-xs font-bold uppercase rounded-full border border-green-500/30">
+                Next-Gen Esports Club
+              </span>
+              <h3 className="text-xl font-bold text-white mt-2">
+                Compete, Climb, Conquer
+              </h3>
+              <p className="text-gray-400 text-xs mt-1">
+                Access tournaments, team matchmaking, and player stats in one hub.
+              </p>
+            </div>
           </div>
+        </div>
+
+        {/* Right Side: Login Form Card */}
+        <div className="w-full max-w-md bg-[#0F1722]/90 border border-green-500/40 rounded-3xl p-8 shadow-2xl backdrop-blur-md">
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center justify-center p-3 rounded-2xl bg-green-500/10 text-[#45F882] mb-3">
+              <FaGamepad size={28} />
+            </div>
+            <h1 className="text-3xl font-extrabold text-white">
+              Login to <span className="text-[#45F882]">Warclub</span>
+            </h1>
+            <p className="text-gray-400 text-xs mt-1">
+              Enter your player credentials to resume your session
+            </p>
+          </div>
+
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+            <div>
+              <label className="block text-gray-300 text-xs font-semibold mb-1 flex items-center gap-1.5" htmlFor="email">
+                <FaEnvelope className="text-[#45F882]" /> Email Address
+              </label>
+              <input
+                type="email"
+                id="email"
+                placeholder="player@warclub.gg"
+                {...register('email', { required: 'Email address is required' })}
+                className="w-full bg-[#16202D] border border-gray-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#45F882] transition"
+              />
+              {errors.email && (
+                <p className="text-red-400 text-xs mt-1">{errors.email.message}</p>
+              )}
+            </div>
+
+            <div>
+              <div className="flex justify-between items-center mb-1">
+                <label className="text-gray-300 text-xs font-semibold flex items-center gap-1.5" htmlFor="password">
+                  <FaLock className="text-[#45F882]" /> Password
+                </label>
+                <button
+                  type="button"
+                  onClick={passwordResetHandle}
+                  className="text-xs text-green-400 hover:text-green-300 transition"
+                >
+                  Forgot Password?
+                </button>
+              </div>
+              <input
+                type="password"
+                id="password"
+                placeholder="••••••••"
+                {...register('password', { required: 'Password is required' })}
+                className="w-full bg-[#16202D] border border-gray-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#45F882] transition"
+              />
+              {errors.password && (
+                <p className="text-red-400 text-xs mt-1">{errors.password.message}</p>
+              )}
+            </div>
+
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full py-3.5 px-6 bg-gradient-to-r from-[#45F882] to-[#2bd468] text-black font-extrabold text-sm rounded-xl shadow-lg shadow-green-500/20 hover:brightness-110 active:scale-95 transition flex items-center justify-center gap-2 disabled:opacity-50 mt-2"
+            >
+              {loading ? 'Authenticating...' : 'Sign In'} <FaArrowRight size={12} />
+            </button>
+          </form>
+
+          {/* Divider */}
+          <div className="relative my-6 flex items-center justify-center">
+            <div className="border-t border-gray-800 w-full" />
+            <span className="bg-[#0F1722] px-3 text-xs text-gray-500 uppercase tracking-wider font-semibold">
+              Or Connect With
+            </span>
+            <div className="border-t border-gray-800 w-full" />
+          </div>
+
+          <div className="flex justify-center">
+            <SocialLogin />
+          </div>
+
+          <p className="text-center text-xs text-gray-400 mt-6">
+            New to Warclub?{' '}
+            <Link to="/register" className="text-[#45F882] font-bold hover:underline">
+              Create an Account
+            </Link>
+          </p>
         </div>
       </div>
       <ToastContainer />
